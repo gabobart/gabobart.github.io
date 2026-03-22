@@ -1,169 +1,155 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Partyverleih – Sound, Licht & Fotobox</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f7f7f7;
-      color: #222;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GABO Verleihservice</title>
 
-    header {
-      background: #111;
-      color: white;
-      text-align: center;
-      padding: 50px 20px;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f0f0f;
+  color: white;
+}
 
-    header h1 {
-      margin: 0 0 10px;
-      font-size: 32px;
-    }
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background: #000;
+}
 
-    header p {
-      margin: 0;
-      font-size: 18px;
-    }
+.logo {
+  max-width: 250px;
+  margin-bottom: 20px;
+}
 
-    nav {
-      background: #222;
-      text-align: center;
-      padding: 12px;
-    }
+.slogan {
+  font-size: 24px;
+  margin-top: 10px;
+}
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 12px;
-      font-weight: bold;
-    }
+.highlight {
+  color: #00ccff;
+  font-weight: bold;
+}
 
-    section {
-      max-width: 1000px;
-      margin: auto;
-      padding: 40px 20px;
-    }
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
 
-    h2 {
-      text-align: center;
-      margin-bottom: 30px;
-    }
+h2 {
+  text-align: center;
+}
 
-    .produkte {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
+.card {
+  background: #1f1f1f;
+  padding: 25px;
+  border-radius: 10px;
+  margin: 15px 0;
+  text-align: center;
+}
 
-    .karte {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      text-align: center;
-    }
+.price {
+  margin-top: 15px;
+  line-height: 1.6;
+}
 
-    .karte h3 {
-      margin-top: 0;
-    }
+.price span {
+  color: #00ffcc;
+  font-weight: bold;
+}
 
-    .preis {
-      font-size: 22px;
-      font-weight: bold;
-      margin: 10px 0;
-    }
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: #25D366;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
 
-    .kontakt-box {
-      background: white;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      text-align: center;
-    }
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+}
+</style>
 
-    .button {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 12px 20px;
-      background: #111;
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-    }
-
-    footer {
-      background: #111;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 30px;
-    }
-  </style>
 </head>
+
 <body>
 
-  <header>
-    <h1>Partyverleih</h1>
-    <p>Partybox, Licht, Nebelmaschine, Seifenblasenmaschine & Fotobox mieten</p>
-  </header>
+<header>
+  <!-- LOGO -->
+  <img src="logo.png" class="logo">
 
-  <nav>
-    <a href="#angebote">Angebote</a>
-    <a href="#kontakt">Kontakt</a>
-  </nav>
+  <!-- SPRUCH -->
+  <div class="slogan">
+    Feier geplant?<br>
+    <span class="highlight">GABO regelt.</span>
+  </div>
+</header>
 
-  <section id="angebote">
-    <h2>Unsere Angebote</h2>
-    <div class="produkte">
-      <div class="karte">
-        <h3>🔊 Partybox</h3>
-        <p>Leistungsstarker Sound für Geburtstag, Hochzeit oder Feier.</p>
-        <div class="preis">ab 25€</div>
-      </div>
+<section>
+  <h2>Unsere Produkte</h2>
 
-      <div class="karte">
-        <h3>💡 Party Licht</h3>
-        <p>Lichteffekte für die perfekte Stimmung auf deiner Party.</p>
-        <div class="preis">ab 15€</div>
-      </div>
-
-      <div class="karte">
-        <h3>🌫️ Nebelmaschine</h3>
-        <p>Sorgt für echten Disco- und Event-Effekt.</p>
-        <div class="preis">ab 15€</div>
-      </div>
-
-      <div class="karte">
-        <h3>🫧 Seifenblasenmaschine</h3>
-        <p>Ideal für Kindergeburtstage, Hochzeiten und Events.</p>
-        <div class="preis">ab 15€</div>
-      </div>
-
-      <div class="karte">
-        <h3>📸 Fotobox</h3>
-        <p>Unvergessliche Erinnerungen für deine Gäste.</p>
-        <div class="preis">ab 50€</div>
-      </div>
+  <div class="card">
+    <h3>🔊 Soundboks Gen 3</h3>
+    <div class="price">
+      <p>Mo–Do (24h): <span>30€</span></p>
+      <p>Fr–So (24h): <span>35€</span></p>
+      <p>Wochenende komplett: <span>90€</span></p>
     </div>
-  </section>
+  </div>
 
-  <section id="kontakt">
-    <h2>Kontakt</h2>
-    <div class="kontakt-box">
-      <p>Du möchtest etwas mieten oder hast Fragen?</p>
-      <p>📞 Telefon: DEINE-NUMMER</p>
-      <p>📧 E-Mail: DEINE-EMAIL</p>
-      <a class="button" href="mailto:DEINE-EMAIL">Jetzt anfragen</a>
+  <div class="card">
+    <h3>💡 Soundboks Lightboks</h3>
+    <div class="price">
+      <p>Mo–Do (24h): <span>15€</span></p>
+      <p>Fr–So (24h): <span>20€</span></p>
+      <p>Wochenende komplett: <span>40€</span></p>
     </div>
-  </section>
+  </div>
 
-  <footer>
-    <p>© 2026 Partyverleih – Alle Rechte vorbehalten</p>
-  </footer>
+  <div class="card">
+    <h3>🎁 Paket: Box + Licht</h3>
+    <div class="price">
+      <p>Mo–Do (24h): <span>40€</span></p>
+      <p>Fr–So (24h): <span>50€</span></p>
+      <p>Wochenende komplett: <span>150€</span></p>
+    </div>
+  </div>
+
+</section>
+
+<section>
+  <h2>Lieferung & Abholung</h2>
+  <div class="card">
+    <p>📍 Abholung: Ingelheim am Rhein (Heidesheim)</p>
+    <p>🚚 Lieferung Ingelheim & Mainz: 10€</p>
+    <p>🚚 Weitere Umgebung: 20€</p>
+  </div>
+</section>
+
+<section>
+  <h2>Kontakt</h2>
+  <div class="card">
+    <p>📞 017629007917</p>
+    <p>📧 gaboverleih@gmail.com</p>
+
+    <a class="button" href="https://wa.me/4917629007917">
+      💬 WhatsApp schreiben
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 GABO Verleihservice</p>
+</footer>
 
 </body>
 </html>
