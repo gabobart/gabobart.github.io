@@ -3,22 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>GABO Event & Verleihservice</title>
 
 <style>
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  color: white;
-  background:
-    radial-gradient(circle at 50% 0%, rgba(72, 140, 255, 0.3), transparent 30%),
-    linear-gradient(180deg, #05060c, #0a1022);
+  color: #0a1a2f;
+  background: linear-gradient(180deg, #ffffff, #f2f7ff);
 }
 
 header {
   text-align: center;
-  padding: 30px 20px;
+  padding: 40px 20px;
 }
 
 .logo {
@@ -27,12 +24,20 @@ header {
 }
 
 .slogan {
-  font-size: 32px;
+  font-size: 36px;
   font-weight: bold;
 }
 
 .slogan span {
-  color: #00ccff;
+  color: #007bff;
+}
+
+.hero {
+  width: 90%;
+  max-width: 900px;
+  margin: 20px auto;
+  display: block;
+  border-radius: 15px;
 }
 
 section {
@@ -41,16 +46,17 @@ section {
 
 .section-title {
   text-align: center;
-  font-size: 26px;
+  font-size: 28px;
   margin-bottom: 20px;
 }
 
 .card {
-  background: rgba(255,255,255,0.05);
+  background: white;
   padding: 20px;
   margin-bottom: 15px;
   border-radius: 15px;
   text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
 }
 
 .price-line {
@@ -59,21 +65,22 @@ section {
 
 .deposit {
   margin-top: 10px;
-  color: gold;
+  color: #ff9900;
+  font-weight: bold;
 }
 
-a.button {
+.button {
   display: block;
   margin-top: 10px;
   padding: 12px;
-  text-decoration: none;
   border-radius: 10px;
+  text-decoration: none;
   font-weight: bold;
 }
 
 .call {
-  background: #00ccff;
-  color: black;
+  background: #007bff;
+  color: white;
 }
 
 .whatsapp {
@@ -83,7 +90,8 @@ a.button {
 
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 30px;
+  background: #f2f7ff;
 }
 </style>
 
@@ -98,70 +106,88 @@ footer {
 Feier geplant?<br>
 <span>GABO regelt.</span>
 </div>
+
+<img src="hero.jpg" class="hero">
+
 </header>
 
 <section>
+
 <h2 class="section-title">Unsere Angebote</h2>
 
 <div class="card">
-<h3>🔊 Soundboks</h3>
-<div class="price-line">Preis auf Anfrage</div>
-<div class="deposit">Kaution: 300€</div>
+<h3>🔊 Soundboks Gen 3</h3>
+<p>Mo–Do (24h): 30€</p>
+<p>Fr–So (24h): 35€</p>
+<p>Wochenende komplett: 90€</p>
+<p class="deposit">Kaution: 300€</p>
+<a href="https://wa.me/4917629007917" class="button whatsapp">Jetzt anfragen</a>
 </div>
 
 <div class="card">
-<h3>💡 Lightbox</h3>
-<div class="price-line">Preis auf Anfrage</div>
-<div class="deposit">Kaution: 150€</div>
+<h3>💡 Lightboks</h3>
+<p>Mo–Do (24h): 15€</p>
+<p>Fr–So (24h): 20€</p>
+<p>Wochenende komplett: 40€</p>
+<p class="deposit">Kaution: 150€</p>
+<a href="https://wa.me/4917629007917" class="button whatsapp">Jetzt anfragen</a>
+</div>
+
+<div class="card">
+<h3>🎉 Paket (Box + Licht)</h3>
+<p>Mo–Do (24h): 40€</p>
+<p>Fr–So (24h): 50€</p>
+<p>Wochenende komplett: 150€</p>
+<p class="deposit">Kaution: 450€</p>
+<a href="https://wa.me/4917629007917" class="button whatsapp">Jetzt anfragen</a>
 </div>
 
 <div class="card">
 <h3>📸 Fotobox</h3>
-<div class="price-line">Preis auf Anfrage</div>
-<div class="deposit">Kaution: 500€</div>
+<p>Mo–Do (24h): 200€</p>
+<p>Fr–So (24h): 250€</p>
+<p>Wochenende komplett: 600€</p>
+<p class="deposit">Kaution: 500€</p>
+<a href="https://wa.me/4917629007917" class="button whatsapp">Jetzt anfragen</a>
 </div>
 
 <div class="card">
 <h3>🌫️ Nebelmaschine</h3>
-<div class="price-line">Preis auf Anfrage</div>
-<div class="deposit">Kaution: 200€</div>
+<p>Mo–Do (24h): 15€</p>
+<p>Fr–So (24h): 20€</p>
+<p>Wochenende komplett: 50€</p>
+<p class="deposit">Kaution: 200€</p>
+<a href="https://wa.me/4917629007917" class="button whatsapp">Jetzt anfragen</a>
 </div>
 
 <div class="card">
 <h3>🫧 Luftblasenmaschine</h3>
-<div class="price-line">Preis auf Anfrage</div>
-<div class="deposit">Kaution: 200€</div>
-</div>
-
-<div class="card">
-<h3>🎉 Komplettpaket</h3>
-<div class="price-line">Preis auf Anfrage</div>
-<div class="deposit">Kaution: 450€</div>
+<p>Mo–Do (24h): 15€</p>
+<p>Fr–So (24h): 20€</p>
+<p>Wochenende komplett: 50€</p>
+<p class="deposit">Kaution: 200€</p>
+<a href="https://wa.me/4917629007917" class="button whatsapp">Jetzt anfragen</a>
 </div>
 
 </section>
 
 <section>
+
 <h2 class="section-title">Kontakt</h2>
 
-<a href="tel:017629007917" class="button call">
-📞 Jetzt anrufen
-</a>
+<a href="tel:017629007917" class="button call">📞 Jetzt anrufen</a>
+<a href="https://wa.me/4917629007917" class="button whatsapp">💬 WhatsApp schreiben</a>
 
-<a href="https://wa.me/4917629007917" class="button whatsapp">
-💬 WhatsApp schreiben
-</a>
-
-<p>📧 gaboverleih@gmail.com</p>
+<p style="text-align:center;">📧 gaboverleih@gmail.com</p>
 
 </section>
 
 <footer>
-© 2026 GABO Event & Verleihservice
 
-<br><br>
+© 2026 GABO Event & Verleihservice<br><br>
 
-<a href="impressum.html" style="color:#00ccff;">Impressum</a>
+<a href="impressum.html">Impressum</a>
+
 </footer>
 
 </body>
