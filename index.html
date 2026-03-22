@@ -1,180 +1,300 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GABO Verleihservice</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GABO Event & Verleihservice</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  color: white;
-  background:
-    radial-gradient(circle at top center, rgba(0, 204, 255, 0.18), transparent 35%),
-    linear-gradient(180deg, #05070f 0%, #0a1020 45%, #000000 100%);
-}
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      background:
+        radial-gradient(circle at top center, rgba(64, 146, 255, 0.22), transparent 28%),
+        radial-gradient(circle at 20% 25%, rgba(120, 0, 255, 0.14), transparent 22%),
+        radial-gradient(circle at 80% 18%, rgba(0, 200, 255, 0.14), transparent 24%),
+        linear-gradient(180deg, #04060d 0%, #0b1120 45%, #020305 100%);
+    }
 
-header {
-  text-align: center;
-  padding: 40px 20px;
-}
+    header {
+      text-align: center;
+      padding: 30px 20px 10px;
+    }
 
-.logo {
-  width: 100%;
-  max-width: 800px;
-  filter:
-    drop-shadow(0 0 10px #00ccff)
-    drop-shadow(0 0 25px #00ccff)
-    drop-shadow(0 0 40px rgba(0,204,255,0.8));
-}
+    .logo {
+      width: 100%;
+      max-width: 820px;
+      filter:
+        drop-shadow(0 0 8px #4db8ff)
+        drop-shadow(0 0 18px #2b8fff)
+        drop-shadow(0 0 30px rgba(43, 143, 255, 0.8));
+    }
 
-.slogan {
-  font-size: 32px;
-  margin-top: 20px;
-}
+    .slogan {
+      margin-top: 18px;
+      font-size: 34px;
+      font-weight: bold;
+      line-height: 1.2;
+    }
 
-.slogan span {
-  color: #00ccff;
-  text-shadow: 0 0 10px #00ccff, 0 0 20px #00ccff;
-}
+    .slogan span {
+      color: #57b9ff;
+      text-shadow: 0 0 10px #57b9ff, 0 0 20px rgba(87,185,255,0.8);
+    }
 
-.welcome {
-  margin-top: 15px;
-  font-size: 18px;
-  color: #cfefff;
-}
+    .welcome {
+      margin: 14px auto 0;
+      max-width: 900px;
+      font-size: 18px;
+      color: #d8e8ff;
+    }
 
-.hero-img {
-  width: 100%;
-  max-width: 600px;
-  margin: 30px auto;
-  display: block;
-  border-radius: 12px;
-  box-shadow: 0 0 25px rgba(0,204,255,0.3);
-}
+    .hero-wrap {
+      max-width: 950px;
+      margin: 28px auto 10px;
+      padding: 0 18px;
+    }
 
-section {
-  padding: 25px;
-  max-width: 900px;
-  margin: auto;
-}
+    .hero {
+      width: 100%;
+      border-radius: 18px;
+      display: block;
+      box-shadow:
+        0 0 28px rgba(56, 140, 255, 0.25),
+        0 0 70px rgba(87,185,255,0.10);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
 
-.card {
-  background: rgba(255,255,255,0.06);
-  padding: 20px;
-  border-radius: 12px;
-  margin: 15px 0;
-  text-align: center;
-}
+    .cta-row {
+      max-width: 950px;
+      margin: 18px auto 0;
+      padding: 0 18px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
 
-.card span {
-  color: #00ffcc;
-  font-weight: bold;
-}
+    .cta-button {
+      display: inline-block;
+      text-align: center;
+      padding: 15px 18px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 17px;
+    }
 
-.button {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 14px 22px;
-  background: #00ccff;
-  color: black;
-  text-decoration: none;
-  border-radius: 10px;
-  font-weight: bold;
-}
+    .call-btn {
+      background: linear-gradient(90deg, #f4f7ff, #d8e8ff);
+      color: #08111d;
+      box-shadow: 0 0 20px rgba(255,255,255,0.10);
+    }
 
-footer {
-  text-align: center;
-  padding: 20px;
-}
-</style>
+    .whatsapp-btn {
+      background: linear-gradient(90deg, #25D366, #6bf39a);
+      color: #08111d;
+      box-shadow: 0 0 20px rgba(37,211,102,0.18);
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 26px 18px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 30px;
+      margin: 8px 0 22px;
+      color: #eef6ff;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 18px;
+      padding: 22px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 22px rgba(60, 130, 255, 0.08);
+    }
+
+    .card h3 {
+      margin: 8px 0 14px;
+      font-size: 25px;
+    }
+
+    .price-line {
+      margin: 7px 0;
+      font-size: 17px;
+    }
+
+    .price-line span {
+      color: #72ffd1;
+      font-weight: bold;
+      text-shadow: 0 0 8px rgba(114,255,209,0.20);
+    }
+
+    .deposit {
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1px solid rgba(255,255,255,0.10);
+      font-size: 17px;
+    }
+
+    .deposit span {
+      color: #ffd56e;
+      font-weight: bold;
+    }
+
+    .info-card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 18px;
+      padding: 22px;
+      text-align: center;
+    }
+
+    .info-card p {
+      margin: 10px 0;
+      font-size: 17px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 28px 20px 34px;
+      color: #c7d7ef;
+    }
+
+    @media (min-width: 760px) {
+      .grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .cta-row {
+        grid-template-columns: 1fr;
+      }
+
+      .slogan {
+        font-size: 28px;
+      }
+
+      .section-title {
+        font-size: 26px;
+      }
+    }
+  </style>
 </head>
-
 <body>
 
-<header>
-  <img src="CB380799-E099-4902-8E1F-DA2134CBA138.png" class="logo">
+  <header>
+    <img src="logo.png" alt="GABO Logo" class="logo">
 
-  <div class="slogan">
-    Feier geplant?<br>
-    <span>GABO regelt.</span>
+    <div class="slogan">
+      Feier geplant?<br>
+      <span>GABO regelt.</span>
+    </div>
+
+    <div class="welcome">
+      Willkommen bei GABO – schau dich um und melde dich direkt per Anruf oder WhatsApp.
+    </div>
+  </header>
+
+  <div class="hero-wrap">
+    <img src="hero.jpg" alt="GABO Event & Verleihservice" class="hero">
   </div>
 
-  <div class="welcome">
-    Willkommen bei GABO – schau dich um und melde dich!
-  </div>
-</header>
-
-<!-- BILD KOMMT HIER -->
-<img src="hero.png" class="hero-img">
-
-<section>
-
-  <div class="card">
-    <h2>🔊 Soundboks Gen 3</h2>
-    <p>Mo–Do: <span>30€</span></p>
-    <p>Fr–So: <span>35€</span></p>
-    <p>Wochenende: <span>90€</span></p>
+  <div class="cta-row">
+    <a class="cta-button call-btn" href="tel:+4917629007917">📞 Jetzt anrufen</a>
+    <a class="cta-button whatsapp-btn" href="https://wa.me/4917629007917">💬 WhatsApp schreiben</a>
   </div>
 
-  <div class="card">
-    <h2>💡 Soundboks Lightboks</h2>
-    <p>Mo–Do: <span>15€</span></p>
-    <p>Fr–So: <span>20€</span></p>
-    <p>Wochenende: <span>40€</span></p>
-  </div>
+  <section>
+    <h2 class="section-title">Unsere Angebote</h2>
 
-  <div class="card">
-    <h2>🎁 Paket</h2>
-    <p>Mo–Do: <span>40€</span></p>
-    <p>Fr–So: <span>50€</span></p>
-    <p>Wochenende: <span>150€</span></p>
-  </div>
+    <div class="grid">
+      <div class="card">
+        <h3>🔊 Soundboks Gen 3</h3>
+        <div class="price-line">Mo–Do (24h): <span>30€</span></div>
+        <div class="price-line">Fr–So (24h): <span>35€</span></div>
+        <div class="price-line">Wochenende komplett: <span>90€</span></div>
+        <div class="deposit">Kaution: <span>300€</span></div>
+      </div>
 
-  <div class="card">
-    <h2>📸 Fotobox</h2>
-    <p>Mo–Do: <span>200€</span></p>
-    <p>Fr–So: <span>250€</span></p>
-    <p>Wochenende: <span>600€</span></p>
-  </div>
+      <div class="card">
+        <h3>💡 Soundboks Lightboks</h3>
+        <div class="price-line">Mo–Do (24h): <span>15€</span></div>
+        <div class="price-line">Fr–So (24h): <span>20€</span></div>
+        <div class="price-line">Wochenende komplett: <span>40€</span></div>
+        <div class="deposit">Kaution: <span>150€</span></div>
+      </div>
 
-  <div class="card">
-    <h2>🌫️ Nebelmaschine</h2>
-    <p>Mo–Do: <span>15€</span></p>
-    <p>Fr–So: <span>20€</span></p>
-    <p>Wochenende: <span>50€</span></p>
-  </div>
+      <div class="card">
+        <h3>🎁 Paket: Box + Licht</h3>
+        <div class="price-line">Mo–Do (24h): <span>40€</span></div>
+        <div class="price-line">Fr–So (24h): <span>50€</span></div>
+        <div class="price-line">Wochenende komplett: <span>150€</span></div>
+        <div class="deposit">Kaution: <span>450€</span></div>
+      </div>
 
-  <div class="card">
-    <h2>🫧 Luftblasenmaschine</h2>
-    <p>Mo–Do: <span>15€</span></p>
-    <p>Fr–So: <span>20€</span></p>
-    <p>Wochenende: <span>50€</span></p>
-  </div>
+      <div class="card">
+        <h3>📸 Fotobox</h3>
+        <div class="price-line">Mo–Do (24h): <span>200€</span></div>
+        <div class="price-line">Fr–So (24h): <span>250€</span></div>
+        <div class="price-line">Wochenende komplett: <span>600€</span></div>
+        <div class="deposit">Kaution: <span>500€</span></div>
+      </div>
 
-</section>
+      <div class="card">
+        <h3>🌫️ Nebelmaschine</h3>
+        <div class="price-line">Mo–Do (24h): <span>15€</span></div>
+        <div class="price-line">Fr–So (24h): <span>20€</span></div>
+        <div class="price-line">Wochenende komplett: <span>50€</span></div>
+        <div class="deposit">Kaution: <span>200€</span></div>
+      </div>
 
-<section>
-  <div class="card">
-    <h2>📍 Lieferung & Abholung</h2>
-    <p>Ingelheim (Heidesheim)</p>
-    <p>Lieferung: 10€ / 20€</p>
-  </div>
-</section>
+      <div class="card">
+        <h3>🫧 Luftblasenmaschine</h3>
+        <div class="price-line">Mo–Do (24h): <span>15€</span></div>
+        <div class="price-line">Fr–So (24h): <span>20€</span></div>
+        <div class="price-line">Wochenende komplett: <span>50€</span></div>
+        <div class="deposit">Kaution: <span>200€</span></div>
+      </div>
+    </div>
+  </section>
 
-<section>
-  <div class="card">
-    <h2>📲 Anfrage</h2>
-    <p>WhatsApp: 017629007917</p>
-    <p>Email: gaboverleih@gmail.com</p>
-    <a class="button" href="https://wa.me/4917629007917">Jetzt schreiben</a>
-  </div>
-</section>
+  <section>
+    <div class="info-card">
+      <h2 class="section-title">Lieferung & Abholung</h2>
+      <p>📍 Abholung: Ingelheim am Rhein (Heidesheim)</p>
+      <p>🚚 Lieferung Ingelheim & Mainz: 10€</p>
+      <p>🚚 Weitere Umgebung: 20€</p>
+    </div>
+  </section>
 
-<footer>
-  <p>© GABO</p>
-</footer>
+  <section>
+    <div class="info-card">
+      <h2 class="section-title">Kontakt</h2>
+      <p>📞 017629007917</p>
+      <p>📧 gaboverleih@gmail.com</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 GABO Event & Verleihservice
+  </footer>
 
 </body>
 </html>
