@@ -9,28 +9,33 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #0f0f0f;
   color: white;
+  background: radial-gradient(circle at center, #1a1f3c, #000);
 }
 
 header {
   text-align: center;
-  padding: 40px 20px;
-  background: #000;
+  padding: 50px 20px;
 }
 
 .logo {
-  max-width: 250px;
-  margin-bottom: 20px;
+  max-width: 260px;
+}
+
+.title {
+  margin-top: 10px;
+  font-size: 20px;
+  letter-spacing: 2px;
 }
 
 .slogan {
-  font-size: 24px;
-  margin-top: 10px;
+  margin-top: 30px;
+  font-size: 34px;
 }
 
-.highlight {
+.slogan span {
   color: #00ccff;
+  text-shadow: 0 0 10px #00ccff, 0 0 20px #00ccff;
   font-weight: bold;
 }
 
@@ -40,21 +45,13 @@ section {
   margin: auto;
 }
 
-h2 {
-  text-align: center;
-}
-
 .card {
-  background: #1f1f1f;
+  background: rgba(255,255,255,0.05);
   padding: 25px;
-  border-radius: 10px;
-  margin: 15px 0;
+  border-radius: 12px;
+  margin: 20px 0;
   text-align: center;
-}
-
-.price {
-  margin-top: 15px;
-  line-height: 1.6;
+  backdrop-filter: blur(10px);
 }
 
 .price span {
@@ -65,17 +62,19 @@ h2 {
 .button {
   display: inline-block;
   margin-top: 20px;
-  padding: 12px 20px;
-  background: #25D366;
-  color: white;
+  padding: 14px 22px;
+  background: #00ccff;
+  color: black;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 footer {
   text-align: center;
   padding: 20px;
-  background: #111;
+  background: #000;
 }
 </style>
 
@@ -84,65 +83,58 @@ footer {
 <body>
 
 <header>
-  <!-- LOGO -->
   <img src="logo.png" class="logo">
+  <div class="title">GABO VERLEIHSERVICE</div>
 
-  <!-- SPRUCH -->
   <div class="slogan">
     Feier geplant?<br>
-    <span class="highlight">GABO regelt.</span>
+    <span>GABO regelt.</span>
   </div>
 </header>
 
 <section>
-  <h2>Unsere Produkte</h2>
 
   <div class="card">
-    <h3>🔊 Soundboks Gen 3</h3>
-    <div class="price">
-      <p>Mo–Do (24h): <span>30€</span></p>
-      <p>Fr–So (24h): <span>35€</span></p>
-      <p>Wochenende komplett: <span>90€</span></p>
-    </div>
+    <h2>🔊 Soundboks Gen 3</h2>
+    <p>Mo–Do (24h): <span>30€</span></p>
+    <p>Fr–So (24h): <span>35€</span></p>
+    <p>Wochenende komplett: <span>90€</span></p>
   </div>
 
   <div class="card">
-    <h3>💡 Soundboks Lightboks</h3>
-    <div class="price">
-      <p>Mo–Do (24h): <span>15€</span></p>
-      <p>Fr–So (24h): <span>20€</span></p>
-      <p>Wochenende komplett: <span>40€</span></p>
-    </div>
+    <h2>💡 Soundboks Lightboks</h2>
+    <p>Mo–Do (24h): <span>15€</span></p>
+    <p>Fr–So (24h): <span>20€</span></p>
+    <p>Wochenende komplett: <span>40€</span></p>
   </div>
 
   <div class="card">
-    <h3>🎁 Paket: Box + Licht</h3>
-    <div class="price">
-      <p>Mo–Do (24h): <span>40€</span></p>
-      <p>Fr–So (24h): <span>50€</span></p>
-      <p>Wochenende komplett: <span>150€</span></p>
-    </div>
+    <h2>🎁 Paket (Box + Licht)</h2>
+    <p>Mo–Do (24h): <span>40€</span></p>
+    <p>Fr–So (24h): <span>50€</span></p>
+    <p>Wochenende komplett: <span>150€</span></p>
   </div>
 
 </section>
 
 <section>
-  <h2>Lieferung & Abholung</h2>
   <div class="card">
-    <p>📍 Abholung: Ingelheim am Rhein (Heidesheim)</p>
-    <p>🚚 Lieferung Ingelheim & Mainz: 10€</p>
-    <p>🚚 Weitere Umgebung: 20€</p>
+    <h2>📍 Lieferung & Abholung</h2>
+    <p>Abholung: Ingelheim am Rhein (Heidesheim)</p>
+    <p>Lieferung Ingelheim & Mainz: 10€</p>
+    <p>Weitere Umgebung: 20€</p>
   </div>
 </section>
 
 <section>
-  <h2>Kontakt</h2>
   <div class="card">
+    <h2>📲 Anfrage</h2>
+    <p>Anfrage per WhatsApp</p>
     <p>📞 017629007917</p>
     <p>📧 gaboverleih@gmail.com</p>
 
     <a class="button" href="https://wa.me/4917629007917">
-      💬 WhatsApp schreiben
+      💬 Jetzt schreiben
     </a>
   </div>
 </section>
