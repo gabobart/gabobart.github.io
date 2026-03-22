@@ -58,7 +58,10 @@ header::after {
   z-index: 1;
   width: 100%;
   max-width: 750px;
-  filter: drop-shadow(0 0 18px #00ccff);
+  filter:
+    drop-shadow(0 0 10px #00ccff)
+    drop-shadow(0 0 20px #00ccff)
+    drop-shadow(0 0 30px rgba(0, 204, 255, 0.8));
 }
 
 .hero {
@@ -198,7 +201,7 @@ section {
   margin-top: 0;
 }
 
-.price span {
+.card p span {
   color: #00ffcc;
   font-weight: bold;
   text-shadow: 0 0 10px rgba(0,255,204,0.25);
@@ -259,8 +262,8 @@ footer {
     <div class="hero-text">
       <h1>Feier geplant?<br><span>GABO regelt.</span></h1>
       <p>
-        Premium Sound und Licht für deine Party. Schnell anfragen, einfach abholen
-        oder liefern lassen.
+        Premium Sound, Licht und Event-Equipment für deine Party.
+        Schnell anfragen, einfach abholen oder liefern lassen.
       </p>
     </div>
 
@@ -293,6 +296,27 @@ footer {
     <p>Mo–Do (24h): <span>40€</span></p>
     <p>Fr–So (24h): <span>50€</span></p>
     <p>Wochenende komplett: <span>150€</span></p>
+  </div>
+
+  <div class="card">
+    <h2>📸 Fotobox</h2>
+    <p>Mo–Do (24h): <span>200€</span></p>
+    <p>Fr–So (24h): <span>250€</span></p>
+    <p>Wochenende komplett: <span>600€</span></p>
+  </div>
+
+  <div class="card">
+    <h2>🌫️ Nebelmaschine</h2>
+    <p>Mo–Do (24h): <span>15€</span></p>
+    <p>Fr–So (24h): <span>20€</span></p>
+    <p>Wochenende komplett: <span>50€</span></p>
+  </div>
+
+  <div class="card">
+    <h2>🫧 Luftblasenmaschine</h2>
+    <p>Mo–Do (24h): <span>15€</span></p>
+    <p>Fr–So (24h): <span>20€</span></p>
+    <p>Wochenende komplett: <span>50€</span></p>
   </div>
 </section>
 
