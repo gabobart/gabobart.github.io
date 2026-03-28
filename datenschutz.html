@@ -1,167 +1,195 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Datenschutz - GABO Event & Verleihservice</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Datenschutz - GABO Event & Verleihservice</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  background: linear-gradient(180deg, #020617, #0a1f4d, #020617);
+  line-height: 1.7;
+}
 
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: white;
-      background: linear-gradient(180deg, #020617, #0a1f4d, #020617);
-      line-height: 1.7;
-    }
+/* LOGO */
+.logo-container {
+  text-align: center;
+  margin-top: 20px;
+}
 
-    a {
-      color: #4da3ff;
-      text-decoration: none;
-    }
+.logo {
+  width: 70%;
+  max-width: 400px;
+  display: block;
+  margin: 0 auto;
+  filter: drop-shadow(0 0 15px rgba(0,123,255,0.7));
+}
 
-    a:hover {
-      text-decoration: underline;
-    }
+/* LINKS */
+a {
+  color: #4da3ff;
+  text-decoration: none;
+}
 
-    .container {
-      max-width: 950px;
-      margin: 0 auto;
-      padding: 30px 20px 50px;
-    }
+a:hover {
+  text-decoration: underline;
+}
 
-    .card {
-      background: rgba(255,255,255,0.06);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 18px;
-      padding: 28px;
-      box-shadow: 0 0 20px rgba(0,123,255,0.18);
-    }
+/* CONTAINER */
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
-    h1 {
-      text-align: center;
-      margin-bottom: 25px;
-      text-shadow: 0 0 10px rgba(0,123,255,0.6);
-    }
+/* CARD */
+.card {
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 0 20px rgba(0,123,255,0.18);
+}
 
-    h2 {
-      color: #4da3ff;
-      margin-top: 28px;
-      margin-bottom: 10px;
-    }
+/* HEADINGS */
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  text-shadow: 0 0 10px rgba(0,123,255,0.6);
+}
 
-    .back-button {
-      display: inline-block;
-      margin-bottom: 20px;
-      padding: 10px 16px;
-      border-radius: 10px;
-      background: #007bff;
-      color: white;
-      font-weight: bold;
-    }
+h2 {
+  color: #4da3ff;
+  margin-top: 28px;
+}
 
-    .back-button:hover {
-      opacity: 0.92;
-      text-decoration: none;
-    }
+/* BUTTON */
+.back-button {
+  display: inline-block;
+  margin: 20px 0;
+  padding: 10px 16px;
+  border-radius: 10px;
+  background: #007bff;
+  color: white;
+  font-weight: bold;
+}
 
-    .note {
-      color: #ffd966;
-      font-weight: bold;
-      margin-top: 18px;
-    }
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 25px;
+  color: rgba(255,255,255,0.8);
+}
+</style>
 
-    footer {
-      text-align: center;
-      padding: 25px 20px 35px;
-      color: rgba(255,255,255,0.85);
-    }
-
-    @media (max-width: 768px) {
-      .card {
-        padding: 22px 18px;
-      }
-
-      h1 {
-        font-size: 28px;
-      }
-    }
-  </style>
 </head>
+
 <body>
 
-  <div class="container">
-    <a href="index.html" class="back-button">← Zurück zur Startseite</a>
+<!-- LOGO -->
+<div class="logo-container">
+  <img src="logo.png" class="logo" alt="GABO Verleihservice Logo">
+</div>
 
-    <div class="card">
-      <h1>Datenschutzerklärung</h1>
+<div class="container">
 
-      <h2>1. Verantwortlicher</h2>
-      <p>
-        Gabriel Bartucca<br>
-        GABO Event &amp; Verleihservice<br>
-        [Straße Hausnummer]<br>
-        [PLZ Ort]<br>
-        E-Mail: <a href="mailto:gaboverleih@gmail.com">gaboverleih@gmail.com</a><br>
-        Telefon: <a href="tel:017629007917">0176 29007917</a>
-      </p>
+<a href="index.html" class="back-button">← Zurück zur Startseite</a>
 
-      <h2>2. Erhebung und Speicherung personenbezogener Daten</h2>
-      <p>
-        Beim Besuch dieser Website können durch den Hosting-Anbieter automatisch technische Informationen erfasst werden.
-        Dazu gehören zum Beispiel die IP-Adresse, Datum und Uhrzeit des Zugriffs, verwendeter Browser und das verwendete Betriebssystem.
-        Diese Daten dienen der technischen Bereitstellung und Sicherheit der Website.
-      </p>
+<div class="card">
+<h1>Datenschutzerklärung</h1>
 
-      <h2>3. Kontaktaufnahme</h2>
-      <p>
-        Wenn du mich per E-Mail, Telefon oder WhatsApp kontaktierst, werden die von dir übermittelten Daten gespeichert,
-        um deine Anfrage zu bearbeiten. Diese Daten werden nicht ohne deine Einwilligung weitergegeben.
-      </p>
+<h2>1. Verantwortlicher</h2>
+<p>
+Gabriel Bartucca<br>
+GABO Event &amp; Verleihservice<br>
+Sandkiefernweg 48<br>
+55262 Ingelheim am Rhein<br><br>
 
-      <h2>4. Zweck der Verarbeitung</h2>
-      <p>
-        Die Verarbeitung deiner Daten erfolgt ausschließlich zur Bearbeitung von Anfragen, zur Kommunikation mit dir
-        und zur Abwicklung von Miet- oder Serviceleistungen.
-      </p>
+E-Mail: <a href="mailto:gaboverleih@gmail.com">gaboverleih@gmail.com</a><br>
+Telefon: <a href="tel:017629007917">0176 29007917</a>
+</p>
 
-      <h2>5. Speicherdauer</h2>
-      <p>
-        Personenbezogene Daten werden nur so lange gespeichert, wie dies für die Bearbeitung deiner Anfrage
-        oder zur Erfüllung gesetzlicher Pflichten erforderlich ist.
-      </p>
+<h2>2. Erhebung und Speicherung personenbezogener Daten beim Besuch der Website</h2>
+<p>
+Beim Aufrufen dieser Website werden durch den Hosting-Anbieter automatisch Informationen erfasst.
+Diese sogenannten Server-Logfiles können folgende Daten enthalten:
+</p>
+<ul>
+<li>IP-Adresse</li>
+<li>Datum und Uhrzeit der Anfrage</li>
+<li>Browsertyp und Browserversion</li>
+<li>verwendetes Betriebssystem</li>
+<li>Referrer URL</li>
+</ul>
 
-      <h2>6. Deine Rechte</h2>
-      <p>
-        Du hast das Recht auf Auskunft über die bei mir gespeicherten personenbezogenen Daten sowie auf Berichtigung,
-        Löschung, Einschränkung der Verarbeitung und Widerspruch gegen die Verarbeitung im Rahmen der gesetzlichen Vorschriften.
-      </p>
+<p>
+Diese Daten dienen ausschließlich der Sicherstellung eines störungsfreien Betriebs der Website
+sowie der Verbesserung unseres Angebots und erlauben keinen Rückschluss auf deine Person.
+</p>
 
-      <h2>7. Externe Dienste</h2>
-      <p>
-        Auf dieser Website können Links zu externen Diensten wie WhatsApp enthalten sein.
-        Beim Anklicken solcher Links gelten die Datenschutzbestimmungen des jeweiligen Anbieters.
-      </p>
+<h2>3. Hosting</h2>
+<p>
+Diese Website wird bei einem externen Dienstleister (Hosting-Anbieter) betrieben.
+Die personenbezogenen Daten, die auf dieser Website erfasst werden,
+werden auf den Servern des Hosters gespeichert.
+</p>
 
-      <h2>8. Kontakt zum Datenschutz</h2>
-      <p>
-        Bei Fragen zum Datenschutz kannst du dich jederzeit melden unter:
-        <a href="mailto:gaboverleih@gmail.com">gaboverleih@gmail.com</a>
-      </p>
+<h2>4. Kontaktaufnahme</h2>
+<p>
+Wenn du uns per E-Mail, Telefon oder WhatsApp kontaktierst,
+werden deine Angaben zur Bearbeitung der Anfrage und für den Fall von Anschlussfragen gespeichert.
+Diese Daten geben wir nicht ohne deine Einwilligung weiter.
+</p>
 
-      <p class="note">
-        Wichtig: Bitte ergänze auch hier noch deine vollständige Anschrift.
-      </p>
-    </div>
-  </div>
+<h2>5. Zweck der Verarbeitung</h2>
+<p>
+Die Verarbeitung der Daten erfolgt zur Bearbeitung von Anfragen,
+zur Kommunikation sowie zur Durchführung von Miet- und Serviceleistungen.
+</p>
 
-  <footer>
-    © 2026 GABO Event &amp; Verleihservice
-  </footer>
+<h2>6. Speicherdauer</h2>
+<p>
+Deine Daten werden nur so lange gespeichert,
+wie dies zur Bearbeitung deiner Anfrage oder aufgrund gesetzlicher Aufbewahrungspflichten erforderlich ist.
+</p>
+
+<h2>7. Deine Rechte</h2>
+<p>
+Du hast jederzeit das Recht auf:
+</p>
+<ul>
+<li>Auskunft über deine gespeicherten Daten</li>
+<li>Berichtigung unrichtiger Daten</li>
+<li>Löschung deiner Daten</li>
+<li>Einschränkung der Verarbeitung</li>
+<li>Widerspruch gegen die Verarbeitung</li>
+</ul>
+
+<h2>8. Externe Dienste (WhatsApp)</h2>
+<p>
+Auf dieser Website wird ein Link zum Dienst WhatsApp verwendet.
+Beim Anklicken des Links wird eine Verbindung zu WhatsApp hergestellt.
+Dabei können Daten an WhatsApp übertragen werden.
+Es gelten die Datenschutzbestimmungen von WhatsApp.
+</p>
+
+<h2>9. Kontakt zum Datenschutz</h2>
+<p>
+Bei Fragen zum Datenschutz kannst du dich jederzeit melden unter:<br>
+<a href="mailto:gaboverleih@gmail.com">gaboverleih@gmail.com</a>
+</p>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 GABO Event &amp; Verleihservice
+</footer>
 
 </body>
 </html>
