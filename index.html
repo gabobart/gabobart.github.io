@@ -16,26 +16,28 @@ body {
 /* HEADER */
 header {
   text-align: center;
-  padding: 0;
+  padding: 10px;
 }
 
-/* 🔥 LOGO BLOCK */
+/* 🔥 LOGO */
 .logo-container {
-  padding-top: 10px;
+  margin-top: 20px;
 }
 
 .logo {
-  width: 130%;
-  max-width: 1600px;
+  width: 80%;
+  max-width: 500px;
   display: block;
   margin: 0 auto;
+  filter: drop-shadow(0 0 15px rgba(0,123,255,0.7));
+  animation: fadeIn 1s ease-in-out;
 }
 
 /* 💡 SLOGAN */
 .slogan {
   font-size: 26px;
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 15px;
   text-shadow: 0 0 10px rgba(0,123,255,0.7);
 }
 
@@ -44,13 +46,14 @@ header {
   color: #4da3ff;
 }
 
-/* HERO BILD */
+/* HERO */
 .hero {
   width: 92%;
   max-width: 900px;
-  margin: 15px auto 0;
+  margin: 20px auto;
   display: block;
   border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,123,255,0.4);
 }
 
 /* SECTION */
@@ -60,7 +63,7 @@ section {
 
 .section-title {
   text-align: center;
-  font-size: 26px;
+  font-size: 28px;
   margin-bottom: 20px;
   text-shadow: 0 0 8px rgba(0,123,255,0.6);
 }
@@ -68,18 +71,19 @@ section {
 /* CARDS */
 .card {
   background: rgba(255,255,255,0.05);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
   padding: 20px;
   margin-bottom: 15px;
   border-radius: 15px;
   text-align: center;
   box-shadow: 0 0 20px rgba(0,123,255,0.2);
   border: 1px solid rgba(255,255,255,0.1);
-  transition: 0.2s;
+  transition: 0.25s;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 0 25px rgba(0,123,255,0.4);
 }
 
 .deposit {
@@ -96,6 +100,11 @@ section {
   border-radius: 10px;
   text-decoration: none;
   font-weight: bold;
+  transition: 0.2s;
+}
+
+.button:hover {
+  opacity: 0.9;
 }
 
 .call {
@@ -116,7 +125,14 @@ footer {
 }
 
 footer a {
-  color: white;
+  color: #4da3ff;
+  text-decoration: none;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(-10px);}
+  to {opacity: 1; transform: translateY(0);}
 }
 </style>
 
