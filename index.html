@@ -13,86 +13,59 @@ body {
   background: linear-gradient(180deg, #020617, #0a1f4d, #020617);
 }
 
-/* HEADER */
 header {
   text-align: center;
-  padding: 10px;
-}
-
-/* 🔥 LOGO */
-.logo-container {
-  margin-top: 20px;
+  padding: 20px;
 }
 
 .logo {
   width: 80%;
-  max-width: 500px;
+  max-width: 400px;
   display: block;
   margin: 0 auto;
-  filter: drop-shadow(0 0 15px rgba(0,123,255,0.7));
-  animation: fadeIn 1s ease-in-out;
 }
 
-/* 💡 SLOGAN */
 .slogan {
-  font-size: 26px;
-  font-weight: bold;
-  margin-top: 15px;
-  text-shadow: 0 0 10px rgba(0,123,255,0.7);
+  font-size: 18px;
+  margin-top: 10px;
 }
 
 .slogan span {
-  font-size: 34px;
+  font-size: 24px;
   color: #4da3ff;
+  font-weight: bold;
 }
 
-/* HERO */
 .hero {
-  width: 92%;
-  max-width: 900px;
+  width: 90%;
+  max-width: 800px;
   margin: 20px auto;
-  display: block;
   border-radius: 15px;
-  box-shadow: 0 0 20px rgba(0,123,255,0.4);
 }
 
-/* SECTION */
 section {
   padding: 20px;
 }
 
 .section-title {
   text-align: center;
-  font-size: 28px;
+  font-size: 26px;
   margin-bottom: 20px;
-  text-shadow: 0 0 8px rgba(0,123,255,0.6);
 }
 
-/* CARDS */
 .card {
   background: rgba(255,255,255,0.05);
-  backdrop-filter: blur(12px);
   padding: 20px;
   margin-bottom: 15px;
   border-radius: 15px;
   text-align: center;
-  box-shadow: 0 0 20px rgba(0,123,255,0.2);
-  border: 1px solid rgba(255,255,255,0.1);
-  transition: 0.25s;
-}
-
-.card:hover {
-  transform: translateY(-6px) scale(1.01);
-  box-shadow: 0 0 25px rgba(0,123,255,0.4);
 }
 
 .deposit {
-  margin-top: 10px;
   color: #ffd966;
   font-weight: bold;
 }
 
-/* BUTTONS */
 .button {
   display: block;
   margin-top: 10px;
@@ -100,16 +73,6 @@ section {
   border-radius: 10px;
   text-decoration: none;
   font-weight: bold;
-  transition: 0.2s;
-}
-
-.button:hover {
-  opacity: 0.9;
-}
-
-.call {
-  background: #007bff;
-  color: white;
 }
 
 .whatsapp {
@@ -117,127 +80,120 @@ section {
   color: white;
 }
 
-/* FOOTER */
+.call {
+  background: #007bff;
+  color: white;
+}
+
 footer {
   text-align: center;
-  padding: 30px;
-  background: #020617;
-}
-
-footer a {
-  color: #4da3ff;
-  text-decoration: none;
-}
-
-/* ANIMATION */
-@keyframes fadeIn {
-  from {opacity: 0; transform: translateY(-10px);}
-  to {opacity: 1; transform: translateY(0);}
+  padding: 20px;
 }
 </style>
-
 </head>
 
 <body>
 
 <header>
-
-<div class="logo-container">
-<img src="logo.png" class="logo" alt="GABO Verleihservice Logo">
-</div>
-
+<img src="logo.png" class="logo">
 <div class="slogan">
 Feier geplant?<br>
 <span>GABO regelt.</span>
 </div>
-
 <img src="hero.jpg" class="hero">
-
 </header>
 
 <section>
 <h2 class="section-title">Unsere Angebote</h2>
 
 <div class="card">
-<h3>🔊 Soundboks Gen 3</h3>
-<p>Mo–Do (24h): 35€</p>
-<p>Fr–So (24h): 45€</p>
-<p>Wochenende komplett: 85€</p>
-<p class="deposit">Kaution: 300€</p>
-<a href="https://wa.me/4917629007917" class="button whatsapp">Jetzt anfragen</a>
+<h3>🔊 Soundboks</h3>
+<p>Mo–Do: 35€</p>
+<p>Fr–So: 45€</p>
+<p>Wochenende: 80€</p>
+<p class="deposit">Kaution: 200€</p>
+<a href="https://wa.me/4917629007917" class="button whatsapp">Anfragen</a>
 </div>
 
 <div class="card">
 <h3>💡 Lightboks</h3>
-<p>Mo–Do (24h): 15€</p>
-<p>Fr–So (24h): 20€</p>
-<p>Wochenende komplett: 35€</p>
-<p class="deposit">Kaution: 150€</p>
-<a href="https://wa.me/4917629007917" class="button whatsapp">Jetzt anfragen</a>
-</div>
-
-<div class="card">
-<h3>🎉 Paket 1 (Box + Licht)</h3>
-<p>Mo–Do (24h): 45€</p>
-<p>Fr–So (24h): 55€</p>
-<p>Wochenende komplett: 105€</p>
-<p class="deposit">Kaution: 450€</p>
-<a href="https://wa.me/4917629007917" class="button whatsapp">Jetzt anfragen</a>
-</div>
-
-<div class="card">
-<h3>🔥 Paket 2 (Box + Licht + Nebelmaschine)</h3>
-<p>Mo–Do (24h): 55€</p>
-<p>Fr–So (24h): 70€</p>
-<p>Wochenende komplett: 135€</p>
-<p class="deposit">Kaution: 500€</p>
-<a href="https://wa.me/4917629007917" class="button whatsapp">Jetzt anfragen</a>
-</div>
-
-<div class="card">
-<h3>📸 Fotobox</h3>
-<p>Mo–Do (24h): 200€</p>
-<p>Fr–So (24h): 250€</p>
-<p>Wochenende komplett: 450€</p>
-<p class="deposit">Kaution: 500€</p>
-<a href="https://wa.me/4917629007917" class="button whatsapp">Jetzt anfragen</a>
+<p>Mo–Do: 15€</p>
+<p>Fr–So: 20€</p>
+<p>Wochenende: 35€</p>
+<p class="deposit">Kaution: 50€</p>
+<a href="#" class="button whatsapp">Anfragen</a>
 </div>
 
 <div class="card">
 <h3>🌫️ Nebelmaschine</h3>
-<p>Mo–Do (24h): 15€</p>
-<p>Fr–So (24h): 20€</p>
-<p>Wochenende komplett: 35€</p>
-<p class="deposit">Kaution: 200€</p>
-<a href="https://wa.me/4917629007917" class="button whatsapp">Jetzt anfragen</a>
+<p>Mo–Do: 15€</p>
+<p>Fr–So: 20€</p>
+<p>Wochenende: 35€</p>
+<p class="deposit">Kaution: 100€</p>
+<a href="#" class="button whatsapp">Anfragen</a>
 </div>
 
 <div class="card">
 <h3>🫧 Seifenblasenmaschine</h3>
-<p>Mo–Do (24h): 15€</p>
-<p>Fr–So (24h): 20€</p>
-<p>Wochenende komplett: 35€</p>
-<p class="deposit">Kaution: 200€</p>
-<a href="https://wa.me/4917629007917" class="button whatsapp">Jetzt anfragen</a>
+<p>Mo–Do: 15€</p>
+<p>Fr–So: 20€</p>
+<p>Wochenende: 35€</p>
+<p class="deposit">Kaution: 100€</p>
+<a href="#" class="button whatsapp">Anfragen</a>
+</div>
+
+<div class="card">
+<h3>📸 Fotobox</h3>
+<p>Mo–Do: 170€</p>
+<p>Fr–So: 220€</p>
+<p>Wochenende: 390€</p>
+<p class="deposit">Kaution: 250€</p>
+<a href="#" class="button whatsapp">Anfragen</a>
 </div>
 
 <div class="card">
 <h3>🎥 Video-Gästebuch</h3>
-<p>Mo–Do (24h): 200€</p>
-<p>Fr–So (24h): 250€</p>
-<p>Wochenende komplett: 450€</p>
-<p class="deposit">Kaution: 300€</p>
-<a href="https://wa.me/4917629007917" class="button whatsapp">Jetzt anfragen</a>
+<p>Mo–Do: 170€</p>
+<p>Fr–So: 220€</p>
+<p>Wochenende: 390€</p>
+<p class="deposit">Kaution: 200€</p>
+<a href="#" class="button whatsapp">Anfragen</a>
 </div>
 
 <div class="card">
-<h3>🎬 Paket 3 (Fotobox + Video-Gästebuch)</h3>
-<p style="color:#4da3ff;font-weight:bold;">⭐ Beliebtestes Paket</p>
-<p>Mo–Do (24h): 350€</p>
-<p>Fr–So (24h): 450€</p>
-<p>Wochenende komplett: 750€</p>
-<p class="deposit">Kaution: 700€</p>
-<a href="https://wa.me/4917629007917" class="button whatsapp">Jetzt anfragen</a>
+<h3>🎉 Paket Basic</h3>
+<p>Box + Licht</p>
+<p>Mo–Do: 45€</p>
+<p>Fr–So: 55€</p>
+<p>Wochenende: 100€</p>
+<p class="deposit">Kaution: 220€</p>
+</div>
+
+<div class="card">
+<h3>🔥 Paket Party</h3>
+<p>Box + Licht + Nebel</p>
+<p>Mo–Do: 55€</p>
+<p>Fr–So: 65€</p>
+<p>Wochenende: 120€</p>
+<p class="deposit">Kaution: 250€</p>
+</div>
+
+<div class="card">
+<h3>🚀 Paket Premium</h3>
+<p>2 Boxen + 2 Lichter</p>
+<p>Mo–Do: 75€</p>
+<p>Fr–So: 90€</p>
+<p>Wochenende: 170€</p>
+<p class="deposit">Kaution: 300€</p>
+</div>
+
+<div class="card">
+<h3>🎊 Komplett Paket</h3>
+<p>2 Boxen + Licht + Nebel + Seifenblasen</p>
+<p>Mo–Do: 95€</p>
+<p>Fr–So: 115€</p>
+<p>Wochenende: 210€</p>
+<p class="deposit">Kaution: 400€</p>
 </div>
 
 </section>
@@ -245,8 +201,8 @@ Feier geplant?<br>
 <section>
 <h2 class="section-title">Kontakt</h2>
 
-<a href="tel:017629007917" class="button call">📞 Jetzt anrufen</a>
-<a href="https://wa.me/4917629007917" class="button whatsapp">💬 WhatsApp schreiben</a>
+<a href="tel:017629007917" class="button call">Anrufen</a>
+<a href="https://wa.me/4917629007917" class="button whatsapp">WhatsApp</a>
 
 <p style="text-align:center;">
 📧 gaboverleih@gmail.com<br>
@@ -256,9 +212,7 @@ Feier geplant?<br>
 </section>
 
 <footer>
-© 2026 GABO Event & Verleihservice<br><br>
-<a href="impressum.html">Impressum</a> |
-<a href="datenschutz.html">Datenschutz</a>
+© 2026 GABO Event & Verleihservice
 </footer>
 
 </body>
