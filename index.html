@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GABO Event & Verleihservice – Sound, Licht & Event-Extras</title>
-  <meta name="description" content="Soundboks, Licht, Nebel, Seifenblasen, Fotobox, Video-Gästebuch & Karaoke für Partys, Hochzeiten und Events in Mainz, Wiesbaden, Ingelheim & Umgebung. Einfach anfragen und losfeiern." />
+  <title>GABO Event & Verleihservice</title>
+  <meta
+    name="description"
+    content="Soundboks, Lightboks, Nebelmaschine, Seifenblasenmaschine, Fotobox und Video-Gästebuch für Hochzeiten, Geburtstage und Events in Ingelheim, Mainz und Umgebung."
+  />
 
   <style>
     :root{
@@ -23,180 +26,305 @@
       --max:1180px;
     }
 
-    *{ box-sizing:border-box; }
-    html{ scroll-behavior:smooth; }
+    *{
+      box-sizing:border-box;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
     body{
       margin:0;
       font-family:Arial, Helvetica, sans-serif;
       color:var(--text);
       background:
-        radial-gradient(circle at top left, rgba(77,163,255,0.20), transparent 25%),
-        radial-gradient(circle at top right, rgba(37,211,102,0.10), transparent 20%),
-        linear-gradient(180deg, #020617 0%, #081a38 35%, #0a1f4d 60%, #020617 100%);
+        radial-gradient(
+          circle at top left,
+          rgba(77,163,255,0.20),
+          transparent 25%
+        ),
+        radial-gradient(
+          circle at top right,
+          rgba(37,211,102,0.10),
+          transparent 20%
+        ),
+        linear-gradient(
+          180deg,
+          #020617 0%,
+          #081a38 35%,
+          #0a1f4d 60%,
+          #020617 100%
+        );
       line-height:1.5;
     }
 
-    a{ color:inherit; text-decoration:none; }
+    a{
+      color:inherit;
+      text-decoration:none;
+    }
 
-    .container{ width:min(calc(100% - 32px), var(--max)); margin:0 auto; }
+    .container{
+      width:min(calc(100% - 32px), var(--max));
+      margin:0 auto;
+    }
 
     .topbar{
-      position:sticky; top:0; z-index:30;
+      position:sticky;
+      top:0;
+      z-index:30;
       backdrop-filter:blur(14px);
       background:rgba(2,6,23,0.65);
       border-bottom:1px solid rgba(255,255,255,0.08);
     }
 
     .topbar-inner{
-      display:flex; align-items:center; justify-content:space-between;
-      gap:16px; padding:14px 0;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      padding:14px 0;
     }
 
-    .brand{ display:flex; align-items:center; gap:12px; font-weight:700; letter-spacing:0.4px; }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      font-weight:700;
+      letter-spacing:0.4px;
+    }
+
     .brand-badge{
-      width:42px; height:42px; border-radius:14px;
-      display:grid; place-items:center;
-      background:linear-gradient(135deg, rgba(77,163,255,0.22), rgba(29,114,255,0.35));
+      width:42px;
+      height:42px;
+      border-radius:14px;
+      display:grid;
+      place-items:center;
+      background:linear-gradient(
+        135deg,
+        rgba(77,163,255,0.22),
+        rgba(29,114,255,0.35)
+      );
       border:1px solid rgba(255,255,255,0.10);
       box-shadow:0 0 18px rgba(77,163,255,0.25);
       font-size:18px;
     }
 
-    .nav{ display:flex; gap:18px; align-items:center; flex-wrap:wrap; }
-    .nav a{ font-size:14px; color:var(--muted); }
-    .nav a:hover{ color:var(--text); }
+    .nav{
+      display:flex;
+      gap:18px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+
+    .nav a{
+      font-size:14px;
+      color:var(--muted);
+    }
+
+    .nav a:hover{
+      color:var(--text);
+    }
 
     .nav-cta{
-      padding:10px 14px; border-radius:12px;
-      background:linear-gradient(135deg, var(--green), #1fb455);
-      color:#fff !important; font-weight:700;
+      padding:10px 14px;
+      border-radius:12px;
+      background:linear-gradient(
+        135deg,
+        var(--green),
+        #1fb455
+      );
+      color:#fff !important;
+      font-weight:700;
       box-shadow:0 8px 22px rgba(37,211,102,0.22);
     }
 
-    .hero{ padding:56px 0 28px; }
+    .hero{
+      padding:56px 0 28px;
+    }
+
     .hero-grid{
-      display:grid; grid-template-columns:1.15fr 0.85fr;
-      gap:28px; align-items:center;
+      display:grid;
+      grid-template-columns:1.15fr 0.85fr;
+      gap:28px;
+      align-items:center;
     }
 
     .eyebrow{
-      display:inline-flex; align-items:center; gap:10px;
-      padding:8px 12px; border-radius:999px;
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:8px 12px;
+      border-radius:999px;
       background:rgba(255,255,255,0.06);
       border:1px solid rgba(255,255,255,0.10);
-      color:#dbeafe; font-size:14px; margin-bottom:16px;
+      color:#dbeafe;
+      font-size:14px;
+      margin-bottom:16px;
     }
 
     h1{
       font-size:clamp(34px, 5vw, 62px);
-      line-height:1.02; margin:0 0 16px; letter-spacing:-1.4px;
+      line-height:1.02;
+      margin:0 0 16px;
+      letter-spacing:-1.4px;
     }
 
     .hero p{
-      color:var(--muted); font-size:18px;
-      margin:0 0 24px; max-width:720px;
+      color:var(--muted);
+      font-size:18px;
+      margin:0 0 24px;
+      max-width:720px;
     }
 
-    .cta-row{ display:flex; gap:14px; flex-wrap:wrap; margin-bottom:20px; }
+    .cta-row{
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+      margin-bottom:20px;
+    }
 
     .btn{
-      display:inline-flex; align-items:center; justify-content:center;
-      gap:10px; min-height:50px; padding:0 18px;
-      border-radius:14px; font-weight:700;
-      transition:transform .18s ease, opacity .18s ease, box-shadow .18s ease;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      min-height:50px;
+      padding:0 18px;
+      border-radius:14px;
+      font-weight:700;
+      transition:
+        transform .18s ease,
+        opacity .18s ease,
+        box-shadow .18s ease;
       box-shadow:var(--shadow);
     }
 
-    .btn:hover{ transform:translateY(-1px); opacity:0.96; }
+    .btn:hover{
+      transform:translateY(-1px);
+      opacity:0.96;
+    }
 
     .btn-primary{
-      background:linear-gradient(135deg, var(--blue), var(--blue-strong));
+      background:linear-gradient(
+        135deg,
+        var(--blue),
+        var(--blue-strong)
+      );
     }
 
     .btn-whatsapp{
-      background:linear-gradient(135deg, var(--green), #1fb455);
+      background:linear-gradient(
+        135deg,
+        var(--green),
+        #1fb455
+      );
     }
 
     .btn-outline{
       background:rgba(255,255,255,0.04);
       border:1px solid rgba(255,255,255,0.12);
-      color:var(--text); box-shadow:none;
+      color:var(--text);
+      box-shadow:none;
     }
 
     .hero-card{
-      background:linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.04));
+      background:linear-gradient(
+        180deg,
+        rgba(255,255,255,0.08),
+        rgba(255,255,255,0.04)
+      );
       border:1px solid rgba(255,255,255,0.12);
-      border-radius:26px; padding:22px;
-      box-shadow:var(--shadow); position:relative; overflow:hidden;
+      border-radius:26px;
+      padding:22px;
+      box-shadow:var(--shadow);
+      position:relative;
+      overflow:hidden;
     }
 
     .hero-card:before{
-      content:""; position:absolute; inset:auto -40px -40px auto;
-      width:140px; height:140px;
-      background:radial-gradient(circle, rgba(77,163,255,.34), transparent 70%);
+      content:"";
+      position:absolute;
+      inset:auto -40px -40px auto;
+      width:140px;
+      height:140px;
+      background:radial-gradient(
+        circle,
+        rgba(77,163,255,.34),
+        transparent 70%
+      );
     }
 
     .hero-photo{
-      width:100%; aspect-ratio:4/3; border-radius:18px;
-      object-fit:cover; display:block;
+      width:100%;
+      aspect-ratio:4 / 3;
+      border-radius:18px;
+      object-fit:cover;
+      display:block;
       background:rgba(255,255,255,0.04);
       border:1px solid rgba(255,255,255,0.08);
       margin-bottom:18px;
     }
 
     .mini-stats{
-      display:grid; grid-template-columns:repeat(3,1fr); gap:12px;
+      display:grid;
+      grid-template-columns:repeat(3, 1fr);
+      gap:12px;
     }
 
     .mini-stat{
       background:rgba(255,255,255,0.05);
       border:1px solid rgba(255,255,255,0.08);
-      border-radius:16px; padding:14px; text-align:center;
+      border-radius:16px;
+      padding:14px;
+      text-align:center;
     }
 
     .mini-stat strong{
-      display:block; font-size:22px; color:#fff; margin-bottom:4px;
+      display:block;
+      font-size:22px;
+      color:#fff;
+      margin-bottom:4px;
     }
   </style>
 </head>
 
 <body>
 
-  <!-- TOPBAR -->
   <div class="topbar">
     <div class="container topbar-inner">
       <div class="brand">
         <div class="brand-badge">G</div>
-        <div>GABO Event & Verleihservice</div>
+        <div>GABO Event &amp; Verleihservice</div>
       </div>
 
       <nav class="nav">
         <a href="#einzelpreise">Einzelverleih</a>
         <a href="#pakete">Pakete</a>
-        <a href="#fotobox">Fotobox & Video</a>
+        <a href="#fotobox">Fotobox &amp; Video</a>
         <a href="#kontakt">Kontakt</a>
         <a class="nav-cta" href="https://wa.me/4917629007917">WhatsApp</a>
       </nav>
     </div>
   </div>
 
-  <!-- HERO -->
   <header class="hero">
     <div class="container hero-grid">
       <div>
         <div class="eyebrow">
-          🎉 Eventverleih in Mainz, Wiesbaden, Ingelheim & Umgebung
+          🎉 Eventverleih in Bingen, Ingelheim, Mainz, Wiesbaden, Rüsselsheim & Umgebung
         </div>
 
         <h1>
           Feier geplant?<br />
-          <span style="color:var(--blue)">GABO regelt das.</span>
+          <span style="color:var(--blue)">GABO regelt.</span>
         </h1>
 
         <p>
-          Egal ob Geburtstag, Hochzeit oder Gartenparty – bei uns bekommst du
-          starken Sound, cooles Licht und Extras, die jede Feier besser machen.
-          Einfach anfragen, abholen oder liefern lassen und direkt losfeiern.
+          Starker Sound, passendes Licht und besondere Event-Extras
+          für Geburtstag, Hochzeit, Gartenparty oder Firmenfeier.
+          Einfach anfragen, abholen oder liefern lassen und direkt
+          losfeiern.
         </p>
 
         <div class="cta-row">
@@ -215,7 +343,11 @@
       </div>
 
       <div class="hero-card">
-        <img src="hero.png" alt="GABO Event & Verleihservice" class="hero-photo" />
+        <img
+          src="hero.png"
+          alt="GABO Event & Verleihservice Hero Bild"
+          class="hero-photo"
+        />
 
         <div class="mini-stats">
           <div class="mini-stat">
@@ -230,674 +362,911 @@
 
           <div class="mini-stat">
             <strong>Top</strong>
-            <span>für Partys & Hochzeiten</span>
+            <span>für Geburtstage &amp; Hochzeiten</span>
           </div>
         </div>
       </div>
     </div>
   </header>
-  <!-- EINZELVERLEIH -->
-  <section class="section" id="einzelpreise">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <h2>Einzelverleih</h2>
-          <p>
-            Stell dir dein Event einfach selbst zusammen. Alles flexibel, fair
-            und super easy – genau so soll’s sein.
-          </p>
-        </div>
-      </div>
-
-      <div class="pricing-grid">
-
-        <!-- SOUNDBOKS -->
-        <article class="card">
-          <div class="badge">Beliebt</div>
-          <h3>🔊 Soundboks Lautsprecher</h3>
-          <div class="subtitle">
-            Laut, klar und perfekt für jede Feier – egal ob Wohnzimmer oder Halle.
-          </div>
-
-          <div class="price-list">
-            <div class="price-row">
-              <span>Mo–Do (24h)</span>
-              <strong>39€</strong>
-            </div>
-
-            <div class="price-row">
-              <span>Fr–So (24h)</span>
-              <strong>49€</strong>
-            </div>
-
-            <div class="price-row">
-              <span>Wochenende komplett</span>
-              <strong>89€</strong>
-            </div>
-          </div>
-
-          <div class="deposit">Kaution: 300€</div>
-
-          <div class="cta-inline">
-            <a class="btn btn-small btn-whatsapp"
-               href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20eine%20Soundboks%20mieten.">
-              Anfragen
-            </a>
-          </div>
-        </article>
-
-        <!-- LIGHTBOKS -->
-        <article class="card">
-          <div class="badge">Licht</div>
-          <h3>💡 Lightboks</h3>
-          <div class="subtitle">
-            Sorgt sofort für Party-Vibes – klein, hell und super effektiv.
-          </div>
-
-          <div class="price-list">
-            <div class="price-row">
-              <span>Mo–Do (24h)</span>
-              <strong>24€</strong>
-            </div>
-
-            <div class="price-row">
-              <span>Fr–So (24h)</span>
-              <strong>29€</strong>
-            </div>
-
-            <div class="price-row">
-              <span>Wochenende komplett</span>
-              <strong>55€</strong>
-            </div>
-          </div>
-
-          <div class="deposit">Kaution: 150€</div>
-
-          <div class="cta-inline">
-            <a class="btn btn-small btn-whatsapp"
-               href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20eine%20Lightboks%20mieten.">
-              Anfragen
-            </a>
-          </div>
-        </article>
-
-        <!-- NEBELMASCHINE -->
-        <article class="card">
-          <div class="badge">Effekt</div>
-          <h3>🌫️ Nebelmaschine</h3>
-          <div class="subtitle">
-            Macht jede Tanzfläche direkt doppelt so cool – besonders mit Licht.
-          </div>
-
-          <div class="price-list">
-            <div class="price-row">
-              <span>Mo–Do (24h)</span>
-              <strong>24€</strong>
-            </div>
-
-            <div class="price-row">
-              <span>Fr–So (24h)</span>
-              <strong>29€</strong>
-            </div>
-
-            <div class="price-row">
-              <span>Wochenende komplett</span>
-              <strong>55€</strong>
-            </div>
-          </div>
-
-          <div class="deposit">Kaution: 100€</div>
-          <div class="small-note">
-            Nebelfluid bekommst du auf Wunsch direkt dazu.
-          </div>
-
-          <div class="cta-inline">
-            <a class="btn btn-small btn-whatsapp"
-               href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20eine%20Nebelmaschine%20mieten.">
-              Anfragen
-            </a>
-          </div>
-        </article>
-
-        <!-- SEIFENBLASENMASCHINE -->
-        <article class="card">
-          <div class="badge">Event-Extra</div>
-          <h3>🫧 Seifenblasenmaschine</h3>
-          <div class="subtitle">
-            Perfekt für Hochzeiten, Kindergeburtstage und besondere Momente.
-          </div>
-
-          <div class="price-list">
-            <div class="price-row">
-              <span>Mo–Do (24h)</span>
-              <strong>22€</strong>
-            </div>
-
-            <div class="price-row">
-              <span>Fr–So (24h)</span>
-              <strong>27€</strong>
-            </div>
-
-            <div class="price-row">
-              <span>Wochenende komplett</span>
-              <strong>49€</strong>
-            </div>
-          </div>
-
-          <div class="deposit">Kaution: 100€</div>
-
-          <div class="cta-inline">
-            <a class="btn btn-small btn-whatsapp"
-               href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20eine%20Seifenblasenmaschine%20mieten.">
-              Anfragen
-            </a>
-          </div>
-        </article>
-
-        <!-- FOTOBOX -->
-        <article class="card" id="fotobox">
-          <div class="badge">Hochzeit & Geburtstag</div>
-          <h3>📸 Fotobox</h3>
-          <div class="subtitle">
-            Für lustige Erinnerungen, die du dir immer wieder gerne anschaust.
-          </div>
-
-          <div class="price-list">
-            <div class="price-row">
-              <span>Mo–Do (24h)</span>
-              <strong>189€</strong>
-            </div>
-
-            <div class="price-row">
-              <span>Fr–So (24h)</span>
-              <strong>239€</strong>
-            </div>
-
-            <div class="price-row">
-              <span>Wochenende komplett</span>
-              <strong>399€</strong>
-            </div>
-          </div>
-
-          <div class="deposit">Kaution: 400€</div>
-
-          <div class="cta-inline">
-            <a class="btn btn-small btn-whatsapp"
-               href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20die%20Fotobox%20mieten.">
-              Anfragen
-            </a>
-          </div>
-        </article>
-
-        <!-- VIDEO-GÄSTEBUCH -->
-        <article class="card">
-          <div class="badge">Erinnerungen</div>
-          <h3>🎥 Video-Gästebuch</h3>
-          <div class="subtitle">
-            Persönliche Videobotschaften – perfekt für Hochzeiten & besondere Feiern.
-          </div>
-
-          <div class="price-list">
-            <div class="price-row">
-              <span>Mo–Do (24h)</span>
-              <strong>159€</strong>
-            </div>
-
-            <div class="price-row">
-              <span>Fr–So (24h)</span>
-              <strong>199€</strong>
-            </div>
-
-            <div class="price-row">
-              <span>Wochenende komplett</span>
-              <strong>349€</strong>
-            </div>
-          </div>
-
-          <div class="deposit">Kaution: 200€</div>
-
-          <div class="cta-inline">
-            <a class="btn btn-small btn-whatsapp"
-               href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20das%20Video-G%C3%A4stebuch%20mieten.">
-              Anfragen
-            </a>
-          </div>
-        </article>
-
+<section class="section" id="einzelpreise">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>Einzelverleih</h2>
+        <p>
+          Ideal, wenn du dein Event individuell zusammenstellen willst.
+          Alle Preise gelten pro Gerät.
+        </p>
       </div>
     </div>
-  </section>
-  <!-- PAKETE -->
-  <section class="section" id="pakete">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <h2>Pakete</h2>
-          <p>
-            Unsere Pakete sind günstiger als alles einzeln zu mieten – perfekt,
-            wenn du direkt ein komplettes Setup willst. Einfach auswählen und losfeiern.
-          </p>
-        </div>
-      </div>
 
-      <div class="packages-grid">
+    <div class="pricing-grid">
 
-        <!-- BASIC -->
-        <article class="card">
-          <div class="badge">Für kleine Feiern</div>
-          <h3>🎉 Paket Basic</h3>
-          <div class="subtitle">
-            1x Soundboks + 1x Lightboks – ideal für Wohnzimmer & kleine Partys.
-          </div>
-
-          <div class="price-list">
-            <div class="price-row">
-              <span>Mo–Do (24h)</span>
-              <strong>59€</strong>
-            </div>
-
-            <div class="price-row">
-              <span>Fr–So (24h)</span>
-              <strong>69€</strong>
-            </div>
-
-            <div class="price-row">
-              <span>Wochenende komplett</span>
-              <strong>119€</strong>
-            </div>
-          </div>
-
-          <div class="deposit">Kaution: 300€</div>
-
-          <div class="cta-inline">
-            <a class="btn btn-small btn-whatsapp"
-               href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20das%20Paket%20Basic%20buchen.">
-              Jetzt anfragen
-            </a>
-          </div>
-        </article>
-
-        <!-- PARTY -->
-        <article class="card">
-          <div class="badge">Mehr Stimmung</div>
-          <h3>🔥 Paket Party</h3>
-          <div class="subtitle">
-            1x Soundboks + 1x Lightboks + Nebelmaschine – Party garantiert.
-          </div>
-
-          <div class="price-list">
-            <div class="price-row">
-              <span>Mo–Do (24h)</span>
-              <strong>79€</strong>
-            </div>
-
-            <div class="price-row">
-              <span>Fr–So (24h)</span>
-              <strong>89€</strong>
-            </div>
-
-            <div class="price-row">
-              <span>Wochenende komplett</span>
-              <strong>159€</strong>
-            </div>
-          </div>
-
-          <div class="deposit">Kaution: 350€</div>
-
-          <div class="cta-inline">
-            <a class="btn btn-small btn-whatsapp"
-               href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20das%20Paket%20Party%20buchen.">
-              Jetzt anfragen
-            </a>
-          </div>
-        </article>
-
-        <!-- FUN -->
-        <article class="card">
-          <div class="badge">Hochzeit & Empfang</div>
-          <h3>🫧 Paket Fun</h3>
-          <div class="subtitle">
-            1x Soundboks + 1x Lightboks + Seifenblasenmaschine – perfekt für besondere Momente.
-          </div>
-
-          <div class="price-list">
-            <div class="price-row">
-              <span>Mo–Do (24h)</span>
-              <strong>79€</strong>
-            </div>
-
-            <div class="price-row">
-              <span>Fr–So (24h)</span>
-              <strong>89€</strong>
-            </div>
-
-            <div class="price-row">
-              <span>Wochenende komplett</span>
-              <strong>159€</strong>
-            </div>
-          </div>
-
-          <div class="deposit">Kaution: 350€</div>
-
-          <div class="cta-inline">
-            <a class="btn btn-small btn-whatsapp"
-               href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20das%20Paket%20Fun%20buchen.">
-              Jetzt anfragen
-            </a>
-          </div>
-        </article>
-
-        <!-- KARAOKE (NEU) -->
-        <article class="card">
-          <div class="badge">Karaoke</div>
-          <h3>🎤 Paket Karaoke</h3>
-          <div class="subtitle">
-            1x Soundboks + 2x Mikrofone – perfekt für Karaoke-Abende & Geburtstage.
-          </div>
-
-          <div class="price-list">
-            <div class="price-row">
-              <span>Mo–Do (24h)</span>
-              <strong>69€</strong>
-            </div>
-
-            <div class="price-row">
-              <span>Fr–So (24h)</span>
-              <strong>89€</strong>
-            </div>
-
-            <div class="price-row">
-              <span>Wochenende komplett</span>
-              <strong>159€</strong>
-            </div>
-          </div>
-
-          <div class="deposit">Kaution: 350€</div>
-
-          <div class="cta-inline">
-            <a class="btn btn-small btn-whatsapp"
-               href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20das%20Paket%20Karaoke%20buchen.">
-              Jetzt anfragen
-            </a>
-          </div>
-        </article>
-
-        <!-- PREMIUM -->
-        <article class="card">
-          <div class="badge">Für größere Räume</div>
-          <h3>🚀 Paket Premium</h3>
-          <div class="subtitle">
-            2x Soundboks + 2x Lightboks – starkes Setup für große Räume & Partys.
-          </div>
-
-          <div class="price-list">
-            <div class="price-row">
-              <span>Mo–Do (24h)</span>
-              <strong>129€</strong>
-            </div>
-
-            <div class="price-row">
-              <span>Fr–So (24h)</span>
-              <strong>149€</strong>
-            </div>
-
-            <div class="price-row">
-              <span>Wochenende komplett</span>
-              <strong>269€</strong>
-            </div>
-          </div>
-
-          <div class="deposit">Kaution: 500€</div>
-
-          <div class="cta-inline">
-            <a class="btn btn-small btn-whatsapp"
-               href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20das%20Paket%20Premium%20buchen.">
-              Jetzt anfragen
-            </a>
-          </div>
-        </article>
-
-        <!-- PREMIUM PLUS -->
-        <article class="card">
-          <div class="badge">Tanzfläche</div>
-          <h3>🌫️ Paket Premium Plus</h3>
-          <div class="subtitle">
-            2x Soundboks + 2x Lightboks + Nebelmaschine – maximale Party.
-          </div>
-
-          <div class="price-list">
-            <div class="price-row">
-              <span>Mo–Do (24h)</span>
-              <strong>159€</strong>
-            </div>
-
-            <div class="price-row">
-              <span>Fr–So (24h)</span>
-              <strong>179€</strong>
-            </div>
-
-            <div class="price-row">
-              <span>Wochenende komplett</span>
-              <strong>329€</strong>
-            </div>
-          </div>
-
-          <div class="deposit">Kaution: 600€</div>
-
-          <div class="cta-inline">
-            <a class="btn btn-small btn-whatsapp"
-               href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20das%20Paket%20Premium%20Plus%20buchen.">
-              Jetzt anfragen
-            </a>
-          </div>
-        </article>
-
-        <!-- EVENT KOMPLETT -->
-        <article class="card featured">
-          <div class="featured-tag">Beliebtestes Paket</div>
-          <div class="badge">Komplettes Event-Set</div>
-          <h3>🎊 Paket Event Komplett</h3>
-          <div class="subtitle">
-            2x Soundboks + 2x Lightboks + Nebelmaschine + Seifenblasenmaschine – alles drin.
-          </div>
-
-          <div class="price-list">
-            <div class="price-row">
-              <span>Mo–Do (24h)</span>
-              <strong>219€</strong>
-            </div>
-
-            <div class="price-row">
-              <span>Fr–So (24h)</span>
-              <strong>249€</strong>
-            </div>
-
-            <div class="price-row">
-              <span>Wochenende komplett</span>
-              <strong>449€</strong>
-            </div>
-          </div>
-
-          <div class="deposit">Kaution: 650€</div>
-
-          <div class="cta-inline">
-            <a class="btn btn-small btn-whatsapp"
-               href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20das%20Paket%20Event%20Komplett%20buchen.">
-              Jetzt anfragen
-            </a>
-          </div>
-        </article>
-
-        <!-- MEMORIES -->
-        <article class="card">
-          <div class="badge">Für Erinnerungen</div>
-          <h3>🎬 Paket Memories</h3>
-          <div class="subtitle">
-            Fotobox + Video-Gästebuch – perfekte Kombi für Hochzeiten & Events.
-          </div>
-
-          <div class="price-list">
-            <div class="price-row">
-              <span>Mo–Do (24h)</span>
-              <strong>300€</strong>
-            </div>
-
-            <div class="price-row">
-              <span>Fr–So (24h)</span>
-              <strong>390€</strong>
-            </div>
-
-            <div class="price-row">
-              <span>Wochenende komplett</span>
-              <strong>690€</strong>
-            </div>
-          </div>
-
-          <div class="deposit">Kaution: 650€</div>
-
-          <div class="cta-inline">
-            <a class="btn btn-small btn-whatsapp"
-               href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20das%20Paket%20Memories%20buchen.">
-              Jetzt anfragen
-            </a>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-  <!-- STEPS -->
-  <section class="section">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <h2>So läuft’s ab</h2>
-          <p>
-            Schnell, unkompliziert und ohne Stress – genau so soll’s sein.
-          </p>
-        </div>
-      </div>
-
-      <div class="steps">
-        <div class="step">
-          <div class="step-number">1</div>
-          <h3>Anfragen</h3>
-          <p>
-            Schreib uns einfach per WhatsApp oder ruf kurz durch. Sag Datum, Ort
-            und was du brauchst – fertig.
-          </p>
+      <!-- SOUNDBOKS -->
+      <article class="card">
+        <div class="badge">Beliebt</div>
+        <h3>🔊 Soundboks Lautsprecher</h3>
+        <div class="subtitle">
+          Perfekt für kleine bis größere Feiern.
+          Eine Box für kleinere Räume, zwei Boxen für größere Räume.
         </div>
 
-        <div class="step">
-          <div class="step-number">2</div>
-          <h3>Abholen oder liefern lassen</h3>
-          <p>
-            Du kannst alles easy bei uns abholen – oder wir bringen’s dir vorbei.
-            Ganz wie du willst.
-          </p>
-        </div>
-
-        <div class="step">
-          <div class="step-number">3</div>
-          <h3>Losfeiern</h3>
-          <p>
-            Anschließen, starten, feiern. Unsere Geräte sind super einfach zu bedienen.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- KONTAKT -->
-  <section class="section" id="kontakt">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <h2>Kontakt</h2>
-          <p>
-            Melde dich einfach – wir antworten schnell und helfen dir direkt weiter.
-          </p>
-        </div>
-      </div>
-
-      <div class="contact-wrap">
-        <div class="contact-card">
-          <h3>So erreichst du uns</h3>
-          <p>
-            Egal ob Fragen, Buchung oder kurzfristige Anfrage – wir sind für dich da.
-          </p>
-
-          <div class="contact-list">
-            <div>📞 Telefon: <strong>0176 29007917</strong></div>
-            <div>💬 WhatsApp: <strong>0176 29007917</strong></div>
-            <div>📍 Standort: <strong>Ingelheim am Rhein</strong></div>
-            <div>⏱️ Abholung & Rückgabe nach Absprache</div>
+        <div class="price-list">
+          <div class="price-row">
+            <span>Mo–Do (24h)</span>
+            <strong>39€</strong>
           </div>
 
-          <a class="btn btn-whatsapp"
-             href="https://wa.me/4917629007917">
-            Jetzt per WhatsApp schreiben
+          <div class="price-row">
+            <span>Fr–So (24h)</span>
+            <strong>49€</strong>
+          </div>
+
+          <div class="price-row">
+            <span>Wochenende komplett</span>
+            <strong>89€</strong>
+          </div>
+        </div>
+
+        <div class="deposit">Kaution: 300€</div>
+
+        <div class="cta-inline">
+          <a class="btn btn-small btn-whatsapp"
+             href="https://wa.me/4917629007917?text=Hallo%2C%20ich%20interessiere%20mich%20f%C3%BCr%20eine%20Soundboks.">
+            Anfragen
           </a>
         </div>
+      </article>
 
-        <div class="contact-card">
-          <h3>FAQ</h3>
-          <p>
-            Die wichtigsten Fragen kurz beantwortet.
-          </p>
+      <!-- LIGHTBOKS -->
+      <article class="card">
+        <div class="badge">Licht</div>
+        <h3>💡 Lightboks</h3>
+        <div class="subtitle">
+          Passendes Partylicht für die Soundboks.
+          Ideal für Wohnzimmer, Partyräume und kleinere Events.
+        </div>
 
-          <div class="faq">
-
-            <details>
-              <summary>Wie funktioniert die Kaution?</summary>
-              <p>
-                Ganz einfach: Du hinterlegst die Kaution bei Abholung und bekommst
-                sie bei Rückgabe sofort wieder – natürlich komplett.
-              </p>
-            </details>
-
-            <details>
-              <summary>Kann ich spontan buchen?</summary>
-              <p>
-                Klar! Schreib uns einfach. Oft ist auch kurzfristig noch etwas frei.
-              </p>
-            </details>
-
-            <details>
-              <summary>Kann ich liefern lassen?</summary>
-              <p>
-                Ja! Wir liefern im Raum Mainz, Wiesbaden, Ingelheim & Umgebung.
-                Preis je nach Entfernung.
-              </p>
-            </details>
-
-            <details>
-              <summary>Wie lange gilt die Miete?</summary>
-              <p>
-                Jede Miete gilt für 24 Stunden. Wochenendpreise gelten von Freitag
-                bis Sonntag.
-              </p>
-            </details>
-
+        <div class="price-list">
+          <div class="price-row">
+            <span>Mo–Do (24h)</span>
+            <strong>24€</strong>
           </div>
+
+          <div class="price-row">
+            <span>Fr–So (24h)</span>
+            <strong>29€</strong>
+          </div>
+
+          <div class="price-row">
+            <span>Wochenende komplett</span>
+            <strong>55€</strong>
+          </div>
+        </div>
+
+        <div class="deposit">Kaution: 150€</div>
+
+        <div class="cta-inline">
+          <a class="btn btn-small btn-whatsapp"
+             href="https://wa.me/4917629007917?text=Hallo%2C%20ich%20interessiere%20mich%20f%C3%BCr%20eine%20Lightboks.">
+            Anfragen
+          </a>
+        </div>
+      </article>
+
+      <!-- NEBELMASCHINE -->
+      <article class="card">
+        <div class="badge">Effekt</div>
+        <h3>🌫️ Nebelmaschine</h3>
+        <div class="subtitle">
+          Für mehr Stimmung auf der Tanzfläche.
+          Besonders stark in Kombination mit Licht.
+        </div>
+
+        <div class="price-list">
+          <div class="price-row">
+            <span>Mo–Do (24h)</span>
+            <strong>24€</strong>
+          </div>
+
+          <div class="price-row">
+            <span>Fr–So (24h)</span>
+            <strong>29€</strong>
+          </div>
+
+          <div class="price-row">
+            <span>Wochenende komplett</span>
+            <strong>55€</strong>
+          </div>
+        </div>
+
+        <div class="deposit">Kaution: 100€</div>
+        <div class="small-note">
+          Zusätzliches Fluid auf Anfrage möglich.
+        </div>
+
+        <div class="cta-inline">
+          <a class="btn btn-small btn-whatsapp"
+             href="https://wa.me/4917629007917?text=Hallo%2C%20ich%20interessiere%20mich%20f%C3%BCr%20eine%20Nebelmaschine.">
+            Anfragen
+          </a>
+        </div>
+      </article>
+
+      <!-- SEIFENBLASENMASCHINE -->
+      <article class="card">
+        <div class="badge">Event-Extra</div>
+        <h3>🫧 Seifenblasenmaschine</h3>
+        <div class="subtitle">
+          Super für Hochzeiten, Kindergeburtstage, Empfang
+          oder besondere Momente beim Event.
+        </div>
+
+        <div class="price-list">
+          <div class="price-row">
+            <span>Mo–Do (24h)</span>
+            <strong>22€</strong>
+          </div>
+
+          <div class="price-row">
+            <span>Fr–So (24h)</span>
+            <strong>27€</strong>
+          </div>
+
+          <div class="price-row">
+            <span>Wochenende komplett</span>
+            <strong>49€</strong>
+          </div>
+        </div>
+
+        <div class="deposit">Kaution: 100€</div>
+
+        <div class="cta-inline">
+          <a class="btn btn-small btn-whatsapp"
+             href="https://wa.me/4917629007917?text=Hallo%2C%20ich%20interessiere%20mich%20f%C3%BCr%20eine%20Seifenblasenmaschine.">
+            Anfragen
+          </a>
+        </div>
+      </article>
+
+      <!-- FOTOBOX -->
+      <article class="card" id="fotobox">
+        <div class="badge">Hochzeit &amp; Geburtstag</div>
+        <h3>📸 Fotobox</h3>
+        <div class="subtitle">
+          Für lustige Erinnerungen und starke Bilder auf deiner Feier.
+        </div>
+
+        <div class="price-list">
+          <div class="price-row">
+            <span>Mo–Do (24h)</span>
+            <strong>189€</strong>
+          </div>
+
+          <div class="price-row">
+            <span>Fr–So (24h)</span>
+            <strong>239€</strong>
+          </div>
+
+          <div class="price-row">
+            <span>Wochenende komplett</span>
+            <strong>399€</strong>
+          </div>
+        </div>
+
+        <div class="deposit">Kaution: 400€</div>
+
+        <div class="cta-inline">
+          <a class="btn btn-small btn-whatsapp"
+             href="https://wa.me/4917629007917?text=Hallo%2C%20ich%20interessiere%20mich%20f%C3%BCr%20die%20Fotobox.">
+            Anfragen
+          </a>
+        </div>
+      </article>
+
+      <!-- VIDEO-GÄSTEBUCH -->
+      <article class="card">
+        <div class="badge">Erinnerungen</div>
+        <h3>🎥 Video-Gästebuch</h3>
+        <div class="subtitle">
+          Persönliche Videobotschaften als besondere Erinnerung
+          für Hochzeit, Geburtstag oder Event.
+        </div>
+
+        <div class="price-list">
+          <div class="price-row">
+            <span>Mo–Do (24h)</span>
+            <strong>159€</strong>
+          </div>
+
+          <div class="price-row">
+            <span>Fr–So (24h)</span>
+            <strong>199€</strong>
+          </div>
+
+          <div class="price-row">
+            <span>Wochenende komplett</span>
+            <strong>349€</strong>
+          </div>
+        </div>
+
+        <div class="deposit">Kaution: 200€</div>
+
+        <div class="cta-inline">
+          <a class="btn btn-small btn-whatsapp"
+             href="https://wa.me/4917629007917?text=Hallo%2C%20ich%20interessiere%20mich%20f%C3%BCr%20das%20Video-G%C3%A4stebuch.">
+            Anfragen
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+<section class="section" id="einzelpreise">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>Einzelverleih</h2>
+        <p>
+          Ideal, wenn du dein Event individuell zusammenstellen willst.
+          Alle Preise gelten pro Gerät.
+        </p>
+      </div>
+    </div>
+
+    <div class="pricing-grid">
+
+      <!-- SOUNDBOKS -->
+      <article class="card">
+        <div class="badge">Beliebt</div>
+        <h3>🔊 Soundboks Lautsprecher</h3>
+        <div class="subtitle">
+          Perfekt für kleine bis größere Feiern.
+          Eine Box für kleinere Räume, zwei Boxen für größere Räume.
+        </div>
+
+        <div class="price-list">
+          <div class="price-row">
+            <span>Mo–Do (24h)</span>
+            <strong>39€</strong>
+          </div>
+
+          <div class="price-row">
+            <span>Fr–So (24h)</span>
+            <strong>49€</strong>
+          </div>
+
+          <div class="price-row">
+            <span>Wochenende komplett</span>
+            <strong>89€</strong>
+          </div>
+        </div>
+
+        <div class="deposit">Kaution: 300€</div>
+
+        <div class="cta-inline">
+          <a class="btn btn-small btn-whatsapp"
+             href="https://wa.me/4917629007917?text=Hallo%2C%20ich%20interessiere%20mich%20f%C3%BCr%20eine%20Soundboks.">
+            Anfragen
+          </a>
+        </div>
+      </article>
+
+      <!-- LIGHTBOKS -->
+      <article class="card">
+        <div class="badge">Licht</div>
+        <h3>💡 Lightboks</h3>
+        <div class="subtitle">
+          Passendes Partylicht für die Soundboks.
+          Ideal für Wohnzimmer, Partyräume und kleinere Events.
+        </div>
+
+        <div class="price-list">
+          <div class="price-row">
+            <span>Mo–Do (24h)</span>
+            <strong>24€</strong>
+          </div>
+
+          <div class="price-row">
+            <span>Fr–So (24h)</span>
+            <strong>29€</strong>
+          </div>
+
+          <div class="price-row">
+            <span>Wochenende komplett</span>
+            <strong>55€</strong>
+          </div>
+        </div>
+
+        <div class="deposit">Kaution: 150€</div>
+
+        <div class="cta-inline">
+          <a class="btn btn-small btn-whatsapp"
+             href="https://wa.me/4917629007917?text=Hallo%2C%20ich%20interessiere%20mich%20f%C3%BCr%20eine%20Lightboks.">
+            Anfragen
+          </a>
+        </div>
+      </article>
+
+      <!-- NEBELMASCHINE -->
+      <article class="card">
+        <div class="badge">Effekt</div>
+        <h3>🌫️ Nebelmaschine</h3>
+        <div class="subtitle">
+          Für mehr Stimmung auf der Tanzfläche.
+          Besonders stark in Kombination mit Licht.
+        </div>
+
+        <div class="price-list">
+          <div class="price-row">
+            <span>Mo–Do (24h)</span>
+            <strong>24€</strong>
+          </div>
+
+          <div class="price-row">
+            <span>Fr–So (24h)</span>
+            <strong>29€</strong>
+          </div>
+
+          <div class="price-row">
+            <span>Wochenende komplett</span>
+            <strong>55€</strong>
+          </div>
+        </div>
+
+        <div class="deposit">Kaution: 100€</div>
+        <div class="small-note">
+          Zusätzliches Fluid auf Anfrage möglich.
+        </div>
+
+        <div class="cta-inline">
+          <a class="btn btn-small btn-whatsapp"
+             href="https://wa.me/4917629007917?text=Hallo%2C%20ich%20interessiere%20mich%20f%C3%BCr%20eine%20Nebelmaschine.">
+            Anfragen
+          </a>
+        </div>
+      </article>
+
+      <!-- SEIFENBLASENMASCHINE -->
+      <article class="card">
+        <div class="badge">Event-Extra</div>
+        <h3>🫧 Seifenblasenmaschine</h3>
+        <div class="subtitle">
+          Super für Hochzeiten, Kindergeburtstage, Empfang
+          oder besondere Momente beim Event.
+        </div>
+
+        <div class="price-list">
+          <div class="price-row">
+            <span>Mo–Do (24h)</span>
+            <strong>22€</strong>
+          </div>
+
+          <div class="price-row">
+            <span>Fr–So (24h)</span>
+            <strong>27€</strong>
+          </div>
+
+          <div class="price-row">
+            <span>Wochenende komplett</span>
+            <strong>49€</strong>
+          </div>
+        </div>
+
+        <div class="deposit">Kaution: 100€</div>
+
+        <div class="cta-inline">
+          <a class="btn btn-small btn-whatsapp"
+             href="https://wa.me/4917629007917?text=Hallo%2C%20ich%20interessiere%20mich%20f%C3%BCr%20eine%20Seifenblasenmaschine.">
+            Anfragen
+          </a>
+        </div>
+      </article>
+
+      <!-- FOTOBOX -->
+      <article class="card" id="fotobox">
+        <div class="badge">Hochzeit &amp; Geburtstag</div>
+        <h3>📸 Fotobox</h3>
+        <div class="subtitle">
+          Für lustige Erinnerungen und starke Bilder auf deiner Feier.
+        </div>
+
+        <div class="price-list">
+          <div class="price-row">
+            <span>Mo–Do (24h)</span>
+            <strong>189€</strong>
+          </div>
+
+          <div class="price-row">
+            <span>Fr–So (24h)</span>
+            <strong>239€</strong>
+          </div>
+
+          <div class="price-row">
+            <span>Wochenende komplett</span>
+            <strong>399€</strong>
+          </div>
+        </div>
+
+        <div class="deposit">Kaution: 400€</div>
+
+        <div class="cta-inline">
+          <a class="btn btn-small btn-whatsapp"
+             href="https://wa.me/4917629007917?text=Hallo%2C%20ich%20interessiere%20mich%20f%C3%BCr%20die%20Fotobox.">
+            Anfragen
+          </a>
+        </div>
+      </article>
+
+      <!-- VIDEO-GÄSTEBUCH -->
+      <article class="card">
+        <div class="badge">Erinnerungen</div>
+        <h3>🎥 Video-Gästebuch</h3>
+        <div class="subtitle">
+          Persönliche Videobotschaften als besondere Erinnerung
+          für Hochzeit, Geburtstag oder Event.
+        </div>
+
+        <div class="price-list">
+          <div class="price-row">
+            <span>Mo–Do (24h)</span>
+            <strong>159€</strong>
+          </div>
+
+          <div class="price-row">
+            <span>Fr–So (24h)</span>
+            <strong>199€</strong>
+          </div>
+
+          <div class="price-row">
+            <span>Wochenende komplett</span>
+            <strong>349€</strong>
+          </div>
+        </div>
+
+        <div class="deposit">Kaution: 200€</div>
+
+        <div class="cta-inline">
+          <a class="btn btn-small btn-whatsapp"
+             href="https://wa.me/4917629007917?text=Hallo%2C%20ich%20interessiere%20mich%20f%C3%BCr%20das%20Video-G%C3%A4stebuch.">
+            Anfragen
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+<section class="section" id="pakete">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>Pakete</h2>
+        <p>
+          Unsere beliebtesten Kombinationen – günstiger als alles einzeln zu mieten.
+        </p>
+      </div>
+    </div>
+
+    <div class="packages-grid">
+
+      <!-- BASIC -->
+      <article class="card">
+        <div class="badge">Für kleine Feiern</div>
+        <h3>🎉 Paket Basic</h3>
+        <div class="subtitle">
+          1x Soundboks + 1x Lightboks – ideal für kleine Räume & Wohnzimmer.
+        </div>
+
+        <div class="price-list">
+          <div class="price-row">
+            <span>Mo–Do (24h)</span>
+            <strong>59€</strong>
+          </div>
+
+          <div class="price-row">
+            <span>Fr–So (24h)</span>
+            <strong>69€</strong>
+          </div>
+
+          <div class="price-row">
+            <span>Wochenende komplett</span>
+            <strong>119€</strong>
+          </div>
+        </div>
+
+        <div class="deposit">Kaution: 300€</div>
+
+        <div class="cta-inline">
+          <a class="btn btn-small btn-whatsapp"
+             href="https://wa.me/4917629007917?text=Paket%20Basic%20Anfrage">
+            Anfragen
+          </a>
+        </div>
+      </article>
+
+      <!-- PARTY -->
+      <article class="card">
+        <div class="badge">Mehr Stimmung</div>
+        <h3>🔥 Paket Party</h3>
+        <div class="subtitle">
+          1x Soundboks + 1x Lightboks + Nebelmaschine – perfekte Party-Kombi.
+        </div>
+
+        <div class="price-list">
+          <div class="price-row">
+            <span>Mo–Do (24h)</span>
+            <strong>79€</strong>
+          </div>
+
+          <div class="price-row">
+            <span>Fr–So (24h)</span>
+            <strong>89€</strong>
+          </div>
+
+          <div class="price-row">
+            <span>Wochenende komplett</span>
+            <strong>159€</strong>
+          </div>
+        </div>
+
+        <div class="deposit">Kaution: 350€</div>
+
+        <div class="cta-inline">
+          <a class="btn btn-small btn-whatsapp"
+             href="https://wa.me/4917629007917?text=Paket%20Party%20Anfrage">
+            Anfragen
+          </a>
+        </div>
+      </article>
+
+      <!-- FUN -->
+      <article class="card">
+        <div class="badge">Hochzeit & Empfang</div>
+        <h3>🫧 Paket Fun</h3>
+        <div class="subtitle">
+          1x Soundboks + 1x Lightboks + Seifenblasenmaschine – ideal für besondere Momente.
+        </div>
+
+        <div class="price-list">
+          <div class="price-row">
+            <span>Mo–Do (24h)</span>
+            <strong>79€</strong>
+          </div>
+
+          <div class="price-row">
+            <span>Fr–So (24h)</span>
+            <strong>89€</strong>
+          </div>
+
+          <div class="price-row">
+            <span>Wochenende komplett</span>
+            <strong>159€</strong>
+          </div>
+        </div>
+
+        <div class="deposit">Kaution: 350€</div>
+
+        <div class="cta-inline">
+          <a class="btn btn-small btn-whatsapp"
+             href="https://wa.me/4917629007917?text=Paket%20Fun%20Anfrage">
+            Anfragen
+          </a>
+        </div>
+      </article>
+
+      <!-- KARAOKE (NEU) -->
+      <article class="card">
+        <div class="badge">Karaoke</div>
+        <h3>🎤 Paket Karaoke</h3>
+        <div class="subtitle">
+          1x Soundboks + 2x Mikrofone – perfekt für Karaoke-Abende & Geburtstage.
+        </div>
+
+        <div class="price-list">
+          <div class="price-row">
+            <span>Mo–Do (24h)</span>
+            <strong>69€</strong>
+          </div>
+
+          <div class="price-row">
+            <span>Fr–So (24h)</span>
+            <strong>89€</strong>
+          </div>
+
+          <div class="price-row">
+            <span>Wochenende komplett</span>
+            <strong>159€</strong>
+          </div>
+        </div>
+
+        <div class="deposit">Kaution: 350€</div>
+
+        <div class="cta-inline">
+          <a class="btn btn-small btn-whatsapp"
+             href="https://wa.me/4917629007917?text=Paket%20Karaoke%20Anfrage">
+            Anfragen
+          </a>
+        </div>
+      </article>
+
+      <!-- PREMIUM -->
+      <article class="card">
+        <div class="badge">Für größere Räume</div>
+        <h3>🚀 Paket Premium</h3>
+        <div class="subtitle">
+          2x Soundboks + 2x Lightboks – starkes Setup für große Räume & Partys.
+        </div>
+
+        <div class="price-list">
+          <div class="price-row">
+            <span>Mo–Do (24h)</span>
+            <strong>129€</strong>
+          </div>
+
+          <div class="price-row">
+            <span>Fr–So (24h)</span>
+            <strong>149€</strong>
+          </div>
+
+          <div class="price-row">
+            <span>Wochenende komplett</span>
+            <strong>269€</strong>
+          </div>
+        </div>
+
+        <div class="deposit">Kaution: 500€</div>
+
+        <div class="cta-inline">
+          <a class="btn btn-small btn-whatsapp"
+             href="https://wa.me/4917629007917?text=Paket%20Premium%20Anfrage">
+            Anfragen
+          </a>
+        </div>
+      </article>
+
+      <!-- PREMIUM PLUS -->
+      <article class="card">
+        <div class="badge">Tanzfläche</div>
+        <h3>🌫️ Paket Premium Plus</h3>
+        <div class="subtitle">
+          2x Soundboks + 2x Lightboks + Nebelmaschine – maximale Party.
+        </div>
+
+        <div class="price-list">
+          <div class="price-row">
+            <span>Mo–Do (24h)</span>
+            <strong>159€</strong>
+          </div>
+
+          <div class="price-row">
+            <span>Fr–So (24h)</span>
+            <strong>179€</strong>
+          </div>
+
+          <div class="price-row">
+            <span>Wochenende komplett</span>
+            <strong>329€</strong>
+          </div>
+        </div>
+
+        <div class="deposit">Kaution: 600€</div>
+
+        <div class="cta-inline">
+          <a class="btn btn-small btn-whatsapp"
+             href="https://wa.me/4917629007917?text=Paket%20Premium%20Plus%20Anfrage">
+            Anfragen
+          </a>
+        </div>
+      </article>
+
+      <!-- EVENT KOMPLETT -->
+      <article class="card featured">
+        <div class="featured-tag">Beliebtestes Paket</div>
+        <div class="badge">Komplettes Event-Set</div>
+        <h3>🎊 Paket Event Komplett</h3>
+        <div class="subtitle">
+          2x Soundboks + 2x Lightboks + Nebelmaschine + Seifenblasenmaschine.
+        </div>
+
+        <div class="price-list">
+          <div class="price-row">
+            <span>Mo–Do (24h)</span>
+            <strong>219€</strong>
+          </div>
+
+          <div class="price-row">
+            <span>Fr–So (24h)</span>
+            <strong>249€</strong>
+          </div>
+
+          <div class="price-row">
+            <span>Wochenende komplett</span>
+            <strong>449€</strong>
+          </div>
+        </div>
+
+        <div class="deposit">Kaution: 650€</div>
+
+        <div class="cta-inline">
+          <a class="btn btn-small btn-whatsapp"
+             href="https://wa.me/4917629007917?text=Paket%20Event%20Komplett%20Anfrage">
+            Anfragen
+          </a>
+        </div>
+      </article>
+
+      <!-- MEMORIES -->
+      <article class="card">
+        <div class="badge">Für Erinnerungen</div>
+        <h3>🎬 Paket Memories</h3>
+        <div class="subtitle">
+          Fotobox + Video-Gästebuch – perfekte Kombi für Hochzeiten & Events.
+        </div>
+
+        <div class="price-list">
+          <div class="price-row">
+            <span>Mo–Do (24h)</span>
+            <strong>300€</strong>
+          </div>
+
+          <div class="price-row">
+            <span>Fr–So (24h)</span>
+            <strong>390€</strong>
+          </div>
+
+          <div class="price-row">
+            <span>Wochenende komplett</span>
+            <strong>690€</strong>
+          </div>
+        </div>
+
+        <div class="deposit">Kaution: 650€</div>
+
+        <div class="cta-inline">
+          <a class="btn btn-small btn-whatsapp"
+             href="https://wa.me/4917629007917?text=Paket%20Memories%20Anfrage">
+            Anfragen
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+<!-- STEPS -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>So läuft’s ab</h2>
+        <p>
+          Schnell, unkompliziert und ohne Stress – genau so soll es sein.
+        </p>
+      </div>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h3>Anfragen</h3>
+        <p>
+          Schreib uns einfach per WhatsApp oder ruf kurz durch. Sag Datum, Ort
+          und was du brauchst – fertig.
+        </p>
+      </div>
+
+      <div class="step">
+        <div class="step-number">2</div>
+        <h3>Abholen oder liefern lassen</h3>
+        <p>
+          Du kannst alles easy bei uns abholen – oder wir bringen’s dir vorbei.
+          Ganz wie du willst.
+        </p>
+      </div>
+
+      <div class="step">
+        <div class="step-number">3</div>
+        <h3>Losfeiern</h3>
+        <p>
+          Anschließen, starten, feiern. Unsere Geräte sind super einfach zu bedienen.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KONTAKT -->
+<section class="section" id="kontakt">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>Kontakt</h2>
+        <p>
+          Melde dich einfach – wir antworten schnell und helfen dir direkt weiter.
+        </p>
+      </div>
+    </div>
+
+    <div class="contact-wrap">
+      <div class="contact-card">
+        <h3>So erreichst du uns</h3>
+        <p>
+          Egal ob Fragen, Buchung oder kurzfristige Anfrage – wir sind für dich da.
+        </p>
+
+        <div class="contact-list">
+          <div>📞 Telefon: <strong>0176 29007917</strong></div>
+          <div>💬 WhatsApp: <strong>0176 29007917</strong></div>
+          <div>📍 Standort: <strong>Ingelheim am Rhein</strong></div>
+          <div>⏱️ Abholung & Rückgabe nach Absprache</div>
+        </div>
+
+        <a class="btn btn-whatsapp"
+           href="https://wa.me/4917629007917">
+          Jetzt per WhatsApp schreiben
+        </a>
+      </div>
+
+      <div class="contact-card">
+        <h3>FAQ</h3>
+        <p>
+          Die wichtigsten Fragen kurz beantwortet.
+        </p>
+
+        <div class="faq">
+
+          <details>
+            <summary>Wie funktioniert die Kaution?</summary>
+            <p>
+              Du hinterlegst die Kaution bei Abholung und bekommst sie bei Rückgabe
+              sofort wieder – natürlich komplett.
+            </p>
+          </details>
+
+          <details>
+            <summary>Kann ich spontan buchen?</summary>
+            <p>
+              Klar! Schreib uns einfach. Oft ist auch kurzfristig noch etwas frei.
+            </p>
+          </details>
+
+          <details>
+            <summary>Kann ich liefern lassen?</summary>
+            <p>
+              Ja! Wir liefern im Raum Mainz, Wiesbaden, Ingelheim & Umgebung.
+              Preis je nach Entfernung.
+            </p>
+          </details>
+
+          <details>
+            <summary>Wie lange gilt die Miete?</summary>
+            <p>
+              Jede Miete gilt für 24 Stunden. Wochenendpreise gelten von Freitag
+              bis Sonntag.
+            </p>
+          </details>
+
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="container footer-inner">
-      <div>© 2026 GABO Event & Verleihservice – Alle Rechte vorbehalten</div>
+<!-- FOOTER -->
+<footer>
+  <div class="container footer-inner">
+    <div>© 2026 GABO Event & Verleihservice – Alle Rechte vorbehalten</div>
 
-      <div class="footer-links">
-        <a href="#einzelpreise">Einzelverleih</a>
-        <a href="#pakete">Pakete</a>
-        <a href="#fotobox">Fotobox & Video</a>
-        <a href="#kontakt">Kontakt</a>
-      </div>
+    <div class="footer-links">
+      <a href="#einzelpreise">Einzelverleih</a>
+      <a href="#pakete">Pakete</a>
+      <a href="#fotobox">Fotobox & Video</a>
+      <a href="#kontakt">Kontakt</a>
     </div>
-  </footer>
+  </div>
+</footer>
 
 </body>
 </html>
