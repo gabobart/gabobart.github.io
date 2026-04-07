@@ -7,7 +7,7 @@
   <title>Soundboks mieten ab 35 € | GABO Verleihservice</title>
   <meta
     name="description"
-    content="Soundboks mieten ab 35 €. Kabellose Partybox für Geburtstag, Hochzeit, Gartenparty und Events. Mikrofon optional zubuchbar. Abholung oder Lieferung möglich."
+    content="Soundboks mieten ab 35 €. Kabellose Partybox für Geburtstag, Hochzeit, Gartenparty und Events. Mikrofon optional zubuchbar. Lichteffekte, Nebelmaschine und Seifenblasenmaschine ebenfalls mietbar."
   />
 
   <style>
@@ -69,24 +69,25 @@
       display:flex;
       flex-direction:column;
       align-items:flex-start;
-      gap:10px;
-      margin-bottom:20px;
+      gap:12px;
+      margin-bottom:22px;
     }
 
     .hero-logo-big{
-      width:128px;
+      width:160px;
+      max-width:100%;
       height:auto;
       object-fit:contain;
-      border-radius:18px;
+      border-radius:20px;
       background:rgba(255,255,255,0.04);
-      padding:8px;
+      padding:10px;
       border:1px solid rgba(255,255,255,0.08);
       box-shadow:0 10px 30px rgba(0,0,0,0.22);
     }
 
     .hero-brand-big h2{
       margin:0;
-      font-size:28px;
+      font-size:30px;
       font-weight:900;
       letter-spacing:0.4px;
       background:linear-gradient(135deg,#4da3ff,#1d72ff);
@@ -108,11 +109,19 @@
       max-width:720px;
     }
 
+    .hero-info{
+      display:grid;
+      gap:10px;
+      margin:20px 0 0;
+      color:#dbeafe;
+      font-size:17px;
+    }
+
     .cta-row{
       display:flex;
       gap:14px;
       flex-wrap:wrap;
-      margin-top:22px;
+      margin-top:24px;
     }
 
     .btn{
@@ -143,13 +152,6 @@
       color:#fff;
     }
 
-    .btn-outline{
-      background:rgba(255,255,255,0.04);
-      border:1px solid rgba(255,255,255,0.12);
-      color:var(--text);
-      box-shadow:none;
-    }
-
     .hero-card{
       background:linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.04));
       border:1px solid rgba(255,255,255,0.12);
@@ -157,13 +159,17 @@
       padding:22px;
       box-shadow:var(--shadow);
       overflow:hidden;
+      display:flex;
+      align-items:center;
+      justify-content:center;
     }
 
     .hero-photo{
       width:100%;
-      aspect-ratio:4 / 3;
+      max-height:420px;
+      height:auto;
+      object-fit:contain;
       border-radius:18px;
-      object-fit:cover;
       display:block;
       background:rgba(255,255,255,0.04);
       border:1px solid rgba(255,255,255,0.08);
@@ -187,33 +193,6 @@
       margin:0;
       color:var(--muted);
       max-width:820px;
-    }
-
-    .price-overview{
-      display:grid;
-      grid-template-columns:repeat(3, minmax(0,1fr));
-      gap:16px;
-    }
-
-    .price-box{
-      background:var(--card);
-      border:1px solid var(--card-border);
-      border-radius:20px;
-      padding:22px;
-      box-shadow:var(--shadow);
-      text-align:center;
-    }
-
-    .price-box strong{
-      display:block;
-      font-size:30px;
-      margin-bottom:6px;
-      color:#fff;
-    }
-
-    .price-box span{
-      color:var(--muted);
-      font-size:15px;
     }
 
     .steps{
@@ -441,7 +420,6 @@
 
     @media (max-width: 980px){
       .hero-grid,
-      .price-overview,
       .steps,
       .pricing-grid,
       .contact-wrap{
@@ -451,11 +429,11 @@
 
     @media (max-width: 720px){
       .hero-logo-big{
-        width:110px;
+        width:135px;
       }
 
       .hero-brand-big h2{
-        font-size:24px;
+        font-size:26px;
       }
 
       .cta-row{
@@ -489,10 +467,11 @@
           Schnell per Bluetooth verbunden, akkubetrieben und flexibel einsetzbar.
         </p>
 
-        <p>
-          Abholung oder Lieferung nach Absprache möglich. Weitere Orte und Städte
-          sind auf Anfrage ebenfalls möglich.
-        </p>
+        <div class="hero-info">
+          <div>ab 35€ Tagesmiete</div>
+          <div>Mikrofon optional +10€</div>
+          <div>Kaution Soundboks 150€</div>
+        </div>
 
         <div class="cta-row">
           <a
@@ -519,27 +498,6 @@
       </div>
     </div>
   </header>
-
-  <section class="section">
-    <div class="container">
-      <div class="price-overview">
-        <div class="price-box">
-          <strong>ab 35€</strong>
-          <span>Soundboks Tagesmiete</span>
-        </div>
-
-        <div class="price-box">
-          <strong>+10€</strong>
-          <span>Mikrofon optional</span>
-        </div>
-
-        <div class="price-box">
-          <strong>150€</strong>
-          <span>Kaution Soundboks</span>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <section class="section">
     <div class="container">
@@ -642,17 +600,20 @@
         </article>
 
         <article class="card">
-          <div class="badge">Licht</div>
-          <h3>💡 Lightboks</h3>
+          <div class="badge">Lichteffekt</div>
+          <h3>💡 Lightboks <span class="brand-note">– SOUNDBOKS</span></h3>
           <div class="subtitle">
-            Passendes Partylicht für mehr Stimmung auf deiner Feier.
-            Ideal als Ergänzung zur Soundboks.
+            Akkubetriebene Lichttechnik für Musik, Party und Event.
+            Ideal als Ergänzung zur Soundboks für mehr Stimmung.
           </div>
 
           <ul class="feature-list">
-            <li>Ideal für Geburtstage und private Feiern</li>
-            <li>Perfekt für mehr Stimmung auf der Tanzfläche</li>
-            <li>Einfach kombinierbar mit Soundboks</li>
+            <li>Akkubetrieben und tragbar</li>
+            <li>Audioreaktives Partylicht</li>
+            <li>Funktioniert mit jedem Lautsprecher</li>
+            <li>7x 12 W RGBW LEDs</li>
+            <li>IP65 staub- und wetterfest</li>
+            <li>2 Stunden Schnellladung über USB-C</li>
           </ul>
 
           <div class="price-list">
@@ -668,6 +629,10 @@
               <span>Wochenende komplett</span>
               <strong>45€</strong>
             </div>
+          </div>
+
+          <div class="small-note">
+            Perfekt für Gartenparty, Geburtstag, Hochzeit und Outdoor-Events.
           </div>
 
           <div class="deposit">Kaution: 100€</div>
@@ -737,8 +702,9 @@
 
           <ul class="feature-list">
             <li>Akkubetrieben</li>
+            <li>Bis zu 3 Stunden Laufzeit</li>
+            <li>Ca. 4 Stunden Ladezeit</li>
             <li>Ideal für Hochzeit, Empfang und besondere Momente</li>
-            <li>Perfekt für besondere Augenblicke und Fotos</li>
           </ul>
 
           <div class="price-list">
