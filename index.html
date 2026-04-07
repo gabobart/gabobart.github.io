@@ -109,14 +109,6 @@
       max-width:720px;
     }
 
-    .hero-info{
-      display:grid;
-      gap:10px;
-      margin:20px 0 0;
-      color:#dbeafe;
-      font-size:17px;
-    }
-
     .cta-row{
       display:flex;
       gap:14px;
@@ -353,22 +345,6 @@
       color:var(--muted);
     }
 
-    .contact-list{
-      display:grid;
-      gap:10px;
-      color:#e2e8f0;
-      margin-bottom:18px;
-    }
-
-    .contact-list div{
-      padding:10px 0;
-      border-bottom:1px dashed rgba(255,255,255,0.10);
-    }
-
-    .contact-list div:last-child{
-      border-bottom:none;
-    }
-
     .faq{
       display:grid;
       gap:12px;
@@ -384,6 +360,23 @@
     summary{
       cursor:pointer;
       font-weight:700;
+      list-style:none;
+    }
+
+    summary::-webkit-details-marker{
+      display:none;
+    }
+
+    summary::after{
+      content:"+";
+      float:right;
+      font-size:22px;
+      line-height:1;
+      color:#dbeafe;
+    }
+
+    details[open] summary::after{
+      content:"−";
     }
 
     details p{
@@ -466,12 +459,6 @@
           Miete eine kabellose Soundboks für Geburtstag, Gartenparty, Hochzeit oder Event.
           Schnell per Bluetooth verbunden, akkubetrieben und flexibel einsetzbar.
         </p>
-
-        <div class="hero-info">
-          <div>ab 35€ Tagesmiete</div>
-          <div>Mikrofon optional +10€</div>
-          <div>Kaution Soundboks 150€</div>
-        </div>
 
         <div class="cta-row">
           <a
@@ -610,10 +597,8 @@
           <ul class="feature-list">
             <li>Akkubetrieben und tragbar</li>
             <li>Audioreaktives Partylicht</li>
-            <li>Funktioniert mit jedem Lautsprecher</li>
             <li>7x 12 W RGBW LEDs</li>
             <li>IP65 staub- und wetterfest</li>
-            <li>2 Stunden Schnellladung über USB-C</li>
           </ul>
 
           <div class="price-list">
@@ -703,7 +688,6 @@
           <ul class="feature-list">
             <li>Akkubetrieben</li>
             <li>Bis zu 3 Stunden Laufzeit</li>
-            <li>Ca. 4 Stunden Ladezeit</li>
             <li>Ideal für Hochzeit, Empfang und besondere Momente</li>
           </ul>
 
@@ -860,24 +844,6 @@
             Du willst eine Soundboks oder ein passendes Paket mieten?
             Frag schnell und unkompliziert per WhatsApp, Telefon oder E-Mail an.
           </p>
-
-          <div class="contact-list">
-            <div>
-              📞 Telefon:
-              <a href="tel:+4917629007917">0176 29007917</a>
-            </div>
-            <div>
-              💬 WhatsApp:
-              <a href="https://wa.me/4917629007917" target="_blank" rel="noopener noreferrer">Nachricht senden</a>
-            </div>
-            <div>
-              📧 E-Mail:
-              <a href="mailto:gaboverleih@gmail.com">gaboverleih@gmail.com</a>
-            </div>
-            <div>
-              📍 Abholung oder Lieferung nach Absprache
-            </div>
-          </div>
 
           <div class="cta-row" style="margin-top:0;">
             <a class="btn btn-whatsapp" href="https://wa.me/4917629007917" target="_blank" rel="noopener noreferrer">
