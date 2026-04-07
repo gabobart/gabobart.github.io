@@ -4,27 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Soundboks mieten ab 35 € | Akku Lautsprecher Verleih | GABO Event & Verleihservice</title>
+  <title>Soundboks mieten ab 35 € | GABO Verleihservice</title>
   <meta
     name="description"
-    content="Soundboks mieten ab 35 €. Kabelloser Akku-Lautsprecher mit Bluetooth für Geburtstag, Hochzeit, Gartenparty und Events. Abholung oder Lieferung möglich. Weitere Orte auf Anfrage."
+    content="Soundboks mieten ab 35 €. Kabelloser Akku-Lautsprecher für Geburtstag, Hochzeit, Gartenparty und Events. Mikrofon optional zubuchbar. Abholung oder Lieferung möglich."
   />
 
   <style>
     :root{
-      --bg:#071224;
-      --bg2:#0b1f45;
-      --card:rgba(255,255,255,0.06);
-      --card-border:rgba(255,255,255,0.12);
       --text:#f8fafc;
       --muted:#cbd5e1;
       --blue:#4da3ff;
       --blue-strong:#1d72ff;
       --green:#25D366;
       --gold:#ffd966;
+      --card:rgba(255,255,255,0.06);
+      --card-border:rgba(255,255,255,0.12);
       --shadow:0 10px 35px rgba(0,0,0,0.28);
       --radius:20px;
-      --max:1180px;
+      --max:1120px;
     }
 
     *{
@@ -39,11 +37,11 @@
       margin:0;
       font-family:Arial, Helvetica, sans-serif;
       color:var(--text);
+      line-height:1.5;
       background:
         radial-gradient(circle at top left, rgba(77,163,255,0.20), transparent 25%),
         radial-gradient(circle at top right, rgba(37,211,102,0.10), transparent 20%),
         linear-gradient(180deg, #020617 0%, #081a38 35%, #0a1f4d 60%, #020617 100%);
-      line-height:1.5;
     }
 
     a{
@@ -56,103 +54,52 @@
       margin:0 auto;
     }
 
-    .topbar{
-      position:sticky;
-      top:0;
-      z-index:30;
-      backdrop-filter:blur(14px);
-      background:rgba(2,6,23,0.65);
-      border-bottom:1px solid rgba(255,255,255,0.08);
-    }
-
-    .topbar-inner{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:16px;
-      padding:14px 0;
-    }
-
-    .brand{
-      display:flex;
-      align-items:center;
-      gap:12px;
-      font-weight:700;
-      letter-spacing:0.4px;
-    }
-
-    .brand-badge{
-      width:42px;
-      height:42px;
-      border-radius:14px;
-      display:grid;
-      place-items:center;
-      background:linear-gradient(135deg, rgba(77,163,255,0.22), rgba(29,114,255,0.35));
-      border:1px solid rgba(255,255,255,0.10);
-      box-shadow:0 0 18px rgba(77,163,255,0.25);
-      font-size:18px;
-    }
-
-    .nav{
-      display:flex;
-      gap:18px;
-      align-items:center;
-      flex-wrap:wrap;
-    }
-
-    .nav a{
-      font-size:14px;
-      color:var(--muted);
-    }
-
-    .nav a:hover{
-      color:var(--text);
-    }
-
-    .nav-cta{
-      padding:10px 14px;
-      border-radius:12px;
-      background:linear-gradient(135deg, var(--green), #1fb455);
-      color:#fff !important;
-      font-weight:700;
-      box-shadow:0 8px 22px rgba(37,211,102,0.22);
-    }
-
     .hero{
-      padding:56px 0 28px;
+      padding:34px 0 26px;
     }
 
     .hero-grid{
       display:grid;
-      grid-template-columns:1.15fr 0.85fr;
+      grid-template-columns:1.08fr 0.92fr;
       gap:28px;
       align-items:center;
     }
 
-    .eyebrow{
-      display:inline-flex;
+    .hero-brand{
+      display:flex;
       align-items:center;
-      gap:10px;
-      padding:8px 12px;
-      border-radius:999px;
-      background:rgba(255,255,255,0.06);
-      border:1px solid rgba(255,255,255,0.10);
+      gap:14px;
+      margin-bottom:18px;
+      flex-wrap:wrap;
+    }
+
+    .hero-logo{
+      width:64px;
+      height:64px;
+      object-fit:contain;
+      border-radius:16px;
+      background:rgba(255,255,255,0.04);
+      padding:6px;
+      border:1px solid rgba(255,255,255,0.08);
+    }
+
+    .hero-welcome{
+      font-size:18px;
+      font-weight:700;
       color:#dbeafe;
-      font-size:14px;
-      margin-bottom:16px;
     }
 
     h1{
-      font-size:clamp(34px, 5vw, 62px);
-      line-height:1.02;
+      font-size:clamp(34px, 5vw, 60px);
+      line-height:1.03;
       margin:0 0 16px;
-      letter-spacing:-1.4px;
+      letter-spacing:-1.2px;
     }
 
     .hero p{
       color:var(--muted);
       font-size:18px;
-      margin:0 0 18px;
+      margin:0 0 16px;
       max-width:720px;
     }
 
@@ -160,7 +107,7 @@
       display:flex;
       gap:14px;
       flex-wrap:wrap;
-      margin-bottom:20px;
+      margin-top:22px;
     }
 
     .btn{
@@ -172,17 +119,13 @@
       padding:0 18px;
       border-radius:14px;
       font-weight:700;
-      transition:transform .18s ease, opacity .18s ease, box-shadow .18s ease;
+      transition:transform .18s ease, opacity .18s ease;
       box-shadow:var(--shadow);
     }
 
     .btn:hover{
       transform:translateY(-1px);
-      opacity:0.96;
-    }
-
-    .btn-primary{
-      background:linear-gradient(135deg, var(--blue), var(--blue-strong));
+      opacity:.96;
     }
 
     .btn-whatsapp{
@@ -190,11 +133,9 @@
       color:#fff;
     }
 
-    .btn-outline{
-      background:rgba(255,255,255,0.04);
-      border:1px solid rgba(255,255,255,0.12);
-      color:var(--text);
-      box-shadow:none;
+    .btn-primary{
+      background:linear-gradient(135deg, var(--blue), var(--blue-strong));
+      color:#fff;
     }
 
     .hero-card{
@@ -203,17 +144,7 @@
       border-radius:26px;
       padding:22px;
       box-shadow:var(--shadow);
-      position:relative;
       overflow:hidden;
-    }
-
-    .hero-card:before{
-      content:"";
-      position:absolute;
-      inset:auto -40px -40px auto;
-      width:140px;
-      height:140px;
-      background:radial-gradient(circle, rgba(77,163,255,.34), transparent 70%);
     }
 
     .hero-photo{
@@ -227,32 +158,91 @@
     }
 
     .section{
-      padding:40px 0;
+      padding:34px 0;
     }
 
     .section-head{
-      display:flex;
-      justify-content:space-between;
-      align-items:end;
-      gap:18px;
       margin-bottom:22px;
     }
 
     .section-head h2{
-      margin:0 0 8px;
+      margin:0 0 10px;
       font-size:clamp(28px, 3.2vw, 40px);
-      letter-spacing:-0.8px;
+      letter-spacing:-0.6px;
     }
 
     .section-head p{
       margin:0;
       color:var(--muted);
-      max-width:780px;
+      max-width:820px;
+    }
+
+    .price-overview{
+      display:grid;
+      grid-template-columns:repeat(3, minmax(0,1fr));
+      gap:16px;
+    }
+
+    .price-box{
+      background:var(--card);
+      border:1px solid var(--card-border);
+      border-radius:20px;
+      padding:22px;
+      box-shadow:var(--shadow);
+      text-align:center;
+    }
+
+    .price-box strong{
+      display:block;
+      font-size:30px;
+      margin-bottom:6px;
+      color:#fff;
+    }
+
+    .price-box span{
+      color:var(--muted);
+      font-size:15px;
+    }
+
+    .steps{
+      display:grid;
+      grid-template-columns:repeat(3, minmax(0,1fr));
+      gap:18px;
+    }
+
+    .step{
+      padding:24px;
+      border-radius:20px;
+      background:rgba(255,255,255,0.05);
+      border:1px solid rgba(255,255,255,0.10);
+      box-shadow:var(--shadow);
+    }
+
+    .step-number{
+      width:40px;
+      height:40px;
+      border-radius:12px;
+      display:grid;
+      place-items:center;
+      background:rgba(77,163,255,0.15);
+      border:1px solid rgba(77,163,255,0.18);
+      font-weight:700;
+      margin-bottom:14px;
+    }
+
+    .step h3{
+      margin:0 0 8px;
+      font-size:22px;
+    }
+
+    .step p{
+      margin:0;
+      color:var(--muted);
     }
 
     .pricing-grid{
       display:grid;
-      grid-template-columns:repeat(3, minmax(0,1fr));
+      grid-template-columns:repeat(2, minmax(0,1fr));
       gap:18px;
     }
 
@@ -262,23 +252,14 @@
       border-radius:var(--radius);
       padding:22px;
       box-shadow:var(--shadow);
-      position:relative;
-      overflow:hidden;
     }
 
-    .card:hover{
-      border-color:rgba(77,163,255,0.28);
-      transform:translateY(-2px);
-      transition:.18s ease;
-    }
-
-    .card .badge{
+    .badge{
       display:inline-flex;
       padding:7px 11px;
       border-radius:999px;
       font-size:12px;
       font-weight:700;
-      letter-spacing:0.2px;
       background:rgba(77,163,255,0.12);
       border:1px solid rgba(77,163,255,0.18);
       color:#cfe4ff;
@@ -288,20 +269,26 @@
     .card h3{
       margin:0 0 8px;
       font-size:24px;
-      letter-spacing:-0.4px;
     }
 
-    .card .subtitle{
+    .subtitle{
       color:var(--muted);
       font-size:15px;
       margin-bottom:18px;
-      min-height:44px;
+    }
+
+    .feature-list{
+      margin:0 0 16px;
+      padding-left:18px;
+      color:#e2e8f0;
+      display:grid;
+      gap:8px;
     }
 
     .price-list{
       display:grid;
       gap:10px;
-      margin-bottom:16px;
+      margin-bottom:12px;
     }
 
     .price-row{
@@ -344,63 +331,10 @@
       box-shadow:none;
     }
 
-    .packages-grid{
-      display:grid;
-      grid-template-columns:repeat(2, minmax(0,1fr));
-      gap:18px;
-    }
-
-    .featured{
-      border-color:rgba(77,163,255,0.35);
-      background:linear-gradient(180deg, rgba(77,163,255,0.12), rgba(255,255,255,0.05));
-    }
-
-    .featured-tag{
-      position:absolute;
-      top:16px;
-      right:16px;
-      padding:8px 12px;
-      border-radius:999px;
-      background:linear-gradient(135deg, #4da3ff, #1d72ff);
-      font-size:12px;
-      font-weight:700;
-      box-shadow:0 10px 24px rgba(29,114,255,0.24);
-    }
-
-    .steps{
-      display:grid;
-      grid-template-columns:repeat(3, minmax(0,1fr));
-      gap:18px;
-    }
-
-    .step{
-      padding:24px;
-      border-radius:20px;
-      background:rgba(255,255,255,0.05);
-      border:1px solid rgba(255,255,255,0.10);
-      box-shadow:var(--shadow);
-    }
-
-    .step-number{
-      width:38px;
-      height:38px;
-      border-radius:12px;
-      display:grid;
-      place-items:center;
-      background:rgba(77,163,255,0.15);
-      border:1px solid rgba(77,163,255,0.18);
-      font-weight:700;
-      margin-bottom:14px;
-    }
-
-    .step h3{
-      margin:0 0 8px;
-      font-size:22px;
-    }
-
-    .step p{
-      margin:0;
-      color:var(--muted);
+    .btn-outline{
+      background:rgba(255,255,255,0.04);
+      border:1px solid rgba(255,255,255,0.12);
+      color:var(--text);
     }
 
     .contact-wrap{
@@ -466,25 +400,8 @@
       font-size:16px;
     }
 
-    .feature-list{
-      margin:0 0 16px;
-      padding-left:18px;
-      color:#e2e8f0;
-      display:grid;
-      gap:8px;
-    }
-
-    .feature-list li{
-      line-height:1.4;
-    }
-
-    .unavailable{
-      color:#ffd966;
-      font-weight:700;
-    }
-
     footer{
-      margin-top:10px;
+      margin-top:8px;
       border-top:1px solid rgba(255,255,255,0.08);
       background:rgba(2,6,23,0.75);
     }
@@ -509,35 +426,17 @@
       color:#dbeafe;
     }
 
-    .footer-links a:hover{
-      color:var(--blue);
-    }
-
     @media (max-width: 980px){
       .hero-grid,
-      .contact-wrap,
+      .price-overview,
+      .steps,
       .pricing-grid,
-      .packages-grid,
-      .steps{
+      .contact-wrap{
         grid-template-columns:1fr;
-      }
-
-      .section-head{
-        align-items:start;
-        flex-direction:column;
       }
     }
 
     @media (max-width: 720px){
-      .topbar-inner{
-        flex-direction:column;
-        align-items:flex-start;
-      }
-
-      .nav{
-        gap:12px;
-      }
-
       .cta-row{
         flex-direction:column;
       }
@@ -549,49 +448,20 @@
       .footer-inner{
         flex-direction:column;
       }
-
-      .hero{
-        padding-top:34px;
-      }
     }
   </style>
 </head>
 <body>
 
-  <div class="topbar">
-    <div class="container topbar-inner">
-      <div class="brand">
-        <div class="brand-badge">G</div>
-        <div>GABO Event &amp; Verleihservice</div>
-      </div>
-
-      <nav class="nav">
-        <a href="#einzelpreise">Einzelverleih</a>
-        <a href="#pakete">Pakete</a>
-        <a href="#fotobox">Fotobox &amp; Video</a>
-        <a href="#kontakt">Kontakt</a>
-        <a
-          class="nav-cta"
-          href="https://wa.me/4917629007917"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          WhatsApp
-        </a>
-      </nav>
-    </div>
-  </div>
-
   <header class="hero">
     <div class="container hero-grid">
       <div>
-        <div class="eyebrow">
-          Soundboks mieten ab 35 € – einfach anfragen, abholen oder liefern lassen
+        <div class="hero-brand">
+          <img src="logo.png" alt="GABO Verleihservice Logo" class="hero-logo" />
+          <div class="hero-welcome">Willkommen bei GABO Verleihservice</div>
         </div>
 
-        <h1>
-          Soundboks mieten für Party, Hochzeit &amp; Event
-        </h1>
+        <h1>Soundboks mieten für Party, Hochzeit &amp; Event</h1>
 
         <p>
           Miete eine kabellose Soundboks für Geburtstag, Gartenparty, Hochzeit oder Event.
@@ -610,15 +480,11 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            💬 Jetzt per WhatsApp anfragen
+            💬 WhatsApp anfragen
           </a>
 
           <a class="btn btn-primary" href="tel:+4917629007917">
             📞 Jetzt anrufen
-          </a>
-
-          <a class="btn btn-outline" href="#einzelpreise">
-            Preise ansehen
           </a>
         </div>
       </div>
@@ -635,36 +501,58 @@
 
   <section class="section">
     <div class="container">
-      <div class="section-head">
-        <div>
-          <h2>Warum eine Soundboks mieten?</h2>
-          <p>
-            Die Soundboks ist ideal, wenn du starken Sound ohne komplizierte Technik willst.
-            Kabellos, akkubetrieben, mobil und per Bluetooth schnell verbunden – perfekt
-            für Geburtstage, Gartenpartys, Hochzeiten und Events.
-          </p>
+      <div class="price-overview">
+        <div class="price-box">
+          <strong>ab 35€</strong>
+          <span>Soundboks Tagesmiete</span>
         </div>
+
+        <div class="price-box">
+          <strong>+10€</strong>
+          <span>Mikrofon optional</span>
+        </div>
+
+        <div class="price-box">
+          <strong>150€</strong>
+          <span>Kaution Soundboks</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Warum eine Soundboks mieten?</h2>
+        <p>
+          Die Soundboks ist ideal, wenn du starken Sound ohne komplizierte Technik willst.
+          Kabellos, akkubetrieben, mobil und schnell verbunden – perfekt für Geburtstage,
+          Gartenpartys, Hochzeiten und private Events.
+        </p>
       </div>
 
       <div class="steps">
         <div class="step">
-          <h3>Kabellos &amp; mobil</h3>
+          <div class="step-number">1</div>
+          <h3>Einfach anfragen</h3>
           <p>
-            Kein aufwendiger Aufbau und ideal für flexible Einsätze auch ohne direkte Stromquelle.
+            Schreib per WhatsApp oder ruf an und nenne kurz Datum, Ort und was du brauchst.
           </p>
         </div>
 
         <div class="step">
-          <h3>Einfach per Bluetooth</h3>
+          <div class="step-number">2</div>
+          <h3>Abholen oder liefern lassen</h3>
           <p>
-            Schnell mit dem Handy verbinden und direkt Musik abspielen – ohne Technikstress.
+            Du kannst das Equipment abholen oder eine Lieferung nach Absprache anfragen.
           </p>
         </div>
 
         <div class="step">
-          <h3>Für viele Anlässe</h3>
+          <div class="step-number">3</div>
+          <h3>Feiern &amp; zurückgeben</h3>
           <p>
-            Perfekt für Geburtstag, Hochzeit, Gartenparty, Sektempfang und andere private Feiern.
+            Aufbauen, Musik starten und nach der Feier entspannt wieder zurückgeben.
           </p>
         </div>
       </div>
@@ -674,18 +562,14 @@
   <section class="section" id="einzelpreise">
     <div class="container">
       <div class="section-head">
-        <div>
-          <h2>Soundboks und Eventequipment im Einzelverleih</h2>
-          <p>
-            Ideal, wenn du dein Event individuell zusammenstellen willst. Miete einzelne Geräte
-            wie Soundboks, Licht, Nebelmaschine, Fotobox oder Video-Gästebuch – flexibel,
-            transparent und zu fairen Preisen. Ein Mikrofon ist optional als Zusatz buchbar.
-          </p>
-        </div>
+        <h2>Einzelverleih</h2>
+        <p>
+          Wenn du dein Event individuell zusammenstellen willst, kannst du einzelne Geräte
+          flexibel mieten. Die Soundboks steht dabei klar im Mittelpunkt.
+        </p>
       </div>
 
       <div class="pricing-grid">
-
         <article class="card">
           <div class="badge">Beliebt</div>
           <h3>🔊 Soundboks</h3>
@@ -696,10 +580,10 @@
 
           <ul class="feature-list">
             <li>Kabellos und akkubetrieben</li>
-            <li>Bluetooth-Verbindung</li>
+            <li>Schnelle Bluetooth-Verbindung</li>
             <li>Für drinnen und draußen geeignet</li>
-            <li>Ideal für private Feiern und Events</li>
             <li>Einfacher Transport und schneller Aufbau</li>
+            <li>Ideal für private Feiern und Events</li>
           </ul>
 
           <div class="price-list">
@@ -724,204 +608,54 @@
           <div class="deposit">Kaution: 150€</div>
 
           <div class="cta-inline">
-            <a class="btn btn-small btn-whatsapp"
-               href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20eine%20Soundboks%20mieten."
-               target="_blank"
-               rel="noopener noreferrer">
+            <a
+              class="btn btn-small btn-whatsapp"
+              href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20eine%20Soundboks%20mieten."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Soundboks reservieren
             </a>
-            <a class="btn btn-small btn-outline" href="soundboks-mieten.html">
-              Details ansehen
-            </a>
           </div>
         </article>
 
         <article class="card">
-          <div class="badge">Licht</div>
-          <h3>💡 Lightboks</h3>
+          <div class="badge">Zusätze</div>
+          <h3>💡 Licht &amp; Effekte</h3>
           <div class="subtitle">
-            Passendes Partylicht für Wohnzimmer, Partyräume, Geburtstage und kleinere Events.
+            Passende Extras für mehr Stimmung auf deiner Feier.
           </div>
-
-          <ul class="feature-list">
-            <li>Einfach kombinierbar mit Soundboks</li>
-            <li>Ideal für Tanzfläche und Partystimmung</li>
-            <li>Für private Feiern und kleinere Events</li>
-          </ul>
 
           <div class="price-list">
             <div class="price-row">
-              <span>Mo–Do (24h)</span>
-              <strong>20€</strong>
+              <span>Lightboks</span>
+              <strong>ab 20€</strong>
             </div>
             <div class="price-row">
-              <span>Fr–So (24h)</span>
-              <strong>25€</strong>
+              <span>Nebelmaschine</span>
+              <strong>ab 20€</strong>
             </div>
             <div class="price-row">
-              <span>Wochenende komplett</span>
-              <strong>45€</strong>
+              <span>Seifenblasenmaschine</span>
+              <strong>ab 20€</strong>
             </div>
           </div>
 
-          <div class="deposit">Kaution: 100€</div>
-
-          <div class="cta-inline">
-            <a class="btn btn-small btn-whatsapp"
-               href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20eine%20Lightboks%20mieten."
-               target="_blank"
-               rel="noopener noreferrer">
-              Lightboks reservieren
-            </a>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="badge">Effekt</div>
-          <h3>🌫️ Nebelmaschine</h3>
-          <div class="subtitle">
-            Für mehr Stimmung auf der Tanzfläche und besonders stark in Kombination
-            mit Licht und Soundboks.
-          </div>
-
-          <ul class="feature-list">
-            <li>Perfekt für Party-Atmosphäre</li>
-            <li>Ideal in Kombination mit Licht</li>
-            <li>Für Feiern und Events mit Tanzfläche</li>
-          </ul>
-
-          <div class="price-list">
-            <div class="price-row">
-              <span>Mo–Do (24h)</span>
-              <strong>20€</strong>
-            </div>
-            <div class="price-row">
-              <span>Fr–So (24h)</span>
-              <strong>25€</strong>
-            </div>
-            <div class="price-row">
-              <span>Wochenende komplett</span>
-              <strong>45€</strong>
-            </div>
-          </div>
-
-          <div class="deposit">Kaution: 100€</div>
           <div class="small-note">
-            Zusätzliches Fluid auf Anfrage möglich.
+            Preise je nach Mietdauer. Am besten direkt kurz anfragen.
           </div>
 
+          <div class="deposit">Kaution je nach Gerät</div>
+
           <div class="cta-inline">
-            <a class="btn btn-small btn-whatsapp"
-               href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20eine%20Nebelmaschine%20mieten."
-               target="_blank"
-               rel="noopener noreferrer">
-              Nebelmaschine reservieren
+            <a
+              class="btn btn-small btn-outline"
+              href="#kontakt"
+            >
+              Zusatz anfragen
             </a>
           </div>
         </article>
-
-        <article class="card">
-          <div class="badge">Event-Extra</div>
-          <h3>🫧 Seifenblasenmaschine</h3>
-          <div class="subtitle">
-            Super für Hochzeiten, Kindergeburtstage, Empfang oder besondere Momente
-            bei deiner Feier.
-          </div>
-
-          <ul class="feature-list">
-            <li>Ideal für Hochzeit und Sektempfang</li>
-            <li>Starke Wirkung für besondere Momente</li>
-            <li>Auch für Kindergeburtstage geeignet</li>
-          </ul>
-
-          <div class="price-list">
-            <div class="price-row">
-              <span>Mo–Do (24h)</span>
-              <strong>20€</strong>
-            </div>
-            <div class="price-row">
-              <span>Fr–So (24h)</span>
-              <strong>25€</strong>
-            </div>
-            <div class="price-row">
-              <span>Wochenende komplett</span>
-              <strong>45€</strong>
-            </div>
-          </div>
-
-          <div class="deposit">Kaution: 100€</div>
-
-          <div class="cta-inline">
-            <a class="btn btn-small btn-whatsapp"
-               href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20eine%20Seifenblasenmaschine%20mieten."
-               target="_blank"
-               rel="noopener noreferrer">
-              Seifenblasenmaschine reservieren
-            </a>
-          </div>
-        </article>
-
-        <article class="card" id="fotobox">
-          <div class="badge">Hochzeit &amp; Geburtstag</div>
-          <h3>📸 Fotobox</h3>
-
-          <div class="subtitle">
-            Für lustige Erinnerungen und starke Bilder auf deiner Feier.
-          </div>
-
-          <div class="price-list">
-            <div class="price-row">
-              <span>Mo–Do (24h)</span>
-              <strong>189€</strong>
-            </div>
-            <div class="price-row">
-              <span>Fr–So (24h)</span>
-              <strong>239€</strong>
-            </div>
-            <div class="price-row">
-              <span>Wochenende komplett</span>
-              <strong>399€</strong>
-            </div>
-          </div>
-
-          <div class="deposit">Kaution: 300€</div>
-
-          <div class="small-note unavailable">
-            Aktuell nicht verfügbar
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="badge">Erinnerungen</div>
-          <h3>🎥 Video-Gästebuch</h3>
-
-          <div class="subtitle">
-            Persönliche Videobotschaften als besondere Erinnerung
-            für Hochzeit, Geburtstag oder Event.
-          </div>
-
-          <div class="price-list">
-            <div class="price-row">
-              <span>Mo–Do (24h)</span>
-              <strong>159€</strong>
-            </div>
-            <div class="price-row">
-              <span>Fr–So (24h)</span>
-              <strong>199€</strong>
-            </div>
-            <div class="price-row">
-              <span>Wochenende komplett</span>
-              <strong>349€</strong>
-            </div>
-          </div>
-
-          <div class="deposit">Kaution: 200€</div>
-
-          <div class="small-note unavailable">
-            Aktuell nicht verfügbar
-          </div>
-        </article>
-
       </div>
     </div>
   </section>
@@ -929,24 +663,17 @@
   <section class="section" id="pakete">
     <div class="container">
       <div class="section-head">
-        <div>
-          <h2>Komplette Pakete für Feiern und Events</h2>
-          <p>
-            Unsere Pakete kombinieren Soundboks, Licht und Event-Extras zu einem
-            günstigeren Gesamtpreis. Ideal für Geburtstage, Hochzeiten, Gartenpartys
-            und größere Feiern.
-          </p>
-        </div>
+        <h2>Pakete für Feiern und Events</h2>
+        <p>
+          Diese Pakete sind ideal, wenn du direkt eine passende Kombination buchen willst.
+        </p>
       </div>
 
-      <div class="packages-grid">
-
+      <div class="pricing-grid">
         <article class="card">
           <div class="badge">Für kleine Feiern</div>
           <h3>🎉 Paket Basic</h3>
-          <div class="subtitle">
-            1x Soundboks + 1x Lightboks
-          </div>
+          <div class="subtitle">1x Soundboks + 1x Lightboks</div>
 
           <div class="price-list">
             <div class="price-row">
@@ -963,27 +690,14 @@
             </div>
           </div>
 
+          <div class="small-note">Mikrofon optional für +10€.</div>
           <div class="deposit">Kaution: 180€</div>
-          <div class="small-note">
-            Mikrofon optional für +10€.
-          </div>
-
-          <div class="cta-inline">
-            <a class="btn btn-small btn-whatsapp"
-               href="https://wa.me/4917629007917?text=Paket%20Basic%20Anfrage"
-               target="_blank"
-               rel="noopener noreferrer">
-              Paket reservieren
-            </a>
-          </div>
         </article>
 
         <article class="card">
           <div class="badge">Mehr Stimmung</div>
           <h3>🔥 Paket Party</h3>
-          <div class="subtitle">
-            1x Soundboks + 1x Lightboks + Nebelmaschine
-          </div>
+          <div class="subtitle">1x Soundboks + 1x Lightboks + Nebelmaschine</div>
 
           <div class="price-list">
             <div class="price-row">
@@ -1000,64 +714,14 @@
             </div>
           </div>
 
+          <div class="small-note">Mikrofon optional für +10€.</div>
           <div class="deposit">Kaution: 220€</div>
-          <div class="small-note">
-            Mikrofon optional für +10€.
-          </div>
-
-          <div class="cta-inline">
-            <a class="btn btn-small btn-whatsapp"
-               href="https://wa.me/4917629007917?text=Paket%20Party%20Anfrage"
-               target="_blank"
-               rel="noopener noreferrer">
-              Paket reservieren
-            </a>
-          </div>
         </article>
 
         <article class="card">
-          <div class="badge">Hochzeit &amp; Empfang</div>
-          <h3>🫧 Paket Fun</h3>
-          <div class="subtitle">
-            1x Soundboks + 1x Lightboks + Seifenblasenmaschine
-          </div>
-
-          <div class="price-list">
-            <div class="price-row">
-              <span>Mo–Do (24h)</span>
-              <strong>65€</strong>
-            </div>
-            <div class="price-row">
-              <span>Fr–So (24h)</span>
-              <strong>75€</strong>
-            </div>
-            <div class="price-row">
-              <span>Wochenende komplett</span>
-              <strong>129€</strong>
-            </div>
-          </div>
-
-          <div class="deposit">Kaution: 220€</div>
-          <div class="small-note">
-            Mikrofon optional für +10€.
-          </div>
-
-          <div class="cta-inline">
-            <a class="btn btn-small btn-whatsapp"
-               href="https://wa.me/4917629007917?text=Paket%20Fun%20Anfrage"
-               target="_blank"
-               rel="noopener noreferrer">
-              Paket reservieren
-            </a>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="badge">Für größere Räume</div>
+          <div class="badge">Für größere Feiern</div>
           <h3>🚀 Paket Premium</h3>
-          <div class="subtitle">
-            2x Soundboks + 2x Lightboks
-          </div>
+          <div class="subtitle">2x Soundboks + 2x Lightboks</div>
 
           <div class="price-list">
             <div class="price-row">
@@ -1074,61 +738,12 @@
             </div>
           </div>
 
+          <div class="small-note">Mikrofon optional für +10€.</div>
           <div class="deposit">Kaution: 300€</div>
-          <div class="small-note">
-            Mikrofon optional für +10€.
-          </div>
-
-          <div class="cta-inline">
-            <a class="btn btn-small btn-whatsapp"
-               href="https://wa.me/4917629007917?text=Paket%20Premium%20Anfrage"
-               target="_blank"
-               rel="noopener noreferrer">
-              Paket reservieren
-            </a>
-          </div>
         </article>
 
         <article class="card">
-          <div class="badge">Tanzfläche</div>
-          <h3>🌫️ Paket Premium Plus</h3>
-          <div class="subtitle">
-            2x Soundboks + 2x Lightboks + Nebelmaschine
-          </div>
-
-          <div class="price-list">
-            <div class="price-row">
-              <span>Mo–Do (24h)</span>
-              <strong>145€</strong>
-            </div>
-            <div class="price-row">
-              <span>Fr–So (24h)</span>
-              <strong>165€</strong>
-            </div>
-            <div class="price-row">
-              <span>Wochenende komplett</span>
-              <strong>289€</strong>
-            </div>
-          </div>
-
-          <div class="deposit">Kaution: 350€</div>
-          <div class="small-note">
-            Mikrofon optional für +10€.
-          </div>
-
-          <div class="cta-inline">
-            <a class="btn btn-small btn-whatsapp"
-               href="https://wa.me/4917629007917?text=Paket%20Premium%20Plus%20Anfrage"
-               target="_blank"
-               rel="noopener noreferrer">
-              Paket reservieren
-            </a>
-          </div>
-        </article>
-
-        <article class="card featured">
-          <div class="featured-tag">Beliebtestes Paket</div>
-          <div class="badge">Komplettes Event-Set</div>
+          <div class="badge">Komplettes Setup</div>
           <h3>🎊 Paket Event Komplett</h3>
           <div class="subtitle">
             2x Soundboks + 2x Lightboks + Nebelmaschine + Seifenblasenmaschine
@@ -1149,92 +764,9 @@
             </div>
           </div>
 
+          <div class="small-note">Mikrofon optional für +10€.</div>
           <div class="deposit">Kaution: 400€</div>
-          <div class="small-note">
-            Mikrofon optional für +10€.
-          </div>
-
-          <div class="cta-inline">
-            <a class="btn btn-small btn-whatsapp"
-               href="https://wa.me/4917629007917?text=Paket%20Event%20Komplett%20Anfrage"
-               target="_blank"
-               rel="noopener noreferrer">
-              Paket reservieren
-            </a>
-          </div>
         </article>
-
-        <article class="card">
-          <div class="badge">Für Erinnerungen</div>
-          <h3>🎬 Paket Memories</h3>
-          <div class="subtitle">
-            Fotobox + Video-Gästebuch
-          </div>
-
-          <div class="price-list">
-            <div class="price-row">
-              <span>Mo–Do (24h)</span>
-              <strong>300€</strong>
-            </div>
-            <div class="price-row">
-              <span>Fr–So (24h)</span>
-              <strong>390€</strong>
-            </div>
-            <div class="price-row">
-              <span>Wochenende komplett</span>
-              <strong>690€</strong>
-            </div>
-          </div>
-
-          <div class="deposit">Kaution: 500€</div>
-
-          <div class="small-note unavailable">
-            Aktuell nicht verfügbar
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <h2>Soundboks und Eventequipment einfach mieten</h2>
-          <p>
-            Schnell, unkompliziert und ohne Technikstress – von der Anfrage bis zur Rückgabe.
-          </p>
-        </div>
-      </div>
-
-      <div class="steps">
-        <div class="step">
-          <div class="step-number">1</div>
-          <h3>Anfragen</h3>
-          <p>
-            Schreib einfach per WhatsApp oder ruf direkt an.
-            Sag kurz Datum, Ort und was du mieten möchtest.
-          </p>
-        </div>
-
-        <div class="step">
-          <div class="step-number">2</div>
-          <h3>Abholen oder liefern lassen</h3>
-          <p>
-            Du kannst das Equipment abholen oder Lieferung anfragen.
-            Kaution und Übergabe werden klar abgesprochen.
-          </p>
-        </div>
-
-        <div class="step">
-          <div class="step-number">3</div>
-          <h3>Feiern &amp; zurückgeben</h3>
-          <p>
-            Aufbauen, feiern und danach entspannt zurückgeben.
-            Einfach und ohne Stress.
-          </p>
-        </div>
       </div>
     </div>
   </section>
@@ -1242,13 +774,11 @@
   <section class="section" id="kontakt">
     <div class="container">
       <div class="contact-wrap">
-
         <div class="contact-card">
           <h3>Kontakt &amp; Reservierung</h3>
           <p>
-            Du willst eine Soundboks oder ein komplettes Event-Set mieten?
+            Du willst eine Soundboks oder ein passendes Paket mieten?
             Frag schnell und unkompliziert per WhatsApp, Telefon oder E-Mail an.
-            Weitere Orte und Städte sind auf Anfrage möglich.
           </p>
 
           <div class="contact-list">
@@ -1256,27 +786,23 @@
               📞 Telefon:
               <a href="tel:+4917629007917">0176 29007917</a>
             </div>
-
             <div>
               💬 WhatsApp:
               <a href="https://wa.me/4917629007917" target="_blank" rel="noopener noreferrer">Nachricht senden</a>
             </div>
-
             <div>
               📧 E-Mail:
               <a href="mailto:gaboverleih@gmail.com">gaboverleih@gmail.com</a>
             </div>
-
             <div>
               📍 Abholung oder Lieferung nach Absprache
             </div>
           </div>
 
-          <div class="cta-row" style="margin-bottom:0">
+          <div class="cta-row" style="margin-top:0;">
             <a class="btn btn-whatsapp" href="https://wa.me/4917629007917" target="_blank" rel="noopener noreferrer">
               WhatsApp schreiben
             </a>
-
             <a class="btn btn-primary" href="tel:+4917629007917">
               Jetzt anrufen
             </a>
@@ -1290,85 +816,47 @@
             <details>
               <summary>Wie lange hält der Akku der Soundboks?</summary>
               <p>
-                Die Soundboks ist akkubetrieben und damit perfekt für flexible Einsätze
-                ohne direkte Stromquelle. Die genaue Laufzeit hängt von Nutzung und Lautstärke ab.
+                Die genaue Laufzeit hängt von Nutzung und Lautstärke ab. Für mobile Einsätze
+                ist die Soundboks aber ideal geeignet.
               </p>
             </details>
 
             <details>
               <summary>Kann ich die Soundboks per Bluetooth verbinden?</summary>
               <p>
-                Ja, die Soundboks lässt sich schnell und unkompliziert per Bluetooth verbinden
-                und ist dadurch ideal für private Feiern, Gartenpartys und mobile Einsätze.
+                Ja, die Verbindung per Bluetooth ist schnell und unkompliziert.
               </p>
             </details>
 
             <details>
               <summary>Ist die Soundboks für draußen geeignet?</summary>
               <p>
-                Ja, die Soundboks eignet sich sehr gut für Outdoor-Feiern wie Gartenpartys,
-                Sektempfang, Geburtstage oder andere Events im Freien.
-              </p>
-            </details>
-
-            <details>
-              <summary>Wie viele Soundboks brauche ich für meine Feier?</summary>
-              <p>
-                Für kleinere Feiern reicht oft eine Soundboks. Für größere Flächen,
-                mehr Gäste oder mehr Druck empfehlen sich zwei Geräte.
+                Ja, sie eignet sich sehr gut für Gartenpartys, Geburtstage und andere Feiern im Freien.
               </p>
             </details>
 
             <details>
               <summary>Kann ich ein Mikrofon dazu buchen?</summary>
               <p>
-                Ja, ein Mikrofon kann optional für 10€ dazu gebucht werden. Ideal für
-                Reden, Moderation, Hochzeit oder andere Events.
-              </p>
-            </details>
-
-            <details>
-              <summary>Kann ich mehrere Geräte kombinieren?</summary>
-              <p>
-                Ja, du kannst Soundboks, Licht, Nebelmaschine und Seifenblasenmaschine
-                flexibel kombinieren oder direkt ein passendes Paket wählen.
+                Ja, ein Mikrofon kann optional für 10€ dazu gebucht werden.
               </p>
             </details>
 
             <details>
               <summary>Gibt es Abholung oder Lieferung?</summary>
               <p>
-                Ja, je nach Absprache ist Abholung oder Lieferung möglich.
-                Am besten direkt per WhatsApp anfragen.
+                Ja, beides ist nach Absprache möglich.
               </p>
             </details>
           </div>
         </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="contact-card">
-        <h3>Soundboks mieten – einfach, günstig und flexibel</h3>
-        <p>
-          Bei GABO Event &amp; Verleihservice kannst du eine Soundboks günstig mieten –
-          für Geburtstag, Gartenparty, Hochzeit, Vereinsfeier oder Event.
-          Die Geräte sind kabellos, akkubetrieben und schnell per Bluetooth verbunden.
-        </p>
-        <p>
-          Abholung oder Lieferung ist nach Absprache möglich. Auch Anfragen aus
-          weiteren Städten und Regionen sind möglich.
-        </p>
       </div>
     </div>
   </section>
 
   <footer>
     <div class="container footer-inner">
-      <div>© 2026 GABO Event &amp; Verleihservice</div>
+      <div>© 2026 GABO Verleihservice</div>
 
       <div class="footer-links">
         <a href="impressum.html">Impressum</a>
