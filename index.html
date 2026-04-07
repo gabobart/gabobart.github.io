@@ -55,7 +55,7 @@
     }
 
     .hero{
-      padding:34px 0 26px;
+      padding:34px 0 30px;
     }
 
     .hero-grid{
@@ -65,28 +65,33 @@
       align-items:center;
     }
 
-    .hero-brand{
+    .hero-brand-big{
       display:flex;
-      align-items:center;
-      gap:14px;
-      margin-bottom:18px;
-      flex-wrap:wrap;
+      flex-direction:column;
+      align-items:flex-start;
+      gap:10px;
+      margin-bottom:20px;
     }
 
-    .hero-logo{
-      width:64px;
-      height:64px;
+    .hero-logo-big{
+      width:128px;
+      height:auto;
       object-fit:contain;
-      border-radius:16px;
+      border-radius:18px;
       background:rgba(255,255,255,0.04);
-      padding:6px;
+      padding:8px;
       border:1px solid rgba(255,255,255,0.08);
+      box-shadow:0 10px 30px rgba(0,0,0,0.22);
     }
 
-    .hero-welcome{
-      font-size:18px;
-      font-weight:700;
-      color:#dbeafe;
+    .hero-brand-big h2{
+      margin:0;
+      font-size:28px;
+      font-weight:900;
+      letter-spacing:0.4px;
+      background:linear-gradient(135deg,#4da3ff,#1d72ff);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
     }
 
     h1{
@@ -445,6 +450,14 @@
     }
 
     @media (max-width: 720px){
+      .hero-logo-big{
+        width:110px;
+      }
+
+      .hero-brand-big h2{
+        font-size:24px;
+      }
+
       .cta-row{
         flex-direction:column;
       }
@@ -464,9 +477,9 @@
   <header class="hero">
     <div class="container hero-grid">
       <div>
-        <div class="hero-brand">
-          <img src="logo.png" alt="GABO Verleihservice Logo" class="hero-logo" />
-          <div class="hero-welcome">Willkommen bei GABO Verleihservice</div>
+        <div class="hero-brand-big">
+          <img src="logo.png" alt="GABO Verleihservice Logo" class="hero-logo-big" />
+          <h2>GABO Verleihservice</h2>
         </div>
 
         <h1>Soundboks mieten für Party, Hochzeit &amp; Event</h1>
