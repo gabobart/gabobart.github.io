@@ -69,25 +69,62 @@
       margin-bottom:22px;
     }
 
-    .logo-title{
-      font-size:clamp(42px, 6vw, 82px);
+    .logo-text{
+      display:inline-block;
       font-weight:900;
-      letter-spacing:-1px;
-      margin:0 0 18px;
-      line-height:1;
-      background:linear-gradient(135deg,#4da3ff,#1d72ff);
+      text-transform:uppercase;
+      line-height:0.88;
+      letter-spacing:-2px;
+      margin-bottom:18px;
+      filter:drop-shadow(0 12px 24px rgba(0,0,0,0.35));
+    }
+
+    .logo-text-main{
+      display:block;
+      font-size:clamp(56px, 10vw, 128px);
+      background:
+        linear-gradient(180deg,
+          #f8fdff 0%,
+          #d6e9ff 10%,
+          #8bbcff 26%,
+          #2f7dff 48%,
+          #174fd1 62%,
+          #d8eeff 78%,
+          #5f96ff 100%);
       -webkit-background-clip:text;
-      -webkit-text-fill-color:transparent;
+      background-clip:text;
+      color:transparent;
+      -webkit-text-stroke:2px rgba(228,242,255,0.95);
+      text-shadow:
+        0 1px 0 rgba(255,255,255,0.7),
+        0 2px 0 rgba(190,220,255,0.35),
+        0 3px 0 rgba(75,125,230,0.35),
+        0 8px 18px rgba(0,0,0,0.25);
     }
 
-    .hero-brand-sub{
-      margin:0;
-      color:#dbeafe;
-      font-size:18px;
-      font-weight:700;
+    .logo-text-sub{
+      display:block;
+      margin-top:10px;
+      margin-left:6px;
+      font-size:clamp(24px, 3.8vw, 52px);
+      letter-spacing:5px;
+      background:
+        linear-gradient(180deg,
+          #f7fbff 0%,
+          #bddcff 20%,
+          #5f96ff 45%,
+          #173fb7 70%,
+          #d7edff 100%);
+      -webkit-background-clip:text;
+      background-clip:text;
+      color:transparent;
+      -webkit-text-stroke:1.4px rgba(220,236,255,0.92);
+      text-shadow:
+        0 1px 0 rgba(255,255,255,0.55),
+        0 5px 14px rgba(0,0,0,0.22);
     }
 
-    .hero h2{
+    .hero h1{
       font-size:clamp(30px, 4vw, 52px);
       line-height:1.05;
       margin:0 0 16px;
@@ -427,16 +464,18 @@
     }
 
     @media (max-width: 720px){
-      .logo-title{
-        font-size:48px;
+      .logo-text-main{
+        font-size:64px;
+        -webkit-text-stroke:1.5px rgba(228,242,255,0.95);
       }
 
-      .hero-brand-sub{
-        font-size:16px;
+      .logo-text-sub{
+        font-size:26px;
+        letter-spacing:3px;
       }
 
-      .hero h2{
-        font-size:34px;
+      .hero h1{
+        font-size:36px;
       }
 
       .cta-row{
@@ -459,11 +498,13 @@
     <div class="container hero-grid">
       <div>
         <div class="hero-brand-big">
-          <h1 class="logo-title">GABO Verleihservice</h1>
-          <p class="hero-brand-sub">Soundboks, Partyboxen und Eventverleih für deine Feier</p>
+          <div class="logo-text">
+            <span class="logo-text-main">GABO</span>
+            <span class="logo-text-sub">VERLEIHSERVICE</span>
+          </div>
         </div>
 
-        <h2>Partybox &amp; Soundboks mieten für deine Feier</h2>
+        <h1>Partybox &amp; Soundboks mieten für deine Feier</h1>
 
         <p>
           Miete eine leistungsstarke Soundboks oder Partybox für Geburtstag,
