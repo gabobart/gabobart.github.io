@@ -9,10 +9,6 @@
     name="description"
     content="Partybox mieten und Soundboks mieten in Mainz, Wiesbaden und Umgebung. Kabellose Lautsprecher für Geburtstag, Hochzeit, Gartenparty und Events. Lichteffekte, Nebelmaschine und Seifenblasenmaschine ebenfalls mietbar."
   />
-  <meta
-    name="keywords"
-    content="Partybox mieten, Soundboks mieten, Lautsprecher mieten Mainz, Lautsprecher mieten Wiesbaden, Partybox Frankfurt, Eventverleih Mainz"
-  />
 
   <style>
     :root{
@@ -73,59 +69,16 @@
       margin-bottom:22px;
     }
 
-    .logo-text{
-      display:inline-block;
-      font-weight:900;
-      text-transform:uppercase;
-      line-height:0.85;
-      letter-spacing:-2px;
+    .main-logo{
+      width:100%;
+      max-width:560px;
+      height:auto;
+      display:block;
       margin-bottom:22px;
-      filter:drop-shadow(0 12px 24px rgba(0,0,0,0.35));
-    }
-
-    .logo-text-main{
-      display:block;
-      font-size:clamp(60px, 10vw, 140px);
-      background:
-        linear-gradient(180deg,
-          #ffffff 0%,
-          #e6f2ff 10%,
-          #9cc7ff 25%,
-          #2f7dff 45%,
-          #174fd1 60%,
-          #d6ecff 75%,
-          #5f96ff 100%);
-      -webkit-background-clip:text;
-      background-clip:text;
-      color:transparent;
-      -webkit-text-stroke:2px rgba(230,245,255,0.95);
-      text-shadow:
-        0 1px 0 rgba(255,255,255,0.9),
-        0 2px 0 rgba(190,220,255,0.5),
-        0 4px 0 rgba(60,110,230,0.4),
-        0 8px 18px rgba(0,0,0,0.4);
-    }
-
-    .logo-text-sub{
-      display:block;
-      margin-top:12px;
-      margin-left:6px;
-      font-size:clamp(24px, 3.5vw, 52px);
-      letter-spacing:6px;
-      background:
-        linear-gradient(180deg,
-          #ffffff 0%,
-          #cfe6ff 25%,
-          #5f96ff 50%,
-          #1a4cd3 75%,
-          #d8eeff 100%);
-      -webkit-background-clip:text;
-      background-clip:text;
-      color:transparent;
-      -webkit-text-stroke:1.4px rgba(220,236,255,0.9);
-      text-shadow:
-        0 1px 0 rgba(255,255,255,0.6),
-        0 6px 14px rgba(0,0,0,0.35);
+      object-fit:contain;
+      filter:
+        drop-shadow(0 10px 25px rgba(0,0,0,0.4))
+        drop-shadow(0 0 20px rgba(50,120,255,0.25));
     }
 
     .hero h1{
@@ -468,14 +421,8 @@
     }
 
     @media (max-width: 720px){
-      .logo-text-main{
-        font-size:64px;
-        -webkit-text-stroke:1.5px rgba(230,245,255,0.95);
-      }
-
-      .logo-text-sub{
-        font-size:26px;
-        letter-spacing:3px;
+      .main-logo{
+        max-width:360px;
       }
 
       .hero h1{
@@ -502,10 +449,7 @@
     <div class="container hero-grid">
       <div>
         <div class="hero-brand-big">
-          <div class="logo-text">
-            <span class="logo-text-main">GABO</span>
-            <span class="logo-text-sub">VERLEIHSERVICE</span>
-          </div>
+          <img src="logo.png" alt="GABO Verleihservice Logo" class="main-logo" />
         </div>
 
         <h1>Partybox &amp; Soundboks mieten für deine Feier</h1>
