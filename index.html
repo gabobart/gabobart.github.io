@@ -9,24 +9,30 @@
     name="description"
     content="Soundboks mieten und Partybox mieten in Mainz, Wiesbaden, Frankfurt und Umgebung. Kabellose Lautsprecher für Geburtstag, Hochzeit, Gartenparty und Events. Lichteffekte, Nebelmaschine und Seifenblasenmaschine ebenfalls mietbar."
   />
-  <meta
-    name="keywords"
-    content="Soundboks mieten, Partybox mieten, Lautsprecher mieten Mainz, Lautsprecher mieten Wiesbaden, Partybox Frankfurt, Eventverleih Mainz"
-  />
 
   <style>
     :root{
-      --text:#f8fafc;
-      --muted:#cbd5e1;
-      --blue:#4da3ff;
-      --blue-strong:#1d72ff;
+      --bg:#f8fbff;
+      --bg2:#edf4ff;
+      --text:#0f172a;
+      --muted:#475569;
+      --muted-2:#64748b;
+      --line:#dbe7f4;
+      --white:#ffffff;
+
+      --blue:#3b82f6;
+      --blue-strong:#2563eb;
+      --blue-soft:#dbeafe;
+
+      --violet:#8b5cf6;
+      --cyan:#06b6d4;
       --green:#25D366;
-      --gold:#ffd966;
-      --card:rgba(255,255,255,0.06);
-      --card-border:rgba(255,255,255,0.12);
-      --shadow:0 10px 35px rgba(0,0,0,0.30);
-      --radius:20px;
-      --max:1120px;
+      --gold:#c58b00;
+
+      --shadow:0 16px 40px rgba(15,23,42,0.10);
+      --shadow-soft:0 10px 24px rgba(15,23,42,0.08);
+      --radius:22px;
+      --max:1180px;
     }
 
     *{
@@ -41,12 +47,17 @@
       margin:0;
       font-family:Arial, Helvetica, sans-serif;
       color:var(--text);
-      line-height:1.5;
+      line-height:1.55;
       background:
-        radial-gradient(circle at 20% 20%, rgba(0,140,255,0.15), transparent 30%),
-        radial-gradient(circle at 80% 30%, rgba(120,0,255,0.12), transparent 30%),
-        radial-gradient(circle at 50% 80%, rgba(0,200,255,0.08), transparent 40%),
-        linear-gradient(180deg, #02020a 0%, #050816 40%, #02020a 100%);
+        radial-gradient(circle at 15% 15%, rgba(59,130,246,0.16), transparent 22%),
+        radial-gradient(circle at 82% 18%, rgba(139,92,246,0.14), transparent 22%),
+        radial-gradient(circle at 50% 82%, rgba(6,182,212,0.10), transparent 25%),
+        linear-gradient(180deg, var(--bg) 0%, var(--bg2) 48%, #f7fbff 100%);
+    }
+
+    img{
+      max-width:100%;
+      display:block;
     }
 
     a{
@@ -60,74 +71,131 @@
     }
 
     .hero{
-      padding:46px 0 34px;
-      background:linear-gradient(180deg, rgba(0,0,0,0.26), transparent);
+      padding:42px 0 28px;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .hero::before{
+      content:"";
+      position:absolute;
+      left:-120px;
+      top:-80px;
+      width:320px;
+      height:320px;
+      background:radial-gradient(circle, rgba(59,130,246,0.14), transparent 65%);
+      filter:blur(8px);
+      pointer-events:none;
+    }
+
+    .hero::after{
+      content:"";
+      position:absolute;
+      right:-100px;
+      top:-40px;
+      width:320px;
+      height:320px;
+      background:radial-gradient(circle, rgba(139,92,246,0.12), transparent 65%);
+      filter:blur(10px);
+      pointer-events:none;
     }
 
     .hero-grid{
+      position:relative;
+      z-index:1;
       display:grid;
       grid-template-columns:1.08fr 0.92fr;
-      gap:28px;
+      gap:30px;
       align-items:center;
-    }
-
-    .hero-brand-big{
-      margin-bottom:20px;
     }
 
     .main-logo{
       width:100%;
       max-width:520px;
       height:auto;
-      display:block;
       margin-bottom:18px;
-      object-fit:contain;
       filter:
-        drop-shadow(0 10px 25px rgba(0,0,0,0.4))
-        drop-shadow(0 0 20px rgba(50,120,255,0.35));
+        drop-shadow(0 12px 26px rgba(15,23,42,0.14))
+        drop-shadow(0 0 22px rgba(59,130,246,0.16));
     }
 
-    .hero h1{
-      font-size:clamp(30px, 4vw, 52px);
-      line-height:1.05;
-      margin:0 0 16px;
-      letter-spacing:-1px;
+    h1{
+      margin:0 0 14px;
+      font-size:clamp(34px, 5vw, 60px);
+      line-height:1.02;
+      letter-spacing:-1.5px;
     }
 
     .hero p{
-      color:var(--muted);
+      margin:0 0 14px;
       font-size:18px;
-      margin:0 0 16px;
+      color:var(--muted);
       max-width:720px;
     }
 
-    .hero-seo-note{
-      color:#dbeafe;
-      font-size:15px;
-      margin-top:10px;
+    .trust-row{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-top:18px;
+    }
+
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:10px 14px;
+      border-radius:999px;
+      background:rgba(255,255,255,0.78);
+      border:1px solid rgba(37,99,235,0.12);
+      color:#1e3a8a;
+      font-size:14px;
+      box-shadow:var(--shadow-soft);
+      backdrop-filter:blur(8px);
     }
 
     .hero-card{
-      background:linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.04));
-      border:1px solid rgba(255,255,255,0.12);
-      border-radius:26px;
+      position:relative;
+      background:linear-gradient(180deg, rgba(255,255,255,0.96), rgba(255,255,255,0.88));
+      border:1px solid rgba(59,130,246,0.12);
+      border-radius:28px;
       padding:22px;
-      box-shadow:var(--shadow);
+      box-shadow:0 24px 50px rgba(15,23,42,0.12);
       overflow:hidden;
-      display:flex;
-      align-items:center;
-      justify-content:center;
+      min-height:100%;
+    }
+
+    .hero-card::before{
+      content:"";
+      position:absolute;
+      inset:auto -40px -45px -40px;
+      height:170px;
+      background:
+        radial-gradient(circle at 18% 50%, rgba(59,130,246,0.38), transparent 28%),
+        radial-gradient(circle at 48% 60%, rgba(255,255,255,0.40), transparent 24%),
+        radial-gradient(circle at 82% 44%, rgba(139,92,246,0.28), transparent 28%);
+      filter:blur(22px);
+      pointer-events:none;
+    }
+
+    .hero-card::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(135deg, rgba(255,255,255,0.55), transparent 38%);
+      pointer-events:none;
     }
 
     .hero-photo{
+      position:relative;
+      z-index:1;
       width:100%;
-      max-height:430px;
-      height:auto;
+      max-height:460px;
       object-fit:contain;
+      filter:
+        drop-shadow(0 20px 26px rgba(15,23,42,0.16))
+        drop-shadow(0 0 18px rgba(59,130,246,0.14));
       border-radius:18px;
-      display:block;
-      background:rgba(255,255,255,0.04);
-      border:1px solid rgba(255,255,255,0.08);
     }
 
     .section{
@@ -139,9 +207,9 @@
     }
 
     .section-head h2{
-      margin:0 0 10px;
+      margin:0 0 8px;
       font-size:clamp(28px, 3.2vw, 40px);
-      letter-spacing:-0.6px;
+      letter-spacing:-0.8px;
     }
 
     .section-head p{
@@ -157,22 +225,23 @@
     }
 
     .step{
+      background:rgba(255,255,255,0.82);
+      border:1px solid var(--line);
+      border-radius:22px;
       padding:24px;
-      border-radius:20px;
-      background:rgba(255,255,255,0.05);
-      border:1px solid rgba(255,255,255,0.10);
-      box-shadow:var(--shadow);
+      box-shadow:var(--shadow-soft);
     }
 
     .step-number{
-      width:40px;
-      height:40px;
-      border-radius:12px;
+      width:42px;
+      height:42px;
+      border-radius:14px;
       display:grid;
       place-items:center;
-      background:rgba(77,163,255,0.15);
-      border:1px solid rgba(77,163,255,0.18);
       font-weight:700;
+      background:linear-gradient(135deg, rgba(59,130,246,0.16), rgba(139,92,246,0.14));
+      color:#1d4ed8;
+      border:1px solid rgba(59,130,246,0.15);
       margin-bottom:14px;
     }
 
@@ -193,22 +262,42 @@
     }
 
     .card{
-      background:var(--card);
-      border:1px solid var(--card-border);
+      background:linear-gradient(180deg, rgba(255,255,255,0.94), rgba(255,255,255,0.88));
+      border:1px solid var(--line);
       border-radius:var(--radius);
       padding:22px;
-      box-shadow:var(--shadow);
+      box-shadow:var(--shadow-soft);
+      position:relative;
+      overflow:hidden;
+      transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+    }
+
+    .card:hover{
+      transform:translateY(-3px);
+      box-shadow:0 18px 36px rgba(15,23,42,0.12);
+      border-color:rgba(59,130,246,0.24);
+    }
+
+    .card::before{
+      content:"";
+      position:absolute;
+      inset:0 auto auto 0;
+      width:100%;
+      height:4px;
+      background:linear-gradient(90deg, var(--blue), var(--violet), var(--cyan));
+      opacity:.95;
     }
 
     .badge{
       display:inline-flex;
-      padding:7px 11px;
+      padding:7px 12px;
       border-radius:999px;
       font-size:12px;
       font-weight:700;
-      background:rgba(77,163,255,0.12);
-      border:1px solid rgba(77,163,255,0.18);
-      color:#cfe4ff;
+      letter-spacing:0.2px;
+      background:var(--blue-soft);
+      border:1px solid rgba(59,130,246,0.14);
+      color:#1e40af;
       margin-bottom:14px;
     }
 
@@ -216,11 +305,12 @@
       margin:0 0 8px;
       font-size:24px;
       line-height:1.3;
+      color:#0f172a;
     }
 
     .brand-note{
       font-size:16px;
-      color:#cbd5e1;
+      color:#475569;
       font-weight:600;
     }
 
@@ -233,7 +323,7 @@
     .feature-list{
       margin:0 0 16px;
       padding-left:18px;
-      color:#e2e8f0;
+      color:#334155;
       display:grid;
       gap:8px;
     }
@@ -248,13 +338,17 @@
       display:flex;
       justify-content:space-between;
       gap:14px;
-      padding:10px 0;
-      border-bottom:1px dashed rgba(255,255,255,0.10);
-      color:#e2e8f0;
+      padding:11px 0;
+      border-bottom:1px dashed #d8e2ee;
+      color:#334155;
     }
 
     .price-row:last-child{
       border-bottom:none;
+    }
+
+    .price-row strong{
+      color:#0f172a;
     }
 
     .deposit{
@@ -265,7 +359,7 @@
 
     .small-note{
       margin-top:8px;
-      color:var(--muted);
+      color:var(--muted-2);
       font-size:14px;
     }
 
@@ -285,13 +379,13 @@
       padding:0 18px;
       border-radius:14px;
       font-weight:700;
-      transition:transform .18s ease, opacity .18s ease;
-      box-shadow:var(--shadow);
+      transition:transform .18s ease, opacity .18s ease, box-shadow .18s ease;
+      box-shadow:0 10px 24px rgba(15,23,42,0.10);
     }
 
     .btn:hover{
       transform:translateY(-1px);
-      opacity:.96;
+      opacity:.97;
     }
 
     .btn-whatsapp{
@@ -321,9 +415,9 @@
     .contact-card{
       padding:26px;
       border-radius:24px;
-      background:rgba(255,255,255,0.05);
-      border:1px solid rgba(255,255,255,0.10);
-      box-shadow:var(--shadow);
+      background:linear-gradient(180deg, rgba(255,255,255,0.94), rgba(255,255,255,0.88));
+      border:1px solid var(--line);
+      box-shadow:var(--shadow-soft);
     }
 
     .contact-card h3{
@@ -348,8 +442,8 @@
     }
 
     .faq-box details{
-      background:rgba(255,255,255,0.05);
-      border:1px solid rgba(255,255,255,0.12);
+      background:rgba(255,255,255,0.84);
+      border:1px solid var(--line);
       border-radius:20px;
       padding:18px;
     }
@@ -359,6 +453,7 @@
       font-size:20px;
       font-weight:700;
       list-style:none;
+      color:#0f172a;
     }
 
     .faq-box summary::-webkit-details-marker{
@@ -369,7 +464,7 @@
       content:"+";
       float:right;
       font-size:24px;
-      color:#dbeafe;
+      color:#2563eb;
     }
 
     .faq-box details[open] summary::after{
@@ -378,7 +473,7 @@
 
     .faq-inner{
       margin-top:15px;
-      color:#cbd5e1;
+      color:#475569;
     }
 
     .faq-inner p{
@@ -388,13 +483,23 @@
     .city-links{
       margin:30px 0;
       font-size:15px;
-      color:#cbd5e1;
+      color:var(--muted);
+    }
+
+    .city-links strong{
+      color:#0f172a;
+    }
+
+    .city-links a{
+      color:#2563eb;
+      font-weight:700;
     }
 
     footer{
       margin-top:8px;
-      border-top:1px solid rgba(255,255,255,0.08);
-      background:rgba(2,6,23,0.75);
+      border-top:1px solid var(--line);
+      background:rgba(255,255,255,0.76);
+      backdrop-filter:blur(8px);
     }
 
     .footer-inner{
@@ -414,7 +519,8 @@
     }
 
     .footer-links a{
-      color:#dbeafe;
+      color:#2563eb;
+      font-weight:700;
     }
 
     @media (max-width: 980px){
@@ -428,11 +534,15 @@
 
     @media (max-width: 720px){
       .main-logo{
-        max-width:360px;
+        max-width:340px;
       }
 
-      .hero h1{
-        font-size:36px;
+      h1{
+        font-size:38px;
+      }
+
+      .hero p{
+        font-size:17px;
       }
 
       .cta-row{
@@ -470,9 +580,11 @@
           Lieferung oder Abholung nach Absprache möglich.
         </p>
 
-        <p class="hero-seo-note">
-          ✓ Soundboks mieten ✓ Partybox mieten ✓ Lautsprecher mieten
-        </p>
+        <div class="trust-row">
+          <div class="pill">⚡ Schnell anfragen</div>
+          <div class="pill">🚗 Abholung oder Lieferung</div>
+          <div class="pill">🎉 Für Party, Hochzeit &amp; Event</div>
+        </div>
       </div>
 
       <div class="hero-card">
