@@ -4,101 +4,154 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Partybox mieten Wiesbaden | Soundboks mieten in Wiesbaden | GABO Verleihservice</title>
+  <title>Soundboks mieten Wiesbaden | Partybox mieten Wiesbaden | GABO Verleihservice</title>
   <meta
     name="description"
-    content="Partybox mieten in Wiesbaden ab 35€. Soundboks mieten für Geburtstag, Hochzeit, Gartenparty und Events. Lautsprecher Verleih Wiesbaden mit Lieferung möglich."
+    content="Soundboks mieten in Wiesbaden. Partybox Verleih für Geburtstag, Hochzeit, Gartenparty und Events. Jetzt einfach bei GABO Verleihservice anfragen."
   />
 
   <style>
+    :root{
+      --bg:#f8fbff; --bg2:#edf4ff; --text:#0f172a; --muted:#475569; --line:#dbe7f4;
+      --blue:#3b82f6; --blue-strong:#2563eb; --green:#25D366;
+      --shadow:0 16px 40px rgba(15,23,42,0.10); --shadow-soft:0 10px 24px rgba(15,23,42,0.08);
+      --max:1100px;
+    }
+    *{box-sizing:border-box;} html{scroll-behavior:smooth;}
     body{
-      margin:0;
-      font-family:Arial, sans-serif;
-      background:#020617;
-      color:#f8fafc;
+      margin:0;font-family:Arial, Helvetica, sans-serif;color:var(--text);line-height:1.55;
+      background:
+        radial-gradient(circle at 15% 15%, rgba(59,130,246,0.16), transparent 22%),
+        radial-gradient(circle at 82% 18%, rgba(139,92,246,0.14), transparent 22%),
+        linear-gradient(180deg, var(--bg) 0%, var(--bg2) 48%, #f7fbff 100%);
     }
-
-    .container{
-      max-width:900px;
-      margin:0 auto;
-      padding:20px;
+    a{color:inherit;text-decoration:none;} img{max-width:100%;display:block;}
+    .container{width:min(calc(100% - 32px), var(--max));margin:0 auto;}
+    .hero{padding:42px 0 28px;}
+    .hero-grid{display:grid;grid-template-columns:1.08fr 0.92fr;gap:30px;align-items:center;}
+    .main-logo{
+      width:100%;max-width:420px;margin-bottom:18px;
+      filter:drop-shadow(0 12px 26px rgba(15,23,42,0.14)) drop-shadow(0 0 22px rgba(59,130,246,0.16));
     }
-
-    h1{
-      font-size:40px;
-      margin-bottom:10px;
+    h1{margin:0 0 14px;font-size:clamp(34px, 5vw, 58px);line-height:1.02;letter-spacing:-1.5px;}
+    h2{margin:0 0 10px;font-size:clamp(28px, 3.2vw, 38px);letter-spacing:-0.8px;}
+    p{margin:0 0 14px;font-size:18px;color:var(--muted);}
+    .trust-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px;}
+    .pill{
+      display:inline-flex;align-items:center;padding:10px 14px;border-radius:999px;background:rgba(255,255,255,0.78);
+      border:1px solid rgba(37,99,235,0.12);color:#1e3a8a;font-size:14px;box-shadow:var(--shadow-soft);
     }
-
-    h2{
-      margin-top:40px;
-      font-size:26px;
+    .hero-card,.card{
+      background:linear-gradient(180deg, rgba(255,255,255,0.94), rgba(255,255,255,0.88));
+      border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:var(--shadow-soft);
     }
-
-    p{
-      color:#cbd5e1;
-      font-size:18px;
-      line-height:1.6;
+    .hero-card{position:relative;overflow:hidden;}
+    .hero-card::before{
+      content:"";position:absolute;inset:auto -40px -45px -40px;height:170px;
+      background:radial-gradient(circle at 18% 50%, rgba(59,130,246,0.38), transparent 28%),
+                 radial-gradient(circle at 82% 44%, rgba(139,92,246,0.28), transparent 28%);
+      filter:blur(22px);pointer-events:none;
     }
-
-    .box{
-      background:rgba(255,255,255,0.05);
-      padding:20px;
-      border-radius:16px;
-      margin-top:20px;
+    .hero-photo{
+      position:relative;z-index:1;width:100%;max-height:440px;object-fit:contain;border-radius:18px;
+      filter:drop-shadow(0 20px 26px rgba(15,23,42,0.16)) drop-shadow(0 0 18px rgba(59,130,246,0.14));
     }
-
+    .section{padding:34px 0;}
+    .price-list{display:grid;gap:10px;margin:16px 0 12px;}
+    .price-row{display:flex;justify-content:space-between;gap:14px;padding:11px 0;border-bottom:1px dashed #d8e2ee;color:#334155;}
+    .price-row:last-child{border-bottom:none;}
+    .price-row strong{color:#0f172a;}
+    .deposit{margin-top:8px;color:#c58b00;font-weight:700;}
     .btn{
-      display:inline-block;
-      margin-top:20px;
-      padding:14px 20px;
-      border-radius:12px;
-      background:#25D366;
-      color:#fff;
-      font-weight:bold;
-      text-decoration:none;
+      display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 18px;border-radius:14px;
+      font-weight:700;box-shadow:0 10px 24px rgba(15,23,42,0.10);
     }
+    .btn-whatsapp{background:linear-gradient(135deg, var(--green), #1fb455);color:#fff;}
+    .info-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+    footer{margin-top:10px;border-top:1px solid var(--line);background:rgba(255,255,255,0.76);}
+    .footer-inner{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:22px 0 34px;color:var(--muted);font-size:14px;}
+    .footer-links{display:flex;gap:14px;flex-wrap:wrap;}
+    .footer-links a{color:#2563eb;font-weight:700;}
+    @media (max-width: 980px){.hero-grid,.info-grid{grid-template-columns:1fr;}}
+    @media (max-width: 720px){h1{font-size:38px;}p{font-size:17px;}.btn{width:100%;}.footer-inner{flex-direction:column;}}
   </style>
 </head>
-
 <body>
-  <div class="container">
 
-    <h1>Partybox mieten in Wiesbaden – Soundboks Verleih</h1>
+  <header class="hero">
+    <div class="container hero-grid">
+      <div>
+        <img src="logo.png" alt="GABO Verleihservice Logo" class="main-logo" />
 
-    <p>
-      Du möchtest eine Partybox oder Soundboks in Wiesbaden mieten?
-      Bei GABO Verleihservice bekommst du leistungsstarke Lautsprecher
-      für Geburtstag, Hochzeit, Gartenparty oder Event.
-    </p>
+        <h1>Soundboks mieten in Wiesbaden</h1>
 
-    <p>
-      Unsere Soundboks ist kabellos, akkubetrieben und einfach per Bluetooth
-      verbindbar. Perfekt für jede Feier – egal ob drinnen oder draußen.
-    </p>
+        <p>
+          Miete eine leistungsstarke Soundboks in Wiesbaden für Geburtstag, Hochzeit,
+          Gartenparty oder Event. Kabellos, laut und sofort einsatzbereit.
+        </p>
 
-    <div class="box">
-      <h2>Preise für Soundboks</h2>
+        <p>
+          Soundboks Verleih in Wiesbaden und Umgebung. Abholung oder Lieferung nach Absprache möglich.
+        </p>
 
-      <p>Mo–Do (24h): <strong>35€</strong></p>
-      <p>Fr–So (24h): <strong>45€</strong></p>
-      <p>Wochenende komplett: <strong>79€</strong></p>
+        <div class="trust-row">
+          <div class="pill">⭐ Für viele Feiern gebucht</div>
+          <div class="pill">⚡ Schnell anfragen</div>
+          <div class="pill">🚗 Abholung oder Lieferung</div>
+        </div>
+      </div>
 
-      <p>Mikrofon optional +10€</p>
-      <p>Kaution: 150€</p>
+      <div class="hero-card">
+        <img src="hero.png" alt="Soundboks mieten Wiesbaden" class="hero-photo" />
+      </div>
     </div>
+  </header>
 
-    <h2>Partybox mieten in Wiesbaden & Umgebung</h2>
+  <section class="section">
+    <div class="container info-grid">
+      <div class="card">
+        <h2>Preise für Soundboks in Wiesbaden</h2>
 
-    <p>
-      Wir bieten Partybox und Soundboks Verleih in Wiesbaden sowie
-      Mainz, Frankfurt und Umgebung.
-      Weitere Orte sind auf Anfrage möglich.
-    </p>
+        <div class="price-list">
+          <div class="price-row"><span>Mo–Do (24h)</span><strong>39€</strong></div>
+          <div class="price-row"><span>Fr–So (24h)</span><strong>49€</strong></div>
+          <div class="price-row"><span>Wochenende komplett</span><strong>89€</strong></div>
+        </div>
 
-    <a href="https://wa.me/4917629007917" class="btn">
-      Jetzt Partybox in Wiesbaden anfragen
-    </a>
+        <p>Mikrofon optional für +10€.</p>
+        <div class="deposit">Kaution: 200€</div>
 
-  </div>
+        <p style="margin-top:18px;">
+          <a class="btn btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20eine%20Soundboks%20in%20Wiesbaden%20mieten." target="_blank" rel="noopener noreferrer">
+            Jetzt anfragen
+          </a>
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Partybox mieten in Wiesbaden</h2>
+        <p>
+          Unsere Soundboks ist ideal für private Feiern, Geburtstage, Hochzeiten,
+          Gartenpartys und kleinere Events in Wiesbaden.
+        </p>
+        <p>
+          Wenn du eine Partybox in Wiesbaden mieten möchtest, bekommst du bei uns
+          eine einfache und schnelle Lösung ohne komplizierte Technik.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>© 2026 GABO Verleihservice</div>
+      <div class="footer-links">
+        <a href="index.html">Startseite</a>
+        <a href="partybox-mieten-mainz.html">Mainz</a>
+        <a href="partybox-mieten-frankfurt.html">Frankfurt</a>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
