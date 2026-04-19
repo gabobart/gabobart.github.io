@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Partybox mieten Mainz | Soundboks Verleih Mainz, Wiesbaden & Frankfurt</title>
-  <meta name="description" content="Soundboks mieten in Mainz, Wiesbaden & Frankfurt. Soundboks ab 39€ sowie Licht, Nebel und Eventeffekte einzeln oder als Paket. Jetzt schnell per WhatsApp anfragen!" />
+  <meta name="description" content="Partybox & Soundboks mieten in Mainz, Wiesbaden & Frankfurt. Lautsprecher Verleih für Geburtstag, Hochzeit & Events. Jetzt schnell anfragen!" />
   <meta
     name="keywords"
     content="Soundboks mieten Mainz, Partybox Verleih Mainz, Partybox mieten Wiesbaden, Lautsprecher mieten Frankfurt, Soundboks Verleih, Eventverleih Mainz"
@@ -147,33 +147,6 @@
       font-size:18px;
       color:var(--muted);
       max-width:720px;
-    }
-
-    .hero-price-box{
-      display:inline-flex;
-      flex-wrap:wrap;
-      align-items:center;
-      gap:10px;
-      margin:10px 0 14px;
-      padding:14px 18px;
-      border-radius:18px;
-      background:linear-gradient(135deg, rgba(37,99,235,0.12), rgba(139,92,246,0.10));
-      border:1px solid rgba(37,99,235,0.16);
-      box-shadow:var(--shadow-soft);
-      font-weight:700;
-      color:#0f172a;
-    }
-
-    .hero-price-main{
-      font-size:28px;
-      color:#1d4ed8;
-      line-height:1;
-    }
-
-    .hero-price-sub{
-      font-size:15px;
-      color:var(--muted);
-      font-weight:600;
     }
 
     .hero-highlight{
@@ -585,6 +558,23 @@
       color:var(--muted);
     }
 
+    .sticky-whatsapp{
+      position:fixed;
+      left:16px;
+      right:16px;
+      bottom:14px;
+      z-index:999;
+      display:none;
+    }
+
+    .sticky-whatsapp .btn{
+      width:100%;
+      min-height:56px;
+      border-radius:16px;
+      font-size:18px;
+      box-shadow:0 16px 32px rgba(15,23,42,0.18);
+    }
+
     footer{
       margin-top:8px;
       border-top:1px solid var(--line);
@@ -647,8 +637,12 @@
         flex-direction:column;
       }
 
-      .hero-price-main{
-        font-size:24px;
+      .sticky-whatsapp{
+        display:block;
+      }
+
+      body{
+        padding-bottom:90px;
       }
     }
   </style>
@@ -662,33 +656,27 @@
           <img src="logo.webp" alt="GABO Verleihservice Logo" class="main-logo" loading="lazy" />
         </div>
 
-        <h1>Soundboks mieten in Mainz – ab 39€</h1>
+        <h1>Soundboks mieten in Mainz, Wiesbaden &amp; Frankfurt</h1>
 
         <p class="hero-highlight">
-          Starker Sound für Geburtstag, Gartenparty, Hochzeit und Event –
-          schnell, unkompliziert und sofort einsatzbereit.
-        </p>
-
-        <div class="hero-price-box">
-          <span class="hero-price-main">ab 39€</span>
-          <span class="hero-price-sub">Soundboks Einzelverleih • Licht, Nebel &amp; Effekte auch einzeln mietbar</span>
-        </div>
-
-        <p>
-          Du möchtest eine Soundboks mieten in Mainz, Wiesbaden oder Frankfurt?
-          Bei uns bekommst du leistungsstarke Partyboxen sowie passendes Eventequipment
-          einzeln oder als Paket – flexibel, kabellos und einfach zu buchen.
+          🔊 Extrem lauter Sound für deine Party – schnell, unkompliziert und sofort einsatzbereit.
         </p>
 
         <p>
-          Abholung oder Lieferung nach Absprache möglich.
-          Ideal für private Feiern, Hochzeiten, Geburtstage und Events.
+          Miete eine Soundboks Partybox oder passendes Equipment für Geburtstag, Gartenparty,
+          Hochzeit und Events – flexibel einzeln oder als Paket.
+        </p>
+
+        <p>
+          💡 Soundboks Partylicht, Nebelmaschine und Seifenblasenmaschine auch einzeln mietbar<br>
+          🚗 Abholung oder Lieferung nach Absprache möglich
         </p>
 
         <div class="cta-row">
           <a class="btn btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20eine%20Soundboks%20mieten." target="_blank" rel="noopener noreferrer">
             📲 Jetzt per WhatsApp anfragen
           </a>
+
           <a class="btn btn-primary" href="#einzelpreise">
             Preise ansehen
           </a>
@@ -697,10 +685,10 @@
         <p class="warning-note">⚠️ Wochenenden oft schnell ausgebucht – jetzt anfragen!</p>
 
         <div class="trust-row">
-          <div class="pill">🔊 Soundboks ab 39€</div>
-          <div class="pill">💡 Licht, Nebel &amp; Effekte einzeln</div>
-          <div class="pill">🚗 Abholung oder Lieferung</div>
-          <div class="pill">🎉 Für Party, Hochzeit &amp; Event</div>
+          <div class="pill">🔊 Soundboks Partybox</div>
+          <div class="pill">💡 Soundboks Partylicht</div>
+          <div class="pill">🌫️ Nebelmaschine</div>
+          <div class="pill">🫧 Seifenblasenmaschine</div>
         </div>
 
         <p class="response-note">Antwort meist innerhalb weniger Minuten</p>
@@ -708,7 +696,8 @@
 
       <div class="hero-card">
         <img
-          src="hero.webp" loading="lazy"
+          src="hero.webp"
+          loading="lazy"
           alt="Soundboks mieten in Mainz, Wiesbaden und Frankfurt für Feiern und Events"
           class="hero-photo"
         />
@@ -752,8 +741,8 @@
       <div class="section-head">
         <h2>Einzelverleih</h2>
         <p>
-          Miete deine Soundboks oder passendes Eventequipment flexibel einzeln.
-          Perfekt, wenn du nur genau das buchen willst, was du wirklich brauchst.
+          Miete deine Soundboks Partybox, dein Soundboks Partylicht oder weiteres Eventequipment einzeln und flexibel.
+          Ideal für Geburtstage, Gartenpartys, Hochzeiten und private Events.
         </p>
       </div>
 
@@ -761,10 +750,10 @@
 
         <article class="card">
           <div class="badge">Beliebt</div>
-          <h3>🔊 Soundboks <span class="brand-note">– SOUNDBOKS</span></h3>
+          <h3>🔊 Soundboks Partybox <span class="brand-note">– SOUNDBOKS</span></h3>
           <div class="subtitle">
-            Leistungsstarke kabellose Partybox für Geburtstage, Gartenpartys, Hochzeiten und Events
-            in Mainz, Wiesbaden und Frankfurt.
+            Leistungsstarke kabellose Partybox für Geburtstag, Gartenparty,
+            Hochzeit und Events in Mainz, Wiesbaden und Frankfurt.
           </div>
 
           <ul class="feature-list">
@@ -793,11 +782,11 @@
         </article>
 
         <article class="card">
-          <div class="badge">Lichteffekt</div>
-          <h3>💡 Lightboks <span class="brand-note">– SOUNDBOKS</span></h3>
+          <div class="badge">Partylicht</div>
+          <h3>💡 Soundboks Partylicht <span class="brand-note">– SOUNDBOKS</span></h3>
           <div class="subtitle">
-            Akkubetriebenes Partylicht als perfekte Ergänzung zur Soundboks
-            für mehr Stimmung auf deiner Feier.
+            Akkubetriebenes Partylicht für Musik, Feier und Event.
+            Ideal als Ergänzung zur Soundboks Partybox für mehr Stimmung.
           </div>
 
           <ul class="feature-list">
@@ -826,11 +815,11 @@
         </article>
 
         <article class="card">
-          <div class="badge">Effekt</div>
+          <div class="badge">Nebel</div>
           <h3>🌫️ Nebelmaschine <span class="brand-note">– Stairville AF-250</span></h3>
           <div class="subtitle">
-            Starke Nebeleffekte für Tanzfläche, Party und Event.
-            Ideal in Kombination mit Licht und Soundboks.
+            Leistungsstarke Nebelmaschine für starke Effekte auf der Tanzfläche.
+            Perfekt in Kombination mit Partylicht und Soundboks Partybox.
           </div>
 
           <ul class="feature-list">
@@ -860,7 +849,8 @@
           <div class="badge">Event-Extra</div>
           <h3>🫧 Seifenblasenmaschine <span class="brand-note">– Eliminator Bubbletron EXL GO</span></h3>
           <div class="subtitle">
-            Für Hochzeit, Empfang, Geburtstag und besondere Momente auf deiner Feier.
+            Akkubetriebene Seifenblasenmaschine für Hochzeit, Empfang,
+            Geburtstag und besondere Momente auf deiner Feier.
           </div>
 
           <ul class="feature-list">
@@ -894,9 +884,7 @@
     <div class="container">
       <div class="section-head">
         <h2>Pakete für Feiern und Events</h2>
-        <p>
-          Du willst direkt ein fertiges Setup? Dann sind diese Pakete ideal für dich.
-        </p>
+        <p>Diese Pakete sind ideal, wenn du direkt eine passende Kombination buchen willst.</p>
       </div>
 
       <div class="pricing-grid">
@@ -904,7 +892,7 @@
         <article class="card">
           <div class="badge">Für kleine Feiern</div>
           <h3>🎉 Paket Basic</h3>
-          <div class="subtitle">1x Soundboks + 1x Lightboks</div>
+          <div class="subtitle">1x Soundboks Partybox + 1x Soundboks Partylicht</div>
 
           <div class="price-list">
             <div class="price-row"><span>Mo–Do (24h)</span><strong>65€</strong></div>
@@ -926,7 +914,7 @@
         <article class="card">
           <div class="badge">Mehr Stimmung</div>
           <h3>🔥 Paket Party</h3>
-          <div class="subtitle">1x Soundboks + 1x Lightboks + Nebelmaschine</div>
+          <div class="subtitle">1x Soundboks Partybox + 1x Soundboks Partylicht + Nebelmaschine</div>
 
           <div class="price-list">
             <div class="price-row"><span>Mo–Do (24h)</span><strong>79€</strong></div>
@@ -948,7 +936,7 @@
         <article class="card">
           <div class="badge">Für größere Feiern</div>
           <h3>🚀 Paket Premium</h3>
-          <div class="subtitle">2x Soundboks + 2x Lightboks</div>
+          <div class="subtitle">2x Soundboks Partybox + 2x Soundboks Partylicht</div>
 
           <div class="price-list">
             <div class="price-row"><span>Mo–Do (24h)</span><strong>139€</strong></div>
@@ -970,7 +958,7 @@
         <article class="card">
           <div class="badge">Komplettes Setup</div>
           <h3>🎊 Paket Event Komplett</h3>
-          <div class="subtitle">2x Soundboks + 2x Lightboks + Nebelmaschine + Seifenblasenmaschine</div>
+          <div class="subtitle">2x Soundboks Partybox + 2x Soundboks Partylicht + Nebelmaschine + Seifenblasenmaschine</div>
 
           <div class="price-list">
             <div class="price-row"><span>Mo–Do (24h)</span><strong>219€</strong></div>
@@ -999,7 +987,8 @@
         <div class="contact-card">
           <h3>Kontakt &amp; Reservierung</h3>
           <p>
-            Du willst eine Soundboks, Licht, Nebelmaschine oder ein komplettes Paket mieten?
+            Du willst eine Soundboks Partybox, ein Soundboks Partylicht,
+            eine Nebelmaschine, eine Seifenblasenmaschine oder ein passendes Paket mieten?
             Frag schnell und unkompliziert per WhatsApp oder Telefon an.
           </p>
 
@@ -1084,6 +1073,17 @@
       </div>
     </div>
   </footer>
+
+  <div class="sticky-whatsapp">
+    <a
+      class="btn btn-whatsapp"
+      href="https://wa.me/4917629007917?text=Hallo%2C%20ich%20m%C3%B6chte%20eine%20Soundboks%20mieten."
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      📲 Jetzt per WhatsApp anfragen
+    </a>
+  </div>
 
 </body>
 </html>
