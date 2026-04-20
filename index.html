@@ -163,6 +163,13 @@
       margin-top:4px !important;
     }
 
+    .offer-label{
+      margin:12px 0 10px;
+      font-weight:700;
+      color:#0f172a;
+      font-size:16px;
+    }
+
     .response-note{
       font-size:14px !important;
       color:var(--muted-2) !important;
@@ -173,19 +180,24 @@
       display:flex;
       gap:12px;
       flex-wrap:wrap;
-      margin-top:18px;
+      margin-top:14px;
     }
 
     .pill{
       display:inline-flex;
       align-items:center;
+      justify-content:center;
       gap:8px;
-      padding:10px 14px;
-      border-radius:999px;
-      background:rgba(255,255,255,0.78);
-      border:1px solid rgba(37,99,235,0.12);
+      flex:1 1 calc(50% - 12px);
+      min-height:52px;
+      padding:12px 12px;
+      border-radius:14px;
+      background:rgba(255,255,255,0.85);
+      border:1px solid rgba(37,99,235,0.15);
       color:#1e3a8a;
       font-size:14px;
+      font-weight:600;
+      text-align:center;
       box-shadow:var(--shadow-soft);
       backdrop-filter:blur(8px);
     }
@@ -557,6 +569,10 @@
         font-size:17px;
       }
 
+      .pill{
+        flex:1 1 100%;
+      }
+
       .cta-row{
         flex-direction:column;
       }
@@ -601,6 +617,8 @@
         </p>
 
         <p class="warning-note">⚠️ Wochenenden oft schnell ausgebucht – jetzt anfragen!</p>
+
+        <p class="offer-label">Das bieten wir an:</p>
 
         <div class="trust-row">
           <div class="pill">🔊 Soundboks Partybox</div>
