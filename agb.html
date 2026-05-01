@@ -1,284 +1,201 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AGB & Mietbedingungen | Gabo Verleihservice</title>
-  <meta name="description" content="AGB und Mietbedingungen von Gabo Verleihservice in Ingelheim am Rhein.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AGB & Mietbedingungen | GABO Verleihservice</title>
+  <meta name="description" content="Allgemeine Geschäftsbedingungen von GABO Event & Verleihservice – Partybox und Soundboks Verleih in Mainz, Wiesbaden und Frankfurt." />
+  <meta name="robots" content="noindex, follow" />
+  <link rel="icon" href="favicon.ico">
+  <link rel="canonical" href="https://gaboevent.de/agb.html" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: white;
-      background: linear-gradient(180deg, #020617, #0a1f4d, #020617);
-      line-height: 1.6;
+    :root{
+      --bg:#f8fbff; --bg2:#edf4ff;
+      --text:#0f172a; --muted:#475569; --muted-2:#64748b;
+      --line:#dbe7f4; --white:#ffffff;
+      --blue:#3b82f6; --blue-strong:#2563eb; --blue-soft:#dbeafe;
+      --violet:#8b5cf6; --cyan:#06b6d4; --green:#25D366;
+      --shadow-soft:0 10px 24px rgba(15,23,42,0.08);
+      --radius:22px; --max:900px;
+    }
+    *{ box-sizing:border-box; }
+    html{ scroll-behavior:smooth; }
+    body{
+      margin:0; font-family:'Nunito', sans-serif;
+      color:var(--text); line-height:1.7;
+      background:
+        radial-gradient(circle at 15% 15%, rgba(59,130,246,0.16), transparent 22%),
+        radial-gradient(circle at 82% 18%, rgba(139,92,246,0.14), transparent 22%),
+        radial-gradient(circle at 50% 82%, rgba(6,182,212,0.10), transparent 25%),
+        linear-gradient(180deg, var(--bg) 0%, var(--bg2) 48%, #f7fbff 100%);
+    }
+    a{ color:inherit; text-decoration:none; }
+    .container{ width:min(calc(100% - 32px), var(--max)); margin:0 auto; }
+
+    .navbar{
+      position:sticky; top:0; z-index:100;
+      background:rgba(248,251,255,0.92);
+      backdrop-filter:blur(14px);
+      border-bottom:1px solid var(--line);
+      box-shadow:0 2px 16px rgba(15,23,42,0.06);
+    }
+    .navbar-inner{
+      width:min(calc(100% - 32px), 1180px); margin:0 auto;
+      display:flex; align-items:center; justify-content:space-between;
+      height:62px; gap:1rem;
+    }
+    .navbar-logo{ font-size:1.2rem; font-weight:900; letter-spacing:-0.5px; color:var(--text); }
+    .navbar-logo span{ color:var(--blue-strong); }
+    .navbar-back{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:9px 18px; border-radius:12px;
+      font-size:15px; font-weight:800;
+      background:linear-gradient(135deg, var(--blue), var(--blue-strong));
+      color:#fff; box-shadow:0 4px 14px rgba(59,130,246,0.28);
+      transition:transform 0.15s, opacity 0.15s;
+    }
+    .navbar-back:hover{ transform:translateY(-1px); opacity:0.95; }
+
+    .legal-hero{ padding:50px 0 20px; text-align:center; }
+    .legal-hero h1{
+      margin:0 0 8px;
+      font-size:clamp(34px,5vw,54px);
+      font-weight:900; letter-spacing:-1px; line-height:1.1;
+    }
+    .legal-hero p{ margin:0; color:var(--muted); font-size:17px; }
+
+    .legal-card{
+      background:linear-gradient(180deg, rgba(255,255,255,0.94), rgba(255,255,255,0.88));
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:36px 40px;
+      box-shadow:var(--shadow-soft);
+      margin:30px 0 40px;
+      position:relative; overflow:hidden;
+    }
+    .legal-card::before{
+      content:""; position:absolute; inset:0 auto auto 0;
+      width:100%; height:4px;
+      background:linear-gradient(90deg, var(--blue), var(--violet), var(--cyan));
     }
 
-    .container {
-      width: min(calc(100% - 32px), 900px);
-      margin: 0 auto;
-      padding: 40px 0;
+    .legal-card h2{
+      margin:32px 0 12px;
+      font-size:22px; font-weight:800;
+      color:#0f172a; letter-spacing:-0.3px;
+    }
+    .legal-card h2:first-of-type{ margin-top:0; }
+    .legal-card p{ margin:0 0 14px; color:#334155; font-size:16px; }
+    .legal-card strong{ color:#0f172a; font-weight:800; }
+
+    .legal-intro{
+      background:rgba(219,234,254,0.4);
+      border:1px solid rgba(59,130,246,0.18);
+      border-radius:14px;
+      padding:18px 22px;
+      margin:0 0 24px;
+    }
+    .legal-intro p{ margin:4px 0; }
+
+    .legal-update{
+      margin-top:30px; padding-top:18px;
+      border-top:1px dashed #d8e2ee;
+      color:var(--muted-2); font-size:14px;
+      text-align:center;
     }
 
-    .card {
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.10);
-      border-radius: 20px;
-      padding: 28px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    footer{
+      margin-top:8px;
+      border-top:1px solid var(--line);
+      background:rgba(255,255,255,0.76);
+      backdrop-filter:blur(8px);
     }
-
-    h1, h2 {
-      margin-top: 0;
-      color: #ffffff;
+    .footer-inner{
+      width:min(calc(100% - 32px), 1180px); margin:0 auto;
+      display:flex; flex-direction:column; align-items:center; text-align:center;
+      gap:12px; padding:22px 0 34px; color:var(--muted); font-size:14px;
     }
+    .footer-links{ display:flex; gap:14px; flex-wrap:wrap; justify-content:center; }
+    .footer-links a{ color:#2563eb; font-weight:700; }
 
-    h1 {
-      margin-bottom: 24px;
-    }
-
-    h2 {
-      margin-top: 28px;
-      margin-bottom: 10px;
-    }
-
-    p, li {
-      color: #dbeafe;
-      margin: 0 0 14px 0;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    a {
-      color: #4da3ff;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .back {
-      display: inline-block;
-      margin-bottom: 20px;
-      color: #4da3ff;
-      font-weight: bold;
-    }
-
-    .hint {
-      color: #bfdbfe;
-      font-size: 0.95rem;
-    }
-
-    .footer {
-      margin-top: 32px;
-      text-align: center;
-      color: #bfdbfe;
-    }
-
-    .footer a {
-      color: #4da3ff;
-      margin: 0 8px;
+    @media(max-width:720px){
+      .legal-card{ padding:24px 22px; }
+      .legal-hero h1{ font-size:34px; }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <a class="back" href="index.html">← Zurück zur Startseite</a>
 
-    <div class="card">
-      <h1>AGB & Mietbedingungen</h1>
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo">GABO <span>Verleihservice</span></a>
+      <a href="index.html" class="navbar-back">← Zurück zur Startseite</a>
+    </div>
+  </nav>
 
-      <h2>1. Geltungsbereich</h2>
-      <p>
-        Diese Allgemeinen Geschäftsbedingungen (AGB) und Mietbedingungen gelten für alle Verträge zwischen
-        <strong>Gabo Verleihservice</strong>, Inhaber Gabriel Bartucca, Sandkiefernweg 48, 55262 Ingelheim am Rhein,
-        und seinen Kunden über die Vermietung von Ton-, Licht- und Eventtechnik sowie Partyzubehör.
-      </p>
+  <header class="legal-hero">
+    <div class="container">
+      <h1>AGB &amp; Mietbedingungen</h1>
+      <p>Allgemeine Geschäftsbedingungen</p>
+    </div>
+  </header>
 
-      <h2>2. Vertragsgegenstand</h2>
-      <p>
-        Vermietet werden insbesondere:
-      </p>
-      <ul>
-        <li>Ton- und Lichttechnik</li>
-        <li>Lautsprecher</li>
-        <li>Lichteffekte</li>
-        <li>Nebelmaschinen</li>
-        <li>Seifenblasenmaschinen</li>
-        <li>weiteres Event- und Partyzubehör</li>
-      </ul>
+  <main class="container">
+    <div class="legal-card">
 
-      <h2>3. Vertragsschluss</h2>
-      <p>
-        Die Präsentation der Mietartikel auf der Website stellt kein rechtlich bindendes Angebot dar,
-        sondern eine unverbindliche Aufforderung zur Anfrage oder Buchung.
-      </p>
-      <p>
-        Ein Vertrag kommt erst zustande, wenn die Buchung oder Anfrage durch Gabo Verleihservice ausdrücklich
-        bestätigt wird, insbesondere per E-Mail, Nachricht, telefonisch oder schriftlich.
-      </p>
+      <div class="legal-intro">
+        <p><strong>GABO Event &amp; Verleihservice</strong></p>
+        <p>Inhaber: Gabriel Bartucca</p>
+      </div>
 
-      <h2>4. Mietdauer</h2>
-      <p>
-        Die Mietdauer richtet sich nach der individuell getroffenen Vereinbarung.
-        Beginn und Ende der Mietzeit werden bei Vertragsschluss festgelegt.
-      </p>
-      <p>
-        Eine Verlängerung der Mietdauer bedarf der vorherigen Zustimmung von Gabo Verleihservice.
-      </p>
+      <h2>1. Mietgegenstand</h2>
+      <p>Vermietet werden Veranstaltungstechnik (z. B. Lautsprecher, Lichttechnik).</p>
 
-      <h2>5. Preise und Zahlungsbedingungen</h2>
-      <p>
-        Es gelten die zum Zeitpunkt der Buchung vereinbarten Preise.
-      </p>
-      <p>
-        Gemäß § 19 UStG wird keine Umsatzsteuer berechnet und nicht ausgewiesen.
-      </p>
-      <p>
-        Die Zahlung erfolgt nach individueller Vereinbarung, z. B. per Überweisung, Barzahlung oder anderen
-        angebotenen Zahlungsmethoden.
-      </p>
-      <p>
-        Sofern nicht anders vereinbart, ist der Mietpreis vor Übergabe bzw. vor Beginn der Mietzeit fällig.
-      </p>
+      <h2>2. Mietdauer</h2>
+      <p>Die Mietdauer wird individuell vereinbart. Eine Verlängerung ist nach Absprache möglich.</p>
 
-      <h2>6. Kaution</h2>
-      <p>
-        Gabo Verleihservice ist berechtigt, für die Vermietung einzelner oder mehrerer Mietgegenstände eine
-        angemessene Kaution zu verlangen.
-      </p>
-      <p>
-        Die Kaution wird nach ordnungsgemäßer und vollständiger Rückgabe der Mietgegenstände zurückerstattet,
-        sofern keine Schäden, Verluste oder sonstigen Ansprüche bestehen.
-      </p>
+      <h2>3. Zahlung &amp; Kaution</h2>
+      <p>Die Zahlung erfolgt bei Übergabe.</p>
+      <p>Eine Kaution ist zu hinterlegen und wird bei ordnungsgemäßer Rückgabe vollständig zurückerstattet.</p>
 
-      <h2>7. Übergabe der Mietgegenstände</h2>
-      <p>
-        Die Übergabe der Mietgegenstände erfolgt in funktionsfähigem und vertragsgemäßem Zustand.
-      </p>
-      <p>
-        Der Kunde ist verpflichtet, die Mietgegenstände bei Übergabe auf offensichtliche Mängel,
-        Vollständigkeit und Funktionsfähigkeit zu überprüfen und erkennbare Mängel unverzüglich mitzuteilen.
-      </p>
+      <h2>4. Zustand &amp; Nutzung</h2>
+      <p>Die Geräte sind gebraucht und können Gebrauchsspuren aufweisen.</p>
+      <p>Der Mieter verpflichtet sich, die Geräte sorgfältig zu behandeln.</p>
 
-      <h2>8. Nutzung der Mietgegenstände</h2>
-      <p>
-        Die Mietgegenstände sind vom Kunden pfleglich, sachgemäß und ausschließlich im Rahmen der vorgesehenen
-        Nutzung zu verwenden.
-      </p>
-      <p>
-        Eine Überlassung an Dritte ist nur mit vorheriger Zustimmung von Gabo Verleihservice zulässig.
-      </p>
-      <p>
-        Der Kunde hat alle geltenden Sicherheitsvorschriften und Bedienhinweise zu beachten.
-      </p>
+      <h2>5. Schäden &amp; Verlust</h2>
+      <p>Bei Schäden oder Verlust haftet der Mieter im Rahmen des Wiederbeschaffungswertes.</p>
+      <p>Normale Gebrauchsspuren sind ausgenommen.</p>
 
-      <h2>9. Pflichten des Kunden</h2>
-      <p>
-        Der Kunde verpflichtet sich insbesondere:
-      </p>
-      <ul>
-        <li>die Mietgegenstände sorgfältig zu behandeln,</li>
-        <li>vor Überlastung, Feuchtigkeit, Schmutz und unsachgemäßer Nutzung zu schützen,</li>
-        <li>keine eigenmächtigen Umbauten oder Reparaturen vorzunehmen,</li>
-        <li>Schäden oder Störungen unverzüglich mitzuteilen.</li>
-      </ul>
+      <h2>6. Rückgabe</h2>
+      <p>Die Rückgabe erfolgt zum vereinbarten Zeitpunkt.</p>
+      <p>Verspätete Rückgaben können zusätzlich berechnet werden.</p>
 
-      <h2>10. Rückgabe</h2>
-      <p>
-        Die Rückgabe der Mietgegenstände hat zum vereinbarten Zeitpunkt und im vereinbarten Zustand zu erfolgen.
-      </p>
-      <p>
-        Die Mietgegenstände sind vollständig, sauber und ordnungsgemäß zurückzugeben.
-      </p>
-      <p>
-        Bei verspäteter Rückgabe kann für den zusätzlichen Zeitraum ein weiterer Mietpreis berechnet werden.
-        Weitergehende Schadensersatzansprüche bleiben unberührt.
-      </p>
+      <h2>7. Haftung</h2>
+      <p>Für Schäden durch unsachgemäße Nutzung wird keine Haftung übernommen.</p>
 
-      <h2>11. Haftung des Kunden</h2>
-      <p>
-        Der Kunde haftet für alle Schäden, Verluste und Beeinträchtigungen der Mietgegenstände, die während der
-        Mietdauer entstehen, soweit diese von ihm zu vertreten sind.
-      </p>
-      <p>
-        Dies gilt auch für Schäden durch unsachgemäße Behandlung, Diebstahl, Verlust, Fehlbedienung oder
-        Überlassung an nicht berechtigte Dritte.
-      </p>
+      <h2>8. Schlussbestimmungen</h2>
+      <p>Es gilt deutsches Recht.</p>
 
-      <h2>12. Haftung von Gabo Verleihservice</h2>
-      <p>
-        Gabo Verleihservice haftet unbeschränkt bei Vorsatz und grober Fahrlässigkeit sowie bei Schäden aus der
-        Verletzung von Leben, Körper oder Gesundheit.
-      </p>
-      <p>
-        Bei leicht fahrlässiger Verletzung wesentlicher Vertragspflichten ist die Haftung auf den
-        vertragstypischen, vorhersehbaren Schaden begrenzt.
-      </p>
-      <p>
-        Im Übrigen ist die Haftung ausgeschlossen, soweit gesetzlich zulässig.
-      </p>
+      <p class="legal-update">Stand: 2026</p>
+    </div>
+  </main>
 
-      <h2>13. Stornierung durch den Kunden</h2>
-      <p>
-        Eine Stornierung der Buchung ist grundsätzlich möglich, bedarf jedoch der Textform
-        (z. B. per E-Mail).
-      </p>
-      <p>
-        Bereits entstandene Kosten, Aufwendungen oder Ausfallentschädigungen können in angemessenem Umfang
-        berechnet werden, sofern die Stornierung kurzfristig vor Mietbeginn erfolgt.
-      </p>
-
-      <h2>14. Ausfall / Nichtverfügbarkeit</h2>
-      <p>
-        Sollte ein Mietgegenstand aus unvorhersehbaren Gründen, insbesondere durch Beschädigung, Defekt oder
-        höhere Gewalt, nicht verfügbar sein, ist Gabo Verleihservice berechtigt, einen gleichwertigen
-        Ersatzgegenstand bereitzustellen oder vom Vertrag zurückzutreten.
-      </p>
-      <p>
-        Bereits geleistete Zahlungen für nicht verfügbare Leistungen werden in diesem Fall erstattet.
-      </p>
-
-      <h2>15. Widerruf für Verbraucher</h2>
-      <p>
-        Sofern der Vertrag ausschließlich unter Verwendung von Fernkommunikationsmitteln
-        (z. B. über Website, E-Mail, Telefon oder Messenger) mit einem Verbraucher geschlossen wird,
-        kann ein gesetzliches Widerrufsrecht bestehen.
-      </p>
-      <p>
-        Einzelheiten dazu sind in der gesonderten <a href="widerruf.html">Widerrufsbelehrung</a> geregelt.
-      </p>
-
-      <h2>16. Datenschutz</h2>
-      <p>
-        Informationen zur Verarbeitung personenbezogener Daten finden sich in der
-        <a href="datenschutz.html">Datenschutzerklärung</a>.
-      </p>
-
-      <h2>17. Schlussbestimmungen</h2>
-      <p>
-        Es gilt das Recht der Bundesrepublik Deutschland unter Ausschluss des UN-Kaufrechts,
-        soweit dem keine zwingenden gesetzlichen Vorschriften entgegenstehen.
-      </p>
-      <p>
-        Sollten einzelne Bestimmungen dieser AGB ganz oder teilweise unwirksam sein oder werden,
-        bleibt die Wirksamkeit der übrigen Bestimmungen unberührt.
-      </p>
-
-      <p class="hint">
-        Stand: April 2026
-      </p>
-
-      <div class="footer">
-        <a href="impressum.html">Impressum</a> |
-        <a href="datenschutz.html">Datenschutz</a> |
-        <a href="agb-mietbedingungen.html">AGB & Mietbedingungen</a> |
+  <footer>
+    <div class="footer-inner">
+      <div>© 2026 GABO Verleihservice</div>
+      <div class="footer-links">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="agb.html">AGB &amp; Mietbedingungen</a>
         <a href="widerruf.html">Widerruf</a>
       </div>
     </div>
-  </div>
+  </footer>
+
 </body>
 </html>
