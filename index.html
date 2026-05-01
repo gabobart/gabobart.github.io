@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Partybox mieten Mainz | Soundboks Verleih Mainz, Wiesbaden & Frankfurt</title>
-  <meta name="description" content="Soundboks mieten in Mainz, Wiesbaden & Frankfurt. Partybox, Soundboks Partylicht, Nebelmaschine und Seifenblasenmaschine einzeln oder als Paket mieten. Jetzt anfragen!" />
-  <meta name="keywords" content="Soundboks mieten Mainz, Partybox Verleih Mainz, Partybox mieten Wiesbaden, Lautsprecher mieten Frankfurt, Soundboks Verleih, Eventverleih Mainz, Nebelmaschine mieten Mainz, Seifenblasenmaschine mieten Mainz" />
+  <title>Partybox mieten Mainz & Umgebung | Soundboks Verleih Wiesbaden, Frankfurt, Bingen, Darmstadt</title>
+  <meta name="description" content="Partybox mieten in Mainz, Wiesbaden, Frankfurt und Umgebung. Soundboks, Partylicht, Nebelmaschine und Seifenblasenmaschine einzeln oder als Paket mieten. Abholung – nach Absprache kann auch geliefert werden (mit Aufpreis). Schnelle Antwort per WhatsApp – jetzt anfragen!" />
+  <meta name="keywords" content="Partybox mieten Mainz, Soundboks mieten Mainz, Partybox mieten Wiesbaden, Soundboks mieten Wiesbaden, Partybox mieten Frankfurt, Lautsprecher mieten Mainz, Partybox Verleih Mainz Umgebung, Soundboks Verleih Rhein-Main, Nebelmaschine mieten Mainz, Seifenblasenmaschine mieten Mainz, Partybox mieten Bingen, Partybox mieten Darmstadt, Partybox mieten Rüsselsheim, Eventverleih Mainz" />
   <link rel="icon" href="favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="canonical" href="https://gaboevent.de/" />
@@ -15,15 +16,23 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
 
+  <!-- Erweitertes Schema.org für bessere Google-Sichtbarkeit -->
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "GABO Verleihservice",
-    "description": "Soundboks Partybox, Soundboks Partylicht und Eventequipment Verleih in Mainz, Wiesbaden und Frankfurt",
-    "areaServed": ["Mainz","Wiesbaden","Frankfurt"],
+    "description": "Partybox und Soundboks mieten in Mainz, Wiesbaden, Frankfurt und Umgebung. Verleih von Soundboks Partybox, Partylicht, Nebelmaschine und Seifenblasenmaschine.",
+    "url": "https://gaboevent.de",
     "telephone": "+4917629007917",
-    "url": "https://gaboevent.de"
+    "areaServed": [
+      "Mainz", "Wiesbaden", "Frankfurt", "Bingen", "Darmstadt",
+      "Rüsselsheim", "Ingelheim", "Nieder-Olm", "Bad Kreuznach", "Rhein-Main"
+    ],
+    "priceRange": "€€",
+    "openingHours": "Mo-Su 08:00-22:00",
+    "sameAs": []
   }
   </script>
 
@@ -317,6 +326,58 @@
 
     /* ── CITY LINKS ── */
     .city-links{ margin:30px 0 18px; font-size:15px; color:var(--muted); text-align:center; }
+
+    /* ── GOOGLE BEWERTUNGEN ── */
+    .reviews-card{
+      background:linear-gradient(180deg, rgba(255,255,255,0.94), rgba(255,255,255,0.88));
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:32px 28px;
+      box-shadow:var(--shadow-soft);
+      text-align:center;
+      position:relative;
+      overflow:hidden;
+    }
+    .reviews-card::before{
+      content:""; position:absolute; inset:0 auto auto 0;
+      width:100%; height:4px;
+      background:linear-gradient(90deg, #4285F4, #EA4335, #FBBC04, #34A853);
+    }
+    .reviews-google-logo{
+      font-family:'Nunito', sans-serif;
+      font-size:28px;
+      font-weight:900;
+      letter-spacing:-0.5px;
+      margin-bottom:12px;
+    }
+    .reviews-google-logo span:nth-child(1){ color:#4285F4; }
+    .reviews-google-logo span:nth-child(2){ color:#EA4335; }
+    .reviews-google-logo span:nth-child(3){ color:#FBBC04; }
+    .reviews-google-logo span:nth-child(4){ color:#4285F4; }
+    .reviews-google-logo span:nth-child(5){ color:#34A853; }
+    .reviews-google-logo span:nth-child(6){ color:#EA4335; }
+    .reviews-google-logo strong{ color:#0f172a; font-weight:700; margin-left:8px; }
+
+    .reviews-stars{
+      display:flex; justify-content:center; gap:4px;
+      margin:8px 0 10px;
+      font-size:32px;
+      color:#FBBC04;
+      letter-spacing:2px;
+    }
+    .reviews-rating{
+      font-size:42px; font-weight:900; color:#0f172a;
+      letter-spacing:-1px; line-height:1;
+      margin-bottom:6px;
+    }
+    .reviews-text{
+      color:var(--muted); font-size:15px; margin-bottom:22px;
+    }
+    .reviews-text strong{ color:#0f172a; }
+
+    .reviews-buttons{
+      display:flex; gap:12px; justify-content:center; flex-wrap:wrap;
+    }
     .city-links strong{ color:#0f172a; }
     .city-links a{ color:#2563eb; font-weight:700; }
 
@@ -356,233 +417,250 @@
       .faq-question{ font-size:16px; padding:16px 18px; }
     }
   </style>
+
 </head>
 <body>
 
-  <!-- ── NAVBAR ── -->
-  <nav class="navbar">
-    <div class="container navbar-inner">
-      <a href="#hero" class="navbar-logo">GABO <span>Verleihservice</span></a>
-      <ul class="navbar-links">
-        <li><a href="#einzelpreise">Einzelverleih</a></li>
-        <li><a href="#pakete">Pakete</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#kontakt">Kontakt</a></li>
-      </ul>
-      <a href="https://wa.me/4917629007917" target="_blank" rel="noopener noreferrer" class="navbar-cta desktop">
-        💬 WhatsApp
-      </a>
-      <div class="hamburger" id="hamburger" onclick="toggleMenu()">
-        <span></span><span></span><span></span>
-      </div>
-    </div>
-    <div class="container">
-      <div class="mobile-menu" id="mobileMenu">
-        <a href="#einzelpreise" onclick="closeMenu()">Einzelverleih</a>
-        <a href="#pakete" onclick="closeMenu()">Pakete</a>
-        <a href="#faq" onclick="closeMenu()">FAQ</a>
-        <a href="#kontakt" onclick="closeMenu()">Kontakt</a>
-        <a href="https://wa.me/4917629007917" target="_blank" rel="noopener noreferrer" class="navbar-cta">💬 WhatsApp schreiben</a>
-      </div>
-    </div>
-  </nav>
-
   <!-- ── HERO ── -->
+
   <header class="hero" id="hero">
     <div class="container hero-grid">
       <div>
-        <img src="logo.webp" alt="GABO Verleihservice Logo" class="main-logo" loading="lazy" />
-        <h1>Soundboks mieten in Mainz, Wiesbaden &amp; Frankfurt</h1>
-        <p class="hero-highlight">🔊 Soundboks Partybox, Partylicht, Nebelmaschine und Seifenblasenmaschine für deine Feier.</p>
-        <p>Miete deine Soundboks Partybox und passendes Equipment für Geburtstag, Gartenparty, Hochzeit und private Events – flexibel einzeln oder als Paket.</p>
-        <p>Abholung oder Lieferung nach Absprache möglich. Verfügbar in Mainz, Wiesbaden, Frankfurt und Umgebung.</p>
-        <p class="warning-note">⚠️ Wochenenden oft schnell ausgebucht – jetzt anfragen!</p>
-        <p class="offer-label">Das bieten wir an:</p>
-        <div class="trust-row">
-          <div class="pill">🔊 Soundboks Partybox</div>
-          <div class="pill">💡 Soundboks Partylicht</div>
-          <div class="pill">🌫️ Nebelmaschine</div>
-          <div class="pill">🫧 Seifenblasenmaschine</div>
-        </div>
-        <p class="response-note">Antwort meist innerhalb weniger Minuten</p>
-      </div>
-      <div class="hero-card">
-        <img src="hero.webp" loading="lazy"
-          alt="Soundboks Partybox, Partylicht, Nebelmaschine und Seifenblasenmaschine mieten in Mainz, Wiesbaden und Frankfurt"
-          class="hero-photo" />
-      </div>
+        <img src="logo.webp" alt="GABO Verleihservice – Partybox mieten Mainz" class="main-logo" loading="lazy" />
+
+```
+    <h1>Partybox & Soundboks mieten in Mainz, Wiesbaden, Frankfurt & Umgebung</h1>
+
+    <p class="hero-highlight">
+      🔊 Soundboks Partybox, Partylicht, Nebelmaschine und Seifenblasenmaschine – jetzt in Mainz und Umgebung mieten.
+    </p>
+
+    <p>
+      Partybox mieten leicht gemacht: Ob Geburtstag, Gartenparty, Hochzeit oder privates Event –
+      wir haben die passende Soundboks Partybox und Equipment für dich in Mainz, Wiesbaden,
+      Frankfurt, Bingen, Ingelheim, Rüsselsheim, Darmstadt und Umgebung.
+    </p>
+
+    <p>
+      Einfach per WhatsApp anfragen – Abholung bei uns, nach Absprache kann auch geliefert werden (mit Aufpreis).
+      Schnelle Antwort, faire Preise, zuverlässiger Service im Rhein-Main-Gebiet.
+    </p>
+
+    <p class="warning-note">⚠️ Wochenenden oft schnell ausgebucht – jetzt anfragen!</p>
+
+    <p class="offer-label">Das bieten wir an:</p>
+
+    <div class="trust-row">
+      <div class="pill">🔊 Soundboks Partybox</div>
+      <div class="pill">💡 Soundboks Partylicht</div>
+      <div class="pill">🌫️ Nebelmaschine</div>
+      <div class="pill">🫧 Seifenblasenmaschine</div>
     </div>
+
+    <p class="response-note">Antwort meist innerhalb weniger Minuten</p>
+  </div>
+  <div class="hero-card">
+    <img
+      src="hero.webp"
+      loading="lazy"
+      alt="Partybox und Soundboks mieten in Mainz, Wiesbaden, Frankfurt und Umgebung"
+      class="hero-photo"
+    />
+  </div>
+</div>
+```
+
   </header>
 
   <!-- ── EINZELVERLEIH ── -->
+
   <section class="section" id="einzelpreise">
     <div class="container">
-      <div class="section-head single-head"><h2>Einzelverleih</h2></div>
+      <div class="section-head single-head">
+        <h2>Einzelverleih</h2>
+        <p style="margin-top:10px; color:var(--muted); font-size:16px;">Partybox mieten in Mainz & Umgebung – einzeln oder als Paket. Abholung bei uns, nach Absprache kann auch geliefert werden (mit Aufpreis) – nach Wiesbaden, Frankfurt, Bingen, Ingelheim und ins Rhein-Main-Gebiet.</p>
+      </div>
       <div class="pricing-grid">
 
-        <article class="card">
-          <div class="badge">Beliebt</div>
-          <h3>🔊 Soundboks Partybox <span class="brand-note">– SOUNDBOKS</span></h3>
-          <div class="subtitle">Leistungsstarke kabellose Partybox für Geburtstag, Gartenparty, Hochzeit und Events in Mainz, Wiesbaden und Frankfurt.</div>
-          <ul class="feature-list">
-            <li>Kabellos und akkubetrieben</li>
-            <li>Schnelle Bluetooth-Verbindung</li>
-            <li>Für drinnen und draußen geeignet</li>
-            <li>Einfacher Transport und schneller Aufbau</li>
-            <li>Ideal für private Feiern und Events</li>
-          </ul>
-          <div class="price-list">
-            <div class="price-row"><span>Mo–Do</span><strong>39€ <span class="price-unit">/ Tag</span></strong></div>
-            <div class="price-row"><span>Fr–So</span><strong>49€ <span class="price-unit">/ Tag</span></strong></div>
-            <div class="price-row"><span>Wochenende komplett</span><strong>89€</strong></div>
-          </div>
-          <div class="deposit">Kaution: 200€</div>
-          <div class="cta-inline">
-            <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20eine%20Soundboks%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="badge">Partylicht</div>
-          <h3>💡 Soundboks Partylicht <span class="brand-note">– SOUNDBOKS</span></h3>
-          <div class="subtitle">Akkubetriebenes Partylicht für Musik, Feier und Event. Ideal als Ergänzung zur Soundboks Partybox für mehr Stimmung.</div>
-          <ul class="feature-list">
-            <li>Akkubetrieben und tragbar</li>
-            <li>Audioreaktives Partylicht</li>
-            <li>7x 12 W RGBW LEDs</li>
-            <li>IP65 staub- und wetterfest</li>
-          </ul>
-          <div class="price-list">
-            <div class="price-row"><span>Mo–Do</span><strong>25€ <span class="price-unit">/ Tag</span></strong></div>
-            <div class="price-row"><span>Fr–So</span><strong>30€ <span class="price-unit">/ Tag</span></strong></div>
-            <div class="price-row"><span>Wochenende komplett</span><strong>55€</strong></div>
-          </div>
-          <div class="small-note">Perfekt für Gartenparty, Geburtstag, Hochzeit und Outdoor-Events.</div>
-          <div class="deposit">Kaution: 120€</div>
-          <div class="cta-inline">
-            <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20ein%20Soundboks%20Partylicht%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="badge">Nebel</div>
-          <h3>🌫️ Nebelmaschine <span class="brand-note">– Stairville AF-250</span></h3>
-          <div class="subtitle">Leistungsstarke Nebelmaschine für starke Effekte auf der Tanzfläche. Perfekt in Kombination mit Partylicht und Soundboks Partybox.</div>
-          <ul class="feature-list">
-            <li>Starker Nebelausstoß für Partys</li>
-            <li>Ideal für Licht- und Dance-Effekte</li>
-            <li>Perfekt für Geburtstage, Events und Feiern</li>
-          </ul>
-          <div class="price-list">
-            <div class="price-row"><span>Mo–Do</span><strong>25€ <span class="price-unit">/ Tag</span></strong></div>
-            <div class="price-row"><span>Fr–So</span><strong>30€ <span class="price-unit">/ Tag</span></strong></div>
-            <div class="price-row"><span>Wochenende komplett</span><strong>55€</strong></div>
-          </div>
-          <div class="deposit">Kaution: 120€</div>
-          <div class="cta-inline">
-            <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20eine%20Nebelmaschine%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="badge">Event-Extra</div>
-          <h3>🫧 Seifenblasenmaschine <span class="brand-note">– Eliminator Bubbletron EXL GO</span></h3>
-          <div class="subtitle">Akkubetriebene Seifenblasenmaschine für Hochzeit, Empfang, Geburtstag und besondere Momente auf deiner Feier.</div>
-          <ul class="feature-list">
-            <li>Akkubetrieben</li>
-            <li>Bis zu 3 Stunden Laufzeit</li>
-            <li>Ideal für Hochzeit, Empfang und besondere Momente</li>
-          </ul>
-          <div class="price-list">
-            <div class="price-row"><span>Mo–Do</span><strong>25€ <span class="price-unit">/ Tag</span></strong></div>
-            <div class="price-row"><span>Fr–So</span><strong>30€ <span class="price-unit">/ Tag</span></strong></div>
-            <div class="price-row"><span>Wochenende komplett</span><strong>55€</strong></div>
-          </div>
-          <div class="deposit">Kaution: 120€</div>
-          <div class="cta-inline">
-            <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20eine%20Seifenblasenmaschine%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
-          </div>
-        </article>
-
+```
+    <article class="card">
+      <div class="badge">Beliebt</div>
+      <h3>🔊 Soundboks Partybox <span class="brand-note">– SOUNDBOKS</span></h3>
+      <div class="subtitle">
+        Soundboks mieten in Mainz, Wiesbaden & Frankfurt – leistungsstarke kabellose Partybox für Geburtstag, Gartenparty, Hochzeit und Events im Rhein-Main-Gebiet.
       </div>
-    </div>
+      <ul class="feature-list">
+        <li>Kabellos und akkubetrieben</li>
+        <li>Schnelle Bluetooth-Verbindung</li>
+        <li>Für drinnen und draußen geeignet</li>
+        <li>Einfacher Transport und schneller Aufbau</li>
+        <li>Ideal für private Feiern und Events</li>
+      </ul>
+      <div class="price-list">
+        <div class="price-row"><span>Mo–Do</span><strong>39€ <span class="price-unit">/ Tag</span></strong></div>
+        <div class="price-row"><span>Fr–So</span><strong>49€ <span class="price-unit">/ Tag</span></strong></div>
+        <div class="price-row"><span>Wochenende komplett</span><strong>89€</strong></div>
+      </div>
+      <div class="deposit">Kaution: 200€</div>
+      <div class="cta-inline">
+        <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20eine%20Soundboks%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="badge">Partylicht</div>
+      <h3>💡 Soundboks Partylicht <span class="brand-note">– SOUNDBOKS</span></h3>
+      <div class="subtitle">
+        Akkubetriebenes Partylicht mieten in Mainz & Umgebung – perfekt als Ergänzung zur Soundboks Partybox für mehr Stimmung auf deiner Feier.
+      </div>
+      <ul class="feature-list">
+        <li>Akkubetrieben und tragbar</li>
+        <li>Audioreaktives Partylicht</li>
+        <li>7x 12 W RGBW LEDs</li>
+        <li>IP65 staub- und wetterfest</li>
+      </ul>
+      <div class="price-list">
+        <div class="price-row"><span>Mo–Do</span><strong>25€ <span class="price-unit">/ Tag</span></strong></div>
+        <div class="price-row"><span>Fr–So</span><strong>30€ <span class="price-unit">/ Tag</span></strong></div>
+        <div class="price-row"><span>Wochenende komplett</span><strong>55€</strong></div>
+      </div>
+      <div class="small-note">Perfekt für Gartenparty, Geburtstag, Hochzeit und Outdoor-Events in Mainz & Umgebung.</div>
+      <div class="deposit">Kaution: 120€</div>
+      <div class="cta-inline">
+        <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20ein%20Soundboks%20Partylicht%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="badge">Nebel</div>
+      <h3>🌫️ Nebelmaschine <span class="brand-note">– Stairville AF-250</span></h3>
+      <div class="subtitle">
+        Nebelmaschine mieten in Mainz, Wiesbaden & Frankfurt – starke Effekte für deine Tanzfläche, perfekt mit Partylicht und Soundboks Partybox kombinierbar.
+      </div>
+      <ul class="feature-list">
+        <li>Starker Nebelausstoß für Partys</li>
+        <li>Ideal für Licht- und Dance-Effekte</li>
+        <li>Perfekt für Geburtstage, Events und Feiern</li>
+      </ul>
+      <div class="price-list">
+        <div class="price-row"><span>Mo–Do</span><strong>25€ <span class="price-unit">/ Tag</span></strong></div>
+        <div class="price-row"><span>Fr–So</span><strong>30€ <span class="price-unit">/ Tag</span></strong></div>
+        <div class="price-row"><span>Wochenende komplett</span><strong>55€</strong></div>
+      </div>
+      <div class="deposit">Kaution: 120€</div>
+      <div class="cta-inline">
+        <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20eine%20Nebelmaschine%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="badge">Event-Extra</div>
+      <h3>🫧 Seifenblasenmaschine <span class="brand-note">– Eliminator Bubbletron EXL GO</span></h3>
+      <div class="subtitle">
+        Seifenblasenmaschine mieten in Mainz & Umgebung – ideal für Hochzeit, Empfang, Geburtstag und besondere Momente auf deiner Feier.
+      </div>
+      <ul class="feature-list">
+        <li>Akkubetrieben</li>
+        <li>Bis zu 3 Stunden Laufzeit</li>
+        <li>Ideal für Hochzeit, Empfang und besondere Momente</li>
+      </ul>
+      <div class="price-list">
+        <div class="price-row"><span>Mo–Do</span><strong>25€ <span class="price-unit">/ Tag</span></strong></div>
+        <div class="price-row"><span>Fr–So</span><strong>30€ <span class="price-unit">/ Tag</span></strong></div>
+        <div class="price-row"><span>Wochenende komplett</span><strong>55€</strong></div>
+      </div>
+      <div class="deposit">Kaution: 120€</div>
+      <div class="cta-inline">
+        <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20eine%20Seifenblasenmaschine%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
+      </div>
+    </article>
+
+  </div>
+</div>
+```
+
   </section>
 
   <!-- ── PAKETE ── -->
+
   <section class="section" id="pakete">
     <div class="container">
       <div class="section-head">
         <h2>Pakete für Feiern und Events</h2>
-        <p>Direkt die passende Kombination für deine Feier buchen.</p>
+        <p>Partybox Pakete mieten in Mainz & Umgebung – direkt die passende Kombination für deine Feier buchen.</p>
       </div>
       <div class="pricing-grid">
 
-        <article class="card">
-          <div class="badge">Für kleine Feiern</div>
-          <h3>🎉 Paket Basic</h3>
-          <div class="subtitle">1x Soundboks Partybox + 1x Soundboks Partylicht</div>
-          <div class="price-list">
-            <div class="price-row"><span>Mo–Do</span><strong>65€ <span class="price-unit">/ Tag</span></strong></div>
-            <div class="price-row"><span>Fr–So</span><strong>75€ <span class="price-unit">/ Tag</span></strong></div>
-            <div class="price-row"><span>Wochenende komplett</span><strong>119€</strong></div>
-          </div>
-          <div class="deposit">Kaution: 220€</div>
-          <div class="cta-inline">
-            <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20das%20Paket%20Basic%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
-          </div>
-        </article>
-
-        <article class="card card-featured">
-          <div class="badge badge-featured">🔥 Am beliebtesten</div>
-          <h3>🔥 Paket Party</h3>
-          <div class="subtitle">1x Soundboks Partybox + 1x Soundboks Partylicht + Nebelmaschine</div>
-          <div class="price-list">
-            <div class="price-row"><span>Mo–Do</span><strong>79€ <span class="price-unit">/ Tag</span></strong></div>
-            <div class="price-row"><span>Fr–So</span><strong>95€ <span class="price-unit">/ Tag</span></strong></div>
-            <div class="price-row"><span>Wochenende komplett</span><strong>149€</strong></div>
-          </div>
-          <div class="deposit">Kaution: 260€</div>
-          <div class="small-note">Ideal für Geburtstage, Gartenpartys und Feiern mit richtig Stimmung.</div>
-          <div class="cta-inline">
-            <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20das%20Paket%20Party%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="badge">Für größere Feiern</div>
-          <h3>🚀 Paket Premium</h3>
-          <div class="subtitle">2x Soundboks Partybox + 2x Soundboks Partylicht</div>
-          <div class="price-list">
-            <div class="price-row"><span>Mo–Do</span><strong>139€ <span class="price-unit">/ Tag</span></strong></div>
-            <div class="price-row"><span>Fr–So</span><strong>159€ <span class="price-unit">/ Tag</span></strong></div>
-            <div class="price-row"><span>Wochenende komplett</span><strong>269€</strong></div>
-          </div>
-          <div class="deposit">Kaution: 350€</div>
-          <div class="cta-inline">
-            <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20das%20Paket%20Premium%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="badge">Komplettes Setup</div>
-          <h3>🎊 Paket Event Komplett</h3>
-          <div class="subtitle">2x Soundboks Partybox + 2x Soundboks Partylicht + Nebelmaschine + Seifenblasenmaschine</div>
-          <div class="price-list">
-            <div class="price-row"><span>Mo–Do</span><strong>219€ <span class="price-unit">/ Tag</span></strong></div>
-            <div class="price-row"><span>Fr–So</span><strong>249€ <span class="price-unit">/ Tag</span></strong></div>
-            <div class="price-row"><span>Wochenende komplett</span><strong>429€</strong></div>
-          </div>
-          <div class="deposit">Kaution: 450€</div>
-          <div class="cta-inline">
-            <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20das%20Paket%20Event%20Komplett%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
-          </div>
-        </article>
-
+```
+    <article class="card">
+      <div class="badge">Für kleine Feiern</div>
+      <h3>🎉 Paket Basic</h3>
+      <div class="subtitle">1x Soundboks Partybox + 1x Soundboks Partylicht</div>
+      <div class="price-list">
+        <div class="price-row"><span>Mo–Do</span><strong>65€ <span class="price-unit">/ Tag</span></strong></div>
+        <div class="price-row"><span>Fr–So</span><strong>75€ <span class="price-unit">/ Tag</span></strong></div>
+        <div class="price-row"><span>Wochenende komplett</span><strong>119€</strong></div>
       </div>
-    </div>
+      <div class="deposit">Kaution: 220€</div>
+      <div class="cta-inline">
+        <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20das%20Paket%20Basic%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
+      </div>
+    </article>
+
+    <article class="card card-featured">
+      <div class="badge badge-featured">🔥 Am beliebtesten</div>
+      <h3>🔥 Paket Party</h3>
+      <div class="subtitle">1x Soundboks Partybox + 1x Soundboks Partylicht + Nebelmaschine</div>
+      <div class="price-list">
+        <div class="price-row"><span>Mo–Do</span><strong>79€ <span class="price-unit">/ Tag</span></strong></div>
+        <div class="price-row"><span>Fr–So</span><strong>95€ <span class="price-unit">/ Tag</span></strong></div>
+        <div class="price-row"><span>Wochenende komplett</span><strong>149€</strong></div>
+      </div>
+      <div class="deposit">Kaution: 260€</div>
+      <div class="small-note">Ideal für Geburtstage, Gartenpartys und Feiern in Mainz, Wiesbaden & Frankfurt.</div>
+      <div class="cta-inline">
+        <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20das%20Paket%20Party%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="badge">Für größere Feiern</div>
+      <h3>🚀 Paket Premium</h3>
+      <div class="subtitle">2x Soundboks Partybox + 2x Soundboks Partylicht</div>
+      <div class="price-list">
+        <div class="price-row"><span>Mo–Do</span><strong>139€ <span class="price-unit">/ Tag</span></strong></div>
+        <div class="price-row"><span>Fr–So</span><strong>159€ <span class="price-unit">/ Tag</span></strong></div>
+        <div class="price-row"><span>Wochenende komplett</span><strong>269€</strong></div>
+      </div>
+      <div class="deposit">Kaution: 350€</div>
+      <div class="cta-inline">
+        <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20das%20Paket%20Premium%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="badge">Komplettes Setup</div>
+      <h3>🎊 Paket Event Komplett</h3>
+      <div class="subtitle">2x Soundboks Partybox + 2x Soundboks Partylicht + Nebelmaschine + Seifenblasenmaschine</div>
+      <div class="price-list">
+        <div class="price-row"><span>Mo–Do</span><strong>219€ <span class="price-unit">/ Tag</span></strong></div>
+        <div class="price-row"><span>Fr–So</span><strong>249€ <span class="price-unit">/ Tag</span></strong></div>
+        <div class="price-row"><span>Wochenende komplett</span><strong>429€</strong></div>
+      </div>
+      <div class="deposit">Kaution: 450€</div>
+      <div class="cta-inline">
+        <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20das%20Paket%20Event%20Komplett%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
+      </div>
+    </article>
+
+  </div>
+</div>
+```
+
   </section>
 
   <!-- ── FAQ ── -->
+
   <section class="section" id="faq">
     <div class="container">
       <div class="section-head">
@@ -591,103 +669,145 @@
       </div>
       <div class="faq-simple">
 
-        <p class="faq-cat">🔊 Gerät & Technik</p>
+```
+    <p class="faq-cat">🔊 Gerät & Technik</p>
 
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">Wie lange hält der Akku der Soundboks?<span class="faq-icon">+</span></button>
-          <div class="faq-answer"><p>Je nach Lautstärke zwischen 10 und 40 Stunden. Bei normaler Partylautstärke reicht der Akku locker für einen ganzen Abend. Du kannst die Box außerdem während des Betriebs laden, falls eine Steckdose in der Nähe ist.</p></div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">Kann ich die Soundboks per Bluetooth verbinden?<span class="faq-icon">+</span></button>
-          <div class="faq-answer"><p>Ja, die Verbindung läuft über Bluetooth und funktioniert schnell und stabil. Du kannst direkt mit deinem Handy oder Laptop Musik abspielen – ohne Kabel, ohne Einrichtungsaufwand. Mehrere Geräte können nacheinander verbunden werden.</p></div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">Ist die Soundboks auch für draußen geeignet?<span class="faq-icon">+</span></button>
-          <div class="faq-answer"><p>Ja! Die Soundboks ist wetterfest und akkubetrieben – perfekt für Gartenpartys, Grillabende oder Outdoor-Events. Du brauchst keine Steckdose und musst dir bei leichtem Regen keine Sorgen machen.</p></div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">Wie laut ist die Soundboks?<span class="faq-icon">+</span></button>
-          <div class="faq-answer"><p>Die Soundboks erreicht bis zu 126 dB – das reicht problemlos für Gärten, Wohnungen und kleine Hallen mit bis zu ca. 100–150 Personen. Bitte beachte die Nachtruhe in Wohngebieten ab 22 Uhr.</p></div>
-        </div>
-
-        <p class="faq-cat">📋 Buchung & Ablauf</p>
-
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">Wie läuft die Buchung ab?<span class="faq-icon">+</span></button>
-          <div class="faq-answer"><p>Ganz einfach: Schreib uns per WhatsApp oder ruf uns an. Wir prüfen die Verfügbarkeit für dein Wunschdatum und bestätigen dir die Buchung schnell – meist innerhalb weniger Minuten.</p></div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">Gibt es Abholung oder Lieferung?<span class="faq-icon">+</span></button>
-          <div class="faq-answer"><p>Beides ist möglich. Du kannst das Equipment bei uns abholen – Ort und Zeit sprechen wir per WhatsApp ab. Alternativ liefern wir dir das Equipment direkt zu dir nach Hause oder zum Veranstaltungsort. Die Liefergebühr hängt vom Standort ab.</p></div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">Kann ich kurzfristig buchen?<span class="faq-icon">+</span></button>
-          <div class="faq-answer"><p>Ja, kurzfristige Buchungen sind möglich – solange das Equipment noch verfügbar ist. Besonders an Wochenenden sind die Geräte schnell ausgebucht. Am besten anfragen, sobald dein Eventdatum feststeht.</p></div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">Kann ich stornieren?<span class="faq-icon">+</span></button>
-          <div class="faq-answer"><p>Ja. Stornierungen sind bis 48 Stunden vor dem Mietbeginn kostenlos möglich. Bei späteren Stornierungen behalten wir uns vor, eine Ausfallgebühr zu berechnen. Schreib uns per WhatsApp – wir finden immer eine faire Lösung.</p></div>
-        </div>
-
-        <p class="faq-cat">💳 Kaution & Zahlung</p>
-
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">Wie funktioniert die Kaution?<span class="faq-icon">+</span></button>
-          <div class="faq-answer"><p>Die Kaution wird bei Übergabe des Equipments in bar hinterlegt und nach der Rückgabe – wenn alles in Ordnung ist – sofort wieder zurückgegeben.</p></div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">Welche Zahlungsmethoden werden akzeptiert?<span class="faq-icon">+</span></button>
-          <div class="faq-answer"><p>Wir akzeptieren Barzahlung und Überweisung. Bei Fragen zur Zahlung einfach kurz per WhatsApp nachfragen – wir sind flexibel.</p></div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question" onclick="toggleFaq(this)">Was passiert bei Schäden am Equipment?<span class="faq-icon">+</span></button>
-          <div class="faq-answer"><p>Bei echten Schäden durch unsachgemäße Nutzung behalten wir die Kaution ganz oder teilweise ein. Im Zweifelsfall sprechen wir alles offen und fair ab.</p></div>
-        </div>
-
-      </div>
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">Wie lange hält der Akku der Soundboks?<span class="faq-icon">+</span></button>
+      <div class="faq-answer"><p>Je nach Lautstärke zwischen 10 und 40 Stunden. Bei normaler Partylautstärke reicht der Akku locker für einen ganzen Abend. Du kannst die Box außerdem während des Betriebs laden, falls eine Steckdose in der Nähe ist.</p></div>
     </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">Kann ich die Soundboks per Bluetooth verbinden?<span class="faq-icon">+</span></button>
+      <div class="faq-answer"><p>Ja, die Verbindung läuft über Bluetooth und funktioniert schnell und stabil. Du kannst direkt mit deinem Handy oder Laptop Musik abspielen – ohne Kabel, ohne Einrichtungsaufwand. Mehrere Geräte können nacheinander verbunden werden.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">Ist die Soundboks auch für draußen geeignet?<span class="faq-icon">+</span></button>
+      <div class="faq-answer"><p>Ja! Die Soundboks ist wetterfest und akkubetrieben – perfekt für Gartenpartys, Grillabende oder Outdoor-Events in Mainz und Umgebung. Du brauchst keine Steckdose und musst dir bei leichtem Regen keine Sorgen machen.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">Wie laut ist die Soundboks?<span class="faq-icon">+</span></button>
+      <div class="faq-answer"><p>Die Soundboks erreicht bis zu 126 dB – das reicht problemlos für Gärten, Wohnungen und kleine Hallen mit bis zu ca. 100–150 Personen. Bitte beachte die Nachtruhe in Wohngebieten ab 22 Uhr.</p></div>
+    </div>
+
+    <p class="faq-cat">📋 Buchung & Ablauf</p>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">Wie läuft die Buchung ab?<span class="faq-icon">+</span></button>
+      <div class="faq-answer"><p>Ganz einfach: Schreib uns per WhatsApp oder ruf uns an. Wir prüfen die Verfügbarkeit für dein Wunschdatum und bestätigen dir die Buchung schnell – meist innerhalb weniger Minuten.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">Gibt es Abholung oder Lieferung?<span class="faq-icon">+</span></button>
+      <div class="faq-answer"><p>Standard ist die Abholung bei uns – einfach, schnell und ohne Zusatzkosten. Nach Absprache kann auch geliefert werden (mit Aufpreis) nach Mainz, Wiesbaden, Frankfurt, Bingen, Ingelheim, Rüsselsheim, Darmstadt und Umgebung. Der Aufpreis hängt vom Standort ab – einfach per WhatsApp anfragen.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">Kann ich kurzfristig buchen?<span class="faq-icon">+</span></button>
+      <div class="faq-answer"><p>Ja, kurzfristige Buchungen sind möglich – solange das Equipment noch verfügbar ist. Besonders an Wochenenden sind die Geräte schnell ausgebucht. Am besten anfragen, sobald dein Eventdatum feststeht.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">Kann ich stornieren?<span class="faq-icon">+</span></button>
+      <div class="faq-answer"><p>Ja. Stornierungen sind bis 48 Stunden vor dem Mietbeginn kostenlos möglich. Bei späteren Stornierungen behalten wir uns vor, eine Ausfallgebühr zu berechnen. Schreib uns per WhatsApp – wir finden immer eine faire Lösung.</p></div>
+    </div>
+
+    <p class="faq-cat">💳 Kaution & Zahlung</p>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">Wie funktioniert die Kaution?<span class="faq-icon">+</span></button>
+      <div class="faq-answer"><p>Die Kaution wird bei Übergabe des Equipments in bar hinterlegt und nach der Rückgabe – wenn alles in Ordnung ist – sofort wieder zurückgegeben.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">Welche Zahlungsmethoden werden akzeptiert?<span class="faq-icon">+</span></button>
+      <div class="faq-answer"><p>Wir akzeptieren Barzahlung und Überweisung. Bei Fragen zur Zahlung einfach kurz per WhatsApp nachfragen – wir sind flexibel.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">Was passiert bei Schäden am Equipment?<span class="faq-icon">+</span></button>
+      <div class="faq-answer"><p>Bei echten Schäden durch unsachgemäße Nutzung behalten wir die Kaution ganz oder teilweise ein. Im Zweifelsfall sprechen wir alles offen und fair ab.</p></div>
+    </div>
+
+  </div>
+</div>
+```
+
+  </section>
+
+  <!-- ── GOOGLE BEWERTUNGEN ── -->
+
+  <section class="section" id="bewertungen">
+    <div class="container">
+      <div class="reviews-card">
+        <div class="reviews-google-logo">
+          <span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>
+          <strong>Bewertungen</strong>
+        </div>
+
+```
+    <div class="reviews-rating">5,0</div>
+    <div class="reviews-stars">★ ★ ★ ★ ★</div>
+
+    <p class="reviews-text">
+      <strong>100% zufriedene Kunden</strong> – überzeuge dich selbst von unserem Service auf Google.
+    </p>
+
+    <div class="reviews-buttons">
+      <a class="btn btn-primary"
+         href="https://g.page/r/CU4kqnSAsf6GEAE"
+         target="_blank" rel="noopener noreferrer">
+        ⭐ Bewertungen ansehen
+      </a>
+      <a class="btn btn-whatsapp"
+         href="https://g.page/r/CU4kqnSAsf6GEAE/review"
+         target="_blank" rel="noopener noreferrer">
+        ✍️ Jetzt bewerten
+      </a>
+    </div>
+  </div>
+</div>
+```
+
   </section>
 
   <!-- ── KONTAKT ── -->
+
   <section class="section" id="kontakt">
     <div class="container">
       <div class="contact-wrap">
         <div class="contact-card">
           <h3>Kontakt &amp; Reservierung</h3>
-          <p>Du willst eine Soundboks Partybox, ein Soundboks Partylicht, eine Nebelmaschine, eine Seifenblasenmaschine oder ein passendes Paket mieten? Frag schnell und unkompliziert per WhatsApp oder Telefon an.</p>
+          <p>Du möchtest eine Partybox oder Soundboks mieten in Mainz, Wiesbaden, Frankfurt oder Umgebung? Frag schnell und unkompliziert per WhatsApp oder Telefon an – wir antworten meist innerhalb weniger Minuten.</p>
           <div class="cta-row" style="margin-top:0;">
             <a class="btn btn-whatsapp" href="https://wa.me/4917629007917" target="_blank" rel="noopener noreferrer">WhatsApp schreiben</a>
             <a class="btn btn-primary" href="tel:+4917629007917">Jetzt anrufen</a>
           </div>
         </div>
         <div class="contact-card">
-          <h3>Liefergebiet</h3>
-          <p>Verleih in Mainz, Wiesbaden, Frankfurt und Umgebung. Ideal für private Feiern, Hochzeiten, Geburtstage und Gartenpartys.</p>
-          <p style="margin-bottom:0;">Abholung oder Lieferung nach Absprache möglich.</p>
+          <h3>Abhol- &amp; Liefergebiet</h3>
+          <p>Partybox Verleih in Mainz, Wiesbaden, Frankfurt und der gesamten Rhein-Main-Region. Standard ist die Abholung bei uns – nach Absprache kann auch geliefert werden (mit Aufpreis) nach Bingen, Ingelheim, Nieder-Olm, Rüsselsheim, Darmstadt und Umgebung.</p>
+          <p style="margin-bottom:0;">Abholung ohne Zusatzkosten – Lieferung mit Aufpreis nach Absprache.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ── CITY LINKS ── -->
+
   <div class="container city-links">
     <p>
-      Wir bieten <strong>Soundboks Verleih und Partybox Verleih</strong> in
+      Wir bieten <strong>Partybox mieten und Soundboks Verleih</strong> in
       <a href="partybox-mieten-mainz.html">Mainz</a>,
       <a href="partybox-mieten-wiesbaden.html">Wiesbaden</a> und
-      <a href="partybox-mieten-frankfurt.html">Frankfurt</a>.
+      <a href="partybox-mieten-frankfurt.html">Frankfurt</a> sowie der gesamten Rhein-Main-Region.
     </p>
   </div>
 
   <!-- ── FOOTER ── -->
+
   <footer>
     <div class="container footer-inner">
       <div>© 2026 GABO Verleihservice</div>
@@ -701,32 +821,12 @@
   </footer>
 
   <script>
-    function toggleMenu() {
-      document.getElementById('mobileMenu').classList.toggle('open');
-      document.getElementById('hamburger').classList.toggle('open');
-    }
-    function closeMenu() {
-      document.getElementById('mobileMenu').classList.remove('open');
-      document.getElementById('hamburger').classList.remove('open');
-    }
     function toggleFaq(btn) {
       const item = btn.closest('.faq-item');
       const isOpen = item.classList.contains('open');
       document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
       if (!isOpen) item.classList.add('open');
     }
-    // Aktiven Nav-Link beim Scrollen highlighten
-    const sections = document.querySelectorAll('section[id], header[id]');
-    const navLinks = document.querySelectorAll('.navbar-links a');
-    window.addEventListener('scroll', () => {
-      let current = '';
-      sections.forEach(sec => {
-        if (window.scrollY >= sec.offsetTop - 80) current = sec.id;
-      });
-      navLinks.forEach(a => {
-        a.classList.toggle('active', a.getAttribute('href') === '#' + current);
-      });
-    });
   </script>
 
 </body>
