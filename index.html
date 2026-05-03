@@ -392,8 +392,8 @@
     .reviews-card{
       background:linear-gradient(180deg, rgba(255,255,255,0.94), rgba(255,255,255,0.88));
       border:1px solid var(--line);
-      border-radius:var(--radius);
-      padding:32px 28px;
+      border-radius:18px;
+      padding:16px 18px;
       box-shadow:var(--shadow-soft);
       text-align:center;
       position:relative;
@@ -401,15 +401,15 @@
     }
     .reviews-card::before{
       content:""; position:absolute; inset:0 auto auto 0;
-      width:100%; height:4px;
+      width:100%; height:3px;
       background:linear-gradient(90deg, #4285F4, #EA4335, #FBBC04, #34A853);
     }
     .reviews-google-logo{
       font-family:'Nunito', sans-serif;
-      font-size:28px;
+      font-size:16px;
       font-weight:900;
-      letter-spacing:-0.5px;
-      margin-bottom:12px;
+      letter-spacing:-0.2px;
+      margin-bottom:4px;
     }
     .reviews-google-logo span:nth-child(1){ color:#4285F4; }
     .reviews-google-logo span:nth-child(2){ color:#EA4335; }
@@ -417,27 +417,80 @@
     .reviews-google-logo span:nth-child(4){ color:#4285F4; }
     .reviews-google-logo span:nth-child(5){ color:#34A853; }
     .reviews-google-logo span:nth-child(6){ color:#EA4335; }
-    .reviews-google-logo strong{ color:#0f172a; font-weight:700; margin-left:8px; }
+    .reviews-google-logo strong{ color:#0f172a; font-weight:700; margin-left:5px; font-size:15px; }
 
-    .reviews-stars{
-      display:flex; justify-content:center; gap:4px;
-      margin:8px 0 10px;
-      font-size:32px;
-      color:#FBBC04;
-      letter-spacing:2px;
+    .reviews-summary{
+      display:flex; align-items:center; justify-content:center;
+      gap:10px; flex-wrap:wrap; margin-bottom:12px;
     }
     .reviews-rating{
-      font-size:42px; font-weight:900; color:#0f172a;
-      letter-spacing:-1px; line-height:1;
+      font-family:'Nunito', sans-serif;
+      font-size:24px; font-weight:900; color:#0f172a;
+      letter-spacing:-0.5px; line-height:1;
+    }
+    .reviews-stars{
+      font-size:16px;
+      color:#FBBC04;
+      letter-spacing:1px;
+      line-height:1;
+    }
+    .reviews-count{
+      font-size:12px; color:var(--muted); font-weight:600;
+    }
+
+    /* Echte Bewertungen */
+    .reviews-list{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+      gap:10px;
+      margin-bottom:14px;
+      text-align:left;
+    }
+    .review-item{
+      background:rgba(248,251,255,0.7);
+      border:1px solid var(--line);
+      border-radius:10px;
+      padding:10px 12px;
+    }
+    .review-header{
+      display:flex; align-items:center; gap:8px;
       margin-bottom:6px;
     }
-    .reviews-text{
-      color:var(--muted); font-size:15px; margin-bottom:22px;
+    .review-avatar{
+      width:28px; height:28px;
+      border-radius:50%;
+      background:linear-gradient(135deg, var(--blue), var(--blue-strong));
+      color:#fff;
+      display:flex; align-items:center; justify-content:center;
+      font-weight:900; font-size:13px;
+      flex-shrink:0;
     }
-    .reviews-text strong{ color:#0f172a; }
+    .review-avatar.green{ background:linear-gradient(135deg, #34A853, #1f8a3a); }
+    .review-avatar.purple{ background:linear-gradient(135deg, #8b5cf6, #6d3fc7); }
+    .review-avatar.orange{ background:linear-gradient(135deg, #f97316, #ea580c); }
+    .review-name-block{ flex:1; min-width:0; }
+    .review-name{
+      font-weight:800; font-size:12px; color:#0f172a;
+      line-height:1.2;
+    }
+    .review-stars{
+      color:#FBBC04; font-size:11px; letter-spacing:1px;
+      margin-top:1px;
+    }
+    .review-date{
+      font-size:10px; color:var(--muted-2);
+    }
+    .review-text{
+      font-size:12px; color:#334155;
+      line-height:1.5; margin:0;
+    }
 
     .reviews-buttons{
-      display:flex; gap:12px; justify-content:center; flex-wrap:wrap;
+      display:flex; gap:8px; justify-content:center; flex-wrap:wrap;
+    }
+    .reviews-buttons .btn{
+      min-height:38px; padding:0 14px; border-radius:10px;
+      font-size:13px; box-shadow:none;
     }
     .city-links strong{ color:#0f172a; }
     .city-links a{ color:#2563eb; font-weight:700; }
@@ -556,7 +609,7 @@
             <div class="price-row"><span>Wochenende komplett</span><strong>89€</strong></div>
           </div>
           <div class="addon-box">
-            <strong>1 Stativ dazu buchen:</strong> +5€
+            <strong>1 Stativ dazu buchen:</strong> +10€
           </div>
           <div class="deposit">Kaution: 200€</div>
           <div class="cta-inline">
@@ -632,7 +685,7 @@
           </div>
           <div class="addon-box">
             <strong>1 Füllung (2 Liter) ist im Preis enthalten.</strong><br>
-            Jede weitere Füllung (2 Liter) kostet 5€.
+            Jede weitere Füllung (2 Liter) kostet 10€.
           </div>
           <div class="deposit">Kaution: 120€</div>
           <div class="cta-inline">
@@ -663,7 +716,7 @@
             <div class="price-row"><span>Wochenende komplett</span><strong>119€</strong></div>
           </div>
           <div class="addon-box">
-            <strong>1 Stativ dazu buchen:</strong> +5€
+            <strong>1 Stativ dazu buchen:</strong> +10€
           </div>
           <div class="deposit">Kaution: 220€</div>
           <div class="cta-inline">
@@ -681,7 +734,7 @@
             <div class="price-row"><span>Wochenende komplett</span><strong>149€</strong></div>
           </div>
           <div class="addon-box">
-            <strong>1 Stativ dazu buchen:</strong> +5€
+            <strong>1 Stativ dazu buchen:</strong> +10€
           </div>
           <div class="addon-box">
             <strong>1 Füllung Nebelfluid (1,6 Liter) ist im Preis enthalten</strong> – reicht bei normaler Nutzung den ganzen Abend.<br>
@@ -704,7 +757,7 @@
             <div class="price-row"><span>Wochenende komplett</span><strong>269€</strong></div>
           </div>
           <div class="addon-box">
-            <strong>2 Stative dazu buchen:</strong> +10€
+            <strong>2 Stative dazu buchen:</strong> +15€
           </div>
           <div class="deposit">Kaution: 350€</div>
           <div class="cta-inline">
@@ -722,12 +775,12 @@
             <div class="price-row"><span>Wochenende komplett</span><strong>429€</strong></div>
           </div>
           <div class="addon-box">
-            <strong>2 Stative dazu buchen:</strong> +10€
+            <strong>2 Stative dazu buchen:</strong> +15€
           </div>
           <div class="addon-box">
             <strong>Je 1 Füllung pro Maschine ist im Preis enthalten:</strong><br>
             • Nebelmaschine: 1,6 Liter (reicht den ganzen Abend) – jede weitere Füllung 8€<br>
-            • Seifenblasenmaschine: 2 Liter – jede weitere Füllung 5€
+            • Seifenblasenmaschine: 2 Liter – jede weitere Füllung 10€
           </div>
           <div class="deposit">Kaution: 450€</div>
           <div class="cta-inline">
@@ -869,18 +922,60 @@
           <strong>Bewertungen</strong>
         </div>
 
-        <div class="reviews-rating">5,0</div>
-        <div class="reviews-stars">★ ★ ★ ★ ★</div>
+        <div class="reviews-summary">
+          <div class="reviews-rating">5,0</div>
+          <div>
+            <div class="reviews-stars">★ ★ ★ ★ ★</div>
+            <div class="reviews-count">3 Rezensionen</div>
+          </div>
+        </div>
 
-        <p class="reviews-text">
-          <strong>100% zufriedene Kunden</strong> – überzeuge dich selbst von unserem Service auf Google.
-        </p>
+        <!-- ECHTE BEWERTUNGEN -->
+        <div class="reviews-list">
+
+          <div class="review-item">
+            <div class="review-header">
+              <div class="review-avatar green">L</div>
+              <div class="review-name-block">
+                <div class="review-name">Lyra</div>
+                <div class="review-stars">★★★★★</div>
+                <div class="review-date">Gestern</div>
+              </div>
+            </div>
+            <p class="review-text">„Wir haben eine Soundboks gemietet und sind sehr zufrieden! Sehr unproblematisch, zuverlässig und nett. Preis absolut fair."</p>
+          </div>
+
+          <div class="review-item">
+            <div class="review-header">
+              <div class="review-avatar">D</div>
+              <div class="review-name-block">
+                <div class="review-name">Dursun Yasar</div>
+                <div class="review-stars">★★★★★</div>
+                <div class="review-date">Vor 2 Tagen</div>
+              </div>
+            </div>
+            <p class="review-text">„Beste Party-maker***** günstige Preise, viele Produkte. Dankeschön"</p>
+          </div>
+
+          <div class="review-item">
+            <div class="review-header">
+              <div class="review-avatar orange">G</div>
+              <div class="review-name-block">
+                <div class="review-name">Gioachino Infranca</div>
+                <div class="review-stars">★★★★★</div>
+                <div class="review-date">Vor 2 Tagen</div>
+              </div>
+            </div>
+            <p class="review-text">„Ich hatte ein fantastisches Erlebnis beim GABO-Event! Die Partyboxen, die Musik, die Atmosphäre – einfach alles war perfekt!"</p>
+          </div>
+
+        </div>
 
         <div class="reviews-buttons">
           <a class="btn btn-primary"
              href="https://g.page/r/CU4kqnSAsf6GEAE"
              target="_blank" rel="noopener noreferrer">
-            ⭐ Bewertungen ansehen
+            ⭐ Alle Bewertungen ansehen
           </a>
           <a class="btn btn-whatsapp"
              href="https://g.page/r/CU4kqnSAsf6GEAE/review"
