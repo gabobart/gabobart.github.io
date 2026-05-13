@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
@@ -17,7 +16,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
   <!-- Erweitertes Schema.org für bessere Google-Sichtbarkeit -->
-
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -930,12 +928,10 @@
       .faq-question{ font-size:16px; padding:16px 18px; }
     }
   </style>
-
 </head>
 <body>
 
   <!-- ── TOP QUICK NAV ── -->
-
   <div class="top-quicknav">
     <div class="quicknav-inner">
       <button class="quicknav-btn" onclick="toggleQuickNav('faq-panel', this)">❓ FAQ</button>
@@ -944,245 +940,237 @@
     </div>
     <div class="quicknav-content" id="quicknav-content">
 
-```
-  <!-- FAQ Panel -->
-  <div class="quicknav-panel" id="faq-panel">
-    <button class="quicknav-panel-close" onclick="closeQuickNav()">×</button>
-    <h2 style="margin:0 0 8px; font-size:24px; color:#0f172a;">❓ Häufige Fragen</h2>
-    <p style="color:var(--muted); margin-bottom:20px; font-size:15px;">Alles was du vor deiner Buchung wissen möchtest.</p>
-    
-    <div class="faq-cats">
-      <!-- KATEGORIE 1: Gerät & Technik -->
-      <div class="faq-cat-block">
-        <button class="faq-cat-header" onclick="toggleCat(this)">
-          <span>🔊 Gerät & Technik</span>
-          <span class="faq-cat-icon">+</span>
-        </button>
-        <div class="faq-cat-body">
-          <div class="faq-item">
-            <button class="faq-question" onclick="toggleFaq(this)">Welche Generation der Soundboks bekomme ich?<span class="faq-icon">+</span></button>
-            <div class="faq-answer"><p>Je nach Verfügbarkeit erhältst du entweder eine Soundboks Generation 3 oder Generation 4. Beide bieten erstklassigen Sound mit bis zu 126 dB Lautstärke und sind perfekt für jede Feier.</p></div>
+      <!-- FAQ Panel -->
+      <div class="quicknav-panel" id="faq-panel">
+        <button class="quicknav-panel-close" onclick="closeQuickNav()">×</button>
+        <h2 style="margin:0 0 8px; font-size:24px; color:#0f172a;">❓ Häufige Fragen</h2>
+        <p style="color:var(--muted); margin-bottom:20px; font-size:15px;">Alles was du vor deiner Buchung wissen möchtest.</p>
+        
+        <div class="faq-cats">
+          <!-- KATEGORIE 1: Gerät & Technik -->
+          <div class="faq-cat-block">
+            <button class="faq-cat-header" onclick="toggleCat(this)">
+              <span>🔊 Gerät & Technik</span>
+              <span class="faq-cat-icon">+</span>
+            </button>
+            <div class="faq-cat-body">
+              <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">Welche Generation der Soundboks bekomme ich?<span class="faq-icon">+</span></button>
+                <div class="faq-answer"><p>Je nach Verfügbarkeit erhältst du entweder eine Soundboks Generation 3 oder Generation 4. Beide bieten erstklassigen Sound mit bis zu 126 dB Lautstärke und sind perfekt für jede Feier.</p></div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">Wie lange hält der Akku der Soundboks?<span class="faq-icon">+</span></button>
+                <div class="faq-answer"><p>Bei normaler Nutzung hält der Akku 10-40 Stunden – also locker die ganze Party. Bei voller Lautstärke (z.B. Festival-Setup) sind es ca. 4-6 Stunden je nach Generation.</p></div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">Ist die Soundboks wetterfest?<span class="faq-icon">+</span></button>
+                <div class="faq-answer"><p>Ja, die Soundboks ist spritzwassergeschützt und perfekt für Outdoor-Events – Gartenpartys, Strand, Festivals. Aber bitte nicht im Dauerregen stehen lassen.</p></div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">Kann ich 2 Soundboks koppeln?<span class="faq-icon">+</span></button>
+                <div class="faq-answer"><p>Ja! Mit der TeamUP-Funktion kannst du beide Soundboks verbinden und entweder denselben Sound aus beiden Boxen abspielen oder echtes Stereo erleben. Perfekt für größere Räume oder Outdoor-Events.</p></div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">Wie hell ist das Partylicht?<span class="faq-icon">+</span></button>
+                <div class="faq-answer"><p>Das Soundboks Performance Light hat 7× 12 W RGBW LEDs – das ist mehr als hell genug für jede Party. Es ist audioreaktiv, tanzt also mit der Musik mit, und ist IP65 staub- und wetterfest.</p></div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">Wie funktioniert die Nebelmaschine?<span class="faq-icon">+</span></button>
+                <div class="faq-answer"><p>Die Stairville AF-250 hat 1.300 W Leistung und produziert 180 m³ Nebel pro Minute mit einer Reichweite von 4-5 Metern. Steuerung per DMX oder Fernbedienung. Eine Füllung (1,6 L) reicht bei normaler Nutzung den ganzen Abend.</p></div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">Wie wird die Seifenblasenmaschine bedient?<span class="faq-icon">+</span></button>
+                <div class="faq-answer"><p>Die Eliminator Bubbletron EXL GO ist akkubetrieben (bis zu 3 Stunden Laufzeit) und wird per Funk-Fernbedienung (BUBGO-WR) gesteuert. So kannst du sie aus der Distanz starten und stoppen – perfekt für den Wow-Effekt bei der Hochzeit oder beim Tanz.</p></div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">Wie funktioniert das Video-Gästebuch?<span class="faq-icon">+</span></button>
+                <div class="faq-answer"><p>Das Video-Gästebuch ist ein stilvolles Retro-Telefon: Hörer abnehmen, sprechen, auflegen – fertig! Es ist akkubetrieben (hält den ganzen Abend) und kann überall ohne Steckdose aufgestellt werden. Nach deiner Feier bekommst du alle Videos digital zum Download. Perfekt für Hochzeiten und besondere Anlässe.</p></div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">Wie viele Personen passen auf eine Bierzeltgarnitur?<span class="faq-icon">+</span></button>
+                <div class="faq-answer"><p>Eine Garnitur (1 Tisch + 2 Bänke) bietet Platz für 6-8 Personen. Mit 2 Garnituren bekommst du Platz für 12-16 Personen. Die Tische sind 220 × 50 cm groß, klappbar und einfach zu transportieren.</p></div>
+              </div>
+            </div>
           </div>
-          <div class="faq-item">
-            <button class="faq-question" onclick="toggleFaq(this)">Wie lange hält der Akku der Soundboks?<span class="faq-icon">+</span></button>
-            <div class="faq-answer"><p>Bei normaler Nutzung hält der Akku 10-40 Stunden – also locker die ganze Party. Bei voller Lautstärke (z.B. Festival-Setup) sind es ca. 4-6 Stunden je nach Generation.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" onclick="toggleFaq(this)">Ist die Soundboks wetterfest?<span class="faq-icon">+</span></button>
-            <div class="faq-answer"><p>Ja, die Soundboks ist spritzwassergeschützt und perfekt für Outdoor-Events – Gartenpartys, Strand, Festivals. Aber bitte nicht im Dauerregen stehen lassen.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" onclick="toggleFaq(this)">Kann ich 2 Soundboks koppeln?<span class="faq-icon">+</span></button>
-            <div class="faq-answer"><p>Ja! Mit der TeamUP-Funktion kannst du beide Soundboks verbinden und entweder denselben Sound aus beiden Boxen abspielen oder echtes Stereo erleben. Perfekt für größere Räume oder Outdoor-Events.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" onclick="toggleFaq(this)">Wie hell ist das Partylicht?<span class="faq-icon">+</span></button>
-            <div class="faq-answer"><p>Das Soundboks Performance Light hat 7× 12 W RGBW LEDs – das ist mehr als hell genug für jede Party. Es ist audioreaktiv, tanzt also mit der Musik mit, und ist IP65 staub- und wetterfest.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" onclick="toggleFaq(this)">Wie funktioniert die Nebelmaschine?<span class="faq-icon">+</span></button>
-            <div class="faq-answer"><p>Die Stairville AF-250 hat 1.300 W Leistung und produziert 180 m³ Nebel pro Minute mit einer Reichweite von 4-5 Metern. Steuerung per DMX oder Fernbedienung. Eine Füllung (1,6 L) reicht bei normaler Nutzung den ganzen Abend.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" onclick="toggleFaq(this)">Wie wird die Seifenblasenmaschine bedient?<span class="faq-icon">+</span></button>
-            <div class="faq-answer"><p>Die Eliminator Bubbletron EXL GO ist akkubetrieben (bis zu 3 Stunden Laufzeit) und wird per Funk-Fernbedienung (BUBGO-WR) gesteuert. So kannst du sie aus der Distanz starten und stoppen – perfekt für den Wow-Effekt bei der Hochzeit oder beim Tanz.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" onclick="toggleFaq(this)">Wie funktioniert das Video-Gästebuch?<span class="faq-icon">+</span></button>
-            <div class="faq-answer"><p>Das Video-Gästebuch ist ein stilvolles Retro-Telefon: Hörer abnehmen, sprechen, auflegen – fertig! Es ist akkubetrieben (hält den ganzen Abend) und kann überall ohne Steckdose aufgestellt werden. Nach deiner Feier bekommst du alle Videos digital zum Download. Perfekt für Hochzeiten und besondere Anlässe.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" onclick="toggleFaq(this)">Wie viele Personen passen auf eine Bierzeltgarnitur?<span class="faq-icon">+</span></button>
-            <div class="faq-answer"><p>Eine Garnitur (1 Tisch + 2 Bänke) bietet Platz für 6-8 Personen. Mit 2 Garnituren bekommst du Platz für 12-16 Personen. Die Tische sind 220 × 50 cm groß, klappbar und einfach zu transportieren.</p></div>
-          </div>
-        </div>
-      </div>
 
-      <!-- KATEGORIE 2: Buchung & Ablauf -->
-      <div class="faq-cat-block">
-        <button class="faq-cat-header" onclick="toggleCat(this)">
-          <span>📋 Buchung & Ablauf</span>
-          <span class="faq-cat-icon">+</span>
-        </button>
-        <div class="faq-cat-body">
-          <div class="faq-item">
-            <button class="faq-question" onclick="toggleFaq(this)">Wie buche ich?<span class="faq-icon">+</span></button>
-            <div class="faq-answer"><p>Am einfachsten per WhatsApp: 0176 29007917 – einfach Wunschtermin und Equipment schreiben. Ich melde mich meist innerhalb weniger Minuten zurück.</p></div>
+          <!-- KATEGORIE 2: Buchung & Ablauf -->
+          <div class="faq-cat-block">
+            <button class="faq-cat-header" onclick="toggleCat(this)">
+              <span>📋 Buchung & Ablauf</span>
+              <span class="faq-cat-icon">+</span>
+            </button>
+            <div class="faq-cat-body">
+              <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">Wie buche ich?<span class="faq-icon">+</span></button>
+                <div class="faq-answer"><p>Am einfachsten per WhatsApp: 0176 29007917 – einfach Wunschtermin und Equipment schreiben. Ich melde mich meist innerhalb weniger Minuten zurück.</p></div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">Wie weit im Voraus muss ich buchen?<span class="faq-icon">+</span></button>
+                <div class="faq-answer"><p>Je früher desto besser, vor allem für Wochenenden! Mindestens 1-2 Wochen vorher empfehle ich. Spontane Anfragen sind aber auch möglich – einfach fragen!</p></div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">Gibt es Abholung oder Lieferung?<span class="faq-icon">+</span></button>
+                <div class="faq-answer">
+                  <p>Standard ist die Abholung bei uns in Ingelheim. Lieferung gegen Aufpreis:</p>
+                  <ul style="margin:8px 0 0 20px;">
+                    <li>📍 Bingen, Ingelheim, Nieder-Olm: +15€</li>
+                    <li>📍 Mainz, Wiesbaden: +25€</li>
+                    <li>📍 Rüsselsheim, Darmstadt: +35€</li>
+                    <li>📍 Frankfurt: +40€</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="faq-item">
-            <button class="faq-question" onclick="toggleFaq(this)">Wie weit im Voraus muss ich buchen?<span class="faq-icon">+</span></button>
-            <div class="faq-answer"><p>Je früher desto besser, vor allem für Wochenenden! Mindestens 1-2 Wochen vorher empfehle ich. Spontane Anfragen sind aber auch möglich – einfach fragen!</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" onclick="toggleFaq(this)">Gibt es Abholung oder Lieferung?<span class="faq-icon">+</span></button>
-            <div class="faq-answer">
-              <p>Standard ist die Abholung bei uns in Ingelheim. Lieferung gegen Aufpreis:</p>
-              <ul style="margin:8px 0 0 20px;">
-                <li>📍 Bingen, Ingelheim, Nieder-Olm: +15€</li>
-                <li>📍 Mainz, Wiesbaden: +25€</li>
-                <li>📍 Rüsselsheim, Darmstadt: +35€</li>
-                <li>📍 Frankfurt: +40€</li>
-              </ul>
+
+          <!-- KATEGORIE 3: Kaution & Zahlung -->
+          <div class="faq-cat-block">
+            <button class="faq-cat-header" onclick="toggleCat(this)">
+              <span>💳 Kaution & Zahlung</span>
+              <span class="faq-cat-icon">+</span>
+            </button>
+            <div class="faq-cat-body">
+              <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">Wie hoch ist die Kaution?<span class="faq-icon">+</span></button>
+                <div class="faq-answer"><p>Die Kaution hängt vom Equipment ab: Soundboks 200€, Partylicht/Nebel/Seife je 120€. Bei Paketen ist die Kaution leicht gebündelt. Wird bei Rückgabe in bar zurückgegeben.</p></div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">Welche Zahlungsmethoden werden akzeptiert?<span class="faq-icon">+</span></button>
+                <div class="faq-answer"><p>Wir akzeptieren ausschließlich Barzahlung. Die Zahlung erfolgt bei der Übergabe des Equipments.</p></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- KATEGORIE 3: Kaution & Zahlung -->
-      <div class="faq-cat-block">
-        <button class="faq-cat-header" onclick="toggleCat(this)">
-          <span>💳 Kaution & Zahlung</span>
-          <span class="faq-cat-icon">+</span>
-        </button>
-        <div class="faq-cat-body">
-          <div class="faq-item">
-            <button class="faq-question" onclick="toggleFaq(this)">Wie hoch ist die Kaution?<span class="faq-icon">+</span></button>
-            <div class="faq-answer"><p>Die Kaution hängt vom Equipment ab: Soundboks 200€, Partylicht/Nebel/Seife je 120€. Bei Paketen ist die Kaution leicht gebündelt. Wird bei Rückgabe in bar zurückgegeben.</p></div>
+      <!-- About Panel -->
+      <div class="quicknav-panel" id="about-panel">
+        <button class="quicknav-panel-close" onclick="closeQuickNav()">×</button>
+        <div class="about-grid">
+          <div class="about-photo">
+            <img src="gabriel-foto.jpeg" alt="Gabo – Inhaber GABO Verleihservice">
           </div>
-          <div class="faq-item">
-            <button class="faq-question" onclick="toggleFaq(this)">Welche Zahlungsmethoden werden akzeptiert?<span class="faq-icon">+</span></button>
-            <div class="faq-answer"><p>Wir akzeptieren ausschließlich Barzahlung. Die Zahlung erfolgt bei der Übergabe des Equipments.</p></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- About Panel -->
-  <div class="quicknav-panel" id="about-panel">
-    <button class="quicknav-panel-close" onclick="closeQuickNav()">×</button>
-    <div class="about-grid">
-      <div class="about-photo">
-        <img src="gabriel-foto.jpeg" alt="Gabo – Inhaber GABO Verleihservice">
-      </div>
-      <div class="about-content">
-        <h2>Hi, ich bin Gabo <span class="wave">👋</span></h2>
-        <p>
-          Schön dass du auf meiner Seite gelandet bist! Ich bin der Gründer von <strong>GABO Verleihservice</strong> – einem ganz neuen Verleih für Soundboks Partyboxen und Eventtechnik in <strong>Mainz, Wiesbaden und Frankfurt</strong>.
-        </p>
-        <p>
-          Seit 2026 helfe ich dir, deine Feier zu einer richtig coolen Party zu machen – egal ob Geburtstag, Hochzeit, Gartenparty oder Firmenfeier. 🎉
-        </p>
-        <div class="about-features">
-          <div class="about-feature">
-            <div class="about-feature-icon">⚡</div>
-            <div><strong>Schnelle Antworten per WhatsApp</strong> – meistens innerhalb weniger Minuten</div>
-          </div>
-          <div class="about-feature">
-            <div class="about-feature-icon">💰</div>
-            <div><strong>Faire Preise</strong> – keine versteckten Kosten, alles transparent</div>
+          <div class="about-content">
+            <h2>Hi, ich bin Gabo <span class="wave">👋</span></h2>
+            <p>
+              Schön dass du auf meiner Seite gelandet bist! Ich bin der Gründer von <strong>GABO Verleihservice</strong> – einem ganz neuen Verleih für Soundboks Partyboxen und Eventtechnik in <strong>Mainz, Wiesbaden und Frankfurt</strong>.
+            </p>
+            <p>
+              Seit 2026 helfe ich dir, deine Feier zu einer richtig coolen Party zu machen – egal ob Geburtstag, Hochzeit, Gartenparty oder Firmenfeier. 🎉
+            </p>
+            <div class="about-features">
+              <div class="about-feature">
+                <div class="about-feature-icon">⚡</div>
+                <div><strong>Schnelle Antworten per WhatsApp</strong> – meistens innerhalb weniger Minuten</div>
+              </div>
+              <div class="about-feature">
+                <div class="about-feature-icon">💰</div>
+                <div><strong>Faire Preise</strong> – keine versteckten Kosten, alles transparent</div>
+              </div>
+            </div>
+            <p>
+              Wenn du Fragen hast oder unsicher bist welches Equipment passt, schreib mir einfach – ich helfe dir gerne weiter und finde mit dir die beste Lösung für deine Feier!
+            </p>
+            <div class="about-signature">Bis bald! 🎵 – Gabo</div>
           </div>
         </div>
-        <p>
-          Wenn du Fragen hast oder unsicher bist welches Equipment passt, schreib mir einfach – ich helfe dir gerne weiter und finde mit dir die beste Lösung für deine Feier!
-        </p>
-        <div class="about-signature">Bis bald! 🎵 – Gabo</div>
       </div>
+
+      <!-- Reviews Panel -->
+      <div class="quicknav-panel" id="reviews-panel">
+        <button class="quicknav-panel-close" onclick="closeQuickNav()">×</button>
+        <div style="text-align:center; margin-bottom:20px;">
+          <div style="font-size:18px; font-weight:800; color:#0f172a; margin-bottom:4px;">
+            <span style="color:#4285F4;">G</span><span style="color:#EA4335;">o</span><span style="color:#FBBC05;">o</span><span style="color:#4285F4;">g</span><span style="color:#34A853;">l</span><span style="color:#EA4335;">e</span>
+            Bewertungen
+          </div>
+          <div style="font-size:32px; font-weight:900; color:var(--blue-strong); margin-top:8px;">
+            5,0 ⭐⭐⭐⭐⭐
+          </div>
+          <div style="color:var(--muted); font-size:14px;">3 Rezensionen</div>
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap:12px;">
+          <div style="background:#f8fafc; padding:14px; border-radius:10px;">
+            <div style="font-weight:700; color:#0f172a; margin-bottom:4px;">Lyra</div>
+            <div style="color:#fbbf24; font-size:14px; margin-bottom:6px;">⭐⭐⭐⭐⭐</div>
+            <p style="color:var(--muted); font-size:14px; line-height:1.5; margin:0;">Sehr empfehlenswert! Soundboks ist top und ohne Probleme funktioniert. Kontakt ist super persönlich und schnell.</p>
+          </div>
+          <div style="background:#f8fafc; padding:14px; border-radius:10px;">
+            <div style="font-weight:700; color:#0f172a; margin-bottom:4px;">Dursun Yasar</div>
+            <div style="color:#fbbf24; font-size:14px; margin-bottom:6px;">⭐⭐⭐⭐⭐</div>
+            <p style="color:var(--muted); font-size:14px; line-height:1.5; margin:0;">Beste Partybox – günstigste Preise im Rhein-Main-Gebiet. Reaktion super schnell – jederzeit wieder!</p>
+          </div>
+          <div style="background:#f8fafc; padding:14px; border-radius:10px;">
+            <div style="font-weight:700; color:#0f172a; margin-bottom:4px;">Gioachino Infranca</div>
+            <div style="color:#fbbf24; font-size:14px; margin-bottom:6px;">⭐⭐⭐⭐⭐</div>
+            <p style="color:var(--muted); font-size:14px; line-height:1.5; margin:0;">Mit Abstand das beste Erlebnis bei GABO Verleih! Top Service, schnelle Antwort, fairer Preis.</p>
+          </div>
+        </div>
+
+        <div style="text-align:center; margin-top:20px;">
+          <a class="btn btn-whatsapp"
+             href="https://g.page/r/CU4kqnSAsf6GEAE/review"
+             target="_blank" rel="noopener noreferrer"
+             style="display:inline-block;">
+            ✍️ Jetzt bewerten
+          </a>
+        </div>
+      </div>
+
     </div>
-  </div>
-
-  <!-- Reviews Panel -->
-  <div class="quicknav-panel" id="reviews-panel">
-    <button class="quicknav-panel-close" onclick="closeQuickNav()">×</button>
-    <div style="text-align:center; margin-bottom:20px;">
-      <div style="font-size:18px; font-weight:800; color:#0f172a; margin-bottom:4px;">
-        <span style="color:#4285F4;">G</span><span style="color:#EA4335;">o</span><span style="color:#FBBC05;">o</span><span style="color:#4285F4;">g</span><span style="color:#34A853;">l</span><span style="color:#EA4335;">e</span>
-        Bewertungen
-      </div>
-      <div style="font-size:32px; font-weight:900; color:var(--blue-strong); margin-top:8px;">
-        5,0 ⭐⭐⭐⭐⭐
-      </div>
-      <div style="color:var(--muted); font-size:14px;">3 Rezensionen</div>
-    </div>
-
-    <div style="display:flex; flex-direction:column; gap:12px;">
-      <div style="background:#f8fafc; padding:14px; border-radius:10px;">
-        <div style="font-weight:700; color:#0f172a; margin-bottom:4px;">Lyra</div>
-        <div style="color:#fbbf24; font-size:14px; margin-bottom:6px;">⭐⭐⭐⭐⭐</div>
-        <p style="color:var(--muted); font-size:14px; line-height:1.5; margin:0;">Sehr empfehlenswert! Soundboks ist top und ohne Probleme funktioniert. Kontakt ist super persönlich und schnell.</p>
-      </div>
-      <div style="background:#f8fafc; padding:14px; border-radius:10px;">
-        <div style="font-weight:700; color:#0f172a; margin-bottom:4px;">Dursun Yasar</div>
-        <div style="color:#fbbf24; font-size:14px; margin-bottom:6px;">⭐⭐⭐⭐⭐</div>
-        <p style="color:var(--muted); font-size:14px; line-height:1.5; margin:0;">Beste Partybox – günstigste Preise im Rhein-Main-Gebiet. Reaktion super schnell – jederzeit wieder!</p>
-      </div>
-      <div style="background:#f8fafc; padding:14px; border-radius:10px;">
-        <div style="font-weight:700; color:#0f172a; margin-bottom:4px;">Gioachino Infranca</div>
-        <div style="color:#fbbf24; font-size:14px; margin-bottom:6px;">⭐⭐⭐⭐⭐</div>
-        <p style="color:var(--muted); font-size:14px; line-height:1.5; margin:0;">Mit Abstand das beste Erlebnis bei GABO Verleih! Top Service, schnelle Antwort, fairer Preis.</p>
-      </div>
-    </div>
-
-    <div style="text-align:center; margin-top:20px;">
-      <a class="btn btn-whatsapp"
-         href="https://g.page/r/CU4kqnSAsf6GEAE/review"
-         target="_blank" rel="noopener noreferrer"
-         style="display:inline-block;">
-        ✍️ Jetzt bewerten
-      </a>
-    </div>
-  </div>
-
-</div>
-```
-
   </div>
 
   <!-- ── HERO ── -->
-
   <header class="hero" id="hero">
     <div class="container hero-grid">
       <div>
         <img src="logo.webp" alt="GABO Verleihservice – Partybox mieten Mainz" class="main-logo" loading="lazy" />
 
-```
-    <h1>Partybox & Soundboks mieten in Mainz, Wiesbaden, Frankfurt & Umgebung</h1>
+        <h1>Partybox & Soundboks mieten in Mainz, Wiesbaden, Frankfurt & Umgebung</h1>
 
-    <p class="hero-highlight">
-      🔊 Soundboks Partybox, Partylicht, Nebelmaschine und Seifenblasenmaschine – jetzt in Mainz und Umgebung mieten.
-    </p>
+        <p class="hero-highlight">
+          🔊 Soundboks Partybox, Partylicht, Nebelmaschine und Seifenblasenmaschine – jetzt in Mainz und Umgebung mieten.
+        </p>
 
-    <p>
-      Partybox mieten leicht gemacht: Ob Geburtstag, Gartenparty, Hochzeit oder privates Event –
-      wir haben die passende Soundboks Partybox und Equipment für dich in Mainz, Wiesbaden,
-      Frankfurt, Bingen, Ingelheim, Rüsselsheim, Darmstadt und Umgebung.
-    </p>
+        <p>
+          Partybox mieten leicht gemacht: Ob Geburtstag, Gartenparty, Hochzeit oder privates Event –
+          wir haben die passende Soundboks Partybox und Equipment für dich in Mainz, Wiesbaden,
+          Frankfurt, Bingen, Ingelheim, Rüsselsheim, Darmstadt und Umgebung.
+        </p>
 
-    <p>
-      Einfach per WhatsApp anfragen – Abholung bei uns, nach Absprache kann auch geliefert werden (mit Aufpreis).
-      Schnelle Antwort, faire Preise, zuverlässiger Service im Rhein-Main-Gebiet.
-    </p>
+        <p>
+          Einfach per WhatsApp anfragen – Abholung bei uns, nach Absprache kann auch geliefert werden (mit Aufpreis).
+          Schnelle Antwort, faire Preise, zuverlässiger Service im Rhein-Main-Gebiet.
+        </p>
 
-    <p class="warning-note">⚠️ Wochenenden oft schnell ausgebucht – jetzt anfragen!</p>
+        <p class="warning-note">⚠️ Wochenenden oft schnell ausgebucht – jetzt anfragen!</p>
 
-    <p class="offer-label">Das bieten wir an:</p>
+        <p class="offer-label">Das bieten wir an:</p>
 
-    <div class="trust-row">
-      <div class="pill">🔊 Soundboks Partybox</div>
-      <div class="pill">💡 Soundboks Partylicht</div>
-      <div class="pill">🌫️ Nebelmaschine</div>
-      <div class="pill">🫧 Seifenblasenmaschine</div>
-      <div class="pill">🎥 Video-Gästebuch</div>
-      <div class="pill">🎉 Party Ausstattung</div>
+        <div class="trust-row">
+          <div class="pill">🔊 Soundboks Partybox</div>
+          <div class="pill">💡 Soundboks Partylicht</div>
+          <div class="pill">🌫️ Nebelmaschine</div>
+          <div class="pill">🫧 Seifenblasenmaschine</div>
+          <div class="pill">🎥 Video-Gästebuch</div>
+          <div class="pill">🎉 Party Ausstattung</div>
+        </div>
+
+        <p class="response-note">Antwort meist innerhalb weniger Minuten</p>
+      </div>
+      <div class="hero-card">
+        <img
+          src="hero.webp"
+          loading="lazy"
+          alt="Partybox und Soundboks mieten in Mainz, Wiesbaden, Frankfurt und Umgebung"
+          class="hero-photo"
+        />
+      </div>
     </div>
-
-    <p class="response-note">Antwort meist innerhalb weniger Minuten</p>
-  </div>
-  <div class="hero-card">
-    <img
-      src="hero.webp"
-      loading="lazy"
-      alt="Partybox und Soundboks mieten in Mainz, Wiesbaden, Frankfurt und Umgebung"
-      class="hero-photo"
-    />
-  </div>
-</div>
-```
-
   </header>
 
   <!-- ── EINZELVERLEIH ── -->
-
   <section class="section" id="einzelverleih">
     <div class="container">
       <div class="section-head single-head">
@@ -1191,169 +1179,165 @@
       </div>
       <div class="pricing-grid">
 
-```
-    <article class="card">
-      <div class="badge">Beliebt</div>
-      <h3>🔊 Soundboks Partybox <span class="brand-note">– SOUNDBOKS</span></h3>
-      <div class="subtitle">
-        Leistungsstarke kabellose Partybox für Geburtstag, Gartenparty, Hochzeit und Events – flexibel überall einsetzbar. Je nach Verfügbarkeit erhältst du eine <strong>Generation 3 oder Generation 4</strong>.
-      </div>
-      <ul class="feature-list">
-        <li>Kabellos und akkubetrieben</li>
-        <li>Schnelle Bluetooth-Verbindung</li>
-        <li>Für drinnen und draußen geeignet</li>
-        <li>Einfacher Transport und schneller Aufbau</li>
-        <li>Ideal für private Feiern und Events</li>
-      </ul>
-      <div class="price-list">
-        <div class="price-row"><span>Mo–Do</span><strong>39€ <span class="price-unit">/ Tag</span></strong></div>
-        <div class="price-row"><span>Fr–So</span><strong>49€ <span class="price-unit">/ Tag</span></strong></div>
-        <div class="price-row"><span>Wochenende komplett</span><strong>89€</strong></div>
-      </div>
-      <div class="addon-box">
-        <strong>1 Stativ dazu buchen:</strong> +10€
-      </div>
-      <div class="deposit">Kaution: 200€</div>
-      <div class="cta-inline">
-        <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20eine%20Soundboks%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
-      </div>
-    </article>
+        <article class="card">
+          <div class="badge">Beliebt</div>
+          <h3>🔊 Soundboks Partybox <span class="brand-note">– SOUNDBOKS</span></h3>
+          <div class="subtitle">
+            Leistungsstarke kabellose Partybox für Geburtstag, Gartenparty, Hochzeit und Events – flexibel überall einsetzbar. Je nach Verfügbarkeit erhältst du eine <strong>Generation 3 oder Generation 4</strong>.
+          </div>
+          <ul class="feature-list">
+            <li>Kabellos und akkubetrieben</li>
+            <li>Schnelle Bluetooth-Verbindung</li>
+            <li>Für drinnen und draußen geeignet</li>
+            <li>Einfacher Transport und schneller Aufbau</li>
+            <li>Ideal für private Feiern und Events</li>
+          </ul>
+          <div class="price-list">
+            <div class="price-row"><span>Mo–Do</span><strong>39€ <span class="price-unit">/ Tag</span></strong></div>
+            <div class="price-row"><span>Fr–So</span><strong>49€ <span class="price-unit">/ Tag</span></strong></div>
+            <div class="price-row"><span>Wochenende komplett</span><strong>89€</strong></div>
+          </div>
+          <div class="addon-box">
+            <strong>1 Stativ dazu buchen:</strong> +10€
+          </div>
+          <div class="deposit">Kaution: 200€</div>
+          <div class="cta-inline">
+            <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20eine%20Soundboks%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
+          </div>
+        </article>
 
-    <article class="card">
-      <div class="badge">🔥 Doppelt Power</div>
-      <h3>🔊🔊 2× Soundboks Partybox <span class="brand-note">– SOUNDBOKS</span></h3>
-      <div class="subtitle">
-        Zwei Soundboks Partyboxen für noch mehr Power auf deiner Feier – ideal für größere Events, Hochzeiten und Outdoor-Partys. Du erhältst je nach Verfügbarkeit eine <strong>Generation 3 + Generation 4</strong>.
-      </div>
-      <ul class="feature-list">
-        <li>2× Soundboks Partybox (Gen. 3 + Gen. 4)</li>
-        <li>Können per TeamUP gekoppelt werden – Stereo-Sound!</li>
-        <li>Perfekt für Events ab 50 Personen</li>
-        <li>Outdoor & Indoor – auch große Räume</li>
-        <li>Spart gegenüber 2× Einzelmiete</li>
-      </ul>
-      <div class="price-list">
-        <div class="price-row"><span>Mo–Do</span><strong>69€ <span class="price-unit">/ Tag</span></strong></div>
-        <div class="price-row"><span>Fr–So</span><strong>75€ <span class="price-unit">/ Tag</span></strong></div>
-        <div class="price-row"><span>Wochenende komplett</span><strong>160€</strong></div>
-      </div>
-      <div class="addon-box">
-        <strong>2 Stative dazu buchen:</strong> +15€
-      </div>
-      <div class="deposit">Kaution: 400€</div>
-      <div class="cta-inline">
-        <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%202%20Soundboks%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
-      </div>
-    </article>
+        <article class="card">
+          <div class="badge">🔥 Doppelt Power</div>
+          <h3>🔊🔊 2× Soundboks Partybox <span class="brand-note">– SOUNDBOKS</span></h3>
+          <div class="subtitle">
+            Zwei Soundboks Partyboxen für noch mehr Power auf deiner Feier – ideal für größere Events, Hochzeiten und Outdoor-Partys. Du erhältst je nach Verfügbarkeit eine <strong>Generation 3 + Generation 4</strong>.
+          </div>
+          <ul class="feature-list">
+            <li>2× Soundboks Partybox (Gen. 3 + Gen. 4)</li>
+            <li>Können per TeamUP gekoppelt werden – Stereo-Sound!</li>
+            <li>Perfekt für Events ab 50 Personen</li>
+            <li>Outdoor & Indoor – auch große Räume</li>
+            <li>Spart gegenüber 2× Einzelmiete</li>
+          </ul>
+          <div class="price-list">
+            <div class="price-row"><span>Mo–Do</span><strong>69€ <span class="price-unit">/ Tag</span></strong></div>
+            <div class="price-row"><span>Fr–So</span><strong>75€ <span class="price-unit">/ Tag</span></strong></div>
+            <div class="price-row"><span>Wochenende komplett</span><strong>160€</strong></div>
+          </div>
+          <div class="addon-box">
+            <strong>2 Stative dazu buchen:</strong> +15€
+          </div>
+          <div class="deposit">Kaution: 400€</div>
+          <div class="cta-inline">
+            <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%202%20Soundboks%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
+          </div>
+        </article>
 
-    <article class="card">
-      <div class="badge">Partylicht</div>
-      <h3>💡 Soundboks Partylicht <span class="brand-note">– SOUNDBOKS</span></h3>
-      <div class="subtitle">
-        Akkubetriebenes Partylicht – perfekt als Ergänzung zur Soundboks Partybox für mehr Stimmung auf deiner Feier.
-      </div>
-      <ul class="feature-list">
-        <li>Akkubetrieben und tragbar</li>
-        <li>Audioreaktives Partylicht</li>
-        <li>7x 12 W RGBW LEDs</li>
-        <li>IP65 staub- und wetterfest</li>
-      </ul>
-      <div class="price-list">
-        <div class="price-row"><span>Mo–Do</span><strong>25€ <span class="price-unit">/ Tag</span></strong></div>
-        <div class="price-row"><span>Fr–So</span><strong>30€ <span class="price-unit">/ Tag</span></strong></div>
-        <div class="price-row"><span>Wochenende komplett</span><strong>55€</strong></div>
-      </div>
-      <div class="small-note">Perfekt für Gartenparty, Geburtstag, Hochzeit und Outdoor-Events.</div>
-      <div class="deposit">Kaution: 120€</div>
-      <div class="cta-inline">
-        <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20ein%20Soundboks%20Partylicht%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
-      </div>
-    </article>
+        <article class="card">
+          <div class="badge">Partylicht</div>
+          <h3>💡 Soundboks Partylicht <span class="brand-note">– SOUNDBOKS</span></h3>
+          <div class="subtitle">
+            Akkubetriebenes Partylicht – perfekt als Ergänzung zur Soundboks Partybox für mehr Stimmung auf deiner Feier.
+          </div>
+          <ul class="feature-list">
+            <li>Akkubetrieben und tragbar</li>
+            <li>Audioreaktives Partylicht</li>
+            <li>7x 12 W RGBW LEDs</li>
+            <li>IP65 staub- und wetterfest</li>
+          </ul>
+          <div class="price-list">
+            <div class="price-row"><span>Mo–Do</span><strong>25€ <span class="price-unit">/ Tag</span></strong></div>
+            <div class="price-row"><span>Fr–So</span><strong>30€ <span class="price-unit">/ Tag</span></strong></div>
+            <div class="price-row"><span>Wochenende komplett</span><strong>55€</strong></div>
+          </div>
+          <div class="small-note">Perfekt für Gartenparty, Geburtstag, Hochzeit und Outdoor-Events.</div>
+          <div class="deposit">Kaution: 120€</div>
+          <div class="cta-inline">
+            <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20ein%20Soundboks%20Partylicht%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
+          </div>
+        </article>
 
-    <article class="card">
-      <div class="badge">Nebel</div>
-      <h3>🌫️ Nebelmaschine <span class="brand-note">– Stairville AF-250</span></h3>
-      <div class="subtitle">
-        Leistungsstarke Nebelmaschine für starke Effekte auf der Tanzfläche – perfekt in Kombination mit Partylicht und Soundboks Partybox. Eine Füllung reicht bei normaler Nutzung locker für einen ganzen Abend.
-      </div>
-      <ul class="feature-list">
-        <li>Starker Nebelausstoß für Partys</li>
-        <li>Ideal für Licht- und Dance-Effekte</li>
-        <li>Perfekt für Geburtstage, Events und Feiern</li>
-      </ul>
-      <div class="price-list">
-        <div class="price-row"><span>Mo–Do</span><strong>30€ <span class="price-unit">/ Tag</span></strong></div>
-        <div class="price-row"><span>Fr–So</span><strong>40€ <span class="price-unit">/ Tag</span></strong></div>
-        <div class="price-row"><span>Wochenende komplett</span><strong>70€</strong></div>
-      </div>
-      <div class="addon-box">
-        <strong>1 Füllung (1,6 Liter) ist im Preis enthalten</strong> – reicht bei normaler Nutzung den ganzen Abend.<br>
-        Jede weitere Füllung (1,6 Liter) kostet 5€.
-      </div>
-      <div class="deposit">Kaution: 120€</div>
-      <div class="cta-inline">
-        <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20eine%20Nebelmaschine%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
-      </div>
-    </article>
+        <article class="card">
+          <div class="badge">Nebel</div>
+          <h3>🌫️ Nebelmaschine <span class="brand-note">– Stairville AF-250</span></h3>
+          <div class="subtitle">
+            Leistungsstarke Nebelmaschine für starke Effekte auf der Tanzfläche – perfekt in Kombination mit Partylicht und Soundboks Partybox. Eine Füllung reicht bei normaler Nutzung locker für einen ganzen Abend.
+          </div>
+          <ul class="feature-list">
+            <li>Starker Nebelausstoß für Partys</li>
+            <li>Ideal für Licht- und Dance-Effekte</li>
+            <li>Perfekt für Geburtstage, Events und Feiern</li>
+          </ul>
+          <div class="price-list">
+            <div class="price-row"><span>Mo–Do</span><strong>30€ <span class="price-unit">/ Tag</span></strong></div>
+            <div class="price-row"><span>Fr–So</span><strong>40€ <span class="price-unit">/ Tag</span></strong></div>
+            <div class="price-row"><span>Wochenende komplett</span><strong>70€</strong></div>
+          </div>
+          <div class="addon-box">
+            <strong>1 Füllung (1,6 Liter) ist im Preis enthalten</strong> – reicht bei normaler Nutzung den ganzen Abend.<br>
+            Jede weitere Füllung (1,6 Liter) kostet 5€.
+          </div>
+          <div class="deposit">Kaution: 120€</div>
+          <div class="cta-inline">
+            <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20eine%20Nebelmaschine%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
+          </div>
+        </article>
 
-    <article class="card">
-      <div class="badge">Event-Extra</div>
-      <h3>🫧 Seifenblasenmaschine <span class="brand-note">– Eliminator Bubbletron EXL GO</span></h3>
-      <div class="subtitle">
-        Akkubetriebene Seifenblasenmaschine – ideal für Hochzeit, Empfang, Geburtstag und besondere Momente auf deiner Feier.
-      </div>
-      <ul class="feature-list">
-        <li>Akkubetrieben</li>
-        <li>Bis zu 3 Stunden Laufzeit</li>
-        <li>Ideal für Hochzeit, Empfang und besondere Momente</li>
-      </ul>
-      <div class="price-list">
-        <div class="price-row"><span>Mo–Do</span><strong>30€ <span class="price-unit">/ Tag</span></strong></div>
-        <div class="price-row"><span>Fr–So</span><strong>40€ <span class="price-unit">/ Tag</span></strong></div>
-        <div class="price-row"><span>Wochenende komplett</span><strong>70€</strong></div>
-      </div>
-      <div class="addon-box">
-        <strong>1 Füllung (2 Liter) ist im Preis enthalten.</strong><br>
-        Jede weitere Füllung (2 Liter) kostet 5€.
-      </div>
-      <div class="deposit">Kaution: 120€</div>
-      <div class="cta-inline">
-        <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20eine%20Seifenblasenmaschine%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
-      </div>
-    </article>
+        <article class="card">
+          <div class="badge">Event-Extra</div>
+          <h3>🫧 Seifenblasenmaschine <span class="brand-note">– Eliminator Bubbletron EXL GO</span></h3>
+          <div class="subtitle">
+            Akkubetriebene Seifenblasenmaschine – ideal für Hochzeit, Empfang, Geburtstag und besondere Momente auf deiner Feier.
+          </div>
+          <ul class="feature-list">
+            <li>Akkubetrieben</li>
+            <li>Bis zu 3 Stunden Laufzeit</li>
+            <li>Ideal für Hochzeit, Empfang und besondere Momente</li>
+          </ul>
+          <div class="price-list">
+            <div class="price-row"><span>Mo–Do</span><strong>30€ <span class="price-unit">/ Tag</span></strong></div>
+            <div class="price-row"><span>Fr–So</span><strong>40€ <span class="price-unit">/ Tag</span></strong></div>
+            <div class="price-row"><span>Wochenende komplett</span><strong>70€</strong></div>
+          </div>
+          <div class="addon-box">
+            <strong>1 Füllung (2 Liter) ist im Preis enthalten.</strong><br>
+            Jede weitere Füllung (2 Liter) kostet 5€.
+          </div>
+          <div class="deposit">Kaution: 120€</div>
+          <div class="cta-inline">
+            <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20eine%20Seifenblasenmaschine%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
+          </div>
+        </article>
 
-    <!-- Video-Gästebuch -->
-    <article class="card is-soldout">
-      <div class="badge-soldout">🚫 Ausgebucht</div>
-      <h3>🎥 Video-Gästebuch</h3>
-      <div class="subtitle">
-        Lass deine Gäste persönliche Videobotschaften hinterlassen – ein einzigartiges, modernes Erinnerungsstück für deine Hochzeit oder Feier.
-      </div>
-      <ul class="feature-list">
-        <li>Einfache Bedienung – einfach anschalten und sprechen</li>
-        <li>Videoaufnahme mit Ton</li>
-        <li>Alle Videos digital nach dem Event</li>
-        <li>Ideal für Hochzeit, Geburtstag und Jubiläum</li>
-      </ul>
-      <div class="price-list">
-        <div class="price-row"><span>Mo–Do</span><strong>59€ <span class="price-unit">/ Tag</span></strong></div>
-        <div class="price-row"><span>Fr–So</span><strong>69€ <span class="price-unit">/ Tag</span></strong></div>
-        <div class="price-row"><span>Wochenende komplett</span><strong>119€</strong></div>
-      </div>
-      <div class="deposit">Kaution: 300€</div>
-      <div class="soldout-notice">
-        ⏰ Aktuell ausgebucht – sobald wieder verfügbar, wird es hier angezeigt.
-      </div>
-    </article>
+        <!-- Video-Gästebuch -->
+        <article class="card is-soldout">
+          <div class="badge-soldout">🚫 Ausgebucht</div>
+          <h3>🎥 Video-Gästebuch</h3>
+          <div class="subtitle">
+            Lass deine Gäste persönliche Videobotschaften hinterlassen – ein einzigartiges, modernes Erinnerungsstück für deine Hochzeit oder Feier.
+          </div>
+          <ul class="feature-list">
+            <li>Einfache Bedienung – einfach anschalten und sprechen</li>
+            <li>Videoaufnahme mit Ton</li>
+            <li>Alle Videos digital nach dem Event</li>
+            <li>Ideal für Hochzeit, Geburtstag und Jubiläum</li>
+          </ul>
+          <div class="price-list">
+            <div class="price-row"><span>Mo–Do</span><strong>59€ <span class="price-unit">/ Tag</span></strong></div>
+            <div class="price-row"><span>Fr–So</span><strong>69€ <span class="price-unit">/ Tag</span></strong></div>
+            <div class="price-row"><span>Wochenende komplett</span><strong>119€</strong></div>
+          </div>
+          <div class="deposit">Kaution: 300€</div>
+          <div class="soldout-notice">
+            ⏰ Aktuell ausgebucht – sobald wieder verfügbar, wird es hier angezeigt.
+          </div>
+        </article>
 
-  </div>
-</div>
-```
-
+      </div>
+    </div>
   </section>
 
   <!-- ── PAKETE ── -->
-
   <section class="section" id="pakete">
     <div class="container">
       <div class="section-head">
@@ -1362,97 +1346,93 @@
       </div>
       <div class="pricing-grid">
 
-```
-    <article class="card">
-      <div class="badge">Für kleine Feiern</div>
-      <h3>🎉 Paket Basic</h3>
-      <div class="subtitle">1x Soundboks Partybox (Gen. 3 oder 4) + 1x Soundboks Partylicht</div>
-      <div class="price-list">
-        <div class="price-row"><span>Mo–Do</span><strong>65€ <span class="price-unit">/ Tag</span></strong></div>
-        <div class="price-row"><span>Fr–So</span><strong>75€ <span class="price-unit">/ Tag</span></strong></div>
-        <div class="price-row"><span>Wochenende komplett</span><strong>119€</strong></div>
-      </div>
-      <div class="addon-box">
-        <strong>1 Stativ dazu buchen:</strong> +10€
-      </div>
-      <div class="deposit">Kaution: 220€</div>
-      <div class="cta-inline">
-        <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20das%20Paket%20Basic%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
-      </div>
-    </article>
+        <article class="card">
+          <div class="badge">Für kleine Feiern</div>
+          <h3>🎉 Paket Basic</h3>
+          <div class="subtitle">1x Soundboks Partybox (Gen. 3 oder 4) + 1x Soundboks Partylicht</div>
+          <div class="price-list">
+            <div class="price-row"><span>Mo–Do</span><strong>65€ <span class="price-unit">/ Tag</span></strong></div>
+            <div class="price-row"><span>Fr–So</span><strong>75€ <span class="price-unit">/ Tag</span></strong></div>
+            <div class="price-row"><span>Wochenende komplett</span><strong>119€</strong></div>
+          </div>
+          <div class="addon-box">
+            <strong>1 Stativ dazu buchen:</strong> +10€
+          </div>
+          <div class="deposit">Kaution: 220€</div>
+          <div class="cta-inline">
+            <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20das%20Paket%20Basic%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
+          </div>
+        </article>
 
-    <article class="card card-featured">
-      <div class="badge badge-featured">🔥 Am beliebtesten</div>
-      <h3>🔥 Paket Party</h3>
-      <div class="subtitle">1x Soundboks Partybox (Gen. 3 oder 4) + 1x Soundboks Partylicht + Nebelmaschine</div>
-      <div class="price-list">
-        <div class="price-row"><span>Mo–Do</span><strong>79€ <span class="price-unit">/ Tag</span></strong></div>
-        <div class="price-row"><span>Fr–So</span><strong>95€ <span class="price-unit">/ Tag</span></strong></div>
-        <div class="price-row"><span>Wochenende komplett</span><strong>149€</strong></div>
-      </div>
-      <div class="addon-box">
-        <strong>1 Stativ dazu buchen:</strong> +10€
-      </div>
-      <div class="addon-box">
-        <strong>1 Füllung Nebelfluid (1,6 Liter) ist im Preis enthalten</strong> – reicht bei normaler Nutzung den ganzen Abend.<br>
-        Jede weitere Füllung (1,6 Liter) kostet 5€.
-      </div>
-      <div class="deposit">Kaution: 260€</div>
-      <div class="small-note">Ideal für Geburtstage, Gartenpartys und Feiern mit richtig Stimmung.</div>
-      <div class="cta-inline">
-        <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20das%20Paket%20Party%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
-      </div>
-    </article>
+        <article class="card card-featured">
+          <div class="badge badge-featured">🔥 Am beliebtesten</div>
+          <h3>🔥 Paket Party</h3>
+          <div class="subtitle">1x Soundboks Partybox (Gen. 3 oder 4) + 1x Soundboks Partylicht + Nebelmaschine</div>
+          <div class="price-list">
+            <div class="price-row"><span>Mo–Do</span><strong>79€ <span class="price-unit">/ Tag</span></strong></div>
+            <div class="price-row"><span>Fr–So</span><strong>95€ <span class="price-unit">/ Tag</span></strong></div>
+            <div class="price-row"><span>Wochenende komplett</span><strong>149€</strong></div>
+          </div>
+          <div class="addon-box">
+            <strong>1 Stativ dazu buchen:</strong> +10€
+          </div>
+          <div class="addon-box">
+            <strong>1 Füllung Nebelfluid (1,6 Liter) ist im Preis enthalten</strong> – reicht bei normaler Nutzung den ganzen Abend.<br>
+            Jede weitere Füllung (1,6 Liter) kostet 5€.
+          </div>
+          <div class="deposit">Kaution: 260€</div>
+          <div class="small-note">Ideal für Geburtstage, Gartenpartys und Feiern mit richtig Stimmung.</div>
+          <div class="cta-inline">
+            <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20das%20Paket%20Party%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
+          </div>
+        </article>
 
-    <article class="card">
-      <div class="badge">Für größere Feiern</div>
-      <h3>🚀 Paket Premium</h3>
-      <div class="subtitle">2x Soundboks Partybox (1x Gen. 3 + 1x Gen. 4) + 2x Soundboks Partylicht</div>
-      <div class="price-list">
-        <div class="price-row"><span>Mo–Do</span><strong>139€ <span class="price-unit">/ Tag</span></strong></div>
-        <div class="price-row"><span>Fr–So</span><strong>159€ <span class="price-unit">/ Tag</span></strong></div>
-        <div class="price-row"><span>Wochenende komplett</span><strong>269€</strong></div>
-      </div>
-      <div class="addon-box">
-        <strong>2 Stative dazu buchen:</strong> +15€
-      </div>
-      <div class="deposit">Kaution: 350€</div>
-      <div class="cta-inline">
-        <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20das%20Paket%20Premium%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
-      </div>
-    </article>
+        <article class="card">
+          <div class="badge">Für größere Feiern</div>
+          <h3>🚀 Paket Premium</h3>
+          <div class="subtitle">2x Soundboks Partybox (1x Gen. 3 + 1x Gen. 4) + 2x Soundboks Partylicht</div>
+          <div class="price-list">
+            <div class="price-row"><span>Mo–Do</span><strong>139€ <span class="price-unit">/ Tag</span></strong></div>
+            <div class="price-row"><span>Fr–So</span><strong>159€ <span class="price-unit">/ Tag</span></strong></div>
+            <div class="price-row"><span>Wochenende komplett</span><strong>269€</strong></div>
+          </div>
+          <div class="addon-box">
+            <strong>2 Stative dazu buchen:</strong> +15€
+          </div>
+          <div class="deposit">Kaution: 350€</div>
+          <div class="cta-inline">
+            <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20das%20Paket%20Premium%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
+          </div>
+        </article>
 
-    <article class="card">
-      <div class="badge">Komplettes Setup</div>
-      <h3>🎊 Paket Event Komplett</h3>
-      <div class="subtitle">2x Soundboks Partybox (1x Gen. 3 + 1x Gen. 4) + 2x Soundboks Partylicht + Nebelmaschine + Seifenblasenmaschine</div>
-      <div class="price-list">
-        <div class="price-row"><span>Mo–Do</span><strong>219€ <span class="price-unit">/ Tag</span></strong></div>
-        <div class="price-row"><span>Fr–So</span><strong>249€ <span class="price-unit">/ Tag</span></strong></div>
-        <div class="price-row"><span>Wochenende komplett</span><strong>429€</strong></div>
-      </div>
-      <div class="addon-box">
-        <strong>2 Stative dazu buchen:</strong> +15€
-      </div>
-      <div class="addon-box">
-        <strong>Je 1 Füllung pro Maschine ist im Preis enthalten:</strong><br>
-        • Nebelmaschine: 1,6 Liter (reicht den ganzen Abend) – jede weitere Füllung 5€<br>
-        • Seifenblasenmaschine: 2 Liter – jede weitere Füllung 5€
-      </div>
-      <div class="deposit">Kaution: 450€</div>
-      <div class="cta-inline">
-        <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20das%20Paket%20Event%20Komplett%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
-      </div>
-    </article>
+        <article class="card">
+          <div class="badge">Komplettes Setup</div>
+          <h3>🎊 Paket Event Komplett</h3>
+          <div class="subtitle">2x Soundboks Partybox (1x Gen. 3 + 1x Gen. 4) + 2x Soundboks Partylicht + Nebelmaschine + Seifenblasenmaschine</div>
+          <div class="price-list">
+            <div class="price-row"><span>Mo–Do</span><strong>219€ <span class="price-unit">/ Tag</span></strong></div>
+            <div class="price-row"><span>Fr–So</span><strong>249€ <span class="price-unit">/ Tag</span></strong></div>
+            <div class="price-row"><span>Wochenende komplett</span><strong>429€</strong></div>
+          </div>
+          <div class="addon-box">
+            <strong>2 Stative dazu buchen:</strong> +15€
+          </div>
+          <div class="addon-box">
+            <strong>Je 1 Füllung pro Maschine ist im Preis enthalten:</strong><br>
+            • Nebelmaschine: 1,6 Liter (reicht den ganzen Abend) – jede weitere Füllung 5€<br>
+            • Seifenblasenmaschine: 2 Liter – jede weitere Füllung 5€
+          </div>
+          <div class="deposit">Kaution: 450€</div>
+          <div class="cta-inline">
+            <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20das%20Paket%20Event%20Komplett%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
+          </div>
+        </article>
 
-  </div>
-</div>
-```
-
+      </div>
+    </div>
   </section>
 
   <!-- ── PARTY AUSSTATTUNG ── -->
-
   <section class="section" id="party-ausstattung">
     <div class="container">
       <div class="section-head">
@@ -1461,59 +1441,55 @@
       </div>
       <div class="grid">
 
-```
-    <article class="card">
-      <div class="badge">Beliebt</div>
-      <h3>🍺 1 Bierzeltgarnitur</h3>
-      <div class="subtitle">
-        1 Tisch + 2 Bänke – ideal für kleine Feiern, Gartenparty oder als Ergänzung zu deinem bestehenden Setup. Robust, klappbar und einfach zu transportieren.
-      </div>
-      <ul class="feature-list">
-        <li>1 Tisch (220 × 50 cm) + 2 Bänke</li>
-        <li>Platz für 6-8 Personen</li>
-        <li>Klappbar und einfach zu transportieren</li>
-      </ul>
-      <div class="price-list">
-        <div class="price-row"><span>Mo–Do</span><strong>15€ <span class="price-unit">/ Tag</span></strong></div>
-        <div class="price-row"><span>Fr–So</span><strong>20€ <span class="price-unit">/ Tag</span></strong></div>
-        <div class="price-row"><span>Wochenende komplett</span><strong>45€</strong></div>
-      </div>
-      <div class="deposit">Kaution: 50€</div>
-      <div class="cta-inline">
-        <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%201%20Bierzeltgarnitur%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
-      </div>
-    </article>
+        <article class="card">
+          <div class="badge">Beliebt</div>
+          <h3>🍺 1 Bierzeltgarnitur</h3>
+          <div class="subtitle">
+            1 Tisch + 2 Bänke – ideal für kleine Feiern, Gartenparty oder als Ergänzung zu deinem bestehenden Setup. Robust, klappbar und einfach zu transportieren.
+          </div>
+          <ul class="feature-list">
+            <li>1 Tisch (220 × 50 cm) + 2 Bänke</li>
+            <li>Platz für 6-8 Personen</li>
+            <li>Klappbar und einfach zu transportieren</li>
+          </ul>
+          <div class="price-list">
+            <div class="price-row"><span>Mo–Do</span><strong>15€ <span class="price-unit">/ Tag</span></strong></div>
+            <div class="price-row"><span>Fr–So</span><strong>20€ <span class="price-unit">/ Tag</span></strong></div>
+            <div class="price-row"><span>Wochenende komplett</span><strong>45€</strong></div>
+          </div>
+          <div class="deposit">Kaution: 50€</div>
+          <div class="cta-inline">
+            <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%201%20Bierzeltgarnitur%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
+          </div>
+        </article>
 
-    <article class="card">
-      <div class="badge">Spar-Tipp</div>
-      <h3>🍻 2 Bierzeltgarnituren</h3>
-      <div class="subtitle">
-        2 Tische + 4 Bänke – perfekt für größere Feiern und Hochzeiten. Spar gegenüber Einzelmiete und schaff Platz für deine ganze Crew!
-      </div>
-      <ul class="feature-list">
-        <li>2 Tische (je 220 × 50 cm) + 4 Bänke</li>
-        <li>Platz für 12-16 Personen</li>
-        <li>Klappbar und einfach zu transportieren</li>
-      </ul>
-      <div class="price-list">
-        <div class="price-row"><span>Mo–Do</span><strong>25€ <span class="price-unit">/ Tag</span></strong></div>
-        <div class="price-row"><span>Fr–So</span><strong>35€ <span class="price-unit">/ Tag</span></strong></div>
-        <div class="price-row"><span>Wochenende komplett</span><strong>80€</strong></div>
-      </div>
-      <div class="deposit">Kaution: 100€</div>
-      <div class="cta-inline">
-        <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%202%20Bierzeltgarnituren%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
-      </div>
-    </article>
+        <article class="card">
+          <div class="badge">Spar-Tipp</div>
+          <h3>🍻 2 Bierzeltgarnituren</h3>
+          <div class="subtitle">
+            2 Tische + 4 Bänke – perfekt für größere Feiern und Hochzeiten. Spar gegenüber Einzelmiete und schaff Platz für deine ganze Crew!
+          </div>
+          <ul class="feature-list">
+            <li>2 Tische (je 220 × 50 cm) + 4 Bänke</li>
+            <li>Platz für 12-16 Personen</li>
+            <li>Klappbar und einfach zu transportieren</li>
+          </ul>
+          <div class="price-list">
+            <div class="price-row"><span>Mo–Do</span><strong>25€ <span class="price-unit">/ Tag</span></strong></div>
+            <div class="price-row"><span>Fr–So</span><strong>35€ <span class="price-unit">/ Tag</span></strong></div>
+            <div class="price-row"><span>Wochenende komplett</span><strong>80€</strong></div>
+          </div>
+          <div class="deposit">Kaution: 100€</div>
+          <div class="cta-inline">
+            <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%202%20Bierzeltgarnituren%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
+          </div>
+        </article>
 
-  </div>
-</div>
-```
-
+      </div>
+    </div>
   </section>
 
   <!-- ── KONTAKT ── -->
-
   <section class="section" id="kontakt">
     <div class="container">
       <div class="contact-wrap">
@@ -1542,7 +1518,6 @@
   </section>
 
   <!-- ── CITY LINKS ── -->
-
   <div class="container city-links">
     <p>
       Wir bieten <strong>Partybox mieten und Soundboks Verleih</strong> in
@@ -1553,7 +1528,6 @@
   </div>
 
   <!-- ── FOOTER ── -->
-
   <footer>
     <div class="container footer-inner">
       <div>© 2026 GABO Verleihservice</div>
