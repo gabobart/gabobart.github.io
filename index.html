@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Partybox mieten Mainz & Umgebung | Soundboks Verleih Wiesbaden, Frankfurt, Bingen, Darmstadt</title>
-  <meta name="description" content="Partybox mieten in Mainz, Wiesbaden, Frankfurt und Umgebung. Soundboks, Partylicht, Nebelmaschine und Seifenblasenmaschine einzeln oder als Paket mieten. Abholung – nach Absprache kann auch geliefert werden (mit Aufpreis). Schnelle Antwort per WhatsApp – jetzt anfragen!" />
+  <meta name="description" content="Partybox mieten in Mainz, Wiesbaden, Frankfurt und Umgebung. Soundboks, Partylicht, Nebelmaschine und Seifenblasenmaschine einzeln oder als Paket mieten. Abholung in Ingelheim – Lieferung nach Absprache gegen Aufpreis. Schnelle Antwort per WhatsApp – jetzt anfragen!" />
   <meta name="keywords" content="Partybox mieten Mainz, Soundboks mieten Mainz, Partybox mieten Wiesbaden, Soundboks mieten Wiesbaden, Partybox mieten Frankfurt, Lautsprecher mieten Mainz, Partybox Verleih Mainz Umgebung, Soundboks Verleih Rhein-Main, Nebelmaschine mieten Mainz, Seifenblasenmaschine mieten Mainz, Partybox mieten Bingen, Partybox mieten Darmstadt, Partybox mieten Rüsselsheim, Eventverleih Mainz" />
   <link rel="icon" href="favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -15,22 +15,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
-  <!-- Erweitertes Schema.org für bessere Google-Sichtbarkeit -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "GABO Verleihservice",
-    "description": "Partybox und Soundboks mieten in Mainz, Wiesbaden, Frankfurt und Umgebung. Verleih von Soundboks Partybox, Partylicht, Nebelmaschine und Seifenblasenmaschine.",
+    "description": "Partybox und Soundboks mieten in Mainz, Wiesbaden, Frankfurt und Umgebung.",
     "url": "https://gaboevent.de",
     "telephone": "+4917629007917",
-    "areaServed": [
-      "Mainz", "Wiesbaden", "Frankfurt", "Bingen", "Darmstadt",
-      "Rüsselsheim", "Ingelheim", "Nieder-Olm", "Bad Kreuznach", "Rhein-Main"
-    ],
+    "areaServed": ["Mainz","Wiesbaden","Frankfurt","Bingen","Darmstadt","Rüsselsheim","Ingelheim","Nieder-Olm","Bad Kreuznach","Rhein-Main"],
     "priceRange": "€€",
     "openingHours": "Mo-Su 08:00-22:00",
-    "sameAs": []
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "6"
+    }
   }
   </script>
 
@@ -42,51 +42,49 @@
       --muted:#475569;
       --muted-2:#64748b;
       --line:#dbe7f4;
-      --white:#ffffff;
       --blue:#3b82f6;
       --blue-strong:#2563eb;
       --blue-soft:#dbeafe;
       --violet:#8b5cf6;
       --cyan:#06b6d4;
       --green:#25D366;
-      --gold:#c58b00;
       --red:#e11d48;
-      --shadow:0 16px 40px rgba(15,23,42,0.10);
       --shadow-soft:0 10px 24px rgba(15,23,42,0.08);
       --radius:22px;
       --max:1180px;
     }
 
-    *{ box-sizing:border-box; }
-    html{ scroll-behavior:smooth; }
-
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
     body{
       margin:0;
-      font-family:'Inter', sans-serif;
+      font-family:'Inter',sans-serif;
       color:var(--text);
       line-height:1.55;
       background:
-        radial-gradient(circle at 15% 15%, rgba(59,130,246,0.16), transparent 22%),
-        radial-gradient(circle at 82% 18%, rgba(139,92,246,0.14), transparent 22%),
-        radial-gradient(circle at 50% 82%, rgba(6,182,212,0.10), transparent 25%),
-        linear-gradient(180deg, var(--bg) 0%, var(--bg2) 48%, #f7fbff 100%);
+        radial-gradient(circle at 15% 15%,rgba(59,130,246,.16),transparent 22%),
+        radial-gradient(circle at 82% 18%,rgba(139,92,246,.14),transparent 22%),
+        radial-gradient(circle at 50% 82%,rgba(6,182,212,.10),transparent 25%),
+        linear-gradient(180deg,var(--bg) 0%,var(--bg2) 48%,#f7fbff 100%);
     }
 
-    img{ max-width:100%; display:block; }
-    a{ color:inherit; text-decoration:none; }
+    img{max-width:100%;display:block}
+    a{color:inherit;text-decoration:none}
 
     .container{
-      width:min(calc(100% - 32px), var(--max));
+      width:min(calc(100% - 32px),var(--max));
       margin:0 auto;
     }
 
-    /* ── TOP QUICK NAV ── */
     .top-quicknav{
-      background:rgba(255,255,255,0.96);
+      background:rgba(255,255,255,.96);
       border-bottom:1px solid var(--line);
       padding:8px 0;
-      box-shadow:0 2px 10px rgba(15, 23, 42, 0.04);
+      box-shadow:0 2px 10px rgba(15,23,42,.04);
+      position:relative;
+      z-index:200;
     }
+
     .quicknav-inner{
       max-width:1200px;
       margin:0 auto;
@@ -97,46 +95,45 @@
       gap:8px;
       flex-wrap:wrap;
     }
+
     .quicknav-btn{
       background:transparent;
       border:1px solid var(--line);
       color:#0f172a;
       padding:8px 16px;
       border-radius:20px;
-      font-family:'Inter', sans-serif;
+      font-family:'Inter',sans-serif;
       font-size:14px;
       font-weight:700;
       cursor:pointer;
-      transition:all 0.15s;
+      transition:all .15s;
       display:inline-flex;
       align-items:center;
       gap:6px;
       white-space:nowrap;
     }
-    .quicknav-btn:hover{
-      background:var(--blue-soft);
-      color:var(--blue-strong);
-      border-color:var(--blue-soft);
-    }
+
+    .quicknav-btn:hover,
     .quicknav-btn.active{
       background:var(--blue-strong);
       color:white;
       border-color:var(--blue-strong);
     }
 
-    /* Quick Content Areas (aufklappbar) */
     .quicknav-content{
       max-width:1200px;
       margin:0 auto;
       padding:0 20px;
       max-height:0;
       overflow:hidden;
-      transition:max-height 0.4s ease, padding 0.25s;
+      transition:max-height .4s ease,padding .25s;
     }
+
     .quicknav-content.open{
       max-height:5000px;
       padding:0 20px 24px;
     }
+
     .quicknav-panel{
       display:none;
       background:white;
@@ -144,11 +141,12 @@
       border-radius:14px;
       padding:24px;
       margin-top:8px;
-      box-shadow:0 4px 20px rgba(15, 23, 42, 0.06);
+      box-shadow:0 4px 20px rgba(15,23,42,.06);
+      position:relative;
     }
-    .quicknav-panel.show{
-      display:block;
-    }
+
+    .quicknav-panel.show{display:block}
+
     .quicknav-panel-close{
       position:absolute;
       top:12px;
@@ -162,311 +160,150 @@
       font-size:20px;
       font-weight:900;
       cursor:pointer;
-      line-height:1;
-    }
-    .quicknav-panel{ position:relative; }
-
-    @media(max-width:480px){
-      .quicknav-btn{
-        font-size:13px;
-        padding:7px 12px;
-      }
-      .quicknav-inner{ gap:5px; }
     }
 
-    /* ── COLLAPSIBLE SECTIONS ── */
-    .collapse-section{
-      background:linear-gradient(180deg, rgba(255,255,255,0.94), rgba(255,255,255,0.88));
-      border:1px solid var(--line);
-      border-radius:18px;
-      box-shadow:var(--shadow-soft);
-      overflow:hidden;
-      position:relative;
-      margin-bottom:14px;
-    }
-    .collapse-section::before{
-      content:""; position:absolute; inset:0 auto auto 0;
-      width:100%; height:4px;
-      background:linear-gradient(90deg, var(--blue), var(--violet), var(--cyan));
-      opacity:.95;
-    }
-    .collapse-header{
-      width:100%; background:none; border:none; cursor:pointer;
-      display:flex; align-items:center; justify-content:space-between;
-      gap:16px; padding:22px 24px;
-      font-family:'Inter', sans-serif;
-      font-size:20px; font-weight:900; color:#0f172a;
-      text-align:left; line-height:1.3;
-      transition:background .15s;
-      letter-spacing:-0.3px;
-    }
-    .collapse-header:hover{ background:rgba(59,130,246,0.04); }
-    .collapse-icon{
-      flex-shrink:0; width:32px; height:32px; border-radius:50%;
-      background:var(--blue-soft); color:var(--blue-strong);
-      display:flex; align-items:center; justify-content:center;
-      font-size:20px; font-weight:900; line-height:1;
-      transition:transform .25s, background .2s;
-    }
-    .collapse-section.open .collapse-icon{
-      transform:rotate(45deg);
-      background:var(--blue-strong); color:#fff;
-    }
-    .collapse-body{
-      max-height:0; overflow:hidden;
-      transition:max-height .4s ease, padding .25s;
-      padding:0 24px;
-    }
-    .collapse-section.open .collapse-body{
-      max-height:5000px;
-      padding:0 24px 24px;
+    .intro{
+      padding:42px 0 18px;
+      text-align:center;
     }
 
-    /* ── NAVBAR ── */
-    .navbar{
-      position:sticky; top:0; z-index:100;
-      background:rgba(248,251,255,0.92);
-      backdrop-filter:blur(14px);
-      -webkit-backdrop-filter:blur(14px);
-      border-bottom:1px solid var(--line);
-      box-shadow:0 2px 16px rgba(15,23,42,0.06);
-    }
-    .navbar-inner{
-      display:flex; align-items:center;
-      justify-content:space-between;
-      height:62px; gap:1rem;
-    }
-    .navbar-logo{
-      font-size:1.2rem; font-weight:900;
-      letter-spacing:-0.5px; white-space:nowrap; color:var(--text);
-    }
-    .navbar-logo span{ color:var(--blue-strong); }
-    .navbar-links{
-      display:flex; align-items:center;
-      gap:4px; list-style:none; margin:0; padding:0;
-    }
-    .navbar-links a{
-      display:inline-block; padding:7px 14px; border-radius:10px;
-      font-size:15px; font-weight:700; color:var(--muted);
-      transition:background 0.15s, color 0.15s; white-space:nowrap;
-    }
-    .navbar-links a:hover,
-    .navbar-links a.active{ background:var(--blue-soft); color:var(--blue-strong); }
-    .navbar-cta{
-      display:inline-flex; align-items:center; gap:8px;
-      padding:9px 18px; border-radius:12px;
-      font-size:15px; font-weight:800;
-      background:linear-gradient(135deg, var(--green), #1fb455);
-      color:#fff; box-shadow:0 4px 14px rgba(37,211,102,0.28);
-      transition:transform 0.15s, opacity 0.15s; white-space:nowrap;
-    }
-    .navbar-cta:hover{ transform:translateY(-1px); opacity:0.95; }
-
-    .hamburger{
-      display:none; flex-direction:column; gap:5px;
-      cursor:pointer; padding:6px; border-radius:8px; transition:background 0.15s;
-    }
-    .hamburger:hover{ background:var(--blue-soft); }
-    .hamburger span{
-      display:block; width:22px; height:2.5px;
-      background:var(--text); border-radius:2px; transition:all 0.25s;
-    }
-
-    /* Mobile Menu */
-    .mobile-menu{
-      display:none;
-      flex-direction:column;
-      gap:4px;
-      padding:8px 16px 16px;
-      background:rgba(255,255,255,0.98);
-      backdrop-filter:blur(14px);
-      border-top:1px solid var(--line);
-    }
-    .mobile-menu.open{
-      display:flex;
-    }
-    .mobile-menu a{
-      padding:14px 16px;
-      border-radius:10px;
-      font-size:16px;
-      font-weight:700;
-      color:#0f172a;
-      transition:background 0.15s;
-    }
-    .mobile-menu a:hover{
-      background:var(--blue-soft);
-      color:var(--blue-strong);
-    }
-    .hamburger.open span:nth-child(1){ transform:translateY(7.5px) rotate(45deg); }
-    .hamburger.open span:nth-child(2){ opacity:0; }
-    .hamburger.open span:nth-child(3){ transform:translateY(-7.5px) rotate(-45deg); }
-
-    .mobile-menu{
-      display:none; flex-direction:column; gap:4px;
-      padding:12px 0 16px; border-top:1px solid var(--line);
-    }
-    .mobile-menu.open{ display:flex; }
-    .mobile-menu a{
-      padding:11px 16px; border-radius:10px;
-      font-size:16px; font-weight:700; color:var(--muted);
-      transition:background 0.15s, color 0.15s;
-    }
-    .mobile-menu a:hover{ background:var(--blue-soft); color:var(--blue-strong); }
-    .mobile-menu .navbar-cta{ margin-top:6px; justify-content:center; }
-
-    /* ── HERO ── */
-    .hero{
-      padding:42px 0 28px;
-      position:relative; overflow:hidden;
-    }
-    .hero::before{
-      content:""; position:absolute; left:-120px; top:-80px;
-      width:320px; height:320px;
-      background:radial-gradient(circle, rgba(59,130,246,0.14), transparent 65%);
-      filter:blur(8px); pointer-events:none;
-    }
-    .hero::after{
-      content:""; position:absolute; right:-100px; top:-40px;
-      width:320px; height:320px;
-      background:radial-gradient(circle, rgba(139,92,246,0.12), transparent 65%);
-      filter:blur(10px); pointer-events:none;
-    }
-    .hero-grid{
-      position:relative; z-index:1;
-      display:grid; grid-template-columns:1.08fr 0.92fr;
-      gap:30px; align-items:center;
-    }
     .main-logo{
-      width:100%; max-width:520px; height:auto; margin-bottom:18px;
-      filter:drop-shadow(0 12px 26px rgba(15,23,42,0.14)) drop-shadow(0 0 22px rgba(59,130,246,0.16));
-    }
-    h1{
-      margin:0 0 14px;
-      font-size:clamp(34px,5vw,60px);
-      line-height:1.02; letter-spacing:-1.5px; font-weight:900;
-    }
-    .hero p{ margin:0 0 14px; font-size:18px; color:var(--muted); max-width:720px; }
-    .hero-highlight{ font-size:17px !important; color:#0f172a !important; font-weight:800; margin-top:0 !important; }
-    .warning-note{ color:var(--red) !important; font-weight:800; margin-top:4px !important; }
-    .offer-label{ margin:12px 0 10px; font-weight:800; color:#0f172a; font-size:16px; }
-    .response-note{ font-size:14px !important; color:var(--muted-2) !important; margin-top:10px !important; }
-
-    .trust-row{ display:flex; gap:12px; flex-wrap:wrap; margin-top:14px; }
-    .pill{
-      display:inline-flex; align-items:center; justify-content:center;
-      gap:8px; flex:1 1 calc(50% - 12px); min-height:52px;
-      padding:12px; border-radius:14px;
-      background:rgba(255,255,255,0.85); border:1px solid rgba(37,99,235,0.15);
-      color:#1e3a8a; font-size:14px; font-weight:700;
-      text-align:center; box-shadow:var(--shadow-soft); backdrop-filter:blur(8px);
-    }
-    .hero-card{
-      position:relative;
-      background:linear-gradient(180deg,rgba(255,255,255,0.96),rgba(255,255,255,0.88));
-      border:1px solid rgba(59,130,246,0.12); border-radius:28px;
-      padding:22px; box-shadow:0 24px 50px rgba(15,23,42,0.12); overflow:hidden;
-    }
-    .hero-card::before{
-      content:""; position:absolute; inset:auto -40px -45px -40px; height:170px;
-      background:
-        radial-gradient(circle at 18% 50%,rgba(59,130,246,0.38),transparent 28%),
-        radial-gradient(circle at 48% 60%,rgba(255,255,255,0.40),transparent 24%),
-        radial-gradient(circle at 82% 44%,rgba(139,92,246,0.28),transparent 28%);
-      filter:blur(22px); pointer-events:none;
-    }
-    .hero-card::after{
-      content:""; position:absolute; inset:0;
-      background:linear-gradient(135deg,rgba(255,255,255,0.55),transparent 38%);
-      pointer-events:none;
-    }
-    .hero-photo{
-      position:relative; z-index:1; width:100%; max-height:460px;
-      object-fit:contain;
-      filter:drop-shadow(0 20px 26px rgba(15,23,42,0.16)) drop-shadow(0 0 18px rgba(59,130,246,0.14));
-      border-radius:18px;
-    }
-
-    /* ── SECTIONS ── */
-    .section{ padding:34px 0; }
-    .section-head{ margin-bottom:22px; }
-    .section-head h2{ margin:0 0 8px; font-size:clamp(28px,3.2vw,40px); letter-spacing:-0.8px; font-weight:900; }
-    .section-head p{ margin:0; color:var(--muted); max-width:820px; }
-    .single-head h2{ font-size:clamp(40px,6vw,54px); line-height:1.05; margin:0; font-weight:900; }
-
-    /* ── PRODUKT-BILDER ── */
-    .product-image{
       width:100%;
-      height:200px;
-      background:linear-gradient(180deg, #f0f4fa 0%, #e8eef7 100%);
-      border-radius:14px;
+      max-width:460px;
+      height:auto;
+      margin:0 auto 22px;
+      filter:drop-shadow(0 12px 26px rgba(15,23,42,.14));
+    }
+
+    h1{
+      margin:0 auto 14px;
+      font-size:clamp(34px,5vw,58px);
+      line-height:1.03;
+      letter-spacing:-1.5px;
+      font-weight:900;
+      max-width:980px;
+    }
+
+    .intro p{
+      margin:0 auto 14px;
+      font-size:18px;
+      color:var(--muted);
+      max-width:850px;
+    }
+
+    .intro-highlight{
+      font-size:17px!important;
+      color:#0f172a!important;
+      font-weight:800;
+    }
+
+    .warning-note{
+      color:var(--red)!important;
+      font-weight:800;
+    }
+
+    .trust-row{
       display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin:18px auto 0;
+      max-width:900px;
+    }
+
+    .pill{
+      display:inline-flex;
       align-items:center;
       justify-content:center;
-      margin-bottom:14px;
-      overflow:hidden;
-      padding:20px;
-      position:relative;
-    }
-    .product-image img{
-      max-width:80%;
-      max-height:80%;
-      width:auto;
-      height:auto;
-      object-fit:contain;
-      filter:drop-shadow(0 4px 12px rgba(15,23,42,0.15));
-    }
-    .product-image.dual{
-      gap:14px;
-    }
-    .product-image.dual img{
-      max-width:42%;
-      max-height:90%;
+      flex:1 1 calc(33.333% - 12px);
+      min-height:52px;
+      padding:12px;
+      border-radius:14px;
+      background:rgba(255,255,255,.85);
+      border:1px solid rgba(37,99,235,.15);
+      color:#1e3a8a;
+      font-size:14px;
+      font-weight:700;
+      text-align:center;
+      box-shadow:var(--shadow-soft);
     }
 
-    /* Paket-Grid für mehrere Geräte */
-    .product-image.package-grid{
+    .section{padding:34px 0}
+    .section-head{margin-bottom:22px}
+    .section-head h2{
+      margin:0 0 8px;
+      font-size:clamp(28px,3.2vw,40px);
+      letter-spacing:-.8px;
+      font-weight:900;
+    }
+    .section-head p{margin:0;color:var(--muted);max-width:820px}
+
+    .single-head h2{
+      font-size:clamp(40px,6vw,54px);
+      line-height:1.05;
+      margin:0;
+      font-weight:900;
+    }
+
+    .pricing-grid,.grid{
       display:grid;
-      gap:10px;
-      padding:14px;
-      height:240px;
-    }
-    /* 2 Bilder - nebeneinander */
-    .product-image.package-grid.items-2{
-      grid-template-columns:1fr 1fr;
-    }
-    /* 3 Bilder - 3 nebeneinander */
-    .product-image.package-grid.items-3{
-      grid-template-columns:1fr 1fr 1fr;
-    }
-    /* 4 Bilder - 2x2 Raster */
-    .product-image.package-grid.items-4{
-      grid-template-columns:1fr 1fr;
-      grid-template-rows:1fr 1fr;
-    }
-    /* 6 Bilder - 3x2 Raster */
-    .product-image.package-grid.items-6{
-      grid-template-columns:repeat(3, 1fr);
-      grid-template-rows:1fr 1fr;
-    }
-    .product-image.package-grid img{
-      max-width:75%;
-      max-height:75%;
-      width:auto;
-      height:auto;
-      object-fit:contain;
-      background:#fff;
-      border-radius:8px;
-      padding:8px;
-      margin:auto;
-      display:block;
-    }
-    /* Wrapper damit die Bilder zentriert sind */
-    .product-image.package-grid img{
-      align-self:center;
-      justify-self:center;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:18px;
     }
 
-    /* Ausgebucht Badge */
+    .card{
+      background:linear-gradient(180deg,rgba(255,255,255,.94),rgba(255,255,255,.88));
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:22px;
+      box-shadow:var(--shadow-soft);
+      position:relative;
+      overflow:hidden;
+      transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease;
+    }
+
+    .card:hover{
+      transform:translateY(-3px);
+      box-shadow:0 18px 36px rgba(15,23,42,.12);
+      border-color:rgba(59,130,246,.24);
+    }
+
+    .card::before{
+      content:"";
+      position:absolute;
+      inset:0 auto auto 0;
+      width:100%;
+      height:4px;
+      background:linear-gradient(90deg,var(--blue),var(--violet),var(--cyan));
+    }
+
+    .card-featured{
+      border:2px solid rgba(197,139,0,.42);
+      box-shadow:0 20px 40px rgba(197,139,0,.14);
+    }
+
+    .card-featured::before{
+      height:5px;
+      background:linear-gradient(90deg,#e7b800,#c58b00,#f4cf4d);
+    }
+
+    .badge{
+      display:inline-flex;
+      padding:7px 12px;
+      border-radius:999px;
+      font-size:12px;
+      font-weight:800;
+      background:var(--blue-soft);
+      border:1px solid rgba(59,130,246,.14);
+      color:#1e40af;
+      margin-bottom:14px;
+    }
+
+    .badge-featured{
+      background:rgba(197,139,0,.12);
+      border:1px solid rgba(197,139,0,.28);
+      color:#8a5e00;
+    }
+
     .badge-soldout{
       display:inline-block;
       padding:4px 12px;
@@ -475,15 +312,16 @@
       color:#dc2626;
       font-size:11px;
       font-weight:800;
-      letter-spacing:0.5px;
+      letter-spacing:.5px;
       text-transform:uppercase;
       margin-bottom:8px;
       border:1.5px solid #fecaca;
     }
+
     .soldout-notice{
       margin-top:8px;
       padding:10px 14px;
-      background:linear-gradient(180deg, #fef2f2 0%, #fef9f9 100%);
+      background:#fef2f2;
       border:1px solid #fecaca;
       border-radius:10px;
       color:#991b1b;
@@ -491,94 +329,220 @@
       font-weight:700;
       text-align:center;
     }
-    .card.is-soldout{
-      opacity:0.92;
-      position:relative;
+
+    .card.is-soldout{opacity:.92}
+
+    .card h3{
+      margin:0 0 8px;
+      font-size:24px;
+      line-height:1.3;
+      color:#0f172a;
+      font-weight:800;
     }
-    .card.is-soldout h3{
+
+    .brand-note{
+      font-size:16px;
       color:#475569;
+      font-weight:600;
     }
 
-    /* Hochzeit Badge */
-    .badge-wedding{
-      background:linear-gradient(135deg, #fce7f3, #fbcfe8);
-      color:#9f1239;
-      border:1px solid #f9a8d4;
-    }
-    .card-wedding{
-      background:linear-gradient(180deg, #fff5f7 0%, #ffffff 60%);
-      border:2px solid #fbcfe8;
-      box-shadow:0 8px 30px rgba(244, 114, 182, 0.15);
-    }
-    .card-wedding::before{
-      background:linear-gradient(90deg, #ec4899, #be185d) !important;
+    .subtitle{
+      color:var(--muted);
+      font-size:15px;
+      margin-bottom:18px;
     }
 
-    /* ── ÜBER MICH ── */
-    .about-section{
-      background:linear-gradient(180deg, rgba(255,255,255,0.94), rgba(255,255,255,0.88));
+    .feature-list{
+      margin:0 0 16px;
+      padding-left:18px;
+      color:#334155;
+      display:grid;
+      gap:8px;
+    }
+
+    .price-list{
+      display:grid;
+      gap:10px;
+      margin-bottom:12px;
+    }
+
+    .price-row{
+      display:flex;
+      justify-content:space-between;
+      gap:14px;
+      padding:11px 0;
+      border-bottom:1px dashed #d8e2ee;
+      color:#334155;
+    }
+
+    .price-row:last-child{border-bottom:none}
+    .price-row strong{
+      color:#0f172a;
+      font-size:18px;
+      font-weight:800;
+      white-space:nowrap;
+    }
+
+    .price-unit{
+      font-size:13px;
+      color:var(--muted-2);
+      font-weight:600;
+      margin-left:4px;
+    }
+
+    .deposit{
+      margin-top:10px;
+      color:var(--muted-2);
+      font-weight:700;
+      font-size:13px;
+    }
+
+    .small-note{
+      margin-top:8px;
+      color:var(--muted-2);
+      font-size:14px;
+    }
+
+    .addon-box{
+      margin-top:10px;
+      padding:10px 14px;
+      background:rgba(219,234,254,.4);
+      border:1px solid rgba(59,130,246,.18);
+      border-radius:12px;
+      color:#1e3a8a;
+      font-size:13px;
+      line-height:1.5;
+    }
+
+    .addon-box strong{
+      color:#0f172a;
+      font-weight:800;
+    }
+
+    .cta-inline{
+      margin-top:18px;
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      min-height:50px;
+      padding:0 18px;
+      border-radius:14px;
+      font-weight:800;
+      font-family:'Inter',sans-serif;
+      transition:transform .18s ease,opacity .18s ease;
+      box-shadow:0 10px 24px rgba(15,23,42,.10);
+      border:none;
+    }
+
+    .btn:hover{
+      transform:translateY(-1px);
+      opacity:.97;
+    }
+
+    .btn-whatsapp{
+      background:linear-gradient(135deg,var(--green),#1fb455);
+      color:#fff;
+    }
+
+    .btn-primary{
+      background:linear-gradient(135deg,var(--blue),var(--blue-strong));
+      color:#fff;
+    }
+
+    .btn-small{
+      min-height:42px;
+      padding:0 14px;
+      border-radius:12px;
+      font-size:14px;
+      box-shadow:none;
+    }
+
+    .contact-wrap{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:18px;
+    }
+
+    .contact-card{
+      padding:26px;
+      border-radius:24px;
+      background:linear-gradient(180deg,rgba(255,255,255,.94),rgba(255,255,255,.88));
       border:1px solid var(--line);
-      border-radius:var(--radius);
-      padding:32px 28px;
       box-shadow:var(--shadow-soft);
-      position:relative;
-      overflow:hidden;
     }
-    .about-section::before{
-      content:""; position:absolute; inset:0 auto auto 0;
-      width:100%; height:4px;
-      background:linear-gradient(90deg, var(--blue), var(--violet), var(--cyan));
+
+    .contact-card h3{
+      margin:0 0 10px;
+      font-size:28px;
+      font-weight:900;
     }
+
+    .contact-card p{
+      margin:0 0 18px;
+      color:var(--muted);
+    }
+
+    .cta-row{
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+      margin-top:18px;
+    }
+
     .about-grid{
       display:grid;
       grid-template-columns:200px 1fr;
       gap:28px;
       align-items:center;
     }
+
     .about-photo{
       width:200px;
       height:200px;
       border-radius:50%;
       overflow:hidden;
       border:4px solid #fff;
-      box-shadow:0 8px 24px rgba(59, 130, 246, 0.25);
+      box-shadow:0 8px 24px rgba(59,130,246,.25);
       flex-shrink:0;
     }
+
     .about-photo img{
       width:100%;
       height:100%;
       object-fit:cover;
     }
+
     .about-content h2{
-      font-family:'Inter', sans-serif;
       font-size:28px;
       font-weight:900;
       color:#0f172a;
       margin:0 0 12px;
-      letter-spacing:-0.5px;
+      letter-spacing:-.5px;
       line-height:1.2;
     }
-    .about-content h2 .wave{
-      display:inline-block;
-      animation:wave 2s ease-in-out infinite;
-    }
-    @keyframes wave{
-      0%, 100%{ transform:rotate(0deg); }
-      25%{ transform:rotate(20deg); }
-      75%{ transform:rotate(-10deg); }
-    }
+
     .about-content p{
       color:var(--muted);
       font-size:15px;
       line-height:1.7;
       margin:0 0 14px;
     }
-    .about-content p strong{ color:#0f172a; }
+
+    .about-content p strong{color:#0f172a}
+
     .about-features{
       display:grid;
       gap:10px;
       margin:16px 0;
     }
+
     .about-feature{
       display:flex;
       align-items:center;
@@ -587,6 +551,7 @@
       color:#334155;
       font-weight:600;
     }
+
     .about-feature-icon{
       flex-shrink:0;
       width:36px;
@@ -599,15 +564,313 @@
       justify-content:center;
       font-size:18px;
     }
+
     .about-signature{
-      font-family:'Inter', sans-serif;
       font-size:18px;
       font-weight:800;
       color:var(--blue-strong);
       margin-top:14px;
       font-style:italic;
     }
-    @media(max-width:680px){
+
+    .faq-cats{
+      display:grid;
+      gap:14px;
+      margin-top:6px;
+    }
+
+    .faq-cat-block{
+      background:linear-gradient(180deg,rgba(255,255,255,.94),rgba(255,255,255,.88));
+      border:1px solid var(--line);
+      border-radius:18px;
+      box-shadow:var(--shadow-soft);
+      overflow:hidden;
+      position:relative;
+    }
+
+    .faq-cat-block::before{
+      content:"";
+      position:absolute;
+      inset:0 auto auto 0;
+      width:100%;
+      height:4px;
+      background:linear-gradient(90deg,var(--blue),var(--violet),var(--cyan));
+    }
+
+    .faq-cat-header{
+      width:100%;
+      background:none;
+      border:none;
+      cursor:pointer;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      padding:22px 24px;
+      font-family:'Inter',sans-serif;
+      font-size:20px;
+      font-weight:900;
+      color:#0f172a;
+      text-align:left;
+    }
+
+    .faq-cat-icon{
+      flex-shrink:0;
+      width:32px;
+      height:32px;
+      border-radius:50%;
+      background:var(--blue-soft);
+      color:var(--blue-strong);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:20px;
+      font-weight:900;
+      transition:transform .25s,background .2s;
+    }
+
+    .faq-cat-block.open .faq-cat-icon{
+      transform:rotate(45deg);
+      background:var(--blue-strong);
+      color:#fff;
+    }
+
+    .faq-cat-body{
+      max-height:0;
+      overflow:hidden;
+      transition:max-height .4s ease,padding .25s;
+      padding:0 18px;
+    }
+
+    .faq-cat-block.open .faq-cat-body{
+      max-height:3000px;
+      padding:0 18px 18px;
+    }
+
+    .faq-item{
+      background:rgba(248,251,255,.6);
+      border:1px solid var(--line);
+      border-radius:12px;
+      overflow:hidden;
+      margin-bottom:8px;
+    }
+
+    .faq-question{
+      width:100%;
+      background:none;
+      border:none;
+      cursor:pointer;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:14px;
+      padding:16px 18px;
+      font-family:'Inter',sans-serif;
+      font-size:16px;
+      font-weight:700;
+      color:#0f172a;
+      text-align:left;
+    }
+
+    .faq-icon{
+      flex-shrink:0;
+      width:24px;
+      height:24px;
+      border-radius:50%;
+      background:var(--blue-soft);
+      color:var(--blue-strong);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:16px;
+      font-weight:900;
+      transition:transform .25s,background .2s;
+    }
+
+    .faq-item.open .faq-icon{
+      transform:rotate(45deg);
+      background:var(--blue-strong);
+      color:#fff;
+    }
+
+    .faq-answer{
+      max-height:0;
+      overflow:hidden;
+      transition:max-height .35s ease,padding .25s;
+      padding:0 18px;
+    }
+
+    .faq-item.open .faq-answer{
+      max-height:600px;
+      padding:0 18px 16px;
+    }
+
+    .faq-answer p{
+      margin:0;
+      color:var(--muted);
+      font-size:14px;
+      line-height:1.7;
+    }
+
+    .reviews-card{
+      background:linear-gradient(180deg,rgba(255,255,255,.94),rgba(255,255,255,.88));
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:20px;
+      box-shadow:var(--shadow-soft);
+      text-align:center;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .reviews-card::before{
+      content:"";
+      position:absolute;
+      inset:0 auto auto 0;
+      width:100%;
+      height:3px;
+      background:linear-gradient(90deg,#4285F4,#EA4335,#FBBC04,#34A853);
+    }
+
+    .reviews-summary{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-bottom:18px;
+    }
+
+    .reviews-rating{
+      font-size:32px;
+      font-weight:900;
+      color:#0f172a;
+      line-height:1;
+    }
+
+    .reviews-stars{
+      font-size:19px;
+      color:#FBBC04;
+      letter-spacing:1px;
+      line-height:1;
+    }
+
+    .reviews-count{
+      font-size:14px;
+      color:var(--muted);
+      font-weight:700;
+    }
+
+    .reviews-window{
+      overflow:hidden;
+      width:100%;
+      margin:0 0 18px;
+      mask-image:linear-gradient(to right,transparent,black 8%,black 92%,transparent);
+      -webkit-mask-image:linear-gradient(to right,transparent,black 8%,black 92%,transparent);
+    }
+
+    .reviews-track{
+      display:flex;
+      gap:14px;
+      width:max-content;
+      animation:moveReviewsRight 35s linear infinite;
+    }
+
+    .reviews-window:hover .reviews-track{
+      animation-play-state:paused;
+    }
+
+    @keyframes moveReviewsRight{
+      from{transform:translateX(-50%)}
+      to{transform:translateX(0)}
+    }
+
+    .review-item{
+      width:310px;
+      min-height:170px;
+      background:rgba(248,251,255,.85);
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:14px;
+      text-align:left;
+      box-shadow:0 8px 18px rgba(15,23,42,.06);
+      flex:0 0 auto;
+    }
+
+    .review-name{
+      font-weight:900;
+      font-size:14px;
+      color:#0f172a;
+      margin-bottom:4px;
+    }
+
+    .review-stars{
+      color:#FBBC04;
+      font-size:13px;
+      letter-spacing:1px;
+      margin-bottom:8px;
+    }
+
+    .review-text{
+      font-size:13px;
+      color:#334155;
+      line-height:1.55;
+      margin:0;
+    }
+
+    .city-links{
+      margin:30px 0 18px;
+      font-size:15px;
+      color:var(--muted);
+      text-align:center;
+    }
+
+    .city-links strong{color:#0f172a}
+    .city-links a{color:#2563eb;font-weight:700}
+
+    footer{
+      margin-top:8px;
+      border-top:1px solid var(--line);
+      background:rgba(255,255,255,.76);
+      backdrop-filter:blur(8px);
+    }
+
+    .footer-inner{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      text-align:center;
+      gap:12px;
+      padding:22px 0 34px;
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    .footer-links{
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+      justify-content:center;
+    }
+
+    .footer-links a{
+      color:#2563eb;
+      font-weight:700;
+    }
+
+    @media(max-width:980px){
+      .pricing-grid,.contact-wrap,.grid{grid-template-columns:1fr}
+    }
+
+    @media(max-width:720px){
+      .main-logo{max-width:330px}
+      h1{font-size:36px}
+      .intro p{font-size:16px}
+      .pill{flex:1 1 100%}
+      .cta-row{flex-direction:column}
+      .btn{width:100%}
+      .single-head h2{font-size:44px}
+      .quicknav-panel{padding:20px 16px}
       .about-grid{
         grid-template-columns:1fr;
         text-align:center;
@@ -618,336 +881,42 @@
         width:160px;
         height:160px;
       }
-      .about-content h2{ font-size:24px; }
-      .about-feature{ text-align:left; }
+      .about-content h2{font-size:24px}
+      .about-feature{text-align:left}
+      .review-item{width:280px}
     }
 
-    /* ── CARDS ── */
-    .pricing-grid{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
-    .card{
-      background:linear-gradient(180deg,rgba(255,255,255,0.94),rgba(255,255,255,0.88));
-      border:1px solid var(--line); border-radius:var(--radius);
-      padding:22px; box-shadow:var(--shadow-soft);
-      position:relative; overflow:hidden;
-      transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
-    }
-    .card:hover{ transform:translateY(-3px); box-shadow:0 18px 36px rgba(15,23,42,0.12); border-color:rgba(59,130,246,0.24); }
-    .card::before{
-      content:""; position:absolute; inset:0 auto auto 0;
-      width:100%; height:4px;
-      background:linear-gradient(90deg,var(--blue),var(--violet),var(--cyan));
-      opacity:.95;
-    }
-    .card-featured{ border:2px solid rgba(197,139,0,0.42); box-shadow:0 20px 40px rgba(197,139,0,0.14); transform:translateY(-2px); }
-    .card-featured::before{ height:5px; background:linear-gradient(90deg,#e7b800,#c58b00,#f4cf4d); }
-
-    .badge{
-      display:inline-flex; padding:7px 12px; border-radius:999px;
-      font-size:12px; font-weight:800; letter-spacing:0.2px;
-      background:var(--blue-soft); border:1px solid rgba(59,130,246,0.14);
-      color:#1e40af; margin-bottom:14px;
-    }
-    .badge-featured{ background:rgba(197,139,0,0.12); border:1px solid rgba(197,139,0,0.28); color:#8a5e00; }
-
-    .card h3{ margin:0 0 8px; font-size:24px; line-height:1.3; color:#0f172a; font-weight:800; }
-    .brand-note{ font-size:16px; color:#475569; font-weight:600; }
-    .subtitle{ color:var(--muted); font-size:15px; margin-bottom:18px; }
-    .feature-list{ margin:0 0 16px; padding-left:18px; color:#334155; display:grid; gap:8px; }
-
-    .price-list{ display:grid; gap:10px; margin-bottom:12px; }
-    .price-row{
-      display:flex; justify-content:space-between; gap:14px;
-      padding:11px 0; border-bottom:1px dashed #d8e2ee; color:#334155;
-    }
-    .price-row:last-child{ border-bottom:none; }
-    .price-row strong{ color:#0f172a; font-size:18px; font-weight:800; }
-    .price-unit{ font-size:13px; color:var(--muted-2); font-weight:600; margin-left:4px; }
-    .deposit{ margin-top:10px; color:var(--muted-2); font-weight:700; font-size:13px; }
-    .small-note{ margin-top:8px; color:var(--muted-2); font-size:14px; }
-
-    .addon-box{
-      margin-top:10px;
-      padding:10px 14px;
-      background:rgba(219,234,254,0.4);
-      border:1px solid rgba(59,130,246,0.18);
-      border-radius:12px;
-      color:#1e3a8a;
-      font-size:13px;
-      line-height:1.5;
-    }
-    .addon-box strong{ color:#0f172a; font-weight:800; }
-
-    .cta-inline{ margin-top:18px; display:flex; gap:10px; flex-wrap:wrap; }
-    .btn{
-      display:inline-flex; align-items:center; justify-content:center;
-      gap:10px; min-height:50px; padding:0 18px; border-radius:14px;
-      font-weight:800; font-family:'Inter', sans-serif;
-      transition:transform .18s ease, opacity .18s ease, box-shadow .18s ease;
-      box-shadow:0 10px 24px rgba(15,23,42,0.10);
-    }
-    .btn:hover{ transform:translateY(-1px); opacity:.97; }
-    .btn-whatsapp{ background:linear-gradient(135deg,var(--green),#1fb455); color:#fff; }
-    .btn-primary{ background:linear-gradient(135deg,var(--blue),var(--blue-strong)); color:#fff; }
-    .btn-small{ min-height:42px; padding:0 14px; border-radius:12px; font-size:14px; box-shadow:none; }
-
-    /* ── CONTACT ── */
-    .contact-wrap{ display:grid; grid-template-columns:1fr 1fr; gap:18px; }
-    .contact-card{
-      padding:26px; border-radius:24px;
-      background:linear-gradient(180deg,rgba(255,255,255,0.94),rgba(255,255,255,0.88));
-      border:1px solid var(--line); box-shadow:var(--shadow-soft);
-    }
-    .contact-card h3{ margin:0 0 10px; font-size:28px; font-weight:900; }
-    .contact-card p{ margin:0 0 18px; color:var(--muted); }
-    .cta-row{ display:flex; gap:14px; flex-wrap:wrap; margin-top:18px; }
-
-    /* ── FAQ ── */
-    .faq-cats{ display:grid; gap:14px; margin-top:6px; }
-
-    .faq-cat-block{
-      background:linear-gradient(180deg, rgba(255,255,255,0.94), rgba(255,255,255,0.88));
-      border:1px solid var(--line);
-      border-radius:18px;
-      box-shadow:var(--shadow-soft);
-      overflow:hidden;
-      position:relative;
-    }
-    .faq-cat-block::before{
-      content:""; position:absolute; inset:0 auto auto 0;
-      width:100%; height:4px;
-      background:linear-gradient(90deg, var(--blue), var(--violet), var(--cyan));
-      opacity:.95;
-    }
-
-    .faq-cat-header{
-      width:100%; background:none; border:none; cursor:pointer;
-      display:flex; align-items:center; justify-content:space-between;
-      gap:16px; padding:22px 24px;
-      font-family:'Inter', sans-serif;
-      font-size:20px; font-weight:900; color:#0f172a;
-      text-align:left; line-height:1.3;
-      transition:background .15s;
-      letter-spacing:-0.3px;
-    }
-    .faq-cat-header:hover{ background:rgba(59,130,246,0.04); }
-
-    .faq-cat-icon{
-      flex-shrink:0; width:32px; height:32px; border-radius:50%;
-      background:var(--blue-soft); color:var(--blue-strong);
-      display:flex; align-items:center; justify-content:center;
-      font-size:20px; font-weight:900; line-height:1;
-      transition:transform .25s, background .2s;
-    }
-    .faq-cat-block.open .faq-cat-icon{
-      transform:rotate(45deg);
-      background:var(--blue-strong); color:#fff;
-    }
-
-    .faq-cat-body{
-      max-height:0; overflow:hidden;
-      transition:max-height .4s ease, padding .25s;
-      padding:0 18px;
-    }
-    .faq-cat-block.open .faq-cat-body{
-      max-height:3000px;
-      padding:0 18px 18px;
-    }
-
-    .faq-item{
-      background:rgba(248,251,255,0.6);
-      border:1px solid var(--line);
-      border-radius:12px;
-      overflow:hidden;
-      margin-bottom:8px;
-    }
-    .faq-item:last-child{ margin-bottom:0; }
-    .faq-question{
-      width:100%; background:none; border:none; cursor:pointer;
-      display:flex; align-items:center; justify-content:space-between;
-      gap:14px; padding:16px 18px;
-      font-family:'Inter', sans-serif;
-      font-size:16px; font-weight:700; color:#0f172a;
-      text-align:left; line-height:1.3; transition:background .15s;
-    }
-    .faq-question:hover{ background:rgba(59,130,246,0.06); }
-    .faq-icon{
-      flex-shrink:0; width:24px; height:24px; border-radius:50%;
-      background:var(--blue-soft); color:var(--blue-strong);
-      display:flex; align-items:center; justify-content:center;
-      font-size:16px; font-weight:900; line-height:1;
-      transition:transform .25s, background .2s;
-    }
-    .faq-item.open .faq-icon{ transform:rotate(45deg); background:var(--blue-strong); color:#fff; }
-    .faq-answer{ max-height:0; overflow:hidden; transition:max-height .35s ease, padding .25s; padding:0 18px; }
-    .faq-item.open .faq-answer{ max-height:500px; padding:0 18px 16px; }
-    .faq-answer p{ margin:0; color:var(--muted); font-size:14px; line-height:1.7; }
-
-    /* ── CITY LINKS ── */
-    .city-links{ margin:30px 0 18px; font-size:15px; color:var(--muted); text-align:center; }
-
-    /* ── GOOGLE BEWERTUNGEN ── */
-    .reviews-card{
-      background:linear-gradient(180deg, rgba(255,255,255,0.94), rgba(255,255,255,0.88));
-      border:1px solid var(--line);
-      border-radius:18px;
-      padding:16px 18px;
-      box-shadow:var(--shadow-soft);
-      text-align:center;
-      position:relative;
-      overflow:hidden;
-    }
-    .reviews-card::before{
-      content:""; position:absolute; inset:0 auto auto 0;
-      width:100%; height:3px;
-      background:linear-gradient(90deg, #4285F4, #EA4335, #FBBC04, #34A853);
-    }
-    .reviews-google-logo{
-      font-family:'Inter', sans-serif;
-      font-size:16px;
-      font-weight:900;
-      letter-spacing:-0.2px;
-      margin-bottom:4px;
-    }
-    .reviews-google-logo span:nth-child(1){ color:#4285F4; }
-    .reviews-google-logo span:nth-child(2){ color:#EA4335; }
-    .reviews-google-logo span:nth-child(3){ color:#FBBC04; }
-    .reviews-google-logo span:nth-child(4){ color:#4285F4; }
-    .reviews-google-logo span:nth-child(5){ color:#34A853; }
-    .reviews-google-logo span:nth-child(6){ color:#EA4335; }
-    .reviews-google-logo strong{ color:#0f172a; font-weight:700; margin-left:5px; font-size:15px; }
-
-    .reviews-summary{
-      display:flex; align-items:center; justify-content:center;
-      gap:10px; flex-wrap:wrap; margin-bottom:12px;
-    }
-    .reviews-rating{
-      font-family:'Inter', sans-serif;
-      font-size:24px; font-weight:900; color:#0f172a;
-      letter-spacing:-0.5px; line-height:1;
-    }
-    .reviews-stars{
-      font-size:16px;
-      color:#FBBC04;
-      letter-spacing:1px;
-      line-height:1;
-    }
-    .reviews-count{
-      font-size:12px; color:var(--muted); font-weight:600;
-    }
-
-    /* Echte Bewertungen */
-    .reviews-list{
-      display:grid;
-      grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
-      gap:10px;
-      margin-bottom:14px;
-      text-align:left;
-    }
-    .review-item{
-      background:rgba(248,251,255,0.7);
-      border:1px solid var(--line);
-      border-radius:10px;
-      padding:10px 12px;
-    }
-    .review-header{
-      display:flex; align-items:center; gap:8px;
-      margin-bottom:6px;
-    }
-    .review-avatar{
-      width:28px; height:28px;
-      border-radius:50%;
-      background:linear-gradient(135deg, var(--blue), var(--blue-strong));
-      color:#fff;
-      display:flex; align-items:center; justify-content:center;
-      font-weight:900; font-size:13px;
-      flex-shrink:0;
-    }
-    .review-avatar.green{ background:linear-gradient(135deg, #34A853, #1f8a3a); }
-    .review-avatar.purple{ background:linear-gradient(135deg, #8b5cf6, #6d3fc7); }
-    .review-avatar.orange{ background:linear-gradient(135deg, #f97316, #ea580c); }
-    .review-name-block{ flex:1; min-width:0; }
-    .review-name{
-      font-weight:800; font-size:12px; color:#0f172a;
-      line-height:1.2;
-    }
-    .review-stars{
-      color:#FBBC04; font-size:11px; letter-spacing:1px;
-      margin-top:1px;
-    }
-    .review-date{
-      font-size:10px; color:var(--muted-2);
-    }
-    .review-text{
-      font-size:12px; color:#334155;
-      line-height:1.5; margin:0;
-    }
-
-    .reviews-buttons{
-      display:flex; gap:8px; justify-content:center; flex-wrap:wrap;
-    }
-    .reviews-buttons .btn{
-      min-height:38px; padding:0 14px; border-radius:10px;
-      font-size:13px; box-shadow:none;
-    }
-    .city-links strong{ color:#0f172a; }
-    .city-links a{ color:#2563eb; font-weight:700; }
-
-    /* ── FOOTER ── */
-    footer{
-      margin-top:8px;
-      border-top:1px solid var(--line);
-      background:rgba(255,255,255,0.76);
-      backdrop-filter:blur(8px);
-    }
-    .footer-inner{
-      display:flex; flex-direction:column;
-      align-items:center; text-align:center;
-      gap:12px; padding:22px 0 34px;
-      color:var(--muted); font-size:14px;
-    }
-    .footer-links{ display:flex; gap:14px; flex-wrap:wrap; justify-content:center; }
-    .footer-links a{ color:#2563eb; font-weight:700; }
-
-    /* ── RESPONSIVE ── */
-    @media(max-width:980px){
-      .hero-grid,.pricing-grid,.contact-wrap{ grid-template-columns:1fr; }
-    }
-    @media(max-width:780px){
-      .navbar-links{ display:none; }
-      .navbar-cta.desktop{ display:none; }
-      .hamburger{ display:flex; }
-    }
-    @media(max-width:720px){
-      .main-logo{ max-width:340px; }
-      h1{ font-size:38px; }
-      .hero p{ font-size:17px; }
-      .pill{ flex:1 1 100%; }
-      .cta-row{ flex-direction:column; }
-      .btn{ width:100%; }
-      .single-head h2{ font-size:48px; }
-      .faq-question{ font-size:16px; padding:16px 18px; }
+    @media(max-width:480px){
+      .quicknav-btn{
+        font-size:13px;
+        padding:7px 12px;
+      }
+      .price-row{
+        align-items:flex-start;
+        flex-direction:column;
+        gap:4px;
+      }
     }
   </style>
 </head>
+
 <body>
 
-  <!-- ── TOP QUICK NAV ── -->
   <div class="top-quicknav">
     <div class="quicknav-inner">
       <button class="quicknav-btn" onclick="toggleQuickNav('faq-panel', this)">❓ FAQ</button>
       <button class="quicknav-btn" onclick="toggleQuickNav('about-panel', this)">👋 Über mich</button>
-      <button class="quicknav-btn" onclick="toggleQuickNav('reviews-panel', this)">⭐ Bewertungen</button>
     </div>
+
     <div class="quicknav-content" id="quicknav-content">
 
-      <!-- FAQ Panel -->
       <div class="quicknav-panel" id="faq-panel">
         <button class="quicknav-panel-close" onclick="closeQuickNav()">×</button>
-        <h2 style="margin:0 0 8px; font-size:24px; color:#0f172a;">❓ Häufige Fragen</h2>
-        <p style="color:var(--muted); margin-bottom:20px; font-size:15px;">Alles was du vor deiner Buchung wissen möchtest.</p>
-        
+        <h2 style="margin:0 0 8px;font-size:24px;color:#0f172a;">❓ Häufige Fragen</h2>
+        <p style="color:var(--muted);margin-bottom:20px;font-size:15px;">Alles, was du vor deiner Buchung wissen möchtest.</p>
+
         <div class="faq-cats">
-          <!-- KATEGORIE 1: Gerät & Technik -->
+
           <div class="faq-cat-block">
             <button class="faq-cat-header" onclick="toggleCat(this)">
               <span>🔊 Gerät & Technik</span>
@@ -956,44 +925,36 @@
             <div class="faq-cat-body">
               <div class="faq-item">
                 <button class="faq-question" onclick="toggleFaq(this)">Welche Generation der Soundboks bekomme ich?<span class="faq-icon">+</span></button>
-                <div class="faq-answer"><p>Je nach Verfügbarkeit erhältst du entweder eine Soundboks Generation 3 oder Generation 4. Beide bieten erstklassigen Sound mit bis zu 126 dB Lautstärke und sind perfekt für jede Feier.</p></div>
+                <div class="faq-answer"><p>Je nach Verfügbarkeit erhältst du entweder eine Soundboks Generation 3 oder Generation 4. Beide bieten starken Sound und sind perfekt für Feiern, Gartenpartys und Events.</p></div>
               </div>
+
               <div class="faq-item">
                 <button class="faq-question" onclick="toggleFaq(this)">Wie lange hält der Akku der Soundboks?<span class="faq-icon">+</span></button>
-                <div class="faq-answer"><p>Bei normaler Nutzung hält der Akku 10-40 Stunden – also locker die ganze Party. Bei voller Lautstärke (z.B. Festival-Setup) sind es ca. 4-6 Stunden je nach Generation.</p></div>
+                <div class="faq-answer"><p>Bei normaler Nutzung hält der Akku viele Stunden und reicht in der Regel locker für eine Feier. Bei dauerhaft voller Lautstärke ist die Laufzeit kürzer.</p></div>
               </div>
+
               <div class="faq-item">
                 <button class="faq-question" onclick="toggleFaq(this)">Ist die Soundboks wetterfest?<span class="faq-icon">+</span></button>
-                <div class="faq-answer"><p>Ja, die Soundboks ist spritzwassergeschützt und perfekt für Outdoor-Events – Gartenpartys, Strand, Festivals. Aber bitte nicht im Dauerregen stehen lassen.</p></div>
+                <div class="faq-answer"><p>Die Soundboks ist für Outdoor-Events geeignet. Bitte trotzdem nicht dauerhaft im Regen stehen lassen und vor direkter Nässe schützen.</p></div>
               </div>
+
               <div class="faq-item">
                 <button class="faq-question" onclick="toggleFaq(this)">Kann ich 2 Soundboks koppeln?<span class="faq-icon">+</span></button>
-                <div class="faq-answer"><p>Ja! Mit der TeamUP-Funktion kannst du beide Soundboks verbinden und entweder denselben Sound aus beiden Boxen abspielen oder echtes Stereo erleben. Perfekt für größere Räume oder Outdoor-Events.</p></div>
+                <div class="faq-answer"><p>Ja, zwei Soundboks können gekoppelt werden. Das ist ideal für größere Räume, Outdoor-Partys oder Feiern mit mehr Gästen.</p></div>
               </div>
-              <div class="faq-item">
-                <button class="faq-question" onclick="toggleFaq(this)">Wie hell ist das Partylicht?<span class="faq-icon">+</span></button>
-                <div class="faq-answer"><p>Das Soundboks Performance Light hat 7× 12 W RGBW LEDs – das ist mehr als hell genug für jede Party. Es ist audioreaktiv, tanzt also mit der Musik mit, und ist IP65 staub- und wetterfest.</p></div>
-              </div>
+
               <div class="faq-item">
                 <button class="faq-question" onclick="toggleFaq(this)">Wie funktioniert die Nebelmaschine?<span class="faq-icon">+</span></button>
-                <div class="faq-answer"><p>Die Stairville AF-250 hat 1.300 W Leistung und produziert 180 m³ Nebel pro Minute mit einer Reichweite von 4-5 Metern. Steuerung per DMX oder Fernbedienung. Eine Füllung (1,6 L) reicht bei normaler Nutzung den ganzen Abend.</p></div>
+                <div class="faq-answer"><p>Die Nebelmaschine sorgt für starke Effekte auf der Tanzfläche und passt besonders gut zusammen mit Partylicht und Soundboks.</p></div>
               </div>
+
               <div class="faq-item">
                 <button class="faq-question" onclick="toggleFaq(this)">Wie wird die Seifenblasenmaschine bedient?<span class="faq-icon">+</span></button>
-                <div class="faq-answer"><p>Die Eliminator Bubbletron EXL GO ist akkubetrieben (bis zu 3 Stunden Laufzeit) und wird per Funk-Fernbedienung (BUBGO-WR) gesteuert. So kannst du sie aus der Distanz starten und stoppen – perfekt für den Wow-Effekt bei der Hochzeit oder beim Tanz.</p></div>
-              </div>
-              <div class="faq-item">
-                <button class="faq-question" onclick="toggleFaq(this)">Wie funktioniert das Video-Gästebuch?<span class="faq-icon">+</span></button>
-                <div class="faq-answer"><p>Das Video-Gästebuch ist ein stilvolles Retro-Telefon: Hörer abnehmen, sprechen, auflegen – fertig! Es ist akkubetrieben (hält den ganzen Abend) und kann überall ohne Steckdose aufgestellt werden. Nach deiner Feier bekommst du alle Videos digital zum Download. Perfekt für Hochzeiten und besondere Anlässe.</p></div>
-              </div>
-              <div class="faq-item">
-                <button class="faq-question" onclick="toggleFaq(this)">Wie viele Personen passen auf eine Bierzeltgarnitur?<span class="faq-icon">+</span></button>
-                <div class="faq-answer"><p>Eine Garnitur (1 Tisch + 2 Bänke) bietet Platz für 6-8 Personen. Mit 2 Garnituren bekommst du Platz für 12-16 Personen. Die Tische sind 220 × 50 cm groß, klappbar und einfach zu transportieren.</p></div>
+                <div class="faq-answer"><p>Die Seifenblasenmaschine ist einfach zu bedienen und ideal für Hochzeit, Empfang, Kindergeburtstag oder besondere Momente auf deiner Feier.</p></div>
               </div>
             </div>
           </div>
 
-          <!-- KATEGORIE 2: Buchung & Ablauf -->
           <div class="faq-cat-block">
             <button class="faq-cat-header" onclick="toggleCat(this)">
               <span>📋 Buchung & Ablauf</span>
@@ -1002,28 +963,29 @@
             <div class="faq-cat-body">
               <div class="faq-item">
                 <button class="faq-question" onclick="toggleFaq(this)">Wie buche ich?<span class="faq-icon">+</span></button>
-                <div class="faq-answer"><p>Am einfachsten per WhatsApp: 0176 29007917 – einfach Wunschtermin und Equipment schreiben. Ich melde mich meist innerhalb weniger Minuten zurück.</p></div>
+                <div class="faq-answer"><p>Am einfachsten per WhatsApp: 0176 29007917. Schreib einfach Wunschtermin und Equipment. Ich melde mich meist schnell zurück.</p></div>
               </div>
+
               <div class="faq-item">
                 <button class="faq-question" onclick="toggleFaq(this)">Wie weit im Voraus muss ich buchen?<span class="faq-icon">+</span></button>
-                <div class="faq-answer"><p>Je früher desto besser, vor allem für Wochenenden! Mindestens 1-2 Wochen vorher empfehle ich. Spontane Anfragen sind aber auch möglich – einfach fragen!</p></div>
+                <div class="faq-answer"><p>Je früher desto besser, besonders für Wochenenden. Spontane Anfragen sind trotzdem möglich – einfach per WhatsApp fragen.</p></div>
               </div>
+
               <div class="faq-item">
                 <button class="faq-question" onclick="toggleFaq(this)">Gibt es Abholung oder Lieferung?<span class="faq-icon">+</span></button>
                 <div class="faq-answer">
-                  <p>Standard ist die Abholung bei uns in Ingelheim. Lieferung gegen Aufpreis:</p>
+                  <p>Standard ist Abholung in Ingelheim. Lieferung und Abholung gegen Aufpreis sind nach Absprache möglich.</p>
                   <ul style="margin:8px 0 0 20px;">
-                    <li>📍 Bingen, Ingelheim, Nieder-Olm: +15€</li>
-                    <li>📍 Mainz, Wiesbaden: +25€</li>
-                    <li>📍 Rüsselsheim, Darmstadt: +35€</li>
-                    <li>📍 Frankfurt: +40€</li>
+                    <li>Bingen, Ingelheim, Nieder-Olm: +15€</li>
+                    <li>Mainz, Wiesbaden: +25€</li>
+                    <li>Rüsselsheim, Darmstadt: +35€</li>
+                    <li>Frankfurt: +40€</li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- KATEGORIE 3: Kaution & Zahlung -->
           <div class="faq-cat-block">
             <button class="faq-cat-header" onclick="toggleCat(this)">
               <span>💳 Kaution & Zahlung</span>
@@ -1032,159 +994,89 @@
             <div class="faq-cat-body">
               <div class="faq-item">
                 <button class="faq-question" onclick="toggleFaq(this)">Wie hoch ist die Kaution?<span class="faq-icon">+</span></button>
-                <div class="faq-answer"><p>Die Kaution hängt vom Equipment ab: Soundboks 200€, Partylicht/Nebel/Seife je 120€. Bei Paketen ist die Kaution leicht gebündelt. Wird bei Rückgabe in bar zurückgegeben.</p></div>
+                <div class="faq-answer"><p>Die Kaution hängt vom Equipment ab und steht direkt beim jeweiligen Produkt oder Paket. Sie wird bei ordentlicher Rückgabe wieder zurückgegeben.</p></div>
               </div>
+
               <div class="faq-item">
                 <button class="faq-question" onclick="toggleFaq(this)">Welche Zahlungsmethoden werden akzeptiert?<span class="faq-icon">+</span></button>
-                <div class="faq-answer"><p>Wir akzeptieren ausschließlich Barzahlung. Die Zahlung erfolgt bei der Übergabe des Equipments.</p></div>
+                <div class="faq-answer"><p>Barzahlung bei Übergabe. Andere Zahlungsarten können nach Absprache geklärt werden.</p></div>
               </div>
             </div>
           </div>
+
         </div>
       </div>
 
-      <!-- About Panel -->
       <div class="quicknav-panel" id="about-panel">
         <button class="quicknav-panel-close" onclick="closeQuickNav()">×</button>
         <div class="about-grid">
           <div class="about-photo">
             <img src="gabriel-foto.jpeg" alt="Gabo – Inhaber GABO Verleihservice">
           </div>
+
           <div class="about-content">
-            <h2>Hi, ich bin Gabo <span class="wave">👋</span></h2>
-            <p>
-              Schön dass du auf meiner Seite gelandet bist! Ich bin der Gründer von <strong>GABO Verleihservice</strong> – einem ganz neuen Verleih für Soundboks Partyboxen und Eventtechnik in <strong>Mainz, Wiesbaden und Frankfurt</strong>.
-            </p>
-            <p>
-              Seit 2026 helfe ich dir, deine Feier zu einer richtig coolen Party zu machen – egal ob Geburtstag, Hochzeit, Gartenparty oder Firmenfeier. 🎉
-            </p>
+            <h2>Hi, ich bin Gabo 👋</h2>
+            <p>Schön, dass du auf meiner Seite gelandet bist. Ich bin der Gründer von <strong>GABO Verleihservice</strong> – deinem Verleih für Soundboks Partyboxen und Eventtechnik in <strong>Mainz, Wiesbaden, Frankfurt und Umgebung</strong>.</p>
+            <p>Ich helfe dir, deine Feier mit gutem Sound, Licht und einfacher Technik aufzuwerten – egal ob Geburtstag, Hochzeit, Gartenparty, Kindergeburtstag oder privates Event.</p>
+
             <div class="about-features">
               <div class="about-feature">
                 <div class="about-feature-icon">⚡</div>
-                <div><strong>Schnelle Antworten per WhatsApp</strong> – meistens innerhalb weniger Minuten</div>
+                <div><strong>Schnelle Antworten per WhatsApp</strong> – meistens innerhalb kurzer Zeit</div>
               </div>
               <div class="about-feature">
                 <div class="about-feature-icon">💰</div>
-                <div><strong>Faire Preise</strong> – keine versteckten Kosten, alles transparent</div>
+                <div><strong>Faire Preise</strong> – transparent und ohne komplizierten Ablauf</div>
               </div>
             </div>
-            <p>
-              Wenn du Fragen hast oder unsicher bist welches Equipment passt, schreib mir einfach – ich helfe dir gerne weiter und finde mit dir die beste Lösung für deine Feier!
-            </p>
+
+            <p>Wenn du unsicher bist, welches Equipment passt, schreib mir einfach. Ich helfe dir gerne weiter.</p>
             <div class="about-signature">Bis bald! 🎵 – Gabo</div>
           </div>
-        </div>
-      </div>
-
-      <!-- Reviews Panel -->
-      <div class="quicknav-panel" id="reviews-panel">
-        <button class="quicknav-panel-close" onclick="closeQuickNav()">×</button>
-        <div style="text-align:center; margin-bottom:20px;">
-          <div style="font-size:18px; font-weight:800; color:#0f172a; margin-bottom:4px;">
-            <span style="color:#4285F4;">G</span><span style="color:#EA4335;">o</span><span style="color:#FBBC05;">o</span><span style="color:#4285F4;">g</span><span style="color:#34A853;">l</span><span style="color:#EA4335;">e</span>
-            Bewertungen
-          </div>
-          <div style="font-size:32px; font-weight:900; color:var(--blue-strong); margin-top:8px;">
-            5,0 ⭐⭐⭐⭐⭐
-          </div>
-          <div style="color:var(--muted); font-size:14px;">3 Rezensionen</div>
-        </div>
-
-        <div style="display:flex; flex-direction:column; gap:12px;">
-          <div style="background:#f8fafc; padding:14px; border-radius:10px;">
-            <div style="font-weight:700; color:#0f172a; margin-bottom:4px;">Lyra</div>
-            <div style="color:#fbbf24; font-size:14px; margin-bottom:6px;">⭐⭐⭐⭐⭐</div>
-            <p style="color:var(--muted); font-size:14px; line-height:1.5; margin:0;">Sehr empfehlenswert! Soundboks ist top und ohne Probleme funktioniert. Kontakt ist super persönlich und schnell.</p>
-          </div>
-          <div style="background:#f8fafc; padding:14px; border-radius:10px;">
-            <div style="font-weight:700; color:#0f172a; margin-bottom:4px;">Dursun Yasar</div>
-            <div style="color:#fbbf24; font-size:14px; margin-bottom:6px;">⭐⭐⭐⭐⭐</div>
-            <p style="color:var(--muted); font-size:14px; line-height:1.5; margin:0;">Beste Partybox – günstigste Preise im Rhein-Main-Gebiet. Reaktion super schnell – jederzeit wieder!</p>
-          </div>
-          <div style="background:#f8fafc; padding:14px; border-radius:10px;">
-            <div style="font-weight:700; color:#0f172a; margin-bottom:4px;">Gioachino Infranca</div>
-            <div style="color:#fbbf24; font-size:14px; margin-bottom:6px;">⭐⭐⭐⭐⭐</div>
-            <p style="color:var(--muted); font-size:14px; line-height:1.5; margin:0;">Mit Abstand das beste Erlebnis bei GABO Verleih! Top Service, schnelle Antwort, fairer Preis.</p>
-          </div>
-        </div>
-
-        <div style="text-align:center; margin-top:20px;">
-          <a class="btn btn-whatsapp"
-             href="https://g.page/r/CU4kqnSAsf6GEAE/review"
-             target="_blank" rel="noopener noreferrer"
-             style="display:inline-block;">
-            ✍️ Jetzt bewerten
-          </a>
         </div>
       </div>
 
     </div>
   </div>
 
-  <!-- ── HERO ── -->
-  <header class="hero" id="hero">
-    <div class="container hero-grid">
-      <div>
-        <img src="logo.webp" alt="GABO Verleihservice – Partybox mieten Mainz" class="main-logo" loading="lazy" />
+  <section class="intro">
+    <div class="container">
+      <img src="logo.webp" alt="GABO Verleihservice – Partybox mieten Mainz" class="main-logo" loading="lazy" />
 
-        <h1>Partybox & Soundboks mieten in Mainz, Wiesbaden, Frankfurt & Umgebung</h1>
+      <h1>Partybox & Soundboks mieten in Mainz, Wiesbaden, Frankfurt & Umgebung</h1>
 
-        <p class="hero-highlight">
-          🔊 Soundboks Partybox, Partylicht, Nebelmaschine und Seifenblasenmaschine – jetzt in Mainz und Umgebung mieten.
-        </p>
+      <p class="intro-highlight">🔊 Soundboks Partybox, Partylicht, Nebelmaschine und Seifenblasenmaschine – jetzt in Mainz und Umgebung mieten.</p>
 
-        <p>
-          Partybox mieten leicht gemacht: Ob Geburtstag, Gartenparty, Hochzeit oder privates Event –
-          wir haben die passende Soundboks Partybox und Equipment für dich in Mainz, Wiesbaden,
-          Frankfurt, Bingen, Ingelheim, Rüsselsheim, Darmstadt und Umgebung.
-        </p>
+      <p>Partybox mieten leicht gemacht: Ob Geburtstag, Gartenparty, Hochzeit oder privates Event – wir haben die passende Soundboks Partybox und Equipment für dich.</p>
 
-        <p>
-          Einfach per WhatsApp anfragen – Abholung bei uns, nach Absprache kann auch geliefert werden (mit Aufpreis).
-          Schnelle Antwort, faire Preise, zuverlässiger Service im Rhein-Main-Gebiet.
-        </p>
+      <p>Abholung in Ingelheim. Lieferung nach Mainz, Wiesbaden, Frankfurt, Bingen, Rüsselsheim und Darmstadt nach Absprache gegen Aufpreis möglich.</p>
 
-        <p class="warning-note">⚠️ Wochenenden oft schnell ausgebucht – jetzt anfragen!</p>
+      <p class="warning-note">⚠️ Wochenenden oft schnell ausgebucht – jetzt anfragen!</p>
 
-        <p class="offer-label">Das bieten wir an:</p>
-
-        <div class="trust-row">
-          <div class="pill">🔊 Soundboks Partybox</div>
-          <div class="pill">💡 Soundboks Partylicht</div>
-          <div class="pill">🌫️ Nebelmaschine</div>
-          <div class="pill">🫧 Seifenblasenmaschine</div>
-          <div class="pill">🎥 Video-Gästebuch</div>
-          <div class="pill">🎉 Party Ausstattung</div>
-        </div>
-
-        <p class="response-note">Antwort meist innerhalb weniger Minuten</p>
-      </div>
-      <div class="hero-card">
-        <img
-          src="hero.webp"
-          loading="lazy"
-          alt="Partybox und Soundboks mieten in Mainz, Wiesbaden, Frankfurt und Umgebung"
-          class="hero-photo"
-        />
+      <div class="trust-row">
+        <div class="pill">🔊 Soundboks Partybox</div>
+        <div class="pill">💡 Soundboks Partylicht</div>
+        <div class="pill">🌫️ Nebelmaschine</div>
+        <div class="pill">🫧 Seifenblasenmaschine</div>
+        <div class="pill">🎥 Video-Gästebuch</div>
+        <div class="pill">🎉 Party Ausstattung</div>
       </div>
     </div>
-  </header>
+  </section>
 
-  <!-- ── EINZELVERLEIH ── -->
   <section class="section" id="einzelverleih">
     <div class="container">
       <div class="section-head single-head">
         <h2>Einzelverleih</h2>
-        <p style="margin-top:10px; color:var(--muted); font-size:16px;">Partybox mieten in Mainz & Umgebung – einzeln oder als Paket. Abholung bei uns, nach Absprache kann auch geliefert werden (mit Aufpreis) – nach Wiesbaden, Frankfurt, Bingen, Ingelheim und ins Rhein-Main-Gebiet.</p>
+        <p style="margin-top:10px;color:var(--muted);font-size:16px;">Partybox mieten in Mainz & Umgebung – einzeln oder als Paket.</p>
       </div>
+
       <div class="pricing-grid">
 
         <article class="card">
           <div class="badge">Beliebt</div>
           <h3>🔊 Soundboks Partybox <span class="brand-note">– SOUNDBOKS</span></h3>
-          <div class="subtitle">
-            Leistungsstarke kabellose Partybox für Geburtstag, Gartenparty, Hochzeit und Events – flexibel überall einsetzbar. Je nach Verfügbarkeit erhältst du eine <strong>Generation 3 oder Generation 4</strong>.
-          </div>
+          <div class="subtitle">Leistungsstarke kabellose Partybox für Geburtstag, Gartenparty, Hochzeit und Events. Je nach Verfügbarkeit erhältst du eine <strong>Generation 3 oder Generation 4</strong>.</div>
           <ul class="feature-list">
             <li>Kabellos und akkubetrieben</li>
             <li>Schnelle Bluetooth-Verbindung</li>
@@ -1197,9 +1089,7 @@
             <div class="price-row"><span>Fr–So</span><strong>49€ <span class="price-unit">/ Tag</span></strong></div>
             <div class="price-row"><span>Wochenende komplett</span><strong>89€</strong></div>
           </div>
-          <div class="addon-box">
-            <strong>1 Stativ dazu buchen:</strong> +10€
-          </div>
+          <div class="addon-box"><strong>1 Stativ dazu buchen:</strong> +10€</div>
           <div class="deposit">Kaution: 200€</div>
           <div class="cta-inline">
             <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20eine%20Soundboks%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
@@ -1209,14 +1099,12 @@
         <article class="card">
           <div class="badge">🔥 Doppelt Power</div>
           <h3>🔊🔊 2× Soundboks Partybox <span class="brand-note">– SOUNDBOKS</span></h3>
-          <div class="subtitle">
-            Zwei Soundboks Partyboxen für noch mehr Power auf deiner Feier – ideal für größere Events, Hochzeiten und Outdoor-Partys. Du erhältst je nach Verfügbarkeit eine <strong>Generation 3 + Generation 4</strong>.
-          </div>
+          <div class="subtitle">Zwei Soundboks Partyboxen für noch mehr Power auf deiner Feier – ideal für größere Events, Hochzeiten und Outdoor-Partys.</div>
           <ul class="feature-list">
-            <li>2× Soundboks Partybox (Gen. 3 + Gen. 4)</li>
-            <li>Können per TeamUP gekoppelt werden – Stereo-Sound!</li>
-            <li>Perfekt für Events ab 50 Personen</li>
-            <li>Outdoor & Indoor – auch große Räume</li>
+            <li>2× Soundboks Partybox</li>
+            <li>Können gekoppelt werden</li>
+            <li>Perfekt für größere Feiern</li>
+            <li>Outdoor & Indoor geeignet</li>
             <li>Spart gegenüber 2× Einzelmiete</li>
           </ul>
           <div class="price-list">
@@ -1224,9 +1112,7 @@
             <div class="price-row"><span>Fr–So</span><strong>75€ <span class="price-unit">/ Tag</span></strong></div>
             <div class="price-row"><span>Wochenende komplett</span><strong>160€</strong></div>
           </div>
-          <div class="addon-box">
-            <strong>2 Stative dazu buchen:</strong> +15€
-          </div>
+          <div class="addon-box"><strong>2 Stative dazu buchen:</strong> +15€</div>
           <div class="deposit">Kaution: 400€</div>
           <div class="cta-inline">
             <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%202%20Soundboks%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
@@ -1236,21 +1122,18 @@
         <article class="card">
           <div class="badge">Partylicht</div>
           <h3>💡 Soundboks Partylicht <span class="brand-note">– SOUNDBOKS</span></h3>
-          <div class="subtitle">
-            Akkubetriebenes Partylicht – perfekt als Ergänzung zur Soundboks Partybox für mehr Stimmung auf deiner Feier.
-          </div>
+          <div class="subtitle">Akkubetriebenes Partylicht – perfekt als Ergänzung zur Soundboks Partybox für mehr Stimmung auf deiner Feier.</div>
           <ul class="feature-list">
             <li>Akkubetrieben und tragbar</li>
             <li>Audioreaktives Partylicht</li>
-            <li>7x 12 W RGBW LEDs</li>
-            <li>IP65 staub- und wetterfest</li>
+            <li>Stimmung für drinnen und draußen</li>
+            <li>Perfekt für Geburtstage und Hochzeiten</li>
           </ul>
           <div class="price-list">
             <div class="price-row"><span>Mo–Do</span><strong>25€ <span class="price-unit">/ Tag</span></strong></div>
             <div class="price-row"><span>Fr–So</span><strong>30€ <span class="price-unit">/ Tag</span></strong></div>
             <div class="price-row"><span>Wochenende komplett</span><strong>55€</strong></div>
           </div>
-          <div class="small-note">Perfekt für Gartenparty, Geburtstag, Hochzeit und Outdoor-Events.</div>
           <div class="deposit">Kaution: 120€</div>
           <div class="cta-inline">
             <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20ein%20Soundboks%20Partylicht%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
@@ -1260,9 +1143,7 @@
         <article class="card">
           <div class="badge">Nebel</div>
           <h3>🌫️ Nebelmaschine <span class="brand-note">– Stairville AF-250</span></h3>
-          <div class="subtitle">
-            Leistungsstarke Nebelmaschine für starke Effekte auf der Tanzfläche – perfekt in Kombination mit Partylicht und Soundboks Partybox. Eine Füllung reicht bei normaler Nutzung locker für einen ganzen Abend.
-          </div>
+          <div class="subtitle">Leistungsstarke Nebelmaschine für starke Effekte auf der Tanzfläche – perfekt in Kombination mit Partylicht und Soundboks.</div>
           <ul class="feature-list">
             <li>Starker Nebelausstoß für Partys</li>
             <li>Ideal für Licht- und Dance-Effekte</li>
@@ -1273,10 +1154,7 @@
             <div class="price-row"><span>Fr–So</span><strong>40€ <span class="price-unit">/ Tag</span></strong></div>
             <div class="price-row"><span>Wochenende komplett</span><strong>70€</strong></div>
           </div>
-          <div class="addon-box">
-            <strong>1 Füllung (1,6 Liter) ist im Preis enthalten</strong> – reicht bei normaler Nutzung den ganzen Abend.<br>
-            Jede weitere Füllung (1,6 Liter) kostet 5€.
-          </div>
+          <div class="addon-box"><strong>1 Füllung ist im Preis enthalten.</strong><br>Jede weitere Füllung kostet 5€.</div>
           <div class="deposit">Kaution: 120€</div>
           <div class="cta-inline">
             <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20eine%20Nebelmaschine%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
@@ -1286,38 +1164,30 @@
         <article class="card">
           <div class="badge">Event-Extra</div>
           <h3>🫧 Seifenblasenmaschine <span class="brand-note">– Eliminator Bubbletron EXL GO</span></h3>
-          <div class="subtitle">
-            Akkubetriebene Seifenblasenmaschine – ideal für Hochzeit, Empfang, Geburtstag und besondere Momente auf deiner Feier.
-          </div>
+          <div class="subtitle">Akkubetriebene Seifenblasenmaschine – ideal für Hochzeit, Empfang, Geburtstag und besondere Momente.</div>
           <ul class="feature-list">
             <li>Akkubetrieben</li>
-            <li>Bis zu 3 Stunden Laufzeit</li>
-            <li>Ideal für Hochzeit, Empfang und besondere Momente</li>
+            <li>Ideal für Hochzeit und Empfang</li>
+            <li>Schöner Effekt für besondere Momente</li>
           </ul>
           <div class="price-list">
             <div class="price-row"><span>Mo–Do</span><strong>30€ <span class="price-unit">/ Tag</span></strong></div>
             <div class="price-row"><span>Fr–So</span><strong>40€ <span class="price-unit">/ Tag</span></strong></div>
             <div class="price-row"><span>Wochenende komplett</span><strong>70€</strong></div>
           </div>
-          <div class="addon-box">
-            <strong>1 Füllung (2 Liter) ist im Preis enthalten.</strong><br>
-            Jede weitere Füllung (2 Liter) kostet 5€.
-          </div>
+          <div class="addon-box"><strong>1 Füllung ist im Preis enthalten.</strong><br>Jede weitere Füllung kostet 5€.</div>
           <div class="deposit">Kaution: 120€</div>
           <div class="cta-inline">
             <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20eine%20Seifenblasenmaschine%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
           </div>
         </article>
 
-        <!-- Video-Gästebuch -->
         <article class="card is-soldout">
           <div class="badge-soldout">🚫 Ausgebucht</div>
           <h3>🎥 Video-Gästebuch</h3>
-          <div class="subtitle">
-            Lass deine Gäste persönliche Videobotschaften hinterlassen – ein einzigartiges, modernes Erinnerungsstück für deine Hochzeit oder Feier.
-          </div>
+          <div class="subtitle">Lass deine Gäste persönliche Videobotschaften hinterlassen – ein modernes Erinnerungsstück für Hochzeit oder Feier.</div>
           <ul class="feature-list">
-            <li>Einfache Bedienung – einfach anschalten und sprechen</li>
+            <li>Einfache Bedienung</li>
             <li>Videoaufnahme mit Ton</li>
             <li>Alle Videos digital nach dem Event</li>
             <li>Ideal für Hochzeit, Geburtstag und Jubiläum</li>
@@ -1328,36 +1198,32 @@
             <div class="price-row"><span>Wochenende komplett</span><strong>119€</strong></div>
           </div>
           <div class="deposit">Kaution: 300€</div>
-          <div class="soldout-notice">
-            ⏰ Aktuell ausgebucht – sobald wieder verfügbar, wird es hier angezeigt.
-          </div>
+          <div class="soldout-notice">⏰ Aktuell ausgebucht – sobald wieder verfügbar, wird es hier angezeigt.</div>
         </article>
 
       </div>
     </div>
   </section>
 
-  <!-- ── PAKETE ── -->
   <section class="section" id="pakete">
     <div class="container">
       <div class="section-head">
         <h2>Pakete für Feiern und Events</h2>
         <p>Partybox Pakete mieten in Mainz & Umgebung – direkt die passende Kombination für deine Feier buchen.</p>
       </div>
+
       <div class="pricing-grid">
 
         <article class="card">
           <div class="badge">Für kleine Feiern</div>
           <h3>🎉 Paket Basic</h3>
-          <div class="subtitle">1x Soundboks Partybox (Gen. 3 oder 4) + 1x Soundboks Partylicht</div>
+          <div class="subtitle">1x Soundboks Partybox + 1x Soundboks Partylicht</div>
           <div class="price-list">
             <div class="price-row"><span>Mo–Do</span><strong>65€ <span class="price-unit">/ Tag</span></strong></div>
             <div class="price-row"><span>Fr–So</span><strong>75€ <span class="price-unit">/ Tag</span></strong></div>
             <div class="price-row"><span>Wochenende komplett</span><strong>119€</strong></div>
           </div>
-          <div class="addon-box">
-            <strong>1 Stativ dazu buchen:</strong> +10€
-          </div>
+          <div class="addon-box"><strong>1 Stativ dazu buchen:</strong> +10€</div>
           <div class="deposit">Kaution: 220€</div>
           <div class="cta-inline">
             <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20das%20Paket%20Basic%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
@@ -1367,19 +1233,14 @@
         <article class="card card-featured">
           <div class="badge badge-featured">🔥 Am beliebtesten</div>
           <h3>🔥 Paket Party</h3>
-          <div class="subtitle">1x Soundboks Partybox (Gen. 3 oder 4) + 1x Soundboks Partylicht + Nebelmaschine</div>
+          <div class="subtitle">1x Soundboks Partybox + 1x Soundboks Partylicht + Nebelmaschine</div>
           <div class="price-list">
             <div class="price-row"><span>Mo–Do</span><strong>79€ <span class="price-unit">/ Tag</span></strong></div>
             <div class="price-row"><span>Fr–So</span><strong>95€ <span class="price-unit">/ Tag</span></strong></div>
             <div class="price-row"><span>Wochenende komplett</span><strong>149€</strong></div>
           </div>
-          <div class="addon-box">
-            <strong>1 Stativ dazu buchen:</strong> +10€
-          </div>
-          <div class="addon-box">
-            <strong>1 Füllung Nebelfluid (1,6 Liter) ist im Preis enthalten</strong> – reicht bei normaler Nutzung den ganzen Abend.<br>
-            Jede weitere Füllung (1,6 Liter) kostet 5€.
-          </div>
+          <div class="addon-box"><strong>1 Stativ dazu buchen:</strong> +10€</div>
+          <div class="addon-box"><strong>1 Füllung Nebelfluid ist im Preis enthalten.</strong><br>Jede weitere Füllung kostet 5€.</div>
           <div class="deposit">Kaution: 260€</div>
           <div class="small-note">Ideal für Geburtstage, Gartenpartys und Feiern mit richtig Stimmung.</div>
           <div class="cta-inline">
@@ -1390,15 +1251,13 @@
         <article class="card">
           <div class="badge">Für größere Feiern</div>
           <h3>🚀 Paket Premium</h3>
-          <div class="subtitle">2x Soundboks Partybox (1x Gen. 3 + 1x Gen. 4) + 2x Soundboks Partylicht</div>
+          <div class="subtitle">2x Soundboks Partybox + 2x Soundboks Partylicht</div>
           <div class="price-list">
             <div class="price-row"><span>Mo–Do</span><strong>139€ <span class="price-unit">/ Tag</span></strong></div>
             <div class="price-row"><span>Fr–So</span><strong>159€ <span class="price-unit">/ Tag</span></strong></div>
             <div class="price-row"><span>Wochenende komplett</span><strong>269€</strong></div>
           </div>
-          <div class="addon-box">
-            <strong>2 Stative dazu buchen:</strong> +15€
-          </div>
+          <div class="addon-box"><strong>2 Stative dazu buchen:</strong> +15€</div>
           <div class="deposit">Kaution: 350€</div>
           <div class="cta-inline">
             <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20das%20Paket%20Premium%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
@@ -1408,20 +1267,14 @@
         <article class="card">
           <div class="badge">Komplettes Setup</div>
           <h3>🎊 Paket Event Komplett</h3>
-          <div class="subtitle">2x Soundboks Partybox (1x Gen. 3 + 1x Gen. 4) + 2x Soundboks Partylicht + Nebelmaschine + Seifenblasenmaschine</div>
+          <div class="subtitle">2x Soundboks Partybox + 2x Soundboks Partylicht + Nebelmaschine + Seifenblasenmaschine</div>
           <div class="price-list">
             <div class="price-row"><span>Mo–Do</span><strong>219€ <span class="price-unit">/ Tag</span></strong></div>
             <div class="price-row"><span>Fr–So</span><strong>249€ <span class="price-unit">/ Tag</span></strong></div>
             <div class="price-row"><span>Wochenende komplett</span><strong>429€</strong></div>
           </div>
-          <div class="addon-box">
-            <strong>2 Stative dazu buchen:</strong> +15€
-          </div>
-          <div class="addon-box">
-            <strong>Je 1 Füllung pro Maschine ist im Preis enthalten:</strong><br>
-            • Nebelmaschine: 1,6 Liter (reicht den ganzen Abend) – jede weitere Füllung 5€<br>
-            • Seifenblasenmaschine: 2 Liter – jede weitere Füllung 5€
-          </div>
+          <div class="addon-box"><strong>2 Stative dazu buchen:</strong> +15€</div>
+          <div class="addon-box"><strong>Je 1 Füllung pro Maschine ist im Preis enthalten.</strong><br>Jede weitere Füllung kostet 5€.</div>
           <div class="deposit">Kaution: 450€</div>
           <div class="cta-inline">
             <a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20das%20Paket%20Event%20Komplett%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a>
@@ -1432,24 +1285,22 @@
     </div>
   </section>
 
-  <!-- ── PARTY AUSSTATTUNG ── -->
   <section class="section" id="party-ausstattung">
     <div class="container">
       <div class="section-head">
         <h2>🎉 Party Ausstattung mieten</h2>
-        <p>Bierzeltgarnituren, Besteck und mehr – alles was deine Feier komplett macht. Weitere Artikel folgen in Kürze!</p>
+        <p>Bierzeltgarnituren, Besteck und mehr – alles, was deine Feier komplett macht. Weitere Artikel folgen in Kürze.</p>
       </div>
+
       <div class="grid">
 
         <article class="card">
           <div class="badge">Beliebt</div>
           <h3>🍺 1 Bierzeltgarnitur</h3>
-          <div class="subtitle">
-            1 Tisch + 2 Bänke – ideal für kleine Feiern, Gartenparty oder als Ergänzung zu deinem bestehenden Setup. Robust, klappbar und einfach zu transportieren.
-          </div>
+          <div class="subtitle">1 Tisch + 2 Bänke – ideal für kleine Feiern, Gartenparty oder als Ergänzung zu deinem bestehenden Setup.</div>
           <ul class="feature-list">
-            <li>1 Tisch (220 × 50 cm) + 2 Bänke</li>
-            <li>Platz für 6-8 Personen</li>
+            <li>1 Tisch + 2 Bänke</li>
+            <li>Platz für 6–8 Personen</li>
             <li>Klappbar und einfach zu transportieren</li>
           </ul>
           <div class="price-list">
@@ -1466,12 +1317,10 @@
         <article class="card">
           <div class="badge">Spar-Tipp</div>
           <h3>🍻 2 Bierzeltgarnituren</h3>
-          <div class="subtitle">
-            2 Tische + 4 Bänke – perfekt für größere Feiern und Hochzeiten. Spar gegenüber Einzelmiete und schaff Platz für deine ganze Crew!
-          </div>
+          <div class="subtitle">2 Tische + 4 Bänke – perfekt für größere Feiern, Gartenpartys und Hochzeiten.</div>
           <ul class="feature-list">
-            <li>2 Tische (je 220 × 50 cm) + 4 Bänke</li>
-            <li>Platz für 12-16 Personen</li>
+            <li>2 Tische + 4 Bänke</li>
+            <li>Platz für 12–16 Personen</li>
             <li>Klappbar und einfach zu transportieren</li>
           </ul>
           <div class="price-list">
@@ -1489,10 +1338,119 @@
     </div>
   </section>
 
-  <!-- ── KONTAKT ── -->
+  <section class="section" id="bewertungen">
+    <div class="container">
+      <div class="section-head">
+        <h2>Google Bewertungen</h2>
+        <p>Das sagen Kunden über GABO Verleihservice.</p>
+      </div>
+
+      <div class="reviews-card">
+
+        <div style="font-size:18px;font-weight:900;margin-bottom:8px;">
+          <span style="color:#4285F4;">G</span><span style="color:#EA4335;">o</span><span style="color:#FBBC05;">o</span><span style="color:#4285F4;">g</span><span style="color:#34A853;">l</span><span style="color:#EA4335;">e</span>
+          Bewertungen
+        </div>
+
+        <div class="reviews-summary">
+          <div class="reviews-rating">5,0</div>
+          <div class="reviews-stars">★★★★★</div>
+          <div class="reviews-count">6 Rezensionen</div>
+        </div>
+
+        <div class="reviews-window">
+          <div class="reviews-track">
+
+            <div class="review-item">
+              <div class="review-name">Raffaela Benvieni</div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">Super schöne Party-Ausstattung, alles sauber und perfekt organisiert. Sehr freundlicher Service und absolut zuverlässig.</p>
+            </div>
+
+            <div class="review-item">
+              <div class="review-name">Heiko Diekhans</div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">Guter Service... die Sound Box war der Hammer, gerne wieder.</p>
+            </div>
+
+            <div class="review-item">
+              <div class="review-name">Verena Luzius</div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">Super netter Kontakt, zuverlässige Abwicklung zu fairen Preisen und geniales Equipment! Für uns ab sofort nur noch über diesen Verleih 😊</p>
+            </div>
+
+            <div class="review-item">
+              <div class="review-name">Lyra</div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">Sehr empfehlenswert! Soundboks ist top und ohne Probleme funktioniert. Kontakt ist super persönlich und schnell.</p>
+            </div>
+
+            <div class="review-item">
+              <div class="review-name">Dursun Yasar</div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">Beste Partybox – günstige Preise im Rhein-Main-Gebiet. Reaktion super schnell – jederzeit wieder!</p>
+            </div>
+
+            <div class="review-item">
+              <div class="review-name">Gioachino Infranca</div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">Top Service, schnelle Antwort und fairer Preis. Sehr gutes Erlebnis mit GABO Verleihservice.</p>
+            </div>
+
+            <div class="review-item">
+              <div class="review-name">Raffaela Benvieni</div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">Super schöne Party-Ausstattung, alles sauber und perfekt organisiert. Sehr freundlicher Service und absolut zuverlässig.</p>
+            </div>
+
+            <div class="review-item">
+              <div class="review-name">Heiko Diekhans</div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">Guter Service... die Sound Box war der Hammer, gerne wieder.</p>
+            </div>
+
+            <div class="review-item">
+              <div class="review-name">Verena Luzius</div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">Super netter Kontakt, zuverlässige Abwicklung zu fairen Preisen und geniales Equipment! Für uns ab sofort nur noch über diesen Verleih 😊</p>
+            </div>
+
+            <div class="review-item">
+              <div class="review-name">Lyra</div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">Sehr empfehlenswert! Soundboks ist top und ohne Probleme funktioniert. Kontakt ist super persönlich und schnell.</p>
+            </div>
+
+            <div class="review-item">
+              <div class="review-name">Dursun Yasar</div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">Beste Partybox – günstige Preise im Rhein-Main-Gebiet. Reaktion super schnell – jederzeit wieder!</p>
+            </div>
+
+            <div class="review-item">
+              <div class="review-name">Gioachino Infranca</div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">Top Service, schnelle Antwort und fairer Preis. Sehr gutes Erlebnis mit GABO Verleihservice.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <a class="btn btn-whatsapp"
+           href="https://g.page/r/CU4kqnSAsf6GEAE/review"
+           target="_blank"
+           rel="noopener noreferrer">
+          ✍️ Jetzt bewerten
+        </a>
+
+      </div>
+    </div>
+  </section>
+
   <section class="section" id="kontakt">
     <div class="container">
       <div class="contact-wrap">
+
         <div class="contact-card">
           <h3>Kontakt &amp; Reservierung</h3>
           <p>Du möchtest eine Partybox oder Soundboks mieten in Mainz, Wiesbaden, Frankfurt oder Umgebung? Frag schnell und unkompliziert per WhatsApp oder Telefon an – wir antworten meist innerhalb weniger Minuten.</p>
@@ -1501,23 +1459,24 @@
             <a class="btn btn-primary" href="tel:+4917629007917">Jetzt anrufen</a>
           </div>
         </div>
+
         <div class="contact-card">
           <h3>Abhol- &amp; Liefergebiet</h3>
           <p>Standard ist die <strong>Abholung bei uns in Ingelheim</strong> – einfach, schnell und ohne Zusatzkosten.</p>
           <p style="margin-bottom:8px;"><strong>🚚 Lieferung & Abholung gegen Aufpreis:</strong></p>
-          <ul style="margin:0 0 12px 20px; padding:0; color:var(--muted); font-size:15px; line-height:1.7;">
+          <ul style="margin:0 0 12px 20px;padding:0;color:var(--muted);font-size:15px;line-height:1.7;">
             <li>📍 Bingen, Ingelheim, Nieder-Olm: <strong>+15€</strong></li>
             <li>📍 Mainz, Wiesbaden: <strong>+25€</strong></li>
             <li>📍 Rüsselsheim, Darmstadt: <strong>+35€</strong></li>
             <li>📍 Frankfurt: <strong>+40€</strong></li>
           </ul>
-          <p style="margin-bottom:0; font-size:14px; color:var(--muted);">Der Preis gilt für Lieferung + Abholung (Hin- und Rückfahrt).</p>
+          <p style="margin-bottom:0;font-size:14px;color:var(--muted);">Der Preis gilt für Lieferung + Abholung.</p>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ── CITY LINKS ── -->
   <div class="container city-links">
     <p>
       Wir bieten <strong>Partybox mieten und Soundboks Verleih</strong> in
@@ -1527,7 +1486,6 @@
     </p>
   </div>
 
-  <!-- ── FOOTER ── -->
   <footer>
     <div class="container footer-inner">
       <div>© 2026 GABO Verleihservice</div>
@@ -1541,63 +1499,50 @@
   </footer>
 
   <script>
-    function toggleFaq(btn) {
+    function toggleFaq(btn){
       const item = btn.closest('.faq-item');
       const isOpen = item.classList.contains('open');
-      // Innerhalb der gleichen Kategorie alle anderen schließen
       const cat = btn.closest('.faq-cat-block');
-      if (cat) {
+
+      if(cat){
         cat.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
       }
-      if (!isOpen) item.classList.add('open');
+
+      if(!isOpen) item.classList.add('open');
     }
 
-    function toggleCat(btn) {
+    function toggleCat(btn){
       const block = btn.closest('.faq-cat-block');
       block.classList.toggle('open');
     }
 
-    function toggleCollapse(btn) {
-      const section = btn.closest('.collapse-section');
-      section.classList.toggle('open');
-    }
-
-    function toggleQuickNav(panelId, btn) {
+    function toggleQuickNav(panelId, btn){
       const content = document.getElementById('quicknav-content');
       const panels = document.querySelectorAll('.quicknav-panel');
       const buttons = document.querySelectorAll('.quicknav-btn');
       const targetPanel = document.getElementById(panelId);
       const wasOpen = targetPanel.classList.contains('show');
-      const clickedBtn = btn || (event && event.currentTarget);
-      
-      // Reset everything
+
       panels.forEach(p => p.classList.remove('show'));
       buttons.forEach(b => b.classList.remove('active'));
-      
-      if (wasOpen) {
-        // Close everything
+
+      if(wasOpen){
         content.classList.remove('open');
-      } else {
-        // Open the target panel
+      }else{
         targetPanel.classList.add('show');
         content.classList.add('open');
-        // Mark the button active
-        if (clickedBtn) clickedBtn.classList.add('active');
+        if(btn) btn.classList.add('active');
       }
     }
 
-    function closeQuickNav() {
+    function closeQuickNav(){
       const content = document.getElementById('quicknav-content');
       const panels = document.querySelectorAll('.quicknav-panel');
       const buttons = document.querySelectorAll('.quicknav-btn');
+
       panels.forEach(p => p.classList.remove('show'));
       buttons.forEach(b => b.classList.remove('active'));
       content.classList.remove('open');
-    }
-
-    function toggleMobileMenu() {
-      const menu = document.getElementById('mobileMenu');
-      menu.classList.toggle('open');
     }
   </script>
 
