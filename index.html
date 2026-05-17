@@ -12,9 +12,14 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="canonical" href="https://gaboevent.de/" />
 
+  <!-- LCP-Optimierung: Logo direkt vorab laden -->
+  <link rel="preload" as="image" href="logo.webp" fetchpriority="high">
+
+  <!-- Fonts non-blocking laden (FCP-Fix) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"></noscript>
 
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="de_DE" />
@@ -268,6 +273,8 @@
     .main-logo{
       width:100%;
       max-width:520px;
+      height:auto;
+      aspect-ratio:520/200;
       margin-bottom:18px;
       filter:drop-shadow(0 12px 26px rgba(15,23,42,0.14));
     }
@@ -1034,6 +1041,7 @@
       font-weight:800;
     }
 
+    /* WhatsApp Float Button - CLS-FIX: transform statt box-shadow animieren */
     .float-wa{
       position:fixed;
       right:18px;
@@ -1051,7 +1059,17 @@
       font-family:'Inter',sans-serif;
       font-size:15px;
       box-shadow:0 12px 28px rgba(37,211,102,.45),0 4px 10px rgba(15,23,42,.18);
-      animation:waPulse 2.4s ease-in-out infinite;
+    }
+
+    .float-wa::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      border-radius:inherit;
+      border:2px solid rgba(37,211,102,.7);
+      pointer-events:none;
+      animation:waPulse 2.4s ease-out infinite;
+      will-change:transform,opacity;
     }
 
     .float-wa svg{
@@ -1061,8 +1079,8 @@
     }
 
     @keyframes waPulse{
-      0%,100%{box-shadow:0 12px 28px rgba(37,211,102,.45),0 4px 10px rgba(15,23,42,.18),0 0 0 0 rgba(37,211,102,.5)}
-      50%{box-shadow:0 12px 28px rgba(37,211,102,.45),0 4px 10px rgba(15,23,42,.18),0 0 0 14px rgba(37,211,102,0)}
+      0%{transform:scale(1);opacity:.7}
+      100%{transform:scale(1.4);opacity:0}
     }
 
     @media(max-width:980px){
@@ -1256,7 +1274,7 @@
 
         <div class="about-grid">
           <div class="about-photo">
-            <img src="gabriel-foto.jpeg" alt="Gabo – Inhaber GABO Verleihservice">
+            <img src="gabriel-foto.jpeg" alt="Gabo – Inhaber GABO Verleihservice" width="200" height="200" loading="lazy" decoding="async">
           </div>
 
           <div class="about-content">
@@ -1293,7 +1311,7 @@
   <header class="hero" id="hero">
     <div class="container hero-grid">
       <div>
-        <img src="logo.webp" alt="GABO Verleihservice – Partybox mieten Mainz" class="main-logo" loading="lazy" />
+        <img src="logo.webp" alt="GABO Verleihservice – Partybox mieten Mainz" class="main-logo" width="520" height="200" fetchpriority="high" decoding="async" />
 
         <h1>Partybox & Soundboks mieten in Mainz, Wiesbaden, Frankfurt & Umgebung</h1>
 
@@ -1341,7 +1359,7 @@
         <article class="card">
           <div class="badge">Beliebt</div>
           <div class="product-image-wrap">
-            <img src="soundboks-lautsprecher.jpeg" alt="Soundboks Partybox mieten – Generation 3 oder 4" loading="lazy" />
+            <img src="soundboks-lautsprecher.jpeg" alt="Soundboks Partybox mieten – Generation 3 oder 4" width="400" height="400" loading="lazy" decoding="async" />
           </div>
           <h3>🔊 Soundboks Partybox <span class="brand-note">– SOUNDBOKS Gen. 3 / Gen. 4</span></h3>
           <div class="subtitle">
@@ -1364,7 +1382,7 @@
           </div>
           <div class="addon-box">
             <div class="addon-image">
-              <img src="lautsprecher-stativ-einzel.jpeg" alt="Lautsprecher Stativ einzeln dazu mieten" loading="lazy" />
+              <img src="lautsprecher-stativ-einzel.jpeg" alt="Lautsprecher Stativ einzeln dazu mieten" width="60" height="60" loading="lazy" decoding="async" />
               <div class="addon-image-text"><strong>1 Stativ dazu buchen:</strong> +10€</div>
             </div>
           </div>
@@ -1377,8 +1395,8 @@
         <article class="card">
           <div class="badge">Doppelt Power</div>
           <div class="product-image-wrap product-image-double">
-            <img src="soundboks-lautsprecher-weiss.jpeg" alt="Soundboks Partybox weiß mieten" loading="lazy" />
-            <img src="soundboks-lautsprecher.jpeg" alt="Soundboks Partybox grau mieten" loading="lazy" />
+            <img src="soundboks-lautsprecher-weiss.jpeg" alt="Soundboks Partybox weiß mieten" width="200" height="200" loading="lazy" decoding="async" />
+            <img src="soundboks-lautsprecher.jpeg" alt="Soundboks Partybox grau mieten" width="200" height="200" loading="lazy" decoding="async" />
           </div>
           <h3>🔊🔊 2× Soundboks Partybox <span class="brand-note">– SOUNDBOKS</span></h3>
           <div class="subtitle">
@@ -1398,7 +1416,7 @@
           </div>
           <div class="addon-box">
             <div class="addon-image">
-              <img src="lautsprecher-stative-paar.jpeg" alt="Zwei Lautsprecher Stative als Paar dazu mieten" loading="lazy" />
+              <img src="lautsprecher-stative-paar.jpeg" alt="Zwei Lautsprecher Stative als Paar dazu mieten" width="60" height="60" loading="lazy" decoding="async" />
               <div class="addon-image-text"><strong>2 Stative dazu buchen:</strong> +15€</div>
             </div>
           </div>
@@ -1411,7 +1429,7 @@
         <article class="card">
           <div class="badge">Partylicht</div>
           <div class="product-image-wrap">
-            <img src="soundboks-party-licht.jpeg" alt="Soundboks Partylicht mieten – akkubetrieben" loading="lazy" />
+            <img src="soundboks-party-licht.jpeg" alt="Soundboks Partylicht mieten – akkubetrieben" width="400" height="400" loading="lazy" decoding="async" />
           </div>
           <h3>💡 Soundboks Partylicht <span class="brand-note">– SOUNDBOKS</span></h3>
           <div class="subtitle">
@@ -1437,7 +1455,7 @@
         <article class="card">
           <div class="badge">Nebel-Effekt</div>
           <div class="product-image-wrap">
-            <img src="nebelmaschine.jpeg" alt="Stairville AF-250 Nebelmaschine mieten" loading="lazy" />
+            <img src="nebelmaschine.jpeg" alt="Stairville AF-250 Nebelmaschine mieten" width="400" height="400" loading="lazy" decoding="async" />
           </div>
           <h3>🌫️ Nebelmaschine <span class="brand-note">– Stairville AF-250</span></h3>
           <div class="subtitle">
@@ -1466,7 +1484,7 @@
         <article class="card">
           <div class="badge">Event-Extra</div>
           <div class="product-image-wrap">
-            <img src="seifenblasenmaschine.jpeg" alt="Eliminator Bubbletron EXL GO Seifenblasenmaschine mieten" loading="lazy" />
+            <img src="seifenblasenmaschine.jpeg" alt="Eliminator Bubbletron EXL GO Seifenblasenmaschine mieten" width="400" height="400" loading="lazy" decoding="async" />
           </div>
           <h3>🫧 Seifenblasenmaschine <span class="brand-note">– Eliminator Bubbletron EXL GO</span></h3>
           <div class="subtitle">
@@ -1508,8 +1526,8 @@
         <article class="card">
           <div class="badge">Für kleine Feiern</div>
           <div class="product-image-wrap product-image-double">
-            <img src="soundboks-lautsprecher.jpeg" alt="Soundboks Partybox im Paket Basic" loading="lazy" />
-            <img src="soundboks-party-licht.jpeg" alt="Soundboks Partylicht im Paket Basic" loading="lazy" />
+            <img src="soundboks-lautsprecher.jpeg" alt="Soundboks Partybox im Paket Basic" width="200" height="200" loading="lazy" decoding="async" />
+            <img src="soundboks-party-licht.jpeg" alt="Soundboks Partylicht im Paket Basic" width="200" height="200" loading="lazy" decoding="async" />
           </div>
           <h3>🎉 Paket Basic</h3>
           <div class="subtitle">1× Soundboks Partybox + 1× Soundboks Partylicht</div>
@@ -1520,7 +1538,7 @@
           </div>
           <div class="addon-box">
             <div class="addon-image">
-              <img src="lautsprecher-stativ-einzel.jpeg" alt="Lautsprecher Stativ einzeln dazu mieten" loading="lazy" />
+              <img src="lautsprecher-stativ-einzel.jpeg" alt="Lautsprecher Stativ einzeln dazu mieten" width="60" height="60" loading="lazy" decoding="async" />
               <div class="addon-image-text"><strong>1 Stativ dazu buchen:</strong> +10€</div>
             </div>
           </div>
@@ -1534,9 +1552,9 @@
         <article class="card card-featured">
           <div class="badge badge-featured">Am beliebtesten</div>
           <div class="product-image-multi multi-3">
-            <div class="multi-cell"><img src="soundboks-lautsprecher.jpeg" alt="Soundboks Partybox im Paket Party" loading="lazy" /></div>
-            <div class="multi-cell"><img src="soundboks-party-licht.jpeg" alt="Soundboks Partylicht im Paket Party" loading="lazy" /></div>
-            <div class="multi-cell"><img src="nebelmaschine.jpeg" alt="Stairville AF-250 Nebelmaschine im Paket Party" loading="lazy" /></div>
+            <div class="multi-cell"><img src="soundboks-lautsprecher.jpeg" alt="Soundboks Partybox im Paket Party" width="150" height="150" loading="lazy" decoding="async" /></div>
+            <div class="multi-cell"><img src="soundboks-party-licht.jpeg" alt="Soundboks Partylicht im Paket Party" width="150" height="150" loading="lazy" decoding="async" /></div>
+            <div class="multi-cell"><img src="nebelmaschine.jpeg" alt="Stairville AF-250 Nebelmaschine im Paket Party" width="150" height="150" loading="lazy" decoding="async" /></div>
           </div>
           <h3>🔥 Paket Party</h3>
           <div class="subtitle">1× Soundboks Partybox + 1× Soundboks Partylicht + 1× Stairville AF-250 Nebelmaschine</div>
@@ -1547,7 +1565,7 @@
           </div>
           <div class="addon-box">
             <div class="addon-image">
-              <img src="lautsprecher-stativ-einzel.jpeg" alt="Lautsprecher Stativ einzeln dazu mieten" loading="lazy" />
+              <img src="lautsprecher-stativ-einzel.jpeg" alt="Lautsprecher Stativ einzeln dazu mieten" width="60" height="60" loading="lazy" decoding="async" />
               <div class="addon-image-text"><strong>1 Stativ dazu buchen:</strong> +10€</div>
             </div>
           </div>
@@ -1562,10 +1580,10 @@
         <article class="card">
           <div class="badge">Für größere Feiern</div>
           <div class="product-image-multi multi-4">
-            <div class="multi-cell"><img src="soundboks-lautsprecher-weiss.jpeg" alt="Soundboks Partybox weiß im Paket Premium" loading="lazy" /></div>
-            <div class="multi-cell"><img src="soundboks-lautsprecher.jpeg" alt="Soundboks Partybox grau im Paket Premium" loading="lazy" /></div>
-            <div class="multi-cell"><img src="soundboks-party-licht.jpeg" alt="Soundboks Partylicht im Paket Premium" loading="lazy" /></div>
-            <div class="multi-cell"><img src="soundboks-party-licht.jpeg" alt="Soundboks Partylicht im Paket Premium" loading="lazy" /></div>
+            <div class="multi-cell"><img src="soundboks-lautsprecher-weiss.jpeg" alt="Soundboks Partybox weiß im Paket Premium" width="150" height="150" loading="lazy" decoding="async" /></div>
+            <div class="multi-cell"><img src="soundboks-lautsprecher.jpeg" alt="Soundboks Partybox grau im Paket Premium" width="150" height="150" loading="lazy" decoding="async" /></div>
+            <div class="multi-cell"><img src="soundboks-party-licht.jpeg" alt="Soundboks Partylicht im Paket Premium" width="150" height="150" loading="lazy" decoding="async" /></div>
+            <div class="multi-cell"><img src="soundboks-party-licht.jpeg" alt="Soundboks Partylicht im Paket Premium" width="150" height="150" loading="lazy" decoding="async" /></div>
           </div>
           <h3>🚀 Paket Premium</h3>
           <div class="subtitle">2× Soundboks Partybox + 2× Soundboks Partylicht</div>
@@ -1576,7 +1594,7 @@
           </div>
           <div class="addon-box">
             <div class="addon-image">
-              <img src="lautsprecher-stative-paar.jpeg" alt="Zwei Lautsprecher Stative als Paar dazu mieten" loading="lazy" />
+              <img src="lautsprecher-stative-paar.jpeg" alt="Zwei Lautsprecher Stative als Paar dazu mieten" width="60" height="60" loading="lazy" decoding="async" />
               <div class="addon-image-text"><strong>2 Stative dazu buchen:</strong> +15€</div>
             </div>
           </div>
@@ -1590,12 +1608,12 @@
         <article class="card">
           <div class="badge">Komplettes Setup</div>
           <div class="product-image-multi multi-6">
-            <div class="multi-cell"><img src="soundboks-lautsprecher-weiss.jpeg" alt="Soundboks Partybox weiß im Paket Event Komplett" loading="lazy" /></div>
-            <div class="multi-cell"><img src="soundboks-lautsprecher.jpeg" alt="Soundboks Partybox grau im Paket Event Komplett" loading="lazy" /></div>
-            <div class="multi-cell"><img src="soundboks-party-licht.jpeg" alt="Soundboks Partylicht im Paket Event Komplett" loading="lazy" /></div>
-            <div class="multi-cell"><img src="soundboks-party-licht.jpeg" alt="Soundboks Partylicht im Paket Event Komplett" loading="lazy" /></div>
-            <div class="multi-cell"><img src="nebelmaschine.jpeg" alt="Stairville AF-250 Nebelmaschine im Paket Event Komplett" loading="lazy" /></div>
-            <div class="multi-cell"><img src="seifenblasenmaschine.jpeg" alt="Eliminator Bubbletron EXL GO Seifenblasenmaschine im Paket Event Komplett" loading="lazy" /></div>
+            <div class="multi-cell"><img src="soundboks-lautsprecher-weiss.jpeg" alt="Soundboks Partybox weiß im Paket Event Komplett" width="120" height="120" loading="lazy" decoding="async" /></div>
+            <div class="multi-cell"><img src="soundboks-lautsprecher.jpeg" alt="Soundboks Partybox grau im Paket Event Komplett" width="120" height="120" loading="lazy" decoding="async" /></div>
+            <div class="multi-cell"><img src="soundboks-party-licht.jpeg" alt="Soundboks Partylicht im Paket Event Komplett" width="120" height="120" loading="lazy" decoding="async" /></div>
+            <div class="multi-cell"><img src="soundboks-party-licht.jpeg" alt="Soundboks Partylicht im Paket Event Komplett" width="120" height="120" loading="lazy" decoding="async" /></div>
+            <div class="multi-cell"><img src="nebelmaschine.jpeg" alt="Stairville AF-250 Nebelmaschine im Paket Event Komplett" width="120" height="120" loading="lazy" decoding="async" /></div>
+            <div class="multi-cell"><img src="seifenblasenmaschine.jpeg" alt="Eliminator Bubbletron EXL GO Seifenblasenmaschine im Paket Event Komplett" width="120" height="120" loading="lazy" decoding="async" /></div>
           </div>
           <h3>🎊 Paket Event Komplett</h3>
           <div class="subtitle">2× Soundboks Partybox + 2× Soundboks Partylicht + Stairville AF-250 Nebelmaschine + Eliminator Bubbletron EXL GO Seifenblasenmaschine</div>
@@ -1606,7 +1624,7 @@
           </div>
           <div class="addon-box">
             <div class="addon-image">
-              <img src="lautsprecher-stative-paar.jpeg" alt="Zwei Lautsprecher Stative als Paar dazu mieten" loading="lazy" />
+              <img src="lautsprecher-stative-paar.jpeg" alt="Zwei Lautsprecher Stative als Paar dazu mieten" width="60" height="60" loading="lazy" decoding="async" />
               <div class="addon-image-text"><strong>2 Stative dazu buchen:</strong> +15€</div>
             </div>
           </div>
