@@ -207,4 +207,133 @@ h1{font-size:clamp(22px,3.6vw,34px);line-height:1.1;letter-spacing:-.6px;margin:
 <div class="container city-links"><p>Lokale Seiten: <a href="partybox-mieten-mainz.html">Partybox mieten Mainz</a> · <a href="partybox-mieten-wiesbaden.html">Partybox mieten Wiesbaden</a> · <a href="partybox-mieten-frankfurt.html">Partybox mieten Frankfurt</a> · <a href="soundboks-mieten-mainz.html">Soundboks mieten Mainz</a> · <a href="soundboks-mieten-wiesbaden.html">Soundboks mieten Wiesbaden</a> · <a href="soundboks-mieten-frankfurt.html">Soundboks mieten Frankfurt</a></p></div>
 <footer><div class="container footer-inner"><div><strong>GABO Verleihservice</strong> · Partybox, Soundboks und Eventtechnik mieten</div><div>© 2026 GABO Verleihservice</div><div class="footer-links"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a><a href="agb.html">AGB & Mietbedingungen</a><a href="widerruf.html">Widerruf</a></div></div></footer>
 <a class="float-wa" href="https://wa.me/4917629007917?text=Hi%20Gabo%2C%20ich%20m%C3%B6chte%20gerne%20etwas%20mieten." target="_blank" rel="noopener noreferrer" aria-label="Per WhatsApp anfragen">WhatsApp</a>
+<!-- Cookie Banner GABO -->
+<div id="gabo-cookie-banner">
+  <div class="gabo-cookie-box">
+    
+    <div class="gabo-cookie-text">
+      <strong>🍪 Cookie-Hinweis</strong>
+      <span>
+        Diese Webseite verwendet technisch notwendige Cookies, damit gaboevent.de zuverlässig funktioniert.
+      </span>
+    </div>
+
+    <button id="gabo-cookie-btn">Verstanden</button>
+
+  </div>
+</div>
+
+<style>
+#gabo-cookie-banner{
+  position:fixed;
+  left:50%;
+  bottom:22px;
+  transform:translateX(-50%);
+  width:calc(100% - 24px);
+  max-width:720px;
+  z-index:99999;
+  font-family:Arial,sans-serif;
+}
+
+.gabo-cookie-box{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+
+  background:rgba(10,15,30,0.92);
+  backdrop-filter:blur(14px);
+
+  border:1px solid rgba(0,140,255,0.25);
+  border-radius:22px;
+
+  padding:18px 20px;
+
+  box-shadow:
+    0 10px 35px rgba(0,0,0,0.35),
+    0 0 18px rgba(0,140,255,0.12);
+
+  animation:gaboCookieFade .45s ease;
+}
+
+.gabo-cookie-text{
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+}
+
+.gabo-cookie-text strong{
+  color:#ffffff;
+  font-size:15px;
+  font-weight:700;
+}
+
+.gabo-cookie-text span{
+  color:rgba(255,255,255,0.78);
+  font-size:14px;
+  line-height:1.5;
+}
+
+#gabo-cookie-btn{
+  background:linear-gradient(135deg,#009dff,#006eff);
+  color:#fff;
+
+  border:none;
+  border-radius:14px;
+
+  padding:11px 18px;
+
+  font-size:14px;
+  font-weight:700;
+
+  cursor:pointer;
+  transition:all .2s ease;
+  white-space:nowrap;
+
+  box-shadow:0 4px 15px rgba(0,110,255,0.35);
+}
+
+#gabo-cookie-btn:hover{
+  transform:translateY(-2px);
+  opacity:.96;
+}
+
+@keyframes gaboCookieFade{
+  from{
+    opacity:0;
+    transform:translateY(20px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+@media(max-width:640px){
+
+  .gabo-cookie-box{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  #gabo-cookie-btn{
+    width:100%;
+  }
+
+}
+</style>
+
+<script>
+const gaboCookieBanner = document.getElementById("gabo-cookie-banner");
+const gaboCookieBtn = document.getElementById("gabo-cookie-btn");
+
+if(localStorage.getItem("gaboCookieAccepted")){
+  gaboCookieBanner.style.display = "none";
+}
+
+gaboCookieBtn.onclick = function(){
+  localStorage.setItem("gaboCookieAccepted","true");
+  gaboCookieBanner.style.display = "none";
+}
+</script>
 </body></html>
