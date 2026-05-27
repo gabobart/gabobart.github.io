@@ -1,4 +1,8 @@
+# robots.txt für gaboevent.de
+# Erlaubt allen Suchmaschinen, die komplette Seite zu crawlen
+
 User-agent: *
 Allow: /
 
+# Sitemap-Pfad für Google, Bing & Co.
 Sitemap: https://gaboevent.de/sitemap.xml
