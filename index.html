@@ -37,6 +37,9 @@ img{max-width:100%;display:block}a{text-decoration:none;color:inherit}.container
 .hero{padding:22px 0 16px}.hero-grid{max-width:940px}.logo{width:min(420px,86%);height:auto;filter:drop-shadow(0 12px 26px rgba(15,23,42,.14));margin:0 auto 16px;display:block}
 h1{font-size:clamp(22px,3.6vw,34px);line-height:1.1;letter-spacing:-.6px;margin:0 0 8px;font-weight:900}h2{font-size:clamp(22px,3vw,30px);letter-spacing:-.4px;margin:0 0 6px;font-weight:900}h3{margin:0 0 6px;font-size:19px;line-height:1.3;font-weight:900}h2.xl{font-size:clamp(30px,4.4vw,46px)}
 .lead{font-size:14px;color:var(--muted);max-width:790px}.highlight{font-size:14px;font-weight:900;color:#0f172a}.section{padding:18px 0}.section-head{margin-bottom:12px}.section-head p{color:var(--muted);max-width:840px;margin:0}
+.about-card{display:grid;grid-template-columns:180px 1fr;gap:20px;align-items:center;background:linear-gradient(180deg,rgba(255,255,255,.96),rgba(255,255,255,.9));border:1px solid var(--line);border-radius:24px;padding:22px;box-shadow:var(--shadow)}
+.about-img{width:180px;height:180px;border-radius:22px;object-fit:cover;border:1px solid var(--line);box-shadow:0 10px 22px rgba(15,23,42,.12)}
+.about-text p{color:var(--muted);margin:8px 0 0}.about-text h2{font-size:clamp(24px,3.2vw,34px)}
 .trust-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}.pill{flex:1 1 calc(33% - 12px);min-height:52px;padding:12px;border-radius:14px;background:rgba(255,255,255,.88);border:1px solid rgba(37,99,235,.15);color:#1e3a8a;font-size:14px;font-weight:900;text-align:center;box-shadow:var(--shadow)}
 .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}.card{background:linear-gradient(180deg,rgba(255,255,255,.95),rgba(255,255,255,.88));border:1px solid var(--line);border-radius:var(--radius);padding:13px;box-shadow:var(--shadow);position:relative;overflow:hidden}.card:before{content:"";position:absolute;inset:0 auto auto 0;width:100%;height:4px;background:linear-gradient(90deg,var(--blue2),#8b5cf6,#06b6d4)}.card.featured{border:2px solid rgba(197,139,0,.35)}
 .badge{display:inline-flex;padding:5px 10px;border-radius:999px;font-size:11px;font-weight:900;background:var(--soft);color:#1e40af;margin-bottom:10px}.subtitle{color:var(--muted);font-size:13px;margin-bottom:12px}.brand-note{font-size:14px;color:#475569;font-weight:700}
@@ -50,7 +53,7 @@ h1{font-size:clamp(22px,3.6vw,34px);line-height:1.1;letter-spacing:-.6px;margin:
 .btn-google{display:inline-flex;align-items:center;gap:9px;margin-top:14px;padding:11px 18px;border-radius:12px;background:#fff;border:1px solid #dadce0;color:#3c4043;font-weight:800;font-size:14px;box-shadow:0 1px 3px rgba(60,64,67,.16);transition:.2s ease}.btn-google:hover{box-shadow:0 3px 8px rgba(60,64,67,.24);background:#f8faff}.btn-google svg{flex-shrink:0}.reviews-link{color:var(--blue);font-weight:900}
 .city-links{text-align:center;color:var(--muted);font-size:15px;margin:26px auto}.city-links a{color:var(--blue);font-weight:900}footer{border-top:1px solid var(--line);background:rgba(255,255,255,.78)}.footer-inner{display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px;padding:24px 0 96px;color:var(--muted);font-size:14px}.footer-links{display:flex;gap:14px;flex-wrap:wrap;justify-content:center}.footer-links a{color:var(--blue);font-weight:900}
 .float-wa{position:fixed;right:18px;bottom:18px;z-index:300;display:inline-flex;align-items:center;justify-content:center;padding:14px 18px;border-radius:999px;background:linear-gradient(135deg,#25D366,#1fb455);color:#fff;font-weight:900;box-shadow:0 12px 28px rgba(37,211,102,.45)}
-@media(max-width:980px){.contact-wrap{grid-template-columns:1fr}}@media(max-width:700px){.grid{grid-template-columns:1fr}.btn{width:100%}}@media(max-width:480px){.price-row{flex-direction:column;gap:4px}.float-wa{right:14px;bottom:14px;font-size:14px}}
+@media(max-width:980px){.contact-wrap{grid-template-columns:1fr}}@media(max-width:700px){.grid{grid-template-columns:1fr}.btn{width:100%}.about-card{grid-template-columns:1fr;text-align:center}.about-img{margin:auto;width:150px;height:150px}.about-card .cta-inline{justify-content:center}}@media(max-width:480px){.price-row{flex-direction:column;gap:4px}.float-wa{right:14px;bottom:14px;font-size:14px}}
 @media(min-width:900px){
 body{font-size:15px}
 .container{width:min(calc(100% - 48px),1240px)}
@@ -69,10 +72,7 @@ h3{font-size:23px}
 .section{padding:30px 0}.section-head{margin-bottom:18px}
 .btn-small{min-height:44px;font-size:14px}
 }
-@media(min-width:1100px){
-.product-image-wrap{height:270px}
-.multi{height:270px}
-}
+@media(min-width:1100px){.product-image-wrap{height:270px}.multi{height:270px}}
 </style>
 <script type="application/ld+json">{
 "@context":"https://schema.org","@type":"LocalBusiness","name":"GABO Verleihservice",
@@ -98,6 +98,7 @@ h3{font-size:23px}
 <button class="burger" id="burger" aria-label="Menü öffnen" aria-expanded="false"><span></span><span></span><span></span></button>
 <nav class="menu" id="menu">
 <a href="index.html">Startseite</a>
+<a href="index.html#ueber-mich">Über mich</a>
 <a href="index.html#einzelverleih">Preise</a>
 <a href="index.html#pakete">Pakete</a>
 <a href="index.html#bewertungen">Bewertungen</a>
@@ -115,6 +116,23 @@ h3{font-size:23px}
 <p class="highlight">Soundboks Partybox, Partylicht, Nebelmaschine, Seifenblasenmaschine und Party-Ausstattung für deine Feier.</p>
 <p class="lead">Für Geburtstag, Gartenparty, Hochzeit, Kindergeburtstag oder private Events. Abholung in Ingelheim, Lieferung nach Mainz, Wiesbaden, Frankfurt und Umgebung nach Absprache gegen Aufpreis.</p>
 </div></header>
+
+<section class="section" id="ueber-mich">
+  <div class="container">
+    <div class="about-card">
+      <img src="gabriel-foto.webp" alt="Gabriel, genannt Gabo, von GABO Verleihservice" class="about-img" width="180" height="180" loading="lazy" decoding="async">
+      <div class="about-text">
+        <div class="badge">Über mich</div>
+        <h2>Hi, ich bin Gabriel – aber die meisten nennen mich Gabo 👋</h2>
+        <p>Musik und gute Stimmung haben mich schon immer begleitet. Meine erste Soundboks hatte ich fast überall dabei – egal ob bei Freunden, kleinen Feiern oder spontanen Treffen.</p>
+        <p>Schnell habe ich gemerkt, wie viel eine gute Partybox ausmachen kann und wie sehr Musik Menschen zusammenbringt. Da nicht jeder direkt eine eigene hochwertige Box kaufen möchte, kam mir die Idee: Warum nicht auch anderen eine Freude machen?</p>
+        <p>So entstand GABO Verleihservice als kleines Gewerbe – für spontane Partys, Geburtstage, Hochzeiten und alle Momente, bei denen guter Sound einfach dazugehört.</p>
+        <p><strong>Mein Ziel:</strong> unkomplizierter Verleih, faire Preise und Equipment, auf das du dich verlassen kannst.</p>
+        <div class="cta-inline"><a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Hi%20Gabo%2C%20ich%20m%C3%B6chte%20gerne%20etwas%20mieten." target="_blank" rel="noopener noreferrer">Per WhatsApp anfragen</a></div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="section" id="einzelverleih">
   <div class="container">
@@ -182,7 +200,7 @@ h3{font-size:23px}
       </article>
       <article class="card">
         <div class="badge">Komplettes Setup</div><div class="multi multi-6"><div class="cell"><img src="soundboks-lautsprecher.webp" alt="Soundboks Partybox grau" loading="lazy" decoding="async"></div><div class="cell"><img src="soundboks-lautsprecher-weiss.webp" alt="Soundboks Partybox weiß" loading="lazy" decoding="async"></div><div class="cell"><img src="soundboks-partylicht.webp" alt="Soundboks Partylicht" loading="lazy" decoding="async"></div><div class="cell"><img src="nebelmaschine.webp" alt="Nebelmaschine" loading="lazy" decoding="async"></div><div class="cell"><img src="seifenblasenmaschine.webp" alt="Seifenblasenmaschine" loading="lazy" decoding="async"></div><div class="cell"><img src="stativ.webp" alt="Stativ" loading="lazy" decoding="async"></div></div><h3>Paket Event Komplett</h3><div class="subtitle">2× Soundboks + 2× Partylicht + Nebelmaschine + Seifenblasenmaschine + 2 Stative</div>
-        <div class="price-list"><div class="price-row"><span>Mo–Do</span><strong>235€ <span class="price-unit">/ Tag</span></strong></div><div class="price-row"><span>Fr–So</span><strong>245€ <span class="price-unit">/ Tag</span></strong></div><div class="price-row"><span>Wochenende komplett</span><strong>615€</strong></div></div>
+        <div class="price-list"><div class="price-row"><span>Mo–Do</span><strong>195€ <span class="price-unit">/ Tag</span></strong></div><div class="price-row"><span>Fr–So</span><strong>235€ <span class="price-unit">/ Tag</span></strong></div><div class="price-row"><span>Wochenende komplett</span><strong>595€</strong></div></div>
         <div class="addon-box"><strong>2 Stative inklusive.</strong> Je 1 Füllung Nebelfluid (1,7 L) &amp; Seifenblasenfluid (2 L) ist dabei. Die beiden Boxen haben eine weiße und eine graue Front – zwei Designs, gleicher Klang.</div>
         <div class="deposit">Kaution: 450€</div><div class="cta-inline"><a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20das%20Paket%20Event%20Komplett%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a></div>
       </article>
@@ -212,7 +230,6 @@ h3{font-size:23px}
         <div class="review-item" aria-hidden="true"><div class="review-name">Verena Luzius</div><div class="review-stars">★★★★★</div><p class="review-text">Super netter Kontakt, zuverlässige Abwicklung zu fairen Preisen und geniales Equipment.</p></div>
         <div class="review-item" aria-hidden="true"><div class="review-name">Dursun Yasar</div><div class="review-stars">★★★★★</div><p class="review-text">Beste Partybox – günstige Preise im Rhein-Main-Gebiet. Reaktion super schnell.</p></div>
       </div></div>
-      <!-- GOOGLE-LINK: Direkter "Rezensionen schreiben"-Link aus dem Google Unternehmensprofil. Öffnet die Bewertungen bzw. das Bewertungsfenster auf Google. -->
       <a class="btn-google" href="https://g.page/r/CU4kqnSAsf6GEAE/review" target="_blank" rel="noopener noreferrer">
         <svg width="18" height="18" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
         Bewertungen auf Google ansehen
@@ -227,7 +244,7 @@ h3{font-size:23px}
     <details><summary>Welche Produkte kann ich mieten?</summary><p>Soundboks Partyboxen, Soundboks Partylicht, Stairville AF-250 Nebelmaschine, Eliminator Bubbletron EXL GO Seifenblasenmaschine und Bierzeltgarnituren.</p></details>
     <details><summary>Welche Farbe haben die Soundboks Boxen?</summary><p>Die Soundboks gibt es mit weißer oder grauer Front. Wenn du zwei Boxen mietest (z. B. im Paket Premium oder Event Komplett), bekommst du in der Regel eine weiße und eine graue – also zwei unterschiedliche Designs. Am Sound ändert das nichts: Beide Boxen klingen identisch.</p></details>
     <details><summary>Kann ich draußen feiern?</summary><p>Ja, die Soundboks ist für Outdoor-Events geeignet. Bitte Geräte trotzdem vor Regen, direkter Nässe und Schmutz schützen.</p></details>
-    <details><summary>Brauche ich Strom?</summary><p>Die Soundboks und das Soundboks Partylicht sind akkubetrieben. Nebelmaschine und Bierzeltgarnituren haben je nach Einsatz andere Anforderungen, die wir vorab klären.</p></details>
+    <details><summary>Brauche ich Strom?</summary><p>Die Soundboks, das Soundboks Partylicht und die Seifenblasenmaschine sind akkubetrieben. Die Nebelmaschine benötigt Strom. Wenn du unsicher bist, klären wir das kurz vorab per WhatsApp.</p></details>
     <details><summary>Gibt es Abholung oder Lieferung?</summary><p>Standard ist Abholung in Ingelheim. Lieferung und Abholung gegen Aufpreis sind nach Absprache möglich: Bingen/Ingelheim/Nieder-Olm +15€, Mainz/Wiesbaden +25€, Rüsselsheim/Darmstadt +35€, Frankfurt +40€.</p></details>
     <details><summary>Was bedeutet „Wochenende komplett"?</summary><p>Beim Preis „Wochenende komplett" holst du das Equipment am Freitag ab und gibst es spätestens am Montag wieder zurück – also das ganze Wochenende zum Festpreis.</p></details>
     <details><summary>Wie buche ich?</summary><p>Am einfachsten per WhatsApp: Wunschtermin und gewünschtes Equipment senden. Du bekommst schnell eine Rückmeldung zur Verfügbarkeit.</p></details>
@@ -267,4 +284,5 @@ h3{font-size:23px}
 })();
 </script>
 
-</body></html>
+</body>
+</html>
