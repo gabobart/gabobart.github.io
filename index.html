@@ -26,13 +26,13 @@
 }
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"Segoe UI",Roboto,"Helvetica Neue",sans-serif;color:var(--text);font-size:17px;line-height:1.6;background:radial-gradient(circle at 15% 15%,rgba(59,130,246,.14),transparent 22%),radial-gradient(circle at 82% 18%,rgba(139,92,246,.12),transparent 22%),linear-gradient(180deg,var(--bg),var(--bg2) 55%,#f7fbff)}
 img{max-width:100%;display:block}a{text-decoration:none;color:inherit}.container{width:min(calc(100% - 32px),var(--max));margin:auto}
-.topbar{position:static;z-index:1000;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);box-shadow:0 2px 10px rgba(15,23,42,.05)}
-.navbar{display:flex;align-items:center;justify-content:flex-end;padding:8px 0;position:relative}
+.topbar{position:relative;z-index:5000;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);box-shadow:0 2px 10px rgba(15,23,42,.05)}
+.navbar{display:flex;align-items:center;justify-content:flex-end;padding:8px 0;position:relative;z-index:5001}
 .burger{display:flex;flex-direction:column;justify-content:center;gap:5px;width:48px;height:48px;border:none;background:transparent;cursor:pointer;padding:0;flex-shrink:0}
 .burger span{display:block;width:27px;height:3px;border-radius:3px;background:#0f172a;transition:.3s;margin:0 auto}
 .burger.open span:nth-child(1){transform:translateY(8px) rotate(45deg)}.burger.open span:nth-child(2){opacity:0}.burger.open span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
-.menu{position:absolute;top:calc(100% + 6px);right:0;width:min(280px,calc(100vw - 32px));display:flex;flex-direction:column;align-items:stretch;gap:2px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:8px;box-shadow:0 14px 34px rgba(15,23,42,.16);max-height:0;overflow:hidden;opacity:0;pointer-events:none;transform:translateY(-8px);transition:.28s ease;z-index:1001}
-.menu.open{max-height:600px;opacity:1;pointer-events:auto;transform:translateY(0)}
+.menu{position:absolute;top:calc(100% + 6px);right:0;width:min(280px,calc(100vw - 32px));display:none;flex-direction:column;align-items:stretch;gap:2px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:8px;box-shadow:0 14px 34px rgba(15,23,42,.16);overflow:hidden;opacity:0;pointer-events:none;transform:translateY(-8px);transition:.28s ease;z-index:6000}
+.menu.open{display:flex;opacity:1;pointer-events:auto;transform:translateY(0)}
 .menu a{font-weight:800;font-size:15px;padding:13px 16px;border-radius:10px;color:#0f172a}.menu a:hover{background:var(--soft)}.menu a:active{background:var(--soft)}
 .hero{padding:22px 0 16px}.hero-grid{max-width:940px}.logo{width:min(420px,86%);height:auto;filter:drop-shadow(0 12px 26px rgba(15,23,42,.14));margin:0 auto 16px;display:block}
 h1{font-size:clamp(26px,4vw,34px);line-height:1.1;letter-spacing:-.6px;margin:0 0 8px;font-weight:900}h2{font-size:clamp(24px,3.5vw,30px);letter-spacing:-.4px;margin:0 0 6px;font-weight:900}h3{margin:0 0 6px;font-size:21px;line-height:1.3;font-weight:900}h2.xl{font-size:clamp(30px,4.4vw,46px)}
@@ -47,7 +47,37 @@ h1{font-size:clamp(26px,4vw,34px);line-height:1.1;letter-spacing:-.6px;margin:0 
 .contact-wrap{display:grid;grid-template-columns:1fr 1fr;gap:18px}.contact-card{padding:26px;border-radius:24px;background:rgba(255,255,255,.9);border:1px solid var(--line);box-shadow:var(--shadow)}.contact-card p{color:var(--muted)}
 .faq details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-bottom:10px;box-shadow:var(--shadow)}.faq summary{font-weight:900;cursor:pointer}.faq p{color:var(--muted);margin-bottom:0}
 .faq-outer{background:transparent;border:none;box-shadow:none;padding:0;margin-bottom:0}.faq-outer-summary{display:flex;align-items:center;justify-content:space-between;background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-bottom:10px;box-shadow:var(--shadow);list-style:none;cursor:pointer}.faq-outer-summary::-webkit-details-marker{display:none}.faq-outer-arrow{font-size:14px;color:var(--blue);transition:transform .3s}.faq-outer[open] .faq-outer-arrow{transform:rotate(180deg)}
-.reviews-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:12px;box-shadow:var(--shadow);text-align:center;overflow:hidden}.reviews-summary{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;align-items:center;font-size:12px}.reviews-rating{font-size:18px;font-weight:900}.reviews-stars{color:#fbbc04;letter-spacing:1px}.reviews-marquee{overflow:hidden;margin-top:12px;-webkit-mask:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}.reviews-track{display:flex;gap:10px;width:max-content;animation:reviewscroll 26s linear infinite}.reviews-marquee:hover .reviews-track{animation-play-state:paused}.review-item{flex:0 0 160px;text-align:left;background:#f8fbff;border:1px solid var(--line);border-radius:12px;padding:8px}.review-name{font-weight:900;font-size:11px}.review-stars{color:#fbbc04;font-size:10px}.review-text{font-size:11px;color:#334155;margin:4px 0 0}@keyframes reviewscroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+/* ===== BEWERTUNGEN ===== */
+.reviews-section-wrap{background:var(--bg2);border-radius:var(--radius);padding:28px 20px;box-shadow:var(--shadow)}
+.google-summary-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:8px 14px;text-align:center;box-shadow:var(--shadow);max-width:220px;margin:0 auto 16px}
+.g-logo-row{display:flex;align-items:center;justify-content:center;gap:5px;margin-bottom:2px}
+.g-logo-row svg{flex-shrink:0;width:14px;height:14px}
+.g-logo-row span{font-size:13px;font-weight:900;color:#3c4043}
+.g-score-row{font-size:20px;font-weight:900;color:#0f172a;line-height:1.1}
+.g-stars-row{color:#fbbc04;font-size:12px;letter-spacing:1px;margin:1px 0}
+.g-count-row{font-size:11px;color:#6b7280;font-weight:700;margin-bottom:8px}
+.btn-google-rate{display:inline-flex;align-items:center;justify-content:center;gap:6px;background:linear-gradient(135deg,#2563eb,#3b82f6);color:#fff;font-weight:900;font-size:11px;padding:7px 12px;border-radius:999px;box-shadow:0 4px 10px rgba(37,99,235,.28);transition:.2s;width:100%}
+.btn-google-rate:hover{transform:translateY(-1px);box-shadow:0 6px 14px rgba(37,99,235,.38)}
+/* Auto-Slider */
+.review-slider-outer{position:relative}
+.review-slider-viewport{overflow:hidden;border-radius:14px}
+.review-slider-track{display:flex;gap:14px;transition:transform .5s cubic-bezier(.4,0,.2,1)}
+.review-slide{flex:0 0 min(200px,68vw);scroll-snap-align:start;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 11px;box-shadow:var(--shadow);height:fit-content}
+.rslide-header{display:flex;align-items:center;gap:7px;margin-bottom:4px}
+.rslide-avatar{width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,#dbeafe,#bfdbfe);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:11px;color:#1e40af;flex-shrink:0}
+.rslide-name{font-weight:900;font-size:11px;color:#0f172a}
+.rslide-g{display:flex;align-items:center;gap:3px;margin-top:1px}
+.rslide-time{font-size:10px;color:#9ca3af}
+.rslide-stars{color:#fbbc04;font-size:11px;letter-spacing:1px;margin-bottom:3px}
+.rslide-text{font-size:11px;color:#374151;line-height:1.45}
+/* Dots */
+.slider-dots{display:flex;justify-content:center;gap:7px;margin-top:14px}
+.slider-dot{width:8px;height:8px;border-radius:50%;border:none;cursor:pointer;padding:0;background:#cbd5e1;transition:.25s}
+.slider-dot.active{background:var(--blue);width:22px;border-radius:4px}
+/* Arrows */
+.slider-arrow{position:absolute;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:#fff;color:#0f172a;font-size:15px;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:5;box-shadow:var(--shadow);transition:.2s}
+.slider-arrow:hover{background:var(--soft)}.slider-arrow.prev{left:-17px}.slider-arrow.next{right:-17px}
+@media(max-width:600px){.slider-arrow{display:none}}
 .btn-google{display:inline-flex;align-items:center;gap:9px;margin-top:14px;padding:11px 18px;border-radius:12px;background:#fff;border:1px solid #dadce0;color:#3c4043;font-weight:800;font-size:14px;box-shadow:0 1px 3px rgba(60,64,67,.16);transition:.2s ease}.btn-google:hover{box-shadow:0 3px 8px rgba(60,64,67,.24);background:#f8faff}.btn-google svg{flex-shrink:0}.reviews-link{color:var(--blue);font-weight:900}
 .city-links{text-align:center;color:var(--muted);font-size:15px;margin:26px auto}.city-links a{color:var(--blue);font-weight:900}footer{border-top:1px solid var(--line);background:rgba(255,255,255,.78)}.footer-inner{display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px;padding:24px 0 96px;color:var(--muted);font-size:14px}.footer-links{display:flex;gap:14px;flex-wrap:wrap;justify-content:center}.footer-links a{color:var(--blue);font-weight:900}
 .float-wa{position:fixed;right:18px;bottom:18px;z-index:300;display:inline-flex;align-items:center;justify-content:center;padding:14px 18px;border-radius:999px;background:linear-gradient(135deg,#25D366,#1fb455);color:#fff;font-weight:900;box-shadow:0 12px 28px rgba(37,211,102,.45)}
@@ -191,34 +221,166 @@ h3{font-size:23px}
 </section>
 
 <section class="section" id="party-ausstattung"><div class="container"><div class="section-head"><h2 class="xl">Party-Ausstattung mieten</h2><p>Bierzeltgarnituren und weitere Ausstattung für deine Feier.</p></div><div class="grid">
-<article class="card"><div class="badge">Beliebt</div><h3>1 Bierzeltgarnitur</h3><div class="subtitle">1 Tisch + 2 Bänke</div><ul class="feature-list"><li>Klappbar – einfacher Transport</li><li>Platz für ca. 6–8 Personen</li></ul><div class="price-list"><div class="price-row"><span>Mo–Do</span><strong>15€ / Tag</strong></div><div class="price-row"><span>Fr–So</span><strong>20€ / Tag</strong></div><div class="price-row"><span>Wochenende komplett</span><strong>45€</strong></div></div><div class="deposit">Kaution: 50€</div></article>
-<article class="card"><div class="badge">Spar-Tipp</div><h3>2 Bierzeltgarnituren</h3><div class="subtitle">2 Tische + 4 Bänke</div><ul class="feature-list"><li>Klappbar – einfacher Transport</li><li>Platz für ca. 12–16 Personen</li></ul><div class="price-list"><div class="price-row"><span>Mo–Do</span><strong>25€ / Tag</strong></div><div class="price-row"><span>Fr–So</span><strong>35€ / Tag</strong></div><div class="price-row"><span>Wochenende komplett</span><strong>80€</strong></div></div><div class="deposit">Kaution: 100€</div></article>
+<article class="card"><div class="badge">Beliebt</div><h3>1 Bierzeltgarnitur</h3><div class="subtitle">1 Tisch + 2 Bänke</div><ul class="feature-list"><li>Klappbar – einfacher Transport</li><li>Platz für ca. 6–8 Personen</li></ul><div class="price-list"><div class="price-row"><span>Mo–Do</span><strong>15€ / Tag</strong></div><div class="price-row"><span>Fr–So</span><strong>20€ / Tag</strong></div><div class="price-row"><span>Wochenende komplett</span><strong>45€</strong></div></div><div class="deposit">Kaution: 50€</div><div class="cta-inline"><a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%201%20Bierzeltgarnitur%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a></div></article>
+<article class="card"><div class="badge">Spar-Tipp</div><h3>2 Bierzeltgarnituren</h3><div class="subtitle">2 Tische + 4 Bänke</div><ul class="feature-list"><li>Klappbar – einfacher Transport</li><li>Platz für ca. 12–16 Personen</li></ul><div class="price-list"><div class="price-row"><span>Mo–Do</span><strong>25€ / Tag</strong></div><div class="price-row"><span>Fr–So</span><strong>35€ / Tag</strong></div><div class="price-row"><span>Wochenende komplett</span><strong>80€</strong></div></div><div class="deposit">Kaution: 100€</div><div class="cta-inline"><a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%202%20Bierzeltgarnituren%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a></div></article>
 </div></div></section>
 
 <section class="section" id="bewertungen">
   <div class="container">
-    <div class="section-head"><h2>Google Bewertungen</h2><p>Das sagen Kunden über GABO Verleihservice.</p></div>
-    <div class="reviews-card">
-      <div class="reviews-summary"><div class="reviews-rating">5,0</div><div class="reviews-stars">★★★★★</div><div><a class="reviews-link" href="https://g.page/r/CU4kqnSAsf6GEAE/review" target="_blank" rel="noopener noreferrer">8 Rezensionen bei Google</a></div></div>
-      <div class="reviews-marquee"><div class="reviews-track">
-        <div class="review-item"><div class="review-name">Murat Senyüz</div><div class="review-stars">★★★★★</div><p class="review-text">Super Service, sehr netter Kontakt, bei uns war es eine kurzfristige Feier, aber Gabo Event &amp; Verleihservice sei Dank. Eine reibungslose Abwicklung. Von mir 5 Sterne.</p></div>
-        <div class="review-item"><div class="review-name">Francesco Lombardo</div><div class="review-stars">★★★★★</div><p class="review-text">Hat alles hervorragend funktioniert! Gabo Event kann ich weiterempfehlen... Gerne demnächst mal wieder.</p></div>
-        <div class="review-item"><div class="review-name">Heiko Diekhans</div><div class="review-stars">★★★★★</div><p class="review-text">Guter Service... die Sound Box war der Hammer, gerne wieder.</p></div>
-        <div class="review-item"><div class="review-name">Verena Luzius</div><div class="review-stars">★★★★★</div><p class="review-text">Super netter Kontakt, zuverlässige Abwicklung zu fairen Preisen und geniales Equipment.</p></div>
-        <div class="review-item"><div class="review-name">Dursun Yasar</div><div class="review-stars">★★★★★</div><p class="review-text">Beste Partybox – günstige Preise im Rhein-Main-Gebiet. Reaktion super schnell.</p></div>
-        <div class="review-item" aria-hidden="true"><div class="review-name">Murat Senyüz</div><div class="review-stars">★★★★★</div><p class="review-text">Super Service, sehr netter Kontakt, bei uns war es eine kurzfristige Feier, aber Gabo Event &amp; Verleihservice sei Dank. Eine reibungslose Abwicklung. Von mir 5 Sterne.</p></div>
-        <div class="review-item" aria-hidden="true"><div class="review-name">Francesco Lombardo</div><div class="review-stars">★★★★★</div><p class="review-text">Hat alles hervorragend funktioniert! Gabo Event kann ich weiterempfehlen... Gerne demnächst mal wieder.</p></div>
-        <div class="review-item" aria-hidden="true"><div class="review-name">Heiko Diekhans</div><div class="review-stars">★★★★★</div><p class="review-text">Guter Service... die Sound Box war der Hammer, gerne wieder.</p></div>
-        <div class="review-item" aria-hidden="true"><div class="review-name">Verena Luzius</div><div class="review-stars">★★★★★</div><p class="review-text">Super netter Kontakt, zuverlässige Abwicklung zu fairen Preisen und geniales Equipment.</p></div>
-        <div class="review-item" aria-hidden="true"><div class="review-name">Dursun Yasar</div><div class="review-stars">★★★★★</div><p class="review-text">Beste Partybox – günstige Preise im Rhein-Main-Gebiet. Reaktion super schnell.</p></div>
-      </div></div>
-      <a class="btn-google" href="https://g.page/r/CU4kqnSAsf6GEAE/review" target="_blank" rel="noopener noreferrer">
-        <svg width="18" height="18" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
-        Bewertungen auf Google ansehen
-      </a>
+    <div class="section-head">
+      <h2>Was unsere Kunden sagen</h2>
+      <p>Echte Bewertungen von zufriedenen Kunden über GABO Verleihservice.</p>
+    </div>
+    <div class="reviews-section-wrap">
+
+      <!-- Google Gesamt-Bewertung -->
+      <div class="google-summary-card">
+        <div class="g-logo-row">
+          <svg width="22" height="22" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+          <span>Google Bewertungen</span>
+        </div>
+        <div class="g-score-row">5,0</div>
+        <div class="g-stars-row">★★★★★</div>
+        <div class="g-count-row">(9 Rezensionen)</div>
+        <a class="btn-google-rate" href="https://g.page/r/CU4kqnSAsf6GEAE/review" target="_blank" rel="noopener noreferrer">
+          Bewerten Sie uns auf Google
+        </a>
+      </div>
+
+      <!-- Auto-Slider -->
+      <div class="review-slider-outer">
+        <button class="slider-arrow prev" id="revPrev" aria-label="Zurück">&#8249;</button>
+        <div class="review-slider-viewport">
+          <div class="review-slider-track" id="reviewTrack">
+
+            <div class="review-slide">
+              <div class="rslide-header">
+                <div class="rslide-avatar">M</div>
+                <div>
+                  <div class="rslide-name">Murat Senyüz <svg class="rslide-g" width="14" height="14" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></div>
+                  <div class="rslide-time">vor 3 Monaten</div>
+                </div>
+              </div>
+              <div class="rslide-stars">★★★★★</div>
+              <p class="rslide-text">Super Service, sehr netter Kontakt, bei uns war es eine kurzfristige Feier, aber Gabo Event & Verleihservice sei Dank. Eine reibungslose Abwicklung. Von mir 5 Sterne.</p>
+            </div>
+
+            <div class="review-slide">
+              <div class="rslide-header">
+                <div class="rslide-avatar">F</div>
+                <div>
+                  <div class="rslide-name">Francesco Lombardo <svg class="rslide-g" width="14" height="14" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></div>
+                  <div class="rslide-time">vor 5 Monaten</div>
+                </div>
+              </div>
+              <div class="rslide-stars">★★★★★</div>
+              <p class="rslide-text">Hat alles hervorragend funktioniert! Gabo Event kann ich weiterempfehlen... Gerne demnächst mal wieder.</p>
+            </div>
+
+            <div class="review-slide">
+              <div class="rslide-header">
+                <div class="rslide-avatar">H</div>
+                <div>
+                  <div class="rslide-name">Heiko Diekhans <svg class="rslide-g" width="14" height="14" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></div>
+                  <div class="rslide-time">vor 6 Monaten</div>
+                </div>
+              </div>
+              <div class="rslide-stars">★★★★★</div>
+              <p class="rslide-text">Guter Service... die Sound Box war der Hammer, gerne wieder.</p>
+            </div>
+
+            <div class="review-slide">
+              <div class="rslide-header">
+                <div class="rslide-avatar">V</div>
+                <div>
+                  <div class="rslide-name">Verena Luzius <svg class="rslide-g" width="14" height="14" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></div>
+                  <div class="rslide-time">vor 7 Monaten</div>
+                </div>
+              </div>
+              <div class="rslide-stars">★★★★★</div>
+              <p class="rslide-text">Super netter Kontakt, zuverlässige Abwicklung zu fairen Preisen und geniales Equipment.</p>
+            </div>
+
+            <div class="review-slide">
+              <div class="rslide-header">
+                <div class="rslide-avatar">D</div>
+                <div>
+                  <div class="rslide-name">Dursun Yasar <svg class="rslide-g" width="14" height="14" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></div>
+                  <div class="rslide-time">vor 8 Monaten</div>
+                </div>
+              </div>
+              <div class="rslide-stars">★★★★★</div>
+              <p class="rslide-text">Beste Partybox – günstige Preise im Rhein-Main-Gebiet. Reaktion super schnell.</p>
+            </div>
+
+            <div class="review-slide">
+              <div class="rslide-header">
+                <div class="rslide-avatar" style="background:linear-gradient(135deg,#fce7f3,#fbcfe8);color:#9d174d;">W</div>
+                <div>
+                  <div class="rslide-name">Wilhelm Trommler <svg class="rslide-g" width="14" height="14" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></div>
+                  <div class="rslide-time">vor 2 Stunden · <strong>NEU</strong></div>
+                </div>
+              </div>
+              <div class="rslide-stars">★★★★★</div>
+              <p class="rslide-text">Wir haben für eine private Feier diverses Equipment bei Gabo Event & Verleihservice gemietet und waren rundum zufrieden. Die Abwicklung war unkompliziert, die Kommunikation freundlich und zuverlässig und alle gemieteten Artikel in einwandfreiem Zustand. Klare Empfehlung!</p>
+            </div>
+
+          </div>
+        </div>
+        <button class="slider-arrow next" id="revNext" aria-label="Weiter">&#8250;</button>
+      </div>
+
+      <!-- Dots -->
+      <div class="slider-dots" id="sliderDots">
+        <button class="slider-dot active" data-index="0"></button>
+        <button class="slider-dot" data-index="1"></button>
+        <button class="slider-dot" data-index="2"></button>
+        <button class="slider-dot" data-index="3"></button>
+        <button class="slider-dot" data-index="4"></button>
+        <button class="slider-dot" data-index="5"></button>
+      </div>
+
     </div>
   </div>
 </section>
+
+<script>
+(function(){
+  var track=document.getElementById('reviewTrack');
+  var dots=document.querySelectorAll('.slider-dot');
+  var prev=document.getElementById('revPrev');
+  var next=document.getElementById('revNext');
+  if(!track) return;
+  var slides=track.querySelectorAll('.review-slide');
+  var total=slides.length;
+  var current=0;
+  var timer;
+
+  function getSlideWidth(){
+    return slides[0].offsetWidth+14;
+  }
+
+  function goTo(idx){
+    current=(idx+total)%total;
+    track.style.transform='translateX(-'+(current*getSlideWidth())+'px)';
+    dots.forEach(function(d,i){d.classList.toggle('active',i===current)});
+  }
+
+  function autoPlay(){
+    timer=setInterval(function(){goTo(current+1)},3500);
+  }
+
+  function resetAuto(){clearInterval(timer);autoPlay();}
+
+  if(prev) prev.addEventListener('click',function(){goTo(current-1);resetAuto()});
+  if(next) next.addEventListener('click',function(){goTo(current+1);resetAuto()});
+  dots.forEach(function(d){
+    d.addEventListener('click',function(){goTo(parseInt(d.dataset.index));resetAuto()});
+  });
+
+  autoPlay();
+})();
+</script>
 
 <section class="section" id="kontakt">
   <div class="container">
@@ -235,23 +397,51 @@ h3{font-size:23px}
 <a class="float-wa" href="https://wa.me/4917629007917?text=Hi%20Gabo%2C%20ich%20m%C3%B6chte%20gerne%20etwas%20mieten." target="_blank" rel="noopener noreferrer" aria-label="Per WhatsApp anfragen">WhatsApp</a>
 
 <script>
-(function(){
-  var burger=document.getElementById('burger');
-  var menu=document.getElementById('menu');
-  if(burger&&menu){
-    burger.addEventListener('click',function(){
-      var open=menu.classList.toggle('open');
-      burger.classList.toggle('open',open);
-      burger.setAttribute('aria-expanded',open);
-    });
-    menu.querySelectorAll('a').forEach(function(a){
-      a.addEventListener('click',function(){
-        menu.classList.remove('open');burger.classList.remove('open');
-        burger.setAttribute('aria-expanded','false');
-      });
-    });
+document.addEventListener('DOMContentLoaded', function(){
+  var burger = document.getElementById('burger');
+  var menu = document.getElementById('menu');
+
+  if (!burger || !menu) return;
+
+  function closeMenu(){
+    menu.classList.remove('open');
+    burger.classList.remove('open');
+    burger.setAttribute('aria-expanded', 'false');
   }
-})();
+
+  function openMenu(){
+    menu.classList.add('open');
+    burger.classList.add('open');
+    burger.setAttribute('aria-expanded', 'true');
+  }
+
+  burger.addEventListener('click', function(e){
+    e.preventDefault();
+    e.stopPropagation();
+
+    if (menu.classList.contains('open')) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  });
+
+  menu.querySelectorAll('a').forEach(function(link){
+    link.addEventListener('click', closeMenu);
+  });
+
+  document.addEventListener('click', function(e){
+    if (!menu.contains(e.target) && !burger.contains(e.target)) {
+      closeMenu();
+    }
+  });
+
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape') {
+      closeMenu();
+    }
+  });
+});
 </script>
 
 </body>
