@@ -6,168 +6,187 @@
 <title>FAQ – Häufige Fragen | GABO Verleihservice</title>
 <meta name="description" content="Häufige Fragen zum Verleih von Partyboxen, Soundboks, Nebelmaschine und Seifenblasenmaschine bei GABO Verleihservice.">
 <link rel="icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="canonical" href="https://gaboevent.de/faq.html">
+<link rel="preload" as="image" href="logo.webp" fetchpriority="high">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="GABO Verleihservice">
+<meta property="og:title" content="FAQ – Häufige Fragen | GABO Verleihservice">
+<meta property="og:description" content="Häufige Fragen zum Verleih von Partyboxen, Soundboks, Nebelmaschine und Seifenblasenmaschine bei GABO Verleihservice.">
+<meta property="og:url" content="https://gaboevent.de/faq.html">
+<meta property="og:image" content="https://gaboevent.de/logo.webp">
+<meta property="og:image:alt" content="GABO Verleihservice Logo">
+<meta name="twitter:card" content="summary_large_image">
 <style>
 :root{
   --bg:#f8fbff;--bg2:#edf4ff;--text:#0f172a;--muted:#475569;--line:#dbe7f4;
   --white:#fff;--blue:#2563eb;--blue2:#3b82f6;--soft:#dbeafe;--green:#25D366;
   --shadow:0 10px 24px rgba(15,23,42,.08);--radius:22px;--max:1180px
 }
-*{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;font-family:"Segoe UI",Roboto,"Helvetica Neue",sans-serif;color:var(--text);font-size:17px;line-height:1.6;background:radial-gradient(circle at 15% 15%,rgba(59,130,246,.14),transparent 22%),radial-gradient(circle at 82% 18%,rgba(139,92,246,.12),transparent 22%),linear-gradient(180deg,var(--bg),var(--bg2) 55%,#f7fbff)}
-img{max-width:100%;display:block}a{text-decoration:none;color:inherit}
-.container{width:min(calc(100% - 32px),var(--max));margin:auto}
-.topbar{background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);box-shadow:0 2px 10px rgba(15,23,42,.05)}
-.navbar{display:flex;align-items:center;justify-content:flex-end;padding:8px 0;position:relative}
-.burger{display:flex;flex-direction:column;justify-content:center;gap:5px;width:48px;height:48px;border:none;background:transparent;cursor:pointer;padding:0;flex-shrink:0}
-.burger span{display:block;width:27px;height:3px;border-radius:3px;background:#0f172a;transition:.3s;margin:0 auto}
-.burger.open span:nth-child(1){transform:translateY(8px) rotate(45deg)}.burger.open span:nth-child(2){opacity:0}.burger.open span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
-.menu{position:absolute;top:calc(100% + 6px);right:0;width:min(280px,calc(100vw - 32px));display:flex;flex-direction:column;align-items:stretch;gap:2px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:8px;box-shadow:0 14px 34px rgba(15,23,42,.16);max-height:0;overflow:hidden;opacity:0;pointer-events:none;transform:translateY(-8px);transition:.28s ease;z-index:1001}
-.menu.open{max-height:600px;opacity:1;pointer-events:auto;transform:translateY(0)}
-.menu a{font-weight:800;font-size:15px;padding:13px 16px;border-radius:10px;color:#0f172a}.menu a:hover{background:var(--soft)}
-.logo{width:min(180px,60%);height:auto;margin:0}
-.logo-wrap{display:flex;align-items:center;flex:1}
-.page-wrap{max-width:700px;margin:40px auto 60px;padding:0 16px}
-h1{font-size:clamp(24px,4vw,32px);font-weight:900;margin:0 0 6px}
-.lead{color:var(--muted);font-size:15px;margin:0 0 28px}
-details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-bottom:10px;box-shadow:var(--shadow)}
-summary{font-weight:900;cursor:pointer;font-size:15px;list-style:none;display:flex;justify-content:space-between;align-items:center}
-summary::-webkit-details-marker{display:none}
-summary::after{content:"▼";font-size:12px;color:var(--blue);transition:transform .3s;flex-shrink:0;margin-left:10px}
-details[open] summary::after{transform:rotate(180deg)}
-details p{color:var(--muted);margin:10px 0 0;font-size:15px}
-.back-link{display:inline-flex;align-items:center;gap:6px;color:var(--blue);font-weight:800;font-size:14px;margin-bottom:20px}
-.back-link:hover{text-decoration:underline}
-footer{padding:20px 0;border-top:1px solid var(--line);margin-top:40px}
-.footer-inner{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted)}
-.footer-links{display:flex;flex-wrap:wrap;gap:12px}.footer-links a{color:var(--muted);font-weight:700}.footer-links a:hover{color:var(--blue)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"Segoe UI",Roboto,"Helvetica Neue",sans-serif;color:var(--text);font-size:17px;line-height:1.6;background:radial-gradient(circle at 15% 15%,rgba(59,130,246,.14),transparent 22%),radial-gradient(circle at 82% 18%,rgba(139,92,246,.12),transparent 22%),linear-gradient(180deg,var(--bg),var(--bg2) 55%,#f7fbff)}
+img{max-width:100%;display:block}a{text-decoration:none;color:inherit}.container{width:min(calc(100% - 32px),var(--max));margin:auto}
+.topbar{position:relative;z-index:5000;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);box-shadow:0 2px 10px rgba(15,23,42,.05)}
+.navbar{display:flex;align-items:center;justify-content:space-between;padding:12px 0;gap:10px}
+.navbar .logo-link{display:flex;align-items:center;gap:8px}
+.navbar .logo-link img{height:38px;width:auto}
+.navbar-links{display:flex;gap:18px;flex-wrap:wrap}
+.navbar-links a{font-weight:800;font-size:14px;color:#0f172a}
+.navbar-links a:hover{color:var(--blue)}
+.hero{padding:22px 0 8px}.hero-grid{max-width:940px}
+h1{font-size:clamp(26px,4vw,34px);line-height:1.1;letter-spacing:-.6px;margin:0 0 8px;font-weight:900}
+.lead{font-size:15px;color:var(--muted);max-width:790px}
+.section{padding:18px 0}
+.back-link{display:inline-flex;align-items:center;gap:6px;font-weight:900;color:var(--blue);font-size:14px;margin-bottom:10px}
+.faq-outer{background:transparent;border:none;box-shadow:none;padding:0;margin-bottom:0}
+.faq-outer-summary{display:flex;align-items:center;justify-content:space-between;background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-bottom:10px;box-shadow:var(--shadow);list-style:none;cursor:pointer;font-weight:900;font-size:15px}
+.faq-outer-summary::-webkit-details-marker{display:none}
+.faq-outer-arrow{font-size:14px;color:var(--blue);transition:transform .3s;flex-shrink:0;margin-left:12px}
+.faq-outer[open] .faq-outer-arrow{transform:rotate(180deg)}
+.faq-outer-body{background:#fff;border:1px solid var(--line);border-top:none;border-radius:0 0 14px 14px;padding:0 18px 16px;margin-top:-10px;margin-bottom:10px;color:var(--muted);font-size:14.5px;line-height:1.65}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:44px;padding:0 16px;border-radius:14px;font-weight:900;font-size:14px;box-shadow:0 10px 24px rgba(15,23,42,.10)}
+.btn-whatsapp{background:linear-gradient(135deg,var(--green),#1fb455);color:#fff}
+.cta-box{margin-top:24px;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow);text-align:center}
+.cta-box h3{margin:0 0 6px;font-size:19px;font-weight:900}
+.cta-box p{color:var(--muted);font-size:14px;margin:0 0 14px}
+footer{border-top:1px solid var(--line);background:rgba(255,255,255,.78);margin-top:20px}
+.footer-inner{display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px;padding:24px 0 40px;color:var(--muted);font-size:14px}
+.footer-links{display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
+.footer-links a{color:var(--blue);font-weight:900}
+.float-wa{position:fixed;right:18px;bottom:18px;z-index:300;display:inline-flex;align-items:center;justify-content:center;padding:14px 18px;border-radius:999px;background:linear-gradient(135deg,#25D366,#1fb455);color:#fff;font-weight:900;box-shadow:0 12px 28px rgba(37,211,102,.45)}
+@media(min-width:900px){
+.container{width:min(calc(100% - 48px),1240px)}
+.hero{padding:34px 0 14px}.hero-grid{max-width:1000px}
+h1{font-size:clamp(30px,3.4vw,42px)}
+.section{padding:26px 0}
+.faq-outer-summary{font-size:16px;padding:18px 22px}
+.faq-outer-body{font-size:15px;padding:0 22px 18px}
+}
 </style>
+<script type="application/ld+json">{
+"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Welche Produkte kann ich mieten?","acceptedAnswer":{"@type":"Answer","text":"Soundboks Partyboxen, Soundboks Partylicht, Stairville AF-250 Nebelmaschine, Eliminator Bubbletron EXL Go Seifenblasenmaschine und Bierzeltgarnituren."}},
+{"@type":"Question","name":"Welche Farbe haben die Soundboks Boxen?","acceptedAnswer":{"@type":"Answer","text":"Die Soundboks gibt es mit weißer oder grauer Front. Wenn du zwei Boxen mietest (z. B. im Paket Premium oder Event Komplett), bekommst du in der Regel eine weiße und eine graue – zwei unterschiedliche Designs, identischer Sound."}},
+{"@type":"Question","name":"Kann ich draußen feiern?","acceptedAnswer":{"@type":"Answer","text":"Ja, alle Geräte sind für Outdoor-Events geeignet. Bei Regen bitte die Geräte trotzdem schützen (z. B. unter einem Dach oder Zelt), da sie nicht wasserdicht sind. Bei der Seifenblasenmaschine hängt die Blasenrichtung und -reichweite vom Wind ab – bei starkem Wind fliegen die Blasen weniger kontrolliert."}},
+{"@type":"Question","name":"Brauche ich Strom?","acceptedAnswer":{"@type":"Answer","text":"Die Soundboks, das Soundboks Partylicht und die Seifenblasenmaschine sind akkubetrieben – die Seifenblasenmaschine hält bis zu 3 Stunden pro Ladung, kein Stromanschluss nötig. Nur die Nebelmaschine benötigt einen Stromanschluss (230V). Wenn du unsicher bist, klären wir das gerne vorab per WhatsApp."}},
+{"@type":"Question","name":"Gibt es Abholung oder Lieferung?","acceptedAnswer":{"@type":"Answer","text":"Standard ist Abholung in Heidesheim (bei Ingelheim). Lieferung nach Ingelheim und Heidesheim ist kostenlos. Weitere Orte gegen Aufpreis nach Absprache: Nieder-Olm +15€, Bingen +10€, Mainz +10€, Rüsselsheim +15€, Wiesbaden +15€, Oppenheim +20€, Darmstadt +25€, Bad Kreuznach +25€, Frankfurt +25€. Der Preis gilt für Lieferung und Abholung zusammen."}},
+{"@type":"Question","name":"Was bedeutet „Wochenende komplett\"?","acceptedAnswer":{"@type":"Answer","text":"Du holst das Equipment am Freitag ab und gibst es spätestens am Montag wieder zurück – das ganze Wochenende zum Festpreis."}},
+{"@type":"Question","name":"Wie lange hält die Füllung der Nebelmaschine?","acceptedAnswer":{"@type":"Answer","text":"Eine Füllung mit 1,7 Litern Nebelfluid ist bereits im Mietpreis enthalten und reicht in der Regel für einen ganzen Abend. Jede weitere Füllung (1,7 Liter) kostet 10€."}},
+{"@type":"Question","name":"Wie lange hält die Füllung der Seifenblasenmaschine?","acceptedAnswer":{"@type":"Answer","text":"Eine Füllung mit 2 Litern Seifenblasenfluid ist bereits im Mietpreis enthalten. Bei normaler Nutzung reicht sie für einen ganzen Veranstaltungstag, bei dauerhaftem Betrieb ca. 3 Stunden. Weitere Füllungen (2 Liter) kosten 12€."}},
+{"@type":"Question","name":"Wie erfolgt die Rückgabe?","acceptedAnswer":{"@type":"Answer","text":"Die Rückgabe erfolgt in der Regel zur gleichen Uhrzeit wie die Abholung am Folgetag. Kleinere Abweichungen sind nach Absprache kein Problem."}},
+{"@type":"Question","name":"Wird ein Mietvertrag gemacht?","acceptedAnswer":{"@type":"Answer","text":"Ja. Bei jeder Vermietung wird ein Mietvertrag erstellt. Zur Sicherheit wird die Personalausweisnummer des Mieters hinterlegt."}},
+{"@type":"Question","name":"Muss eine Kaution hinterlegt werden?","acceptedAnswer":{"@type":"Answer","text":"Je nach Produkt wird eine Kaution hinterlegt. Die jeweilige Kaution findest du direkt beim entsprechenden Artikel auf der Webseite."}},
+{"@type":"Question","name":"Kann ich kurzfristig mieten?","acceptedAnswer":{"@type":"Answer","text":"Ja, kurzfristige Anfragen sind möglich. Am schnellsten erreichst du uns per WhatsApp."}},
+{"@type":"Question","name":"Wie buche ich?","acceptedAnswer":{"@type":"Answer","text":"Am einfachsten per WhatsApp: Wunschtermin und gewünschtes Equipment senden. Du bekommst schnell eine Rückmeldung zur Verfügbarkeit."}}
+]
+}</script>
 </head>
 <body>
 
-<div class="topbar">
-  <div class="container">
-    <nav class="navbar">
-      <div class="logo-wrap">
-        <a href="index.html"><img src="logo.webp" alt="GABO Verleihservice" class="logo"></a>
-      </div>
-      <button class="burger" id="burger" aria-label="Menü" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <div class="menu" id="menu">
-        <a href="index.html#produkte">Produkte</a>
-        <a href="index.html#pakete">Pakete</a>
-        <a href="index.html#kontakt">Kontakt</a>
-        <a href="faq.html">FAQ</a>
-      </div>
-    </nav>
-  </div>
-</div>
+<div class="topbar"><div class="container navbar">
+  <a class="logo-link" href="index.html"><img src="logo.webp" alt="GABO Verleihservice"></a>
+  <nav class="navbar-links">
+    <a href="index.html#einzelverleih">Produkte</a>
+    <a href="index.html#pakete">Pakete</a>
+    <a href="index.html#kontakt">Kontakt</a>
+    <a href="faq.html">FAQ</a>
+  </nav>
+</div></div>
 
-<div class="page-wrap">
+<header class="hero"><div class="container hero-grid">
   <a class="back-link" href="index.html">← Zurück zur Startseite</a>
   <h1>Häufige Fragen</h1>
   <p class="lead">Die wichtigsten Antworten vor deiner Buchung.</p>
+</div></header>
 
-  <details>
-    <summary>Welche Produkte kann ich mieten?</summary>
-    <p>Soundboks Partyboxen, Soundboks Partylicht, Stairville AF-250 Nebelmaschine, DJ Power Bubble Machine P-1000Y Seifenblasenmaschine und Bierzeltgarnituren.</p>
+<section class="section"><div class="container" style="max-width:900px">
+
+  <details class="faq-outer">
+    <summary class="faq-outer-summary">Welche Produkte kann ich mieten?<span class="faq-outer-arrow">▾</span></summary>
+    <div class="faq-outer-body">Soundboks Partyboxen, Soundboks Partylicht, Stairville AF-250 Nebelmaschine, Eliminator Bubbletron EXL Go Seifenblasenmaschine und Bierzeltgarnituren.</div>
   </details>
 
-  <details>
-    <summary>Welche Farbe haben die Soundboks Boxen?</summary>
-    <p>Die Soundboks gibt es mit weißer oder grauer Front. Wenn du zwei Boxen mietest (z. B. im Paket Premium oder Event Komplett), bekommst du in der Regel eine weiße und eine graue – zwei unterschiedliche Designs, identischer Sound.</p>
+  <details class="faq-outer">
+    <summary class="faq-outer-summary">Welche Farbe haben die Soundboks Boxen?<span class="faq-outer-arrow">▾</span></summary>
+    <div class="faq-outer-body">Die Soundboks gibt es mit weißer oder grauer Front. Wenn du zwei Boxen mietest (z. B. im Paket Premium oder Event Komplett), bekommst du in der Regel eine weiße und eine graue – zwei unterschiedliche Designs, identischer Sound.</div>
   </details>
 
-  <details>
-    <summary>Kann ich draußen feiern?</summary>
-    <p>Ja, die Soundboks ist für Outdoor-Events geeignet. Bitte Geräte trotzdem vor Regen, direkter Nässe und Schmutz schützen.</p>
+  <details class="faq-outer">
+    <summary class="faq-outer-summary">Kann ich draußen feiern?<span class="faq-outer-arrow">▾</span></summary>
+    <div class="faq-outer-body">Ja, alle Geräte sind für Outdoor-Events geeignet. Bei Regen bitte die Geräte trotzdem schützen (z. B. unter einem Dach oder Zelt), da sie nicht wasserdicht sind. Bei der Seifenblasenmaschine hängt die Blasenrichtung und -reichweite vom Wind ab – bei starkem Wind fliegen die Blasen weniger kontrolliert.</div>
   </details>
 
-  <details>
-    <summary>Brauche ich Strom?</summary>
-    <p>Die Soundboks und das Soundboks Partylicht sind akkubetrieben. Die Nebelmaschine sowie die Seifenblasenmaschine benötigen einen Stromanschluss (230V). Wenn du unsicher bist, klären wir das gerne vorab per WhatsApp.</p>
+  <details class="faq-outer">
+    <summary class="faq-outer-summary">Brauche ich Strom?<span class="faq-outer-arrow">▾</span></summary>
+    <div class="faq-outer-body">Die Soundboks, das Soundboks Partylicht und die Seifenblasenmaschine sind akkubetrieben – die Seifenblasenmaschine hält bis zu 3 Stunden pro Ladung, kein Stromanschluss nötig. Nur die Nebelmaschine benötigt einen Stromanschluss (230V). Wenn du unsicher bist, klären wir das gerne vorab per WhatsApp.</div>
   </details>
 
-  <details>
-    <summary>Gibt es Abholung oder Lieferung?</summary>
-    <p>Standard ist Abholung in Ingelheim. Lieferung und Abholung gegen Aufpreis sind nach Absprache möglich: Bingen/Ingelheim/Nieder-Olm +15€, Mainz/Wiesbaden +25€, Rüsselsheim/Darmstadt +35€, Frankfurt +40€. Der Preis gilt für Lieferung und Abholung zusammen.</p>
+  <details class="faq-outer">
+    <summary class="faq-outer-summary">Gibt es Abholung oder Lieferung?<span class="faq-outer-arrow">▾</span></summary>
+    <div class="faq-outer-body">Standard ist Abholung in Heidesheim (bei Ingelheim). Lieferung nach Ingelheim und Heidesheim ist kostenlos. Weitere Orte gegen Aufpreis nach Absprache: Nieder-Olm +15€, Bingen +10€, Mainz +10€, Rüsselsheim +15€, Wiesbaden +15€, Oppenheim +20€, Darmstadt +25€, Bad Kreuznach +25€, Frankfurt +25€. Der Preis gilt für Lieferung und Abholung zusammen.</div>
   </details>
 
-  <details>
-    <summary>Was bedeutet „Wochenende komplett"?</summary>
-    <p>Du holst das Equipment am Freitag ab und gibst es spätestens am Montag wieder zurück – das ganze Wochenende zum Festpreis.</p>
+  <details class="faq-outer">
+    <summary class="faq-outer-summary">Was bedeutet „Wochenende komplett"?<span class="faq-outer-arrow">▾</span></summary>
+    <div class="faq-outer-body">Du holst das Equipment am Freitag ab und gibst es spätestens am Montag wieder zurück – das ganze Wochenende zum Festpreis.</div>
   </details>
 
-  <details>
-    <summary>Wie lange hält die Füllung der Nebelmaschine?</summary>
-    <p>Eine Füllung mit 1,7 Litern Nebelfluid ist bereits im Mietpreis enthalten und reicht in der Regel für einen ganzen Abend. Jede weitere Füllung (1,7 Liter) kostet 10€.</p>
+  <details class="faq-outer">
+    <summary class="faq-outer-summary">Wie lange hält die Füllung der Nebelmaschine?<span class="faq-outer-arrow">▾</span></summary>
+    <div class="faq-outer-body">Eine Füllung mit 1,7 Litern Nebelfluid ist bereits im Mietpreis enthalten und reicht in der Regel für einen ganzen Abend. Jede weitere Füllung (1,7 Liter) kostet 10€.</div>
   </details>
 
-  <details>
-    <summary>Wie lange hält die Füllung der Seifenblasenmaschine?</summary>
-    <p>Eine Füllung mit 2,5 Litern Seifenblasenfluid ist bereits enthalten. Bei normaler Nutzung reicht sie für einen ganzen Veranstaltungstag. Bei dauerhaftem Betrieb ca. 4 Stunden. Weitere Füllungen (2 Liter): 12€.</p>
+  <details class="faq-outer">
+    <summary class="faq-outer-summary">Wie lange hält die Füllung der Seifenblasenmaschine?<span class="faq-outer-arrow">▾</span></summary>
+    <div class="faq-outer-body">Eine Füllung mit 2 Litern Seifenblasenfluid ist bereits im Mietpreis enthalten. Bei normaler Nutzung reicht sie für einen ganzen Veranstaltungstag, bei dauerhaftem Betrieb ca. 3 Stunden. Weitere Füllungen (2 Liter) kosten 12€.</div>
   </details>
 
-  <details>
-    <summary>Wie erfolgt die Rückgabe?</summary>
-    <p>Die Rückgabe erfolgt in der Regel zur gleichen Uhrzeit wie die Abholung am Folgetag. Kleinere Abweichungen sind nach Absprache kein Problem.</p>
+  <details class="faq-outer">
+    <summary class="faq-outer-summary">Wie erfolgt die Rückgabe?<span class="faq-outer-arrow">▾</span></summary>
+    <div class="faq-outer-body">Die Rückgabe erfolgt in der Regel zur gleichen Uhrzeit wie die Abholung am Folgetag. Kleinere Abweichungen sind nach Absprache kein Problem.</div>
   </details>
 
-  <details>
-    <summary>Wird ein Mietvertrag gemacht?</summary>
-    <p>Ja. Bei jeder Vermietung wird ein Mietvertrag erstellt. Zur Sicherheit wird die Personalausweisnummer des Mieters hinterlegt.</p>
+  <details class="faq-outer">
+    <summary class="faq-outer-summary">Wird ein Mietvertrag gemacht?<span class="faq-outer-arrow">▾</span></summary>
+    <div class="faq-outer-body">Ja. Bei jeder Vermietung wird ein Mietvertrag erstellt. Zur Sicherheit wird die Personalausweisnummer des Mieters hinterlegt.</div>
   </details>
 
-  <details>
-    <summary>Muss eine Kaution hinterlegt werden?</summary>
-    <p>Je nach Produkt wird eine Kaution hinterlegt. Die jeweilige Kaution findest du direkt beim entsprechenden Artikel auf der Webseite.</p>
+  <details class="faq-outer">
+    <summary class="faq-outer-summary">Muss eine Kaution hinterlegt werden?<span class="faq-outer-arrow">▾</span></summary>
+    <div class="faq-outer-body">Je nach Produkt wird eine Kaution hinterlegt. Die jeweilige Kaution findest du direkt beim entsprechenden Artikel auf der Webseite.</div>
   </details>
 
-  <details>
-    <summary>Kann ich kurzfristig mieten?</summary>
-    <p>Ja, kurzfristige Anfragen sind möglich. Am schnellsten erreichst du uns per WhatsApp.</p>
+  <details class="faq-outer">
+    <summary class="faq-outer-summary">Kann ich kurzfristig mieten?<span class="faq-outer-arrow">▾</span></summary>
+    <div class="faq-outer-body">Ja, kurzfristige Anfragen sind möglich. Am schnellsten erreichst du uns per WhatsApp.</div>
   </details>
 
-  <details>
-    <summary>Wie buche ich?</summary>
-    <p>Am einfachsten per WhatsApp: Wunschtermin und gewünschtes Equipment senden. Du bekommst schnell eine Rückmeldung zur Verfügbarkeit.</p>
+  <details class="faq-outer">
+    <summary class="faq-outer-summary">Wie buche ich?<span class="faq-outer-arrow">▾</span></summary>
+    <div class="faq-outer-body">Am einfachsten per WhatsApp: Wunschtermin und gewünschtes Equipment senden. Du bekommst schnell eine Rückmeldung zur Verfügbarkeit.</div>
   </details>
-</div>
 
-<footer>
-  <div class="container footer-inner">
-    <div><strong>GABO Verleihservice</strong> · Partybox, Soundboks und Eventtechnik mieten</div>
-    <div>© 2026 GABO Verleihservice</div>
-    <div class="footer-links">
-      <a href="impressum.html">Impressum</a>
-      <a href="datenschutz.html">Datenschutz</a>
-      <a href="agb.html">AGB & Mietbedingungen</a>
-      <a href="widerruf.html">Widerruf</a>
-      <a href="faq.html">FAQ</a>
-    </div>
+  <div class="cta-box">
+    <h3>Noch Fragen offen?</h3>
+    <p>Schreib uns einfach direkt per WhatsApp – schnelle Antwort garantiert.</p>
+    <a class="btn btn-whatsapp" href="https://wa.me/4917629007917?text=Hallo%20Gabo%2C%20ich%20habe%20noch%20eine%20Frage." target="_blank" rel="noopener noreferrer">WhatsApp schreiben</a>
   </div>
-</footer>
 
-<script>
-(function(){
-  var burger=document.getElementById('burger');
-  var menu=document.getElementById('menu');
-  if(burger&&menu){
-    burger.addEventListener('click',function(){
-      var open=menu.classList.toggle('open');
-      burger.classList.toggle('open',open);
-      burger.setAttribute('aria-expanded',open);
-    });
-    menu.querySelectorAll('a').forEach(function(a){
-      a.addEventListener('click',function(){
-        menu.classList.remove('open');burger.classList.remove('open');
-        burger.setAttribute('aria-expanded','false');
-      });
-    });
-  }
-})();
-</script>
+</div></section>
+
+<footer><div class="container footer-inner">
+  <div><strong>GABO Verleihservice</strong> · Partybox, Soundboks und Eventtechnik mieten</div>
+  <div>© 2026 GABO Verleihservice</div>
+  <div class="footer-links">
+    <a href="impressum.html">Impressum</a>
+    <a href="datenschutz.html">Datenschutz</a>
+    <a href="agb.html">AGB & Mietbedingungen</a>
+    <a href="widerruf.html">Widerruf</a>
+    <a href="faq.html">FAQ</a>
+  </div>
+</div></footer>
+
+<a class="float-wa" href="https://wa.me/4917629007917?text=Hi%20Gabo%2C%20ich%20habe%20eine%20Frage." target="_blank" rel="noopener noreferrer" aria-label="Per WhatsApp anfragen">WhatsApp</a>
 
 </body>
 </html>
