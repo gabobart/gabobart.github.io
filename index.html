@@ -40,7 +40,8 @@ h1{font-size:clamp(26px,4vw,34px);line-height:1.1;letter-spacing:-.6px;margin:0 
 .lead{font-size:15px;color:var(--muted);max-width:790px}.highlight{font-size:15px;font-weight:900;color:#0f172a}.section{padding:18px 0}.section-head{margin-bottom:12px}.section-head p{color:var(--muted);max-width:840px;margin:0}
 .trust-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}.pill{flex:1 1 calc(33% - 12px);min-height:52px;padding:12px;border-radius:14px;background:rgba(255,255,255,.88);border:1px solid rgba(37,99,235,.15);color:#1e3a8a;font-size:14px;font-weight:900;text-align:center;box-shadow:var(--shadow)}
 .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}.card{background:linear-gradient(180deg,rgba(255,255,255,.95),rgba(255,255,255,.88));border:1px solid var(--line);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);position:relative;overflow:hidden}.card:before{content:"";position:absolute;inset:0 auto auto 0;width:100%;height:4px;background:linear-gradient(90deg,var(--blue2),#8b5cf6,#06b6d4)}.card.featured{border:2px solid rgba(197,139,0,.35)}
-.badge{display:inline-flex;padding:5px 10px;border-radius:999px;font-size:11px;font-weight:900;background:var(--soft);color:#1e40af;margin-bottom:10px}.subtitle{color:var(--muted);font-size:14px;margin-bottom:12px}.brand-note{font-size:14px;color:#475569;font-weight:700}
+.badge{display:inline-flex;padding:5px 10px;border-radius:999px;font-size:11px;font-weight:900;background:var(--soft);color:#1e40af;margin-bottom:10px}
+.card-compact{padding:12px}.card-compact .badge{padding:4px 9px;font-size:10px;margin-bottom:6px}.card-compact h3{font-size:16px;margin-bottom:4px}.card-compact .subtitle{font-size:12.5px;margin-bottom:0}.subtitle{color:var(--muted);font-size:14px;margin-bottom:12px}.brand-note{font-size:14px;color:#475569;font-weight:700}
 .product-image-wrap{height:220px;background:linear-gradient(135deg,#f8fbff,#edf4ff);border:1px solid var(--line);border-radius:10px;margin-bottom:10px;display:flex;align-items:center;justify-content:center;padding:4px;overflow:hidden}.product-image-wrap img{max-height:100%;max-width:100%;width:100%;height:100%;object-fit:cover;border-radius:8px}.product-image-double{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .multi{display:grid;gap:4px;background:linear-gradient(135deg,#f8fbff,#edf4ff);border:1px solid var(--line);border-radius:10px;margin-bottom:10px;padding:4px;height:180px}.multi-2{grid-template-columns:repeat(2,1fr)}.multi-3{grid-template-columns:repeat(3,1fr)}.multi-4{grid-template-columns:repeat(2,1fr);grid-template-rows:repeat(2,1fr)}.multi-6{grid-template-columns:repeat(3,1fr)}.cell{background:#fff;border:1px solid var(--line);border-radius:6px;padding:2px;display:flex;align-items:center;justify-content:center;overflow:hidden}.cell img{max-height:100%;max-width:100%;width:100%;height:100%;object-fit:cover}
 .feature-list{margin:0 0 10px;padding-left:18px;color:#334155;display:grid;gap:5px;font-size:14px}.price-list{display:grid;gap:5px;margin-bottom:8px}.price-row{display:flex;justify-content:space-between;gap:14px;padding:6px 0;border-bottom:1px dashed #d8e2ee;color:#334155;font-size:14px}.price-row:last-child{border-bottom:none}.price-row strong{font-size:17px;font-weight:900;color:#0f172a;white-space:nowrap}.price-unit{font-size:11px;color:#64748b;font-weight:700}.deposit,.small-note{margin-top:6px;color:#0f172a;font-size:13px;font-weight:900}.addon-box{margin-top:6px;color:#64748b;font-size:12px;font-weight:700;line-height:1.5}
@@ -110,7 +111,7 @@ h3{font-size:23px}
 "address":{"@type":"PostalAddress","postalCode":"55262","addressLocality":"Heidesheim am Rhein","addressRegion":"Rheinland-Pfalz","addressCountry":"DE"},
 "areaServed":["Mainz","Wiesbaden","Frankfurt","Bingen","Darmstadt","Rüsselsheim","Ingelheim","Heidesheim","Nieder-Olm","Oppenheim","Bad Kreuznach","Rhein-Main"],
 "sameAs":["https://www.instagram.com/gaboevent"],
-"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"12"}
+"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"13"}
 }</script>
 <script type="application/ld+json">{
 "@context":"https://schema.org","@type":"FAQPage","mainEntity":[
@@ -151,25 +152,20 @@ h3{font-size:23px}
   <div class="container">
     <div class="section-head"><h2 class="xl">Warum GABO?</h2><p>Kein anonymer Konzern, sondern persönlicher Verleih aus der Region.</p></div>
     <div class="grid">
-      <article class="card">
+      <article class="card card-compact">
         <div class="badge">Fair & transparent</div>
         <h3>Keine versteckten Kosten</h3>
         <div class="subtitle">Alle Preise stehen direkt auf der Seite – keine Überraschungen bei Abholung oder Rückgabe.</div>
       </article>
-      <article class="card">
+      <article class="card card-compact">
         <div class="badge">Direkter Draht</div>
         <h3>Persönlicher Kontakt</h3>
         <div class="subtitle">Du schreibst direkt mit uns per WhatsApp – keine Hotline, kein Chatbot, keine Warteschleife.</div>
       </article>
-      <article class="card">
+      <article class="card card-compact">
         <div class="badge">Regional</div>
         <h3>Aus der Region, für die Region</h3>
         <div class="subtitle">Wir kennen unser Equipment und stehen dahinter – statt anonymer Großplattform.</div>
-      </article>
-      <article class="card">
-        <div class="badge">Vor Ort</div>
-        <h3>Kostenlose Lieferung</h3>
-        <div class="subtitle">In Ingelheim und Heidesheim liefern wir dein Equipment ohne Aufpreis direkt zu dir.</div>
       </article>
     </div>
   </div>
@@ -233,23 +229,23 @@ h3{font-size:23px}
       <article class="card featured">
         <div class="badge">Am beliebtesten</div><div class="multi multi-3"><div class="cell"><img src="soundboks-lautsprecher.webp" alt="Soundboks Partybox" loading="lazy" decoding="async"></div><div class="cell"><img src="soundboks-partylicht.webp" alt="Soundboks Partylicht" loading="lazy" decoding="async"></div><div class="cell"><img src="nebelmaschine.webp" alt="Nebelmaschine" loading="lazy" decoding="async"></div></div><h3>Paket Party</h3><div class="subtitle">1× Soundboks + 1× Partylicht + 1× Nebelmaschine</div>
         <div class="price-list"><div class="price-row"><span>Mo–Do</span><strong>85€ <span class="price-unit">/ Tag</span></strong></div><div class="price-row"><span>Fr–So</span><strong>105€ <span class="price-unit">/ Tag</span></strong></div><div class="price-row"><span>Wochenende komplett</span><strong>290€</strong></div></div>
-        <div class="deposit">Kaution: 260€</div><div class="addon-box">1 Füllung (1,7 Liter) inklusive · Weitere Füllung: 10€ · Stativ optional: +5€</div><div class="cta-inline"><a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20das%20Paket%20Party%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a></div>
+        <div class="deposit">Kaution: 260€</div><div class="addon-box">1 Füllung Nebelfluid (1,7 Liter) inklusive · Weitere Füllung Nebelfluid (1,7 L): 10€ · Stativ optional: +5€</div><div class="cta-inline"><a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20das%20Paket%20Party%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a></div>
       </article>
       <article class="card">
-        <div class="badge">Für größere Feiern</div><div class="multi multi-3"><div class="cell"><img src="soundboks-lautsprecher.webp" alt="Soundboks Partybox grau" loading="lazy" decoding="async"></div><div class="cell"><img src="soundboks-lautsprecher-weiss.webp" alt="Soundboks Partybox weiß" loading="lazy" decoding="async"></div><div class="cell"><img src="soundboks-partylicht.webp" alt="Soundboks Partylicht" loading="lazy" decoding="async"></div></div><h3>Paket Premium</h3><div class="subtitle">2× Soundboks Partybox + 2× Soundboks Partylicht</div>
+        <div class="badge">Für größere Feiern</div><div class="multi multi-4"><div class="cell"><img src="soundboks-lautsprecher.webp" alt="Soundboks Partybox grau" loading="lazy" decoding="async"></div><div class="cell"><img src="soundboks-lautsprecher-weiss.webp" alt="Soundboks Partybox weiß" loading="lazy" decoding="async"></div><div class="cell"><img src="soundboks-partylicht.webp" alt="Soundboks Partylicht" loading="lazy" decoding="async"></div><div class="cell"><img src="soundboks-partylicht.webp" alt="Soundboks Partylicht" loading="lazy" decoding="async"></div></div><h3>Paket Premium</h3><div class="subtitle">2× Soundboks Partybox + 2× Soundboks Partylicht</div>
         <div class="price-list"><div class="price-row"><span>Mo–Do</span><strong>115€ <span class="price-unit">/ Tag</span></strong></div><div class="price-row"><span>Fr–So</span><strong>135€ <span class="price-unit">/ Tag</span></strong></div><div class="price-row"><span>Wochenende komplett</span><strong>385€</strong></div></div>
         <div class="deposit">Kaution: 350€</div><div class="addon-box">1 Box weiß + 1 Box grau – gleicher Sound · 2 Stative optional: +10€</div><div class="cta-inline"><a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20das%20Paket%20Premium%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a></div>
       </article>
       <article class="card">
         <div class="badge">Komplettes Setup</div><div class="multi multi-6"><div class="cell"><img src="soundboks-lautsprecher.webp" alt="Soundboks Partybox grau" loading="lazy" decoding="async"></div><div class="cell"><img src="soundboks-lautsprecher-weiss.webp" alt="Soundboks Partybox weiß" loading="lazy" decoding="async"></div><div class="cell"><img src="soundboks-partylicht.webp" alt="Soundboks Partylicht" loading="lazy" decoding="async"></div><div class="cell"><img src="nebelmaschine.webp" alt="Nebelmaschine" loading="lazy" decoding="async"></div><div class="cell"><img src="seifenblasenmaschine.webp" alt="Seifenblasenmaschine Eliminator Bubbletron EXL Go" loading="lazy" decoding="async"></div><div class="cell"><img src="stativ-set.webp" alt="Stativ Set" loading="lazy" decoding="async"></div></div><h3>Paket Event Komplett</h3><div class="subtitle">2× Soundboks + 2× Partylicht + Nebelmaschine + Seifenblasenmaschine + 2 Stative</div>
         <div class="price-list"><div class="price-row"><span>Mo–Do</span><strong>215€ <span class="price-unit">/ Tag</span></strong></div><div class="price-row"><span>Fr–So</span><strong>245€ <span class="price-unit">/ Tag</span></strong></div><div class="price-row"><span>Wochenende komplett</span><strong>650€</strong></div></div>
-        <div class="deposit">Kaution: 450€</div><div class="addon-box">Je 1 Füllung Nebelfluid (1,7 L) + Seifenblasenfluid (2 L) inklusive · Weitere Füllung Seifenblasenfluid (2 L): 12€ · 1 Box weiß + 1 Box grau</div>
+        <div class="deposit">Kaution: 450€</div><div class="addon-box">Je 1 Füllung Nebelfluid (1,7 L) + Seifenblasenfluid (2 L) inklusive · Weitere Füllung Nebelfluid (1,7 L): 10€ · Weitere Füllung Seifenblasenfluid (2 L): 12€ · 1 Box weiß + 1 Box grau</div>
         <div class="cta-inline"><a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20das%20Paket%20Event%20Komplett%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a></div>
       </article>
       <article class="card">
         <div class="badge">Mit Sitzgelegenheit</div><div class="multi multi-6"><div class="cell"><img src="soundboks-lautsprecher.webp" alt="Soundboks Partybox grau" loading="lazy" decoding="async"></div><div class="cell"><img src="soundboks-lautsprecher-weiss.webp" alt="Soundboks Partybox weiß" loading="lazy" decoding="async"></div><div class="cell"><img src="soundboks-partylicht.webp" alt="Soundboks Partylicht" loading="lazy" decoding="async"></div><div class="cell"><img src="nebelmaschine.webp" alt="Nebelmaschine" loading="lazy" decoding="async"></div><div class="cell"><img src="seifenblasenmaschine.webp" alt="Seifenblasenmaschine Eliminator Bubbletron EXL Go" loading="lazy" decoding="async"></div><div class="cell"><img src="stativ-set.webp" alt="Stativ Set" loading="lazy" decoding="async"></div></div><h3>Paket Event Komplett mit Bierzelt</h3><div class="subtitle">2× Soundboks + 2× Partylicht + Nebelmaschine + Seifenblasenmaschine + 2 Stative + 2 Bierzeltgarnituren</div>
         <div class="price-list"><div class="price-row"><span>Mo–Do</span><strong>245€ <span class="price-unit">/ Tag</span></strong></div><div class="price-row"><span>Fr–So</span><strong>275€ <span class="price-unit">/ Tag</span></strong></div><div class="price-row"><span>Wochenende komplett</span><strong>680€</strong></div></div>
-        <div class="deposit">Kaution: 550€</div><div class="addon-box">Je 1 Füllung Nebelfluid (1,7 L) + Seifenblasenfluid (2 L) inklusive · Weitere Füllung Seifenblasenfluid (2 L): 12€ · 1 Box weiß + 1 Box grau · 2 Tische + 4 Bänke, Platz für ca. 12–16 Personen</div>
+        <div class="deposit">Kaution: 550€</div><div class="addon-box">Je 1 Füllung Nebelfluid (1,7 L) + Seifenblasenfluid (2 L) inklusive · Weitere Füllung Nebelfluid (1,7 L): 10€ · Weitere Füllung Seifenblasenfluid (2 L): 12€ · 1 Box weiß + 1 Box grau · 2 Tische + 4 Bänke, Platz für ca. 12–16 Personen</div>
         <div class="cta-inline"><a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20das%20Paket%20Event%20Komplett%20mit%20Bierzelt%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a></div>
       </article>
     </div>
@@ -277,7 +273,7 @@ h3{font-size:23px}
         </div>
         <div class="g-score-row">5,0</div>
         <div class="g-stars-row">★★★★★</div>
-        <div class="g-count-row">(12 Rezensionen)</div>
+        <div class="g-count-row">(13 Rezensionen)</div>
         <a class="btn-google-rate" href="https://g.page/r/CU4kqnSAsf6GEAE/review" target="_blank" rel="noopener noreferrer">
           Bewerten Sie uns auf Google
         </a>
@@ -291,10 +287,58 @@ h3{font-size:23px}
 
             <div class="review-slide">
               <div class="rslide-header">
+                <div class="rslide-avatar" style="background:linear-gradient(135deg,#dcfce7,#bbf7d0);color:#166534;">M</div>
+                <div>
+                  <div class="rslide-name">Mike Enroute</div>
+                  <div class="rslide-time">vor 10 Stunden · <strong>NEU</strong></div>
+                </div>
+              </div>
+              <div class="rslide-stars">★★★★★</div>
+              <p class="rslide-text">Alles Top! Sehr freundlicher Service, auch noch beim Tragen geholfen, super Kommunikation einfach über WhatsApp, Anlieferung und Ablieferung pünktlich und ohne Probleme und guter Preis! Gerne wieder! Vielen Dank</p>
+            </div>
+
+            <div class="review-slide">
+              <div class="rslide-header">
+                <div class="rslide-avatar" style="background:linear-gradient(135deg,#e0e7ff,#c7d2fe);color:#3730a3;">A</div>
+                <div>
+                  <div class="rslide-name">Alex</div>
+                  <div class="rslide-time">vor 5 Wochen</div>
+                </div>
+              </div>
+              <div class="rslide-stars">★★★★★</div>
+              <p class="rslide-text">Hat meinen Tag gerettet, schnell und Kompetent. Vielen Dank nochmal 😊</p>
+            </div>
+
+            <div class="review-slide">
+              <div class="rslide-header">
+                <div class="rslide-avatar" style="background:linear-gradient(135deg,#ccfbf1,#99f6e4);color:#115e59;">S</div>
+                <div>
+                  <div class="rslide-name">Seref Demir</div>
+                  <div class="rslide-time">vor 5 Wochen</div>
+                </div>
+              </div>
+              <div class="rslide-stars">★★★★★</div>
+              <p class="rslide-text">Absolute empfehlenswerte Verleihservice – die Partyboxen waren in einwandfreiem Zustand, kraftvoller Klang und einfache Bedienung. Abholung und Rückgabe unkompliziert, Kontakt zuverlässig und freundlich.</p>
+            </div>
+
+            <div class="review-slide">
+              <div class="rslide-header">
+                <div class="rslide-avatar" style="background:linear-gradient(135deg,#dcfce7,#bbf7d0);color:#166534;">M</div>
+                <div>
+                  <div class="rslide-name">Maria bartucca</div>
+                  <div class="rslide-time">vor 5 Wochen</div>
+                </div>
+              </div>
+              <div class="rslide-stars">★★★★★</div>
+              <p class="rslide-text">Danke Gabo für die kurzfristige Vermietung – mein Geburtstag war toll mit den Lichtern und der Nebelmaschine!</p>
+            </div>
+
+            <div class="review-slide">
+              <div class="rslide-header">
                 <div class="rslide-avatar">M</div>
                 <div>
-                  <div class="rslide-name">Murat Senyüz <svg class="rslide-g" width="14" height="14" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></div>
-                  <div class="rslide-time">vor 3 Monaten</div>
+                  <div class="rslide-name">Murat Senyüz</div>
+                  <div class="rslide-time">vor 7 Wochen</div>
                 </div>
               </div>
               <div class="rslide-stars">★★★★★</div>
@@ -303,10 +347,10 @@ h3{font-size:23px}
 
             <div class="review-slide">
               <div class="rslide-header">
-                <div class="rslide-avatar">F</div>
+                <div class="rslide-avatar" style="background:linear-gradient(135deg,#fce7f3,#fbcfe8);color:#9d174d;">F</div>
                 <div>
-                  <div class="rslide-name">Francesco Lombardo <svg class="rslide-g" width="14" height="14" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></div>
-                  <div class="rslide-time">vor 5 Monaten</div>
+                  <div class="rslide-name">Francesco Lombardo</div>
+                  <div class="rslide-time">vor 8 Wochen</div>
                 </div>
               </div>
               <div class="rslide-stars">★★★★★</div>
@@ -315,10 +359,58 @@ h3{font-size:23px}
 
             <div class="review-slide">
               <div class="rslide-header">
+                <div class="rslide-avatar" style="background:linear-gradient(135deg,#e0e7ff,#c7d2fe);color:#3730a3;">R</div>
+                <div>
+                  <div class="rslide-name">Raffaela Benvieni</div>
+                  <div class="rslide-time">vor 9 Wochen</div>
+                </div>
+              </div>
+              <div class="rslide-stars">★★★★★</div>
+              <p class="rslide-text">Super schöne Party-Ausstattung, alles sauber und perfekt organisiert. Sehr freundlicher Service und absolut zuverlässig.</p>
+            </div>
+
+            <div class="review-slide">
+              <div class="rslide-header">
+                <div class="rslide-avatar" style="background:linear-gradient(135deg,#dcfce7,#bbf7d0);color:#166534;">L</div>
+                <div>
+                  <div class="rslide-name">Lyra</div>
+                  <div class="rslide-time">vor 10 Wochen</div>
+                </div>
+              </div>
+              <div class="rslide-stars">★★★★★</div>
+              <p class="rslide-text">Wir haben eine Soundboks gemietet und sind sehr zufrieden! Sehr unproblematisch, zuverlässig und nett. Preis absolut fair.</p>
+            </div>
+
+            <div class="review-slide">
+              <div class="rslide-header">
+                <div class="rslide-avatar" style="background:linear-gradient(135deg,#e0e7ff,#c7d2fe);color:#3730a3;">D</div>
+                <div>
+                  <div class="rslide-name">Dursun Yasar</div>
+                  <div class="rslide-time">vor 10 Wochen</div>
+                </div>
+              </div>
+              <div class="rslide-stars">★★★★★</div>
+              <p class="rslide-text">Beste Party-maker***** günstiger Preise viele Produkte. Dankeschön</p>
+            </div>
+
+            <div class="review-slide">
+              <div class="rslide-header">
+                <div class="rslide-avatar" style="background:linear-gradient(135deg,#fef9c3,#fef08a);color:#713f12;">G</div>
+                <div>
+                  <div class="rslide-name">Gioachino infranca</div>
+                  <div class="rslide-time">vor 10 Wochen</div>
+                </div>
+              </div>
+              <div class="rslide-stars">★★★★★</div>
+              <p class="rslide-text">Ich hatte ein fantastisches Erlebnis beim GABO-Event! Die Partyboxen, die Musik, die Atmosphäre – einfach alles war top.</p>
+            </div>
+
+            <div class="review-slide">
+              <div class="rslide-header">
                 <div class="rslide-avatar">H</div>
                 <div>
-                  <div class="rslide-name">Heiko Diekhans <svg class="rslide-g" width="14" height="14" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></div>
-                  <div class="rslide-time">vor 6 Monaten</div>
+                  <div class="rslide-name">Heiko Diekhans</div>
+                  <div class="rslide-time">vor 9 Wochen</div>
                 </div>
               </div>
               <div class="rslide-stars">★★★★★</div>
@@ -329,68 +421,20 @@ h3{font-size:23px}
               <div class="rslide-header">
                 <div class="rslide-avatar">V</div>
                 <div>
-                  <div class="rslide-name">Verena Luzius <svg class="rslide-g" width="14" height="14" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></div>
-                  <div class="rslide-time">vor 7 Monaten</div>
+                  <div class="rslide-name">Verena Luzius</div>
+                  <div class="rslide-time">vor 9 Wochen</div>
                 </div>
               </div>
               <div class="rslide-stars">★★★★★</div>
-              <p class="rslide-text">Super netter Kontakt, zuverlässige Abwicklung zu fairen Preisen und geniales Equipment.</p>
-            </div>
-
-            <div class="review-slide">
-              <div class="rslide-header">
-                <div class="rslide-avatar">D</div>
-                <div>
-                  <div class="rslide-name">Dursun Yasar <svg class="rslide-g" width="14" height="14" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></div>
-                  <div class="rslide-time">vor 8 Monaten</div>
-                </div>
-              </div>
-              <div class="rslide-stars">★★★★★</div>
-              <p class="rslide-text">Beste Partybox – günstige Preise im Rhein-Main-Gebiet. Reaktion super schnell.</p>
-            </div>
-
-            <div class="review-slide">
-              <div class="rslide-header">
-                <div class="rslide-avatar" style="background:linear-gradient(135deg,#fce7f3,#fbcfe8);color:#9d174d;">W</div>
-                <div>
-                  <div class="rslide-name">Wilhelm Trommler <svg class="rslide-g" width="14" height="14" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></div>
-                  <div class="rslide-time">vor 2 Stunden · <strong>NEU</strong></div>
-                </div>
-              </div>
-              <div class="rslide-stars">★★★★★</div>
-              <p class="rslide-text">Wir haben für eine private Feier diverses Equipment bei Gabo Event & Verleihservice gemietet und waren rundum zufrieden. Die Abwicklung war unkompliziert, die Kommunikation freundlich und zuverlässig und alle gemieteten Artikel in einwandfreiem Zustand. Klare Empfehlung!</p>
-            </div>
-
-            <div class="review-slide">
-              <div class="rslide-header">
-                <div class="rslide-avatar" style="background:linear-gradient(135deg,#dcfce7,#bbf7d0);color:#166534;">M</div>
-                <div>
-                  <div class="rslide-name">Maria bartucca <svg class="rslide-g" width="14" height="14" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></div>
-                  <div class="rslide-time">vor 1 Tag · <strong>NEU</strong></div>
-                </div>
-              </div>
-              <div class="rslide-stars">★★★★★</div>
-              <p class="rslide-text">Danke Gabo für die kurzfristige Vermietung – mein Geburtstag war toll mit den Lichtern und der Nebelmaschine!</p>
-            </div>
-
-            <div class="review-slide">
-              <div class="rslide-header">
-                <div class="rslide-avatar" style="background:linear-gradient(135deg,#ccfbf1,#99f6e4);color:#115e59;">S</div>
-                <div>
-                  <div class="rslide-name">Seref Demir <svg class="rslide-g" width="14" height="14" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></div>
-                  <div class="rslide-time">vor 15 Stunden · <strong>NEU</strong></div>
-                </div>
-              </div>
-              <div class="rslide-stars">★★★★★</div>
-              <p class="rslide-text">Absolute empfehlenswerte Verleihservice – die Partyboxen in einwandfreiem Zustand, kraftvoller Klang, einfache Bedienung. Abholung und Rückgabe unkompliziert, Kontakt zuverlässig und freundlich. Sehr Empfehlenswert!</p>
+              <p class="rslide-text">Super netter Kontakt, zuverlässige Abwicklung zu fairen Preisen und geniales Equipment! Für uns ab sofort noch über diesen Verleih.</p>
             </div>
 
             <div class="review-slide">
               <div class="rslide-header">
                 <div class="rslide-avatar" style="background:linear-gradient(135deg,#fef9c3,#fef08a);color:#713f12;">B</div>
                 <div>
-                  <div class="rslide-name">Bellamia Beautylounge <svg class="rslide-g" width="14" height="14" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></div>
-                  <div class="rslide-time">vor 1 Tag · <strong>NEU</strong></div>
+                  <div class="rslide-name">Bellamia Beautylounge</div>
+                  <div class="rslide-time">vor 5 Wochen</div>
                 </div>
               </div>
               <div class="rslide-stars">★★★★★</div>
