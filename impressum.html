@@ -3,111 +3,244 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Impressum | GABO Verleihservice Ton & Licht Technik</title>
-  <meta name="description" content="Impressum von GABO Verleihservice Ton & Licht Technik in Ingelheim am Rhein." />
-  <meta name="robots" content="noindex, follow" />
-  <link rel="icon" href="favicon.ico">
-  <link rel="canonical" href="https://gaboevent.de/impressum.html" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <title>Impressum | GABO Verleihservice Ton &amp; Licht Technik</title>
+
+  <meta
+    name="description"
+    content="Impressum von GABO Verleihservice Ton &amp; Licht Technik in Ingelheim am Rhein."
+  />
+
+  <meta name="robots" content="noindex, follow" />
+
+  <link rel="icon" href="favicon.ico" />
+  <link rel="canonical" href="https://gaboevent.de/impressum.html" />
 
   <style>
     :root{
-      --bg:#f8fbff; --bg2:#edf4ff;
-      --text:#0f172a; --muted:#475569; --muted-2:#64748b;
-      --line:#dbe7f4; --white:#ffffff;
-      --blue:#3b82f6; --blue-strong:#2563eb; --blue-soft:#dbeafe;
-      --violet:#8b5cf6; --cyan:#06b6d4; --green:#25D366;
+      --bg:#f8fbff;
+      --bg2:#edf4ff;
+      --text:#0f172a;
+      --muted:#475569;
+      --muted-2:#64748b;
+      --line:#dbe7f4;
+      --white:#ffffff;
+      --blue:#3b82f6;
+      --blue-strong:#2563eb;
+      --blue-soft:#dbeafe;
+      --violet:#8b5cf6;
+      --cyan:#06b6d4;
       --shadow-soft:0 10px 24px rgba(15,23,42,0.08);
-      --radius:22px; --max:900px;
+      --radius:22px;
+      --max:900px;
     }
-    *{ box-sizing:border-box; }
-    html{ scroll-behavior:smooth; }
+
+    *{
+      box-sizing:border-box;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
     body{
-      margin:0; font-family:'Nunito', sans-serif;
-      color:var(--text); line-height:1.7;
+      margin:0;
+      font-family:
+        Nunito,
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+      color:var(--text);
+      line-height:1.7;
       background:
         radial-gradient(circle at 15% 15%, rgba(59,130,246,0.16), transparent 22%),
         radial-gradient(circle at 82% 18%, rgba(139,92,246,0.14), transparent 22%),
         radial-gradient(circle at 50% 82%, rgba(6,182,212,0.10), transparent 25%),
         linear-gradient(180deg, var(--bg) 0%, var(--bg2) 48%, #f7fbff 100%);
     }
-    a{ color:inherit; text-decoration:none; }
-    .container{ width:min(calc(100% - 32px), var(--max)); margin:0 auto; }
+
+    a{
+      color:inherit;
+      text-decoration:none;
+    }
+
+    .container{
+      width:min(calc(100% - 32px), var(--max));
+      margin:0 auto;
+    }
 
     .navbar{
-      position:sticky; top:0; z-index:100;
+      position:sticky;
+      top:0;
+      z-index:100;
       background:rgba(248,251,255,0.92);
       backdrop-filter:blur(14px);
+      -webkit-backdrop-filter:blur(14px);
       border-bottom:1px solid var(--line);
       box-shadow:0 2px 16px rgba(15,23,42,0.06);
     }
+
     .navbar-inner{
-      width:min(calc(100% - 32px), 1180px); margin:0 auto;
-      display:flex; align-items:center; justify-content:space-between;
-      height:62px; gap:1rem;
+      width:min(calc(100% - 32px), 1180px);
+      min-height:62px;
+      margin:0 auto;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:1rem;
     }
-    .navbar-logo{ font-size:1.2rem; font-weight:900; letter-spacing:-0.5px; color:var(--text); }
-    .navbar-logo span{ color:var(--blue-strong); }
+
+    .navbar-logo{
+      font-size:1.2rem;
+      font-weight:900;
+      letter-spacing:-0.5px;
+      color:var(--text);
+    }
+
+    .navbar-logo span{
+      color:var(--blue-strong);
+    }
+
     .navbar-back{
-      display:inline-flex; align-items:center; gap:8px;
-      padding:9px 18px; border-radius:12px;
-      font-size:15px; font-weight:800;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:9px 18px;
+      border-radius:12px;
+      font-size:15px;
+      font-weight:800;
       background:linear-gradient(135deg, var(--blue), var(--blue-strong));
-      color:#fff; box-shadow:0 4px 14px rgba(59,130,246,0.28);
+      color:#fff;
+      box-shadow:0 4px 14px rgba(59,130,246,0.28);
       transition:transform 0.15s, opacity 0.15s;
     }
-    .navbar-back:hover{ transform:translateY(-1px); opacity:0.95; }
 
-    .legal-hero{ padding:50px 0 20px; text-align:center; }
+    .navbar-back:hover{
+      transform:translateY(-1px);
+      opacity:0.95;
+    }
+
+    .navbar-back:focus-visible,
+    .footer-links a:focus-visible,
+    .legal-card a:focus-visible{
+      outline:3px solid rgba(37,99,235,0.35);
+      outline-offset:3px;
+      border-radius:6px;
+    }
+
+    .legal-hero{
+      padding:50px 0 20px;
+      text-align:center;
+    }
+
     .legal-hero h1{
       margin:0 0 8px;
       font-size:clamp(34px,5vw,54px);
-      font-weight:900; letter-spacing:-1px; line-height:1.1;
+      font-weight:900;
+      letter-spacing:-1px;
+      line-height:1.1;
     }
-    .legal-hero p{ margin:0; color:var(--muted); font-size:17px; }
+
+    .legal-hero p{
+      margin:0;
+      color:var(--muted);
+      font-size:17px;
+    }
 
     .legal-card{
-      background:linear-gradient(180deg, rgba(255,255,255,0.94), rgba(255,255,255,0.88));
+      position:relative;
+      overflow:hidden;
+      margin:30px 0 40px;
+      padding:36px 40px;
+      background:linear-gradient(
+        180deg,
+        rgba(255,255,255,0.94),
+        rgba(255,255,255,0.88)
+      );
       border:1px solid var(--line);
       border-radius:var(--radius);
-      padding:36px 40px;
       box-shadow:var(--shadow-soft);
-      margin:30px 0 40px;
-      position:relative; overflow:hidden;
     }
+
     .legal-card::before{
-      content:""; position:absolute; inset:0 auto auto 0;
-      width:100%; height:4px;
+      content:"";
+      position:absolute;
+      inset:0 auto auto 0;
+      width:100%;
+      height:4px;
       background:linear-gradient(90deg, var(--blue), var(--violet), var(--cyan));
     }
 
     .legal-card h2{
       margin:32px 0 12px;
-      font-size:22px; font-weight:800;
-      color:#0f172a; letter-spacing:-0.3px;
+      font-size:22px;
+      font-weight:800;
+      color:#0f172a;
+      letter-spacing:-0.3px;
     }
-    .legal-card h2:first-of-type{ margin-top:0; }
-    .legal-card p{ margin:0 0 14px; color:#334155; font-size:16px; }
-    .legal-card strong{ color:#0f172a; font-weight:800; }
-    .legal-card a{ color:var(--blue-strong); font-weight:700; }
-    .legal-card a:hover{ text-decoration:underline; }
+
+    .legal-card h2:first-of-type{
+      margin-top:0;
+    }
+
+    .legal-card p{
+      margin:0 0 14px;
+      color:#334155;
+      font-size:16px;
+    }
+
+    .legal-card strong{
+      color:#0f172a;
+      font-weight:800;
+    }
+
+    .legal-card a{
+      color:var(--blue-strong);
+      font-weight:700;
+      text-decoration:underline;
+      text-decoration-thickness:1px;
+      text-underline-offset:3px;
+    }
+
+    .legal-card a:hover{
+      text-decoration-thickness:2px;
+    }
 
     .legal-block{
+      margin:0 0 24px;
+      padding:18px 22px;
       background:rgba(219,234,254,0.4);
       border:1px solid rgba(59,130,246,0.18);
       border-radius:14px;
-      padding:18px 22px;
-      margin:0 0 24px;
     }
-    .legal-block p{ margin:4px 0; }
+
+    .legal-block p{
+      margin:4px 0;
+    }
+
+    .legal-note{
+      margin:18px 0 24px;
+      padding:16px 18px;
+      background:rgba(239,246,255,0.8);
+      border-left:4px solid var(--blue);
+      border-radius:10px;
+    }
+
+    .legal-note p{
+      margin:0;
+    }
 
     .legal-update{
-      margin-top:30px; padding-top:18px;
+      margin-top:30px;
+      padding-top:18px;
       border-top:1px dashed #d8e2ee;
-      color:var(--muted-2); font-size:14px;
+      color:var(--muted-2);
+      font-size:14px;
       text-align:center;
     }
 
@@ -116,41 +249,95 @@
       border-top:1px solid var(--line);
       background:rgba(255,255,255,0.76);
       backdrop-filter:blur(8px);
+      -webkit-backdrop-filter:blur(8px);
     }
+
     .footer-inner{
-      width:min(calc(100% - 32px), 1180px); margin:0 auto;
-      display:flex; flex-direction:column; align-items:center; text-align:center;
-      gap:12px; padding:22px 0 34px; color:var(--muted); font-size:14px;
+      width:min(calc(100% - 32px), 1180px);
+      margin:0 auto;
+      padding:22px 0 34px;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      gap:12px;
+      color:var(--muted);
+      font-size:14px;
+      text-align:center;
     }
-    .footer-links{ display:flex; gap:14px; flex-wrap:wrap; justify-content:center; }
-    .footer-links a{ color:#2563eb; font-weight:700; }
+
+    .footer-links{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:14px;
+    }
+
+    .footer-links a{
+      color:#2563eb;
+      font-weight:700;
+    }
 
     @media(max-width:720px){
-      .legal-card{ padding:24px 22px; }
-      .legal-hero h1{ font-size:34px; }
+      .navbar-inner{
+        padding:10px 0;
+      }
+
+      .navbar-logo{
+        font-size:1rem;
+      }
+
+      .navbar-back{
+        padding:8px 12px;
+        font-size:13px;
+      }
+
+      .legal-card{
+        padding:24px 22px;
+      }
+
+      .legal-hero{
+        padding-top:38px;
+      }
+
+      .legal-hero h1{
+        font-size:34px;
+      }
+    }
+
+    @media(max-width:440px){
+      .navbar-logo span{
+        display:none;
+      }
     }
   </style>
 </head>
+
 <body>
 
-  <nav class="navbar">
+  <nav class="navbar" aria-label="Hauptnavigation">
     <div class="navbar-inner">
-      <a href="index.html" class="navbar-logo">GABO <span>Verleihservice</span></a>
-      <a href="index.html" class="navbar-back">← Zurück zur Startseite</a>
+      <a href="index.html" class="navbar-logo">
+        GABO <span>Verleihservice</span>
+      </a>
+
+      <a href="index.html" class="navbar-back">
+        ← Zurück zur Startseite
+      </a>
     </div>
   </nav>
 
   <header class="legal-hero">
     <div class="container">
       <h1>Impressum</h1>
-      <p>Angaben gemäß § 5 DDG</p>
+      <p>Anbieterkennzeichnung gemäß § 5 DDG</p>
     </div>
   </header>
 
   <main class="container">
-    <div class="legal-card">
+    <article class="legal-card">
 
       <h2>Angaben gemäß § 5 DDG</h2>
+
       <div class="legal-block">
         <p><strong>GABO Verleihservice Ton &amp; Licht Technik</strong></p>
         <p>Inhaber: Gabriel Bartucca</p>
@@ -160,50 +347,125 @@
       </div>
 
       <h2>Kontakt</h2>
+
       <p>
-        Telefon: <a href="tel:+4917629007917">0176 29007917</a><br>
-        E-Mail: <a href="mailto:gaboverleih@gmail.com">gaboverleih@gmail.com</a>
+        Telefon:
+        <a href="tel:+4917629007917">0176 29007917</a>
+        <br />
+        E-Mail:
+        <a href="mailto:gaboverleih@gmail.com">gaboverleih@gmail.com</a>
       </p>
 
-      <h2>Unternehmensangaben</h2>
-      <p>Kleingewerbe / Einzelunternehmen</p>
+      <h2>Unternehmensform</h2>
+
+      <p>
+        Einzelunternehmen / Kleingewerbe
+      </p>
 
       <h2>Umsatzsteuer</h2>
-      <p>Gemäß § 19 UStG (Kleinunternehmerregelung) wird keine Umsatzsteuer berechnet und nicht ausgewiesen.</p>
 
-      <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
+      <p>
+        Aufgrund der Kleinunternehmerregelung gemäß § 19 UStG wird keine
+        Umsatzsteuer ausgewiesen.
+      </p>
+
+      <h2>Verantwortlich für redaktionelle Inhalte</h2>
+
       <div class="legal-block">
         <p>Gabriel Bartucca</p>
         <p>Sandkiefernweg 48</p>
         <p>55262 Ingelheim am Rhein</p>
+        <p>Deutschland</p>
       </div>
 
-      <h2>EU-Streitschlichtung</h2>
-      <p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr/</a>.</p>
-      <p>Meine E-Mail-Adresse finden Sie oben im Impressum.</p>
+      <h2>Verbraucherstreitbeilegung</h2>
 
-      <h2>Verbraucherstreitbeilegung / Universalschlichtungsstelle</h2>
-      <p>Ich bin nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+      <p>
+        Ich bin weder bereit noch verpflichtet, an Streitbeilegungsverfahren
+        vor einer Verbraucherschlichtungsstelle teilzunehmen.
+      </p>
 
-      <h2>Haftung für Inhalte</h2>
-      <p>Als Diensteanbieter bin ich gemäß § 7 Abs. 1 DDG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 DDG bin ich als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</p>
-      <p>Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden entsprechender Rechtsverletzungen werde ich diese Inhalte umgehend entfernen.</p>
+      <div class="legal-note">
+        <p>
+          Die frühere Plattform der Europäischen Union zur
+          Online-Streitbeilegung wurde zum 20. Juli 2025 eingestellt und wird
+          deshalb nicht mehr verlinkt.
+        </p>
+      </div>
 
-      <h2>Haftung für Links</h2>
-      <p>Diese Website enthält gegebenenfalls Links zu externen Websites Dritter, auf deren Inhalte ich keinen Einfluss habe. Deshalb kann ich für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.</p>
-      <p>Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werde ich derartige Links umgehend entfernen.</p>
+      <h2>Haftung für eigene Inhalte</h2>
+
+      <p>
+        Die Inhalte dieser Website wurden mit größtmöglicher Sorgfalt
+        erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der
+        Inhalte kann jedoch keine Gewähr übernommen werden, soweit gesetzlich
+        zulässig.
+      </p>
+
+      <p>
+        Gesetzliche Haftungsansprüche, insbesondere wegen Vorsatz, grober
+        Fahrlässigkeit sowie der Verletzung von Leben, Körper oder Gesundheit,
+        bleiben unberührt.
+      </p>
+
+      <h2>Externe Links</h2>
+
+      <p>
+        Diese Website kann Links zu externen Websites Dritter enthalten. Auf
+        deren Inhalte besteht kein Einfluss. Für die Inhalte verlinkter Seiten
+        ist stets der jeweilige Anbieter oder Betreiber verantwortlich.
+      </p>
+
+      <p>
+        Verlinkte Seiten werden zum Zeitpunkt der Verlinkung auf erkennbare
+        Rechtsverstöße geprüft. Eine dauerhafte inhaltliche Kontrolle ist ohne
+        konkrete Anhaltspunkte nicht zumutbar. Bei Bekanntwerden einer
+        Rechtsverletzung werden betroffene Links unverzüglich entfernt.
+      </p>
 
       <h2>Urheberrecht</h2>
-      <p>Die durch den Seitenbetreiber erstellten Inhalte und Werke auf dieser Website unterliegen dem deutschen Urheberrecht. Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
-      <p>Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitte ich um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werde ich derartige Inhalte umgehend entfernen.</p>
 
-      <p class="legal-update">Stand: Mai 2026</p>
-    </div>
+      <p>
+        Die vom Betreiber dieser Website erstellten Inhalte und Werke
+        unterliegen dem deutschen Urheberrecht. Vervielfältigung, Bearbeitung,
+        Verbreitung und jede Art der Verwertung außerhalb der Grenzen des
+        Urheberrechts bedürfen der vorherigen Zustimmung des jeweiligen
+        Rechteinhabers.
+      </p>
+
+      <p>
+        Downloads und Kopien dieser Website sind nur für den privaten, nicht
+        kommerziellen Gebrauch gestattet, soweit keine abweichende Erlaubnis
+        erteilt wurde.
+      </p>
+
+      <p>
+        Soweit Inhalte nicht vom Betreiber erstellt wurden, werden Rechte
+        Dritter beachtet und entsprechende Inhalte als solche gekennzeichnet.
+        Hinweise auf mögliche Rechtsverletzungen können an die oben genannte
+        E-Mail-Adresse gesendet werden. Bei Bekanntwerden berechtigter
+        Beanstandungen werden betroffene Inhalte unverzüglich geprüft und
+        gegebenenfalls entfernt.
+      </p>
+
+      <h2>Markenhinweis</h2>
+
+      <p>
+        Genannte Produkt- und Markennamen, insbesondere Soundboks, sind Marken
+        der jeweiligen Rechteinhaber. GABO Verleihservice ist kein offizieller
+        Vertragspartner oder wirtschaftlich verbundenes Unternehmen des
+        jeweiligen Herstellers, sofern nicht ausdrücklich anders angegeben.
+      </p>
+
+      <p class="legal-update">Stand: Juli 2026</p>
+
+    </article>
   </main>
 
   <footer>
     <div class="footer-inner">
       <div>© 2026 GABO Verleihservice</div>
+
       <div class="footer-links">
         <a href="impressum.html">Impressum</a>
         <a href="datenschutz.html">Datenschutz</a>

@@ -3,113 +3,280 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Widerruf | GABO Verleihservice</title>
-  <meta name="description" content="Widerrufsbelehrung von GABO Verleihservice – Partybox und Soundboks Verleih in Mainz, Wiesbaden und Frankfurt." />
-  <meta name="robots" content="noindex, follow" />
-  <link rel="icon" href="favicon.ico">
-  <link rel="canonical" href="https://gaboevent.de/widerruf.html" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <title>Widerruf | GABO Verleihservice</title>
+
+  <meta
+    name="description"
+    content="Widerrufsbelehrung und Muster-Widerrufsformular von GABO Verleihservice."
+  />
+
+  <meta name="robots" content="noindex, follow" />
+
+  <link rel="icon" href="favicon.ico" />
+  <link rel="canonical" href="https://gaboevent.de/widerruf.html" />
 
   <style>
     :root{
-      --bg:#f8fbff; --bg2:#edf4ff;
-      --text:#0f172a; --muted:#475569; --muted-2:#64748b;
-      --line:#dbe7f4; --white:#ffffff;
-      --blue:#3b82f6; --blue-strong:#2563eb; --blue-soft:#dbeafe;
-      --violet:#8b5cf6; --cyan:#06b6d4; --green:#25D366;
+      --bg:#f8fbff;
+      --bg2:#edf4ff;
+      --text:#0f172a;
+      --muted:#475569;
+      --muted-2:#64748b;
+      --line:#dbe7f4;
+      --white:#ffffff;
+      --blue:#3b82f6;
+      --blue-strong:#2563eb;
+      --blue-soft:#dbeafe;
+      --violet:#8b5cf6;
+      --cyan:#06b6d4;
       --shadow-soft:0 10px 24px rgba(15,23,42,0.08);
-      --radius:22px; --max:900px;
+      --radius:22px;
+      --max:900px;
     }
-    *{ box-sizing:border-box; }
-    html{ scroll-behavior:smooth; }
+
+    *{
+      box-sizing:border-box;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
     body{
-      margin:0; font-family:'Nunito', sans-serif;
-      color:var(--text); line-height:1.7;
+      margin:0;
+      font-family:
+        Nunito,
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+      color:var(--text);
+      line-height:1.7;
       background:
         radial-gradient(circle at 15% 15%, rgba(59,130,246,0.16), transparent 22%),
         radial-gradient(circle at 82% 18%, rgba(139,92,246,0.14), transparent 22%),
         radial-gradient(circle at 50% 82%, rgba(6,182,212,0.10), transparent 25%),
         linear-gradient(180deg, var(--bg) 0%, var(--bg2) 48%, #f7fbff 100%);
     }
-    a{ color:inherit; text-decoration:none; }
-    .container{ width:min(calc(100% - 32px), var(--max)); margin:0 auto; }
+
+    a{
+      color:inherit;
+      text-decoration:none;
+    }
+
+    .container{
+      width:min(calc(100% - 32px), var(--max));
+      margin:0 auto;
+    }
 
     .navbar{
-      position:sticky; top:0; z-index:100;
+      position:sticky;
+      top:0;
+      z-index:100;
       background:rgba(248,251,255,0.92);
       backdrop-filter:blur(14px);
+      -webkit-backdrop-filter:blur(14px);
       border-bottom:1px solid var(--line);
       box-shadow:0 2px 16px rgba(15,23,42,0.06);
     }
+
     .navbar-inner{
-      width:min(calc(100% - 32px), 1180px); margin:0 auto;
-      display:flex; align-items:center; justify-content:space-between;
-      height:62px; gap:1rem;
+      width:min(calc(100% - 32px), 1180px);
+      min-height:62px;
+      margin:0 auto;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:1rem;
     }
-    .navbar-logo{ font-size:1.2rem; font-weight:900; letter-spacing:-0.5px; color:var(--text); }
-    .navbar-logo span{ color:var(--blue-strong); }
+
+    .navbar-logo{
+      font-size:1.2rem;
+      font-weight:900;
+      letter-spacing:-0.5px;
+      color:var(--text);
+    }
+
+    .navbar-logo span{
+      color:var(--blue-strong);
+    }
+
     .navbar-back{
-      display:inline-flex; align-items:center; gap:8px;
-      padding:9px 18px; border-radius:12px;
-      font-size:15px; font-weight:800;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:9px 18px;
+      border-radius:12px;
+      font-size:15px;
+      font-weight:800;
       background:linear-gradient(135deg, var(--blue), var(--blue-strong));
-      color:#fff; box-shadow:0 4px 14px rgba(59,130,246,0.28);
+      color:#fff;
+      box-shadow:0 4px 14px rgba(59,130,246,0.28);
       transition:transform 0.15s, opacity 0.15s;
     }
-    .navbar-back:hover{ transform:translateY(-1px); opacity:0.95; }
 
-    .legal-hero{ padding:50px 0 20px; text-align:center; }
+    .navbar-back:hover{
+      transform:translateY(-1px);
+      opacity:0.95;
+    }
+
+    .navbar-back:focus-visible,
+    .footer-links a:focus-visible,
+    .legal-card a:focus-visible{
+      outline:3px solid rgba(37,99,235,0.35);
+      outline-offset:3px;
+      border-radius:6px;
+    }
+
+    .legal-hero{
+      padding:50px 0 20px;
+      text-align:center;
+    }
+
     .legal-hero h1{
       margin:0 0 8px;
       font-size:clamp(34px,5vw,54px);
-      font-weight:900; letter-spacing:-1px; line-height:1.1;
+      font-weight:900;
+      letter-spacing:-1px;
+      line-height:1.1;
     }
-    .legal-hero p{ margin:0; color:var(--muted); font-size:17px; }
+
+    .legal-hero p{
+      margin:0;
+      color:var(--muted);
+      font-size:17px;
+    }
 
     .legal-card{
-      background:linear-gradient(180deg, rgba(255,255,255,0.94), rgba(255,255,255,0.88));
+      position:relative;
+      overflow:hidden;
+      margin:30px 0 40px;
+      padding:36px 40px;
+      background:linear-gradient(
+        180deg,
+        rgba(255,255,255,0.94),
+        rgba(255,255,255,0.88)
+      );
       border:1px solid var(--line);
       border-radius:var(--radius);
-      padding:36px 40px;
       box-shadow:var(--shadow-soft);
-      margin:30px 0 40px;
-      position:relative; overflow:hidden;
     }
+
     .legal-card::before{
-      content:""; position:absolute; inset:0 auto auto 0;
-      width:100%; height:4px;
+      content:"";
+      position:absolute;
+      inset:0 auto auto 0;
+      width:100%;
+      height:4px;
       background:linear-gradient(90deg, var(--blue), var(--violet), var(--cyan));
     }
 
     .legal-card h2{
-      margin:24px 0 14px;
-      font-size:22px; font-weight:800;
-      color:#0f172a; letter-spacing:-0.3px;
+      margin:30px 0 14px;
+      font-size:22px;
+      font-weight:800;
+      color:#0f172a;
+      letter-spacing:-0.3px;
     }
-    .legal-card h2:first-of-type{ margin-top:0; }
-    .legal-card p{ margin:0 0 14px; color:#334155; font-size:16px; }
-    .legal-card strong{ color:#0f172a; font-weight:800; }
-    .legal-card a{ color:var(--blue-strong); font-weight:700; }
-    .legal-card a:hover{ text-decoration:underline; }
+
+    .legal-card h2:first-of-type{
+      margin-top:0;
+    }
+
+    .legal-card h3{
+      margin:22px 0 10px;
+      font-size:18px;
+      font-weight:800;
+      color:#0f172a;
+    }
+
+    .legal-card p{
+      margin:0 0 14px;
+      color:#334155;
+      font-size:16px;
+    }
+
+    .legal-card ul{
+      margin:0 0 14px;
+      padding-left:20px;
+      color:#334155;
+      font-size:16px;
+    }
+
+    .legal-card li{
+      margin-bottom:6px;
+    }
+
+    .legal-card strong{
+      color:#0f172a;
+      font-weight:800;
+    }
+
+    .legal-card a{
+      color:var(--blue-strong);
+      font-weight:700;
+      text-decoration:underline;
+      text-decoration-thickness:1px;
+      text-underline-offset:3px;
+    }
+
+    .legal-card a:hover{
+      text-decoration-thickness:2px;
+    }
 
     .legal-highlight{
+      margin:14px 0 24px;
+      padding:18px 22px;
       background:rgba(219,234,254,0.4);
       border:1px solid rgba(59,130,246,0.18);
       border-radius:14px;
-      padding:18px 22px;
-      margin:14px 0 24px;
     }
-    .legal-highlight p{ margin:4px 0; }
+
+    .legal-highlight p{
+      margin:4px 0;
+    }
+
+    .legal-warning{
+      margin:18px 0 24px;
+      padding:16px 18px;
+      background:rgba(255,247,237,0.9);
+      border-left:4px solid #f59e0b;
+      border-radius:10px;
+    }
+
+    .legal-warning p{
+      margin:0;
+    }
+
+    .form-box{
+      margin:16px 0 24px;
+      padding:22px;
+      background:#ffffff;
+      border:1px dashed #94a3b8;
+      border-radius:14px;
+    }
+
+    .form-line{
+      display:block;
+      min-height:30px;
+      margin:7px 0;
+      border-bottom:1px solid #cbd5e1;
+    }
 
     .legal-end{
-      margin-top:24px; padding:14px 22px;
+      margin-top:26px;
+      padding:14px 22px;
       background:rgba(219,234,254,0.4);
       border:1px solid rgba(59,130,246,0.18);
       border-radius:12px;
-      color:var(--blue-strong); font-weight:800; font-size:15px;
+      color:var(--blue-strong);
+      font-weight:800;
+      font-size:15px;
       text-align:center;
     }
 
@@ -118,70 +285,310 @@
       border-top:1px solid var(--line);
       background:rgba(255,255,255,0.76);
       backdrop-filter:blur(8px);
+      -webkit-backdrop-filter:blur(8px);
     }
+
     .footer-inner{
-      width:min(calc(100% - 32px), 1180px); margin:0 auto;
-      display:flex; flex-direction:column; align-items:center; text-align:center;
-      gap:12px; padding:22px 0 34px; color:var(--muted); font-size:14px;
+      width:min(calc(100% - 32px), 1180px);
+      margin:0 auto;
+      padding:22px 0 34px;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      gap:12px;
+      color:var(--muted);
+      font-size:14px;
+      text-align:center;
     }
-    .footer-links{ display:flex; gap:14px; flex-wrap:wrap; justify-content:center; }
-    .footer-links a{ color:#2563eb; font-weight:700; }
+
+    .footer-links{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:14px;
+    }
+
+    .footer-links a{
+      color:#2563eb;
+      font-weight:700;
+    }
 
     @media(max-width:720px){
-      .legal-card{ padding:24px 22px; }
-      .legal-hero h1{ font-size:34px; }
+      .navbar-inner{
+        padding:10px 0;
+      }
+
+      .navbar-logo{
+        font-size:1rem;
+      }
+
+      .navbar-back{
+        padding:8px 12px;
+        font-size:13px;
+      }
+
+      .legal-card{
+        padding:24px 22px;
+      }
+
+      .legal-hero{
+        padding-top:38px;
+      }
+
+      .legal-hero h1{
+        font-size:34px;
+      }
+    }
+
+    @media(max-width:440px){
+      .navbar-logo span{
+        display:none;
+      }
     }
   </style>
 </head>
+
 <body>
 
-  <nav class="navbar">
+  <nav class="navbar" aria-label="Hauptnavigation">
     <div class="navbar-inner">
-      <a href="index.html" class="navbar-logo">GABO <span>Verleihservice</span></a>
-      <a href="index.html" class="navbar-back">← Zurück zur Startseite</a>
+      <a href="index.html" class="navbar-logo">
+        GABO <span>Verleihservice</span>
+      </a>
+
+      <a href="index.html" class="navbar-back">
+        ← Zurück zur Startseite
+      </a>
     </div>
   </nav>
 
   <header class="legal-hero">
     <div class="container">
       <h1>Widerrufsbelehrung</h1>
-      <p>Hinweise zum Widerrufsrecht bei Mietverträgen</p>
+      <p>Informationen für Verbraucher bei Fernabsatzverträgen</p>
     </div>
   </header>
 
   <main class="container">
-    <div class="legal-card">
+    <article class="legal-card">
 
-      <h2>Hinweise zum Widerrufsrecht</h2>
-      <p>Bei den vom Vermieter angebotenen Mietleistungen handelt es sich um die Vermietung von Veranstaltungstechnik (z. B. Soundboks, Partylicht, Nebelmaschine, Seifenblasenmaschine, Bierzeltgarnituren) zu einem konkreten, mit dem Mieter individuell vereinbarten Termin.</p>
-
-      <h2>Ausschluss des Widerrufsrechts</h2>
-      <div class="legal-highlight">
-        <p>Gemäß <strong>§ 312g Abs. 2 Nr. 9 BGB</strong> besteht <strong>kein Widerrufsrecht</strong> bei Verträgen zur Erbringung von Dienstleistungen im Zusammenhang mit Freizeitbetätigungen, wenn der Vertrag für die Erbringung einen <strong>spezifischen Termin oder Zeitraum</strong> vorsieht.</p>
+      <div class="legal-warning">
+        <p>
+          <strong>Wichtiger Hinweis:</strong>
+          Ein gesetzliches Widerrufsrecht besteht insbesondere dann, wenn ein
+          Verbraucher den Mietvertrag ausschließlich über Fernkommunikationsmittel
+          wie WhatsApp, Telefon oder E-Mail abschließt und keine gesetzliche
+          Ausnahme greift. Ob eine Ausnahme vorliegt, richtet sich nach dem
+          konkreten Vertrag.
+        </p>
       </div>
-      <p>Da die Vermietung der Veranstaltungstechnik zu einem konkret vereinbarten Mietzeitraum für eine private oder geschäftliche Veranstaltung erfolgt, ist das Widerrufsrecht für Verbraucher nach den Vorschriften über Fernabsatzverträge ausgeschlossen.</p>
 
-      <h2>Stornierung statt Widerruf</h2>
-      <p>Eine vorzeitige Auflösung des Mietvertrags ist nach den in den <a href="agb.html">AGB</a> geregelten Stornierungsbedingungen möglich.</p>
-      <p>Die dort genannten Stornogebühren richten sich nach dem zeitlichen Abstand zwischen Stornierung und vereinbartem Mietbeginn.</p>
+      <h2>Widerrufsbelehrung</h2>
 
-      <h2>Kontakt für Anfragen</h2>
-      <p>Wenden Sie sich bei Fragen zur Stornierung oder Vertragsauflösung bitte direkt an den Vermieter:</p>
+      <h3>Widerrufsrecht</h3>
+
+      <p>
+        Sie haben das Recht, binnen vierzehn Tagen ohne Angabe von Gründen
+        diesen Vertrag zu widerrufen.
+      </p>
+
+      <p>
+        Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag des
+        Vertragsabschlusses.
+      </p>
+
+      <p>
+        Um Ihr Widerrufsrecht auszuüben, müssen Sie uns
+      </p>
+
       <div class="legal-highlight">
         <p><strong>GABO Verleihservice Ton &amp; Licht Technik</strong></p>
-        <p>Gabriel Bartucca</p>
-        <p>Sandkiefernweg 48, 55262 Ingelheim am Rhein</p>
-        <p>Telefon: <a href="tel:+4917629007917">0176 29007917</a></p>
-        <p>E-Mail: <a href="mailto:gaboverleih@gmail.com">gaboverleih@gmail.com</a></p>
+        <p>Inhaber: Gabriel Bartucca</p>
+        <p>Sandkiefernweg 48</p>
+        <p>55262 Ingelheim am Rhein</p>
+        <p>Deutschland</p>
+        <p>
+          Telefon:
+          <a href="tel:+4917629007917">0176 29007917</a>
+        </p>
+        <p>
+          E-Mail:
+          <a href="mailto:gaboverleih@gmail.com">gaboverleih@gmail.com</a>
+        </p>
       </div>
 
-      <p class="legal-end">Ende der Widerrufsbelehrung – Stand: Mai 2026</p>
-    </div>
+      <p>
+        mittels einer eindeutigen Erklärung, zum Beispiel eines mit der Post
+        versandten Briefs oder einer E-Mail, über Ihren Entschluss, diesen
+        Vertrag zu widerrufen, informieren.
+      </p>
+
+      <p>
+        Sie können dafür das unten stehende Muster-Widerrufsformular verwenden.
+        Die Verwendung des Formulars ist jedoch nicht vorgeschrieben.
+      </p>
+
+      <p>
+        Zur Wahrung der Widerrufsfrist reicht es aus, dass Sie die Mitteilung
+        über die Ausübung des Widerrufsrechts vor Ablauf der Widerrufsfrist
+        absenden.
+      </p>
+
+      <h3>Folgen des Widerrufs</h3>
+
+      <p>
+        Wenn Sie diesen Vertrag widerrufen, haben wir Ihnen alle Zahlungen, die
+        wir von Ihnen erhalten haben, einschließlich vereinbarter
+        Standardlieferkosten, unverzüglich und spätestens binnen vierzehn Tagen
+        ab dem Tag zurückzuzahlen, an dem die Mitteilung über Ihren Widerruf
+        dieses Vertrags bei uns eingegangen ist.
+      </p>
+
+      <p>
+        Für diese Rückzahlung verwenden wir grundsätzlich dasselbe
+        Zahlungsmittel, das Sie bei der ursprünglichen Transaktion eingesetzt
+        haben, es sei denn, mit Ihnen wurde ausdrücklich etwas anderes
+        vereinbart. Wegen dieser Rückzahlung werden Ihnen keine Entgelte
+        berechnet.
+      </p>
+
+      <p>
+        Wurde Ihnen ein Mietgegenstand bereits übergeben, müssen Sie diesen
+        unverzüglich und spätestens binnen vierzehn Tagen ab dem Tag, an dem
+        Sie uns über den Widerruf unterrichten, vollständig zurückgeben oder
+        zurücksenden. Die Frist ist gewahrt, wenn Sie den Mietgegenstand vor
+        Ablauf der Frist zurückgeben oder absenden.
+      </p>
+
+      <p>
+        Die unmittelbaren Kosten der Rückgabe beziehungsweise Rücksendung
+        tragen Sie, sofern nicht ausdrücklich etwas anderes vereinbart wurde.
+      </p>
+
+      <p>
+        Sie müssen für einen Wertverlust nur aufkommen, wenn dieser auf einen
+        zur Prüfung von Beschaffenheit, Eigenschaften und Funktionsweise nicht
+        notwendigen Umgang mit dem Mietgegenstand zurückzuführen ist.
+      </p>
+
+      <h2>Vorzeitiger Beginn während der Widerrufsfrist</h2>
+
+      <p>
+        Soll die vereinbarte Mietleistung bereits vor Ablauf der
+        vierzehntägigen Widerrufsfrist beginnen, ist hierfür eine ausdrückliche
+        Erklärung des Verbrauchers erforderlich.
+      </p>
+
+      <p>
+        Bei einem wirksamen Widerruf nach Beginn der Leistung kann für den bis
+        zum Widerruf bereits erbrachten Teil eine angemessene Zahlung verlangt
+        werden, wenn der Verbraucher ausdrücklich verlangt hat, dass mit der
+        Leistung vor Ablauf der Widerrufsfrist begonnen wird, und zuvor
+        ordnungsgemäß über diese Folge informiert wurde.
+      </p>
+
+      <div class="legal-highlight">
+        <p>
+          <strong>Empfohlene Erklärung bei kurzfristigen Buchungen:</strong>
+        </p>
+        <p>
+          „Ich verlange ausdrücklich, dass GABO Verleihservice bereits vor
+          Ablauf der Widerrufsfrist mit der vereinbarten Leistung beginnt. Mir
+          ist bekannt, dass ich bei einem Widerruf Wertersatz für die bis dahin
+          erbrachte Leistung schulden kann.“
+        </p>
+      </div>
+
+      <h2>Möglicher gesetzlicher Ausschluss</h2>
+
+      <p>
+        Nach § 312g Abs. 2 Nr. 9 BGB besteht bei bestimmten Verträgen über
+        Dienstleistungen im Zusammenhang mit Freizeitbetätigungen kein
+        Widerrufsrecht, wenn für die Leistung ein spezifischer Termin oder
+        Zeitraum vorgesehen ist.
+      </p>
+
+      <p>
+        Ob diese Ausnahme auf einen konkreten Mietvertrag über
+        Veranstaltungstechnik anwendbar ist, hängt von dessen Inhalt und
+        rechtlicher Einordnung ab. Ein Ausschluss wird deshalb nicht pauschal
+        für jede Buchung behauptet.
+      </p>
+
+      <p>
+        Besteht im konkreten Fall kein gesetzliches Widerrufsrecht oder ist die
+        Widerrufsfrist abgelaufen, gelten für eine freiwillige Stornierung die
+        in den
+        <a href="agb.html">AGB und Mietbedingungen</a>
+        vereinbarten Regelungen.
+      </p>
+
+      <h2>Muster-Widerrufsformular</h2>
+
+      <p>
+        Wenn Sie den Vertrag widerrufen wollen, können Sie dieses Formular
+        ausfüllen und an uns übermitteln:
+      </p>
+
+      <div class="form-box">
+        <p>
+          An:
+          <strong>GABO Verleihservice Ton &amp; Licht Technik</strong><br />
+          Gabriel Bartucca<br />
+          Sandkiefernweg 48<br />
+          55262 Ingelheim am Rhein<br />
+          E-Mail:
+          <a href="mailto:gaboverleih@gmail.com">gaboverleih@gmail.com</a>
+        </p>
+
+        <p>
+          Hiermit widerrufe ich den von mir abgeschlossenen Vertrag über die
+          Anmietung der folgenden Gegenstände beziehungsweise die Erbringung
+          der folgenden Leistung:
+        </p>
+
+        <span class="form-line"></span>
+        <span class="form-line"></span>
+
+        <p>Gebucht am:</p>
+        <span class="form-line"></span>
+
+        <p>Name des Verbrauchers:</p>
+        <span class="form-line"></span>
+
+        <p>Anschrift des Verbrauchers:</p>
+        <span class="form-line"></span>
+        <span class="form-line"></span>
+
+        <p>Datum:</p>
+        <span class="form-line"></span>
+
+        <p>
+          Unterschrift des Verbrauchers
+          <em>(nur bei Mitteilung auf Papier)</em>:
+        </p>
+        <span class="form-line"></span>
+      </div>
+
+      <h2>Kontakt bei Fragen</h2>
+
+      <p>
+        Fragen zum Widerruf oder zu einer Stornierung können per Telefon,
+        E-Mail oder WhatsApp geklärt werden. Ein Widerruf sollte zur sicheren
+        Dokumentation vorzugsweise per E-Mail oder Brief erklärt werden.
+      </p>
+
+      <p class="legal-end">
+        Ende der Widerrufsbelehrung – Stand: Juli 2026
+      </p>
+
+    </article>
   </main>
 
   <footer>
     <div class="footer-inner">
       <div>© 2026 GABO Verleihservice</div>
+
       <div class="footer-links">
         <a href="impressum.html">Impressum</a>
         <a href="datenschutz.html">Datenschutz</a>
