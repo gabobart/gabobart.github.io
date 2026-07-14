@@ -3,113 +3,261 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AGB & Mietbedingungen | GABO Verleihservice</title>
-  <meta name="description" content="Allgemeine Geschäftsbedingungen von GABO Verleihservice – Partybox und Soundboks Verleih in Mainz, Wiesbaden und Frankfurt." />
-  <meta name="robots" content="noindex, follow" />
-  <link rel="icon" href="favicon.ico">
-  <link rel="canonical" href="https://gaboevent.de/agb.html" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <title>AGB &amp; Mietbedingungen | GABO Verleihservice</title>
+
+  <meta
+    name="description"
+    content="Allgemeine Geschäftsbedingungen und Mietbedingungen von GABO Verleihservice für die Vermietung von Partyboxen, Veranstaltungstechnik und Bierzeltgarnituren."
+  />
+
+  <meta name="robots" content="noindex, follow" />
+
+  <link rel="icon" href="favicon.ico" />
+  <link rel="canonical" href="https://gaboevent.de/agb.html" />
 
   <style>
     :root{
-      --bg:#f8fbff; --bg2:#edf4ff;
-      --text:#0f172a; --muted:#475569; --muted-2:#64748b;
-      --line:#dbe7f4; --white:#ffffff;
-      --blue:#3b82f6; --blue-strong:#2563eb; --blue-soft:#dbeafe;
-      --violet:#8b5cf6; --cyan:#06b6d4; --green:#25D366;
+      --bg:#f8fbff;
+      --bg2:#edf4ff;
+      --text:#0f172a;
+      --muted:#475569;
+      --muted-2:#64748b;
+      --line:#dbe7f4;
+      --white:#ffffff;
+      --blue:#3b82f6;
+      --blue-strong:#2563eb;
+      --blue-soft:#dbeafe;
+      --violet:#8b5cf6;
+      --cyan:#06b6d4;
+      --green:#25d366;
       --shadow-soft:0 10px 24px rgba(15,23,42,0.08);
-      --radius:22px; --max:900px;
+      --radius:22px;
+      --max:900px;
     }
-    *{ box-sizing:border-box; }
-    html{ scroll-behavior:smooth; }
+
+    *{
+      box-sizing:border-box;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
     body{
-      margin:0; font-family:'Nunito', sans-serif;
-      color:var(--text); line-height:1.7;
+      margin:0;
+      font-family:
+        Nunito,
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+      color:var(--text);
+      line-height:1.7;
       background:
         radial-gradient(circle at 15% 15%, rgba(59,130,246,0.16), transparent 22%),
         radial-gradient(circle at 82% 18%, rgba(139,92,246,0.14), transparent 22%),
         radial-gradient(circle at 50% 82%, rgba(6,182,212,0.10), transparent 25%),
         linear-gradient(180deg, var(--bg) 0%, var(--bg2) 48%, #f7fbff 100%);
     }
-    a{ color:inherit; text-decoration:none; }
-    .container{ width:min(calc(100% - 32px), var(--max)); margin:0 auto; }
+
+    a{
+      color:inherit;
+      text-decoration:none;
+    }
+
+    .container{
+      width:min(calc(100% - 32px), var(--max));
+      margin:0 auto;
+    }
 
     .navbar{
-      position:sticky; top:0; z-index:100;
+      position:sticky;
+      top:0;
+      z-index:100;
       background:rgba(248,251,255,0.92);
       backdrop-filter:blur(14px);
+      -webkit-backdrop-filter:blur(14px);
       border-bottom:1px solid var(--line);
       box-shadow:0 2px 16px rgba(15,23,42,0.06);
     }
+
     .navbar-inner{
-      width:min(calc(100% - 32px), 1180px); margin:0 auto;
-      display:flex; align-items:center; justify-content:space-between;
-      height:62px; gap:1rem;
+      width:min(calc(100% - 32px), 1180px);
+      height:62px;
+      margin:0 auto;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:1rem;
     }
-    .navbar-logo{ font-size:1.2rem; font-weight:900; letter-spacing:-0.5px; color:var(--text); }
-    .navbar-logo span{ color:var(--blue-strong); }
+
+    .navbar-logo{
+      font-size:1.2rem;
+      font-weight:900;
+      letter-spacing:-0.5px;
+      color:var(--text);
+    }
+
+    .navbar-logo span{
+      color:var(--blue-strong);
+    }
+
     .navbar-back{
-      display:inline-flex; align-items:center; gap:8px;
-      padding:9px 18px; border-radius:12px;
-      font-size:15px; font-weight:800;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:9px 18px;
+      border-radius:12px;
+      font-size:15px;
+      font-weight:800;
       background:linear-gradient(135deg, var(--blue), var(--blue-strong));
-      color:#fff; box-shadow:0 4px 14px rgba(59,130,246,0.28);
+      color:#fff;
+      box-shadow:0 4px 14px rgba(59,130,246,0.28);
       transition:transform 0.15s, opacity 0.15s;
     }
-    .navbar-back:hover{ transform:translateY(-1px); opacity:0.95; }
 
-    .legal-hero{ padding:50px 0 20px; text-align:center; }
+    .navbar-back:hover{
+      transform:translateY(-1px);
+      opacity:0.95;
+    }
+
+    .navbar-back:focus-visible,
+    .footer-links a:focus-visible,
+    .legal-card a:focus-visible{
+      outline:3px solid rgba(37,99,235,0.35);
+      outline-offset:3px;
+      border-radius:6px;
+    }
+
+    .legal-hero{
+      padding:50px 0 20px;
+      text-align:center;
+    }
+
     .legal-hero h1{
       margin:0 0 8px;
       font-size:clamp(34px,5vw,54px);
-      font-weight:900; letter-spacing:-1px; line-height:1.1;
+      font-weight:900;
+      letter-spacing:-1px;
+      line-height:1.1;
     }
-    .legal-hero p{ margin:0; color:var(--muted); font-size:17px; }
+
+    .legal-hero p{
+      margin:0;
+      color:var(--muted);
+      font-size:17px;
+    }
 
     .legal-card{
-      background:linear-gradient(180deg, rgba(255,255,255,0.94), rgba(255,255,255,0.88));
+      position:relative;
+      overflow:hidden;
+      margin:30px 0 40px;
+      padding:36px 40px;
+      background:linear-gradient(
+        180deg,
+        rgba(255,255,255,0.94),
+        rgba(255,255,255,0.88)
+      );
       border:1px solid var(--line);
       border-radius:var(--radius);
-      padding:36px 40px;
       box-shadow:var(--shadow-soft);
-      margin:30px 0 40px;
-      position:relative; overflow:hidden;
     }
+
     .legal-card::before{
-      content:""; position:absolute; inset:0 auto auto 0;
-      width:100%; height:4px;
-      background:linear-gradient(90deg, var(--blue), var(--violet), var(--cyan));
+      content:"";
+      position:absolute;
+      inset:0 auto auto 0;
+      width:100%;
+      height:4px;
+      background:linear-gradient(
+        90deg,
+        var(--blue),
+        var(--violet),
+        var(--cyan)
+      );
     }
 
     .legal-card h2{
       margin:32px 0 12px;
-      font-size:22px; font-weight:800;
-      color:#0f172a; letter-spacing:-0.3px;
+      font-size:22px;
+      font-weight:800;
+      color:#0f172a;
+      letter-spacing:-0.3px;
     }
-    .legal-card h2:first-of-type{ margin-top:0; }
-    .legal-card p{ margin:0 0 14px; color:#334155; font-size:16px; }
-    .legal-card ul{ margin:0 0 14px; padding-left:20px; color:#334155; font-size:16px; }
-    .legal-card ul li{ margin-bottom:6px; }
-    .legal-card strong{ color:#0f172a; font-weight:800; }
-    .legal-card a{ color:var(--blue-strong); font-weight:700; }
-    .legal-card a:hover{ text-decoration:underline; }
+
+    .legal-card h2:first-of-type{
+      margin-top:0;
+    }
+
+    .legal-card p{
+      margin:0 0 14px;
+      color:#334155;
+      font-size:16px;
+    }
+
+    .legal-card ul{
+      margin:0 0 14px;
+      padding-left:20px;
+      color:#334155;
+      font-size:16px;
+    }
+
+    .legal-card ul li{
+      margin-bottom:6px;
+    }
+
+    .legal-card strong{
+      color:#0f172a;
+      font-weight:800;
+    }
+
+    .legal-card a{
+      color:var(--blue-strong);
+      font-weight:700;
+      text-decoration:underline;
+      text-decoration-thickness:1px;
+      text-underline-offset:3px;
+    }
+
+    .legal-card a:hover{
+      text-decoration-thickness:2px;
+    }
 
     .legal-intro{
+      margin:0 0 24px;
+      padding:18px 22px;
       background:rgba(219,234,254,0.4);
       border:1px solid rgba(59,130,246,0.18);
       border-radius:14px;
-      padding:18px 22px;
-      margin:0 0 24px;
     }
-    .legal-intro p{ margin:4px 0; }
+
+    .legal-intro p{
+      margin:4px 0;
+    }
+
+    .legal-note{
+      margin:20px 0;
+      padding:16px 18px;
+      background:rgba(239,246,255,0.8);
+      border-left:4px solid var(--blue);
+      border-radius:10px;
+    }
+
+    .legal-note p{
+      margin:0;
+    }
 
     .legal-update{
-      margin-top:30px; padding-top:18px;
+      margin-top:30px;
+      padding-top:18px;
       border-top:1px dashed #d8e2ee;
-      color:var(--muted-2); font-size:14px;
+      color:var(--muted-2);
+      font-size:14px;
       text-align:center;
     }
 
@@ -118,134 +266,460 @@
       border-top:1px solid var(--line);
       background:rgba(255,255,255,0.76);
       backdrop-filter:blur(8px);
+      -webkit-backdrop-filter:blur(8px);
     }
+
     .footer-inner{
-      width:min(calc(100% - 32px), 1180px); margin:0 auto;
-      display:flex; flex-direction:column; align-items:center; text-align:center;
-      gap:12px; padding:22px 0 34px; color:var(--muted); font-size:14px;
+      width:min(calc(100% - 32px), 1180px);
+      margin:0 auto;
+      padding:22px 0 34px;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      gap:12px;
+      color:var(--muted);
+      font-size:14px;
+      text-align:center;
     }
-    .footer-links{ display:flex; gap:14px; flex-wrap:wrap; justify-content:center; }
-    .footer-links a{ color:#2563eb; font-weight:700; }
+
+    .footer-links{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:14px;
+    }
+
+    .footer-links a{
+      color:#2563eb;
+      font-weight:700;
+    }
 
     @media(max-width:720px){
-      .legal-card{ padding:24px 22px; }
-      .legal-hero h1{ font-size:34px; }
+      .navbar-inner{
+        height:auto;
+        min-height:62px;
+        padding:10px 0;
+      }
+
+      .navbar-logo{
+        font-size:1rem;
+      }
+
+      .navbar-back{
+        padding:8px 12px;
+        font-size:13px;
+      }
+
+      .legal-card{
+        padding:24px 22px;
+      }
+
+      .legal-hero{
+        padding-top:38px;
+      }
+
+      .legal-hero h1{
+        font-size:34px;
+      }
+    }
+
+    @media(max-width:440px){
+      .navbar-logo span{
+        display:none;
+      }
     }
   </style>
 </head>
+
 <body>
 
-  <nav class="navbar">
+  <nav class="navbar" aria-label="Hauptnavigation">
     <div class="navbar-inner">
-      <a href="index.html" class="navbar-logo">GABO <span>Verleihservice</span></a>
-      <a href="index.html" class="navbar-back">← Zurück zur Startseite</a>
+      <a href="index.html" class="navbar-logo">
+        GABO <span>Verleihservice</span>
+      </a>
+
+      <a href="index.html" class="navbar-back">
+        ← Zurück zur Startseite
+      </a>
     </div>
   </nav>
 
   <header class="legal-hero">
     <div class="container">
       <h1>AGB &amp; Mietbedingungen</h1>
-      <p>Allgemeine Geschäftsbedingungen</p>
+      <p>Allgemeine Geschäftsbedingungen für die Vermietung</p>
     </div>
   </header>
 
   <main class="container">
-    <div class="legal-card">
+    <article class="legal-card">
 
       <div class="legal-intro">
         <p><strong>GABO Verleihservice Ton &amp; Licht Technik</strong></p>
         <p>Inhaber: Gabriel Bartucca</p>
         <p>Sandkiefernweg 48, 55262 Ingelheim am Rhein</p>
-        <p>Telefon: 0176 29007917 · E-Mail: gaboverleih@gmail.com</p>
-        <p>– nachfolgend „Vermieter" –</p>
+        <p>
+          Telefon:
+          <a href="tel:+4917629007917">0176 29007917</a>
+          ·
+          E-Mail:
+          <a href="mailto:gaboverleih@gmail.com">gaboverleih@gmail.com</a>
+        </p>
+        <p>– nachfolgend „Vermieter“ –</p>
       </div>
 
       <h2>§ 1 Geltungsbereich</h2>
-      <p>Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Mietverträge zwischen dem Vermieter und dem Mieter über die Vermietung von Veranstaltungstechnik (Soundboks, Partylicht, Nebelmaschine, Seifenblasenmaschine, Bierzeltgarnituren und ggf. weiteres Equipment).</p>
-      <p>Abweichende Bedingungen des Mieters werden nicht anerkannt, es sei denn, der Vermieter stimmt ihrer Geltung ausdrücklich schriftlich zu.</p>
 
-      <h2>§ 2 Vertragsschluss</h2>
-      <p>Der Mietvertrag kommt durch eine Anfrage des Mieters (per WhatsApp, Telefon oder E-Mail) und die anschließende Bestätigung durch den Vermieter zustande.</p>
-      <p>Mit der Bestätigung des Termins durch den Vermieter erklärt sich der Mieter mit diesen AGB einverstanden.</p>
+      <p>
+        Diese Allgemeinen Geschäftsbedingungen gelten für alle Mietverträge zwischen dem Vermieter und seinen Kunden über die Vermietung von Veranstaltungstechnik, Partyboxen, Partylichtern, Nebelmaschinen, Seifenblasenmaschinen, Bierzeltgarnituren sowie sonstigem Veranstaltungsequipment.
+      </p>
 
-      <h2>§ 3 Mindestalter / Vertragspartner</h2>
-      <p>Der Mieter muss <strong>mindestens 18 Jahre alt</strong> und voll geschäftsfähig sein. Der Vermieter ist berechtigt, einen Ausweis bei der Übergabe zu verlangen. Bei Falschangaben oder fehlendem Nachweis kann die Übergabe verweigert werden.</p>
+      <p>
+        Kunde beziehungsweise Mieter kann sowohl ein Verbraucher als auch ein Unternehmer sein. Verbraucher ist jede natürliche Person, die den Vertrag zu Zwecken abschließt, die überwiegend weder ihrer gewerblichen noch ihrer selbstständigen beruflichen Tätigkeit zugerechnet werden können.
+      </p>
 
-      <h2>§ 4 Mietgegenstand</h2>
-      <p>Vermietet werden gebrauchte Geräte aus dem Bereich Veranstaltungstechnik. Gebrauchsspuren am Mietgegenstand sind möglich und stellen keinen Mangel dar.</p>
-      <p>Der konkrete Mietgegenstand (z. B. Modellgeneration der Soundboks, Farbe der Front) richtet sich nach der Verfügbarkeit zum Mietzeitraum.</p>
+      <p>
+        Abweichende Bedingungen des Mieters gelten nur, wenn der Vermieter ihrer Geltung ausdrücklich zugestimmt hat. Individuelle Vereinbarungen zwischen Vermieter und Mieter haben Vorrang vor diesen AGB.
+      </p>
 
-      <h2>§ 5 Mietpreis &amp; Zahlung</h2>
-      <p>Die jeweils gültigen Mietpreise ergeben sich aus den Angaben auf der Website oder einem individuellen Angebot.</p>
-      <p>Die Zahlung erfolgt grundsätzlich in <strong>bar bei Übergabe</strong> des Mietgegenstands. Andere Zahlungsweisen sind nur nach vorheriger Absprache zulässig.</p>
-      <p>Gemäß § 19 UStG wird keine Umsatzsteuer berechnet (Kleinunternehmerregelung).</p>
+      <h2>§ 2 Angebot und Vertragsschluss</h2>
+
+      <p>
+        Anfragen des Mieters über WhatsApp, Telefon, E-Mail oder ein Kontaktformular sind zunächst unverbindlich.
+      </p>
+
+      <p>
+        Ein verbindlicher Mietvertrag kommt zustande, sobald der Vermieter die Buchung unter Angabe der wesentlichen Vertragsdaten ausdrücklich bestätigt und der Mieter die Buchung annimmt. Maßgebliche Vertragsdaten sind insbesondere Mietgegenstand, Mietzeitraum, Mietpreis, Kaution sowie gegebenenfalls Liefer- und Abholkosten.
+      </p>
+
+      <p>
+        Der Mieter erhält vor oder spätestens bei Abschluss des Mietvertrags die Möglichkeit, diese AGB einzusehen und in speicherbarer Form abzurufen. Mit seiner Annahme bestätigt der Mieter, dass ihm die AGB vor Vertragsschluss zugänglich gemacht wurden und er mit ihrer Geltung einverstanden ist.
+      </p>
+
+      <div class="legal-note">
+        <p><strong>Hinweis:</strong> Die bloße Reservierungsanfrage führt noch nicht zu einer verbindlichen Buchung.</p>
+      </div>
+
+      <h2>§ 3 Mindestalter und Vertragspartner</h2>
+
+      <p>
+        Der Mieter muss mindestens 18 Jahre alt und voll geschäftsfähig sein.
+      </p>
+
+      <p>
+        Der Vermieter ist berechtigt, bei der Übergabe einen gültigen amtlichen Lichtbildausweis zur Überprüfung der Identität und des Alters vorzeigen zu lassen. Eine Kopie oder Speicherung von Ausweisdaten erfolgt nur, soweit dies erforderlich und datenschutzrechtlich zulässig ist.
+      </p>
+
+      <p>
+        Kann der Mieter seine Identität oder Volljährigkeit nicht nachweisen oder hat er bei der Buchung wesentliche Falschangaben gemacht, darf der Vermieter die Übergabe verweigern.
+      </p>
+
+      <h2>§ 4 Mietgegenstand und Zustand</h2>
+
+      <p>
+        Art und Umfang der vermieteten Gegenstände ergeben sich aus der jeweiligen Buchungsbestätigung oder dem Mietvertrag.
+      </p>
+
+      <p>
+        Vermietet werden teilweise gebrauchte Gegenstände. Normale Gebrauchsspuren, die die ordnungsgemäße Nutzung nicht beeinträchtigen, stellen keinen Mangel dar.
+      </p>
+
+      <p>
+        Sofern keine bestimmte Ausführung ausdrücklich vereinbart wurde, kann der Vermieter ein technisch und funktional vergleichbares Modell bereitstellen. Dies kann beispielsweise die Modellgeneration oder die Farbe einer Lautsprecherfront betreffen.
+      </p>
+
+      <h2>§ 5 Mietpreis und Zahlung</h2>
+
+      <p>
+        Es gelten die bei Vertragsschluss ausdrücklich vereinbarten Mietpreise. Diese ergeben sich aus der Website, einem individuellen Angebot, der Buchungsbestätigung oder dem Mietvertrag.
+      </p>
+
+      <p>
+        Alle gegenüber Verbrauchern genannten Preise sind Endpreise. Aufgrund der Kleinunternehmerregelung gemäß § 19 UStG wird keine Umsatzsteuer ausgewiesen.
+      </p>
+
+      <p>
+        Kautionen sind nicht Bestandteil des Mietpreises. Liefer-, Abhol- oder sonstige Zusatzkosten werden dem Mieter vor Vertragsschluss mitgeteilt und ausdrücklich vereinbart.
+      </p>
+
+      <p>
+        Die Zahlung erfolgt grundsätzlich in bar bei der Übergabe. Andere Zahlungsarten sind nur nach vorheriger Vereinbarung möglich.
+      </p>
 
       <h2>§ 6 Kaution</h2>
-      <p>Vor Übergabe des Mietgegenstands ist eine <strong>Kaution in bar</strong> zu hinterlegen. Die Höhe der Kaution richtet sich nach dem jeweiligen Mietgegenstand bzw. Paket und wird vorab kommuniziert.</p>
-      <p>Die Kaution wird nach ordnungsgemäßer und vollständiger Rückgabe in unbeschädigtem Zustand vollständig zurückerstattet. Schäden, fehlendes Zubehör oder erforderliche Reinigungskosten werden mit der Kaution verrechnet.</p>
 
-      <h2>§ 7 Mietdauer</h2>
-      <p>Die Mietdauer wird individuell vereinbart und in der Bestätigung festgehalten. Eine Verlängerung ist nur nach vorheriger Absprache und sofern verfügbar möglich.</p>
-      <p>Bei verspäteter Rückgabe ohne Absprache wird je angefangenem Tag die Tagesmiete in voller Höhe (Wochenendtarif) zusätzlich berechnet.</p>
+      <p>
+        Der Vermieter kann vor der Übergabe eine Kaution verlangen. Die Höhe richtet sich nach dem Mietgegenstand beziehungsweise dem gebuchten Paket und wird dem Mieter vor Vertragsschluss mitgeteilt.
+      </p>
 
-      <h2>§ 8 Abholung &amp; Rückgabe</h2>
-      <p>Standardmäßig erfolgt die Abholung und Rückgabe am Sitz des Vermieters in Ingelheim am Rhein zu den vereinbarten Zeiten.</p>
-      <p>Bei Übergabe wird der Zustand des Mietgegenstands gemeinsam geprüft. Spätere Reklamationen über zum Zeitpunkt der Übergabe erkennbare Mängel sind ausgeschlossen.</p>
+      <p>
+        Die Kaution wird nach vollständiger und vertragsgemäßer Rückgabe zurückgezahlt, sofern keine fälligen Ansprüche des Vermieters aus dem Mietverhältnis bestehen.
+      </p>
 
-      <h2>§ 9 Lieferung</h2>
-      <p>Eine Lieferung und Abholung durch den Vermieter ist nach Absprache gegen einen vereinbarten Aufpreis möglich. Der Mieter ist verpflichtet, am vereinbarten Liefertermin anwesend zu sein und einen geeigneten Stell- bzw. Übergabeort bereitzustellen.</p>
+      <p>
+        Bei festgestellten Schäden, fehlenden Gegenständen, fehlendem Zubehör oder außergewöhnlichem Reinigungsbedarf darf der Vermieter einen angemessenen Betrag bis zur Klärung und Abrechnung zurückbehalten.
+      </p>
 
-      <h2>§ 10 Stornierung</h2>
-      <p>Der Mieter kann den Mietvertrag bis zum vereinbarten Mietbeginn stornieren. Es gelten folgende Stornogebühren bezogen auf den Gesamtmietpreis:</p>
+      <p>
+        Eine Verrechnung mit der Kaution entbindet den Mieter nicht von einer weitergehenden Ersatzpflicht, sofern der nachgewiesene Schaden die Kaution übersteigt und der Mieter hierfür nach den gesetzlichen Vorschriften verantwortlich ist.
+      </p>
+
+      <h2>§ 7 Mietdauer und verspätete Rückgabe</h2>
+
+      <p>
+        Beginn und Ende der Mietdauer sowie die vereinbarten Übergabe- und Rückgabezeiten ergeben sich aus der Buchungsbestätigung oder dem Mietvertrag.
+      </p>
+
+      <p>
+        Eine Verlängerung ist nur mit vorheriger Zustimmung des Vermieters möglich. Der Mieter soll eine gewünschte Verlängerung so früh wie möglich mitteilen.
+      </p>
+
+      <p>
+        Gibt der Mieter den Mietgegenstand schuldhaft verspätet zurück, kann der Vermieter für die Dauer der Vorenthaltung eine angemessene Nutzungsentschädigung verlangen. Weitergehende, nachweislich entstandene Schäden bleiben unberührt.
+      </p>
+
+      <p>
+        Dem Mieter bleibt der Nachweis gestattet, dass kein oder ein wesentlich geringerer Schaden entstanden ist.
+      </p>
+
+      <h2>§ 8 Abholung, Übergabe und Rückgabe</h2>
+
+      <p>
+        Soweit nichts anderes vereinbart wurde, erfolgen Abholung und Rückgabe am Sitz des Vermieters in Ingelheim am Rhein zu den vereinbarten Zeiten.
+      </p>
+
+      <p>
+        Der Zustand, die Funktionsfähigkeit und die Vollständigkeit der Mietgegenstände können bei der Übergabe gemeinsam überprüft und in einem Übergabeprotokoll oder Mietvertrag festgehalten werden.
+      </p>
+
+      <p>
+        Offensichtliche Mängel oder fehlendes Zubehör soll der Mieter möglichst bei der Übergabe mitteilen. Mängel, die erst später erkennbar werden, sind dem Vermieter unverzüglich nach ihrer Entdeckung mitzuteilen.
+      </p>
+
+      <p>
+        Bei der Rückgabe müssen sämtliche Mietgegenstände einschließlich Zubehör vollständig, in einem ordentlichen Zustand und in der vereinbarten Verpackung zurückgegeben werden.
+      </p>
+
+      <h2>§ 9 Lieferung und Abholung durch den Vermieter</h2>
+
+      <p>
+        Eine Lieferung und spätere Abholung durch den Vermieter ist nach vorheriger Vereinbarung und gegen den vereinbarten Aufpreis möglich.
+      </p>
+
+      <p>
+        Der Mieter muss sicherstellen, dass am vereinbarten Ort und zur vereinbarten Zeit eine empfangsberechtigte Person anwesend ist und ein sicher erreichbarer Übergabeort zur Verfügung steht.
+      </p>
+
+      <p>
+        Erschwerte Zugänge, längere Tragewege, fehlende Parkmöglichkeiten, Treppen oder sonstige besondere Umstände sind dem Vermieter vor Vertragsschluss mitzuteilen.
+      </p>
+
+      <p>
+        Verzögerungen aufgrund nicht mitgeteilter örtlicher Hindernisse oder einer vom Mieter zu vertretenden Abwesenheit können dem Mieter nur in Höhe des hierdurch tatsächlich entstandenen, angemessenen Mehraufwands berechnet werden.
+      </p>
+
+      <h2>§ 10 Stornierung durch den Mieter</h2>
+
+      <p>
+        Soweit kein gesetzliches Widerrufsrecht besteht oder die Widerrufsfrist bereits abgelaufen ist, kann der Mieter die Buchung vor dem vereinbarten Mietbeginn stornieren.
+      </p>
+
+      <p>
+        Bei einer Stornierung kann der Vermieter unter Berücksichtigung gewöhnlich ersparter Aufwendungen und einer möglichen anderweitigen Vermietung folgende pauschalierte Entschädigung verlangen:
+      </p>
+
       <ul>
-        <li>Bis <strong>7 Tage</strong> (eine Woche) vor Mietbeginn: <strong>kostenlos</strong></li>
-        <li><strong>6 bis 2 Tage</strong> vor Mietbeginn: <strong>50 %</strong> des Mietpreises</li>
-        <li>Weniger als <strong>48 Stunden</strong> vor Mietbeginn oder bei Nichterscheinen: <strong>100 %</strong> des Mietpreises</li>
+        <li>Bis einschließlich <strong>7 Kalendertage</strong> vor Mietbeginn: <strong>kostenlos</strong></li>
+        <li>Ab <strong>6 Kalendertagen bis 48 Stunden</strong> vor Mietbeginn: <strong>50 % des vereinbarten Mietpreises</strong></li>
+        <li>Weniger als <strong>48 Stunden</strong> vor Mietbeginn oder bei Nichterscheinen: <strong>100 % des vereinbarten Mietpreises</strong></li>
       </ul>
-      <p>Die Stornierung muss schriftlich (z. B. per WhatsApp, E-Mail) erfolgen. Maßgeblich ist der Zeitpunkt des Eingangs beim Vermieter.</p>
+
+      <p>
+        Dem Mieter bleibt ausdrücklich der Nachweis gestattet, dass dem Vermieter kein Schaden oder ein wesentlich geringerer Schaden entstanden ist.
+      </p>
+
+      <p>
+        Dem Vermieter bleibt der Nachweis eines höheren, tatsächlich entstandenen Schadens vorbehalten. Bereits durch eine anderweitige Vermietung erzielte Einnahmen und ersparte Aufwendungen werden angerechnet.
+      </p>
+
+      <p>
+        Die Stornierung muss in Textform, beispielsweise per WhatsApp oder E-Mail, erfolgen. Maßgeblich ist der Zeitpunkt des Zugangs beim Vermieter.
+      </p>
 
       <h2>§ 11 Pflichten des Mieters</h2>
-      <p>Der Mieter verpflichtet sich:</p>
+
+      <p>Der Mieter verpflichtet sich insbesondere:</p>
+
       <ul>
-        <li>den Mietgegenstand pfleglich und ausschließlich gemäß seiner Bestimmung zu nutzen,</li>
-        <li>die Bedienungshinweise des Vermieters zu beachten,</li>
-        <li>den Mietgegenstand vor Diebstahl, Beschädigung und übermäßiger Witterung (Regen, Hitze) zu schützen,</li>
-        <li>den Mietgegenstand nicht an Dritte weiterzuvermieten oder zu überlassen,</li>
-        <li>den Mietgegenstand nicht selbst zu reparieren oder zu öffnen,</li>
-        <li>im Schadens- oder Diebstahlsfall den Vermieter unverzüglich zu informieren.</li>
+        <li>die Mietgegenstände sorgfältig und ausschließlich bestimmungsgemäß zu verwenden,</li>
+        <li>die Bedienungs- und Sicherheitshinweise des Vermieters und des Herstellers zu beachten,</li>
+        <li>die Mietgegenstände vor Regen, Feuchtigkeit, starker Hitze, Frost, Verschmutzung, Umkippen, Diebstahl und unbefugtem Zugriff zu schützen,</li>
+        <li>erforderliche Stromanschlüsse und Verlängerungsleitungen sicher und entsprechend ihrer zulässigen Belastung zu verwenden,</li>
+        <li>Kabel so zu verlegen, dass möglichst keine Stolper- oder Unfallgefahren entstehen,</li>
+        <li>die Mietgegenstände nicht ohne Zustimmung weiterzuvermieten,</li>
+        <li>die Mietgegenstände nicht zu öffnen, umzubauen oder selbst zu reparieren,</li>
+        <li>Störungen, Schäden, Verlust oder Diebstahl unverzüglich dem Vermieter mitzuteilen,</li>
+        <li>dafür zu sorgen, dass nur geeignete und eingewiesene Personen die Geräte bedienen.</li>
       </ul>
 
-      <h2>§ 12 Schäden, Verlust &amp; Diebstahl</h2>
-      <p>Der Mieter haftet ab Übergabe bis zur Rückgabe für sämtliche Schäden am Mietgegenstand sowie für dessen Verlust oder Diebstahl, unabhängig vom Verschulden – ausgenommen sind normale Gebrauchsspuren bei bestimmungsgemäßer Nutzung.</p>
-      <p>Im Schadensfall ist der Mieter zum Ersatz der Reparaturkosten oder, bei Totalschaden oder Verlust, zum Ersatz des <strong>aktuellen Zeitwertes</strong> bzw. Wiederbeschaffungswertes verpflichtet.</p>
-      <p>Während der Mietdauer ausgefallene Mieteinnahmen wegen Reparatur können dem Mieter zusätzlich in Rechnung gestellt werden.</p>
+      <h2>§ 12 Besondere Sicherheitshinweise</h2>
 
-      <h2>§ 13 Haftung des Vermieters</h2>
-      <p>Der Vermieter haftet uneingeschränkt für Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit sowie für Schäden, die auf einer vorsätzlichen oder grob fahrlässigen Pflichtverletzung beruhen.</p>
-      <p>Bei leicht fahrlässiger Verletzung wesentlicher Vertragspflichten ist die Haftung des Vermieters auf den vertragstypischen, vorhersehbaren Schaden begrenzt.</p>
-      <p>Im Übrigen ist die Haftung des Vermieters – insbesondere für mittelbare Schäden, Folgeschäden oder entgangenen Gewinn – ausgeschlossen.</p>
-      <p>Der Vermieter haftet nicht für Schäden, die durch unsachgemäße Bedienung, Eigenmanipulation oder Nichtbeachtung der Hinweise durch den Mieter entstehen.</p>
+      <p>
+        Nebelmaschinen dürfen nur verwendet werden, wenn der Einsatz am Veranstaltungsort zulässig ist. Der Mieter muss insbesondere klären, ob Rauchmelder, Brandmeldeanlagen oder sonstige Sicherheitseinrichtungen ausgelöst oder beeinträchtigt werden können. Vorgaben des Veranstaltungsorts und der zuständigen Stellen sind einzuhalten.
+      </p>
 
-      <h2>§ 14 Defekt während der Mietdauer</h2>
-      <p>Sollte der Mietgegenstand während der Mietdauer ohne Verschulden des Mieters einen technischen Defekt aufweisen, ist der Mieter verpflichtet, den Vermieter unverzüglich zu informieren. Der Vermieter wird bemüht sein, eine schnelle Lösung anzubieten (z. B. Ersatzgerät, sofern verfügbar).</p>
-      <p>Ein darüberhinausgehender Schadensersatzanspruch des Mieters – insbesondere wegen ausfallender Veranstaltung – ist im Rahmen des § 13 begrenzt bzw. ausgeschlossen.</p>
+      <p>
+        Bei Seifenblasenmaschinen ist wegen möglicher Flüssigkeitsreste und Rutschgefahr auf einen geeigneten Standort sowie einen empfindlichen Boden schützende Maßnahmen zu achten.
+      </p>
 
-      <h2>§ 15 Datenschutz</h2>
-      <p>Die Verarbeitung personenbezogener Daten erfolgt im Rahmen der gesetzlichen Bestimmungen. Einzelheiten ergeben sich aus der <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+      <p>
+        Bierzeltgarnituren sind vollständig aufzuklappen, ordnungsgemäß zu verriegeln und auf einem tragfähigen, möglichst ebenen Untergrund aufzustellen. Sie dürfen nicht zweckwidrig verwendet oder übermäßig belastet werden.
+      </p>
 
-      <h2>§ 16 Schlussbestimmungen</h2>
-      <p>Es gilt das Recht der Bundesrepublik Deutschland unter Ausschluss des UN-Kaufrechts.</p>
-      <p>Erfüllungsort ist der Sitz des Vermieters in Ingelheim am Rhein.</p>
-      <p>Änderungen und Ergänzungen des Mietvertrags bedürfen der Textform (z. B. WhatsApp, E-Mail).</p>
-      <p>Sollten einzelne Bestimmungen dieser AGB unwirksam sein oder werden, so bleibt die Wirksamkeit der übrigen Bestimmungen davon unberührt. Anstelle der unwirksamen Bestimmung gilt diejenige wirksame Regelung als vereinbart, die dem Zweck der unwirksamen Bestimmung am nächsten kommt.</p>
+      <p>
+        Lautsprecher und Stative sind standsicher aufzustellen. Die Lautstärke ist so zu wählen, dass gesetzliche Vorgaben, Nachbarschaftsrechte und Vorgaben des Veranstaltungsorts eingehalten werden.
+      </p>
 
-      <p class="legal-update">Stand: Mai 2026</p>
-    </div>
+      <h2>§ 13 Schäden, Verlust und Diebstahl</h2>
+
+      <p>
+        Der Mieter haftet nach den gesetzlichen Vorschriften für Schäden, Verlust oder Diebstahl, soweit er, seine Erfüllungsgehilfen, Gäste oder sonstige Personen, denen er den Zugriff auf die Mietgegenstände ermöglicht hat, diese vorsätzlich oder fahrlässig verursacht haben.
+      </p>
+
+      <p>
+        Normale Gebrauchsspuren, die durch einen vertragsgemäßen Gebrauch entstehen, gelten nicht als ersatzpflichtiger Schaden.
+      </p>
+
+      <p>
+        Im Schadensfall kann der Vermieter die erforderlichen und nachgewiesenen Reparaturkosten verlangen. Ist eine Reparatur technisch oder wirtschaftlich nicht sinnvoll oder liegt ein Verlust vor, richtet sich der Ersatzanspruch nach dem nachgewiesenen Wert des Mietgegenstands zum Zeitpunkt des Schadenseintritts beziehungsweise nach den gesetzlichen Vorschriften.
+      </p>
+
+      <p>
+        Ein nachweislich entstandener Mietausfallschaden kann verlangt werden, soweit der Mieter das schädigende Ereignis zu vertreten hat. Einnahmen aus einer möglichen Ersatzvermietung und ersparte Aufwendungen werden angerechnet.
+      </p>
+
+      <p>
+        Dem Mieter bleibt der Nachweis gestattet, dass kein oder ein wesentlich geringerer Schaden entstanden ist.
+      </p>
+
+      <p>
+        Bei Diebstahl oder einem sonstigen strafrechtlich relevanten Verlust ist der Mieter verpflichtet, unverzüglich die Polizei zu verständigen und dem Vermieter das Aktenzeichen beziehungsweise den Nachweis der Anzeige mitzuteilen.
+      </p>
+
+      <h2>§ 14 Haftung des Vermieters</h2>
+
+      <p>
+        Der Vermieter haftet unbeschränkt bei Vorsatz und grober Fahrlässigkeit sowie bei schuldhafter Verletzung des Lebens, des Körpers oder der Gesundheit.
+      </p>
+
+      <p>
+        Der Vermieter haftet außerdem nach den zwingenden gesetzlichen Vorschriften, insbesondere nach dem Produkthaftungsgesetz und im Umfang einer ausdrücklich übernommenen Garantie.
+      </p>
+
+      <p>
+        Bei leicht fahrlässiger Verletzung einer wesentlichen Vertragspflicht ist die Haftung auf den vertragstypischen, vorhersehbaren Schaden begrenzt. Wesentliche Vertragspflichten sind Pflichten, deren Erfüllung die ordnungsgemäße Durchführung des Vertrags überhaupt erst ermöglicht und auf deren Einhaltung der Mieter regelmäßig vertrauen darf.
+      </p>
+
+      <p>
+        Im Übrigen ist die Haftung des Vermieters bei leichter Fahrlässigkeit ausgeschlossen.
+      </p>
+
+      <p>
+        Die vorstehenden Haftungsbeschränkungen gelten entsprechend für gesetzliche Vertreter und Erfüllungsgehilfen des Vermieters.
+      </p>
+
+      <p>
+        Der Vermieter haftet nicht für Schäden, die auf einer unsachgemäßen Bedienung, eigenmächtigen Veränderung, zweckwidrigen Nutzung oder Nichtbeachtung von Bedienungs- und Sicherheitshinweisen durch den Mieter beruhen, soweit der Vermieter diese Umstände nicht selbst zu vertreten hat.
+      </p>
+
+      <h2>§ 15 Technischer Defekt und Leistungsstörungen</h2>
+
+      <p>
+        Tritt während der Mietdauer ein technischer Defekt auf, muss der Mieter den Betrieb des betroffenen Geräts einstellen, sofern ein sicherer Weiterbetrieb nicht gewährleistet ist, und den Vermieter unverzüglich informieren.
+      </p>
+
+      <p>
+        Hat der Mieter den Defekt nicht zu vertreten, wird der Vermieter im Rahmen des Zumutbaren versuchen, den Fehler zu beheben oder ein vergleichbares Ersatzgerät bereitzustellen, sofern ein solches verfügbar ist.
+      </p>
+
+      <p>
+        Kann der Mietgegenstand aufgrund eines bereits bei Übergabe vorhandenen oder vom Vermieter zu vertretenden Mangels nicht oder nur eingeschränkt genutzt werden, bleiben die gesetzlichen Rechte des Mieters unberührt.
+      </p>
+
+      <p>
+        Ansprüche auf Ersatz weitergehender Schäden richten sich nach § 14 dieser AGB und den gesetzlichen Vorschriften.
+      </p>
+
+      <h2>§ 16 Absage oder Nichterfüllung durch den Vermieter</h2>
+
+      <p>
+        Kann der Vermieter die vereinbarte Leistung aufgrund eines von ihm nicht zu vertretenden Umstands nicht erbringen, wird er den Mieter unverzüglich informieren.
+      </p>
+
+      <p>
+        Bereits geleistete Zahlungen für nicht erbrachte Leistungen werden unverzüglich zurückerstattet.
+      </p>
+
+      <p>
+        Gesetzliche Ansprüche des Mieters bleiben unberührt. Für Schadensersatzansprüche gilt § 14 dieser AGB.
+      </p>
+
+      <h2>§ 17 Datenschutz</h2>
+
+      <p>
+        Personenbezogene Daten werden nur verarbeitet, soweit dies zur Vertragsanbahnung, Vertragsdurchführung, Zahlungsabwicklung, Erfüllung gesetzlicher Pflichten oder zur Wahrung berechtigter Interessen erforderlich ist.
+      </p>
+
+      <p>
+        Weitere Informationen, insbesondere zu Speicherdauer, Empfängern und Betroffenenrechten, enthält die <a href="datenschutz.html">Datenschutzerklärung</a>.
+      </p>
+
+      <h2>§ 18 Widerrufsrecht für Verbraucher</h2>
+
+      <p>
+        Verbrauchern kann bei einem Fernabsatzvertrag oder einem außerhalb von Geschäftsräumen geschlossenen Vertrag grundsätzlich ein gesetzliches Widerrufsrecht zustehen.
+      </p>
+
+      <p>
+        Ob ein Widerrufsrecht besteht oder gesetzlich ausgeschlossen ist, hängt von der konkreten Art des Vertrags und den gesetzlichen Voraussetzungen ab. Einzelheiten enthält die gesonderte <a href="widerruf.html">Widerrufsbelehrung</a>.
+      </p>
+
+      <p>
+        Die in § 10 geregelte vertragliche Stornierungsmöglichkeit besteht unabhängig davon, soweit dort nichts Abweichendes geregelt ist.
+      </p>
+
+      <h2>§ 19 Schlussbestimmungen</h2>
+
+      <p>
+        Es gilt das Recht der Bundesrepublik Deutschland. Bei Verbrauchern gilt diese Rechtswahl nur, soweit ihnen dadurch nicht der Schutz zwingender Vorschriften des Staates ihres gewöhnlichen Aufenthalts entzogen wird.
+      </p>
+
+      <p>
+        Das UN-Kaufrecht findet keine Anwendung.
+      </p>
+
+      <p>
+        Änderungen und Ergänzungen des Mietvertrags können in Textform, beispielsweise per E-Mail oder WhatsApp, vereinbart werden. Individuelle Vereinbarungen bleiben unabhängig von ihrer Form vorrangig.
+      </p>
+
+      <p>
+        Ist der Mieter Kaufmann, eine juristische Person des öffentlichen Rechts oder ein öffentlich-rechtliches Sondervermögen, ist Gerichtsstand für alle Streitigkeiten aus dem Vertragsverhältnis der Sitz des Vermieters. Gegenüber Verbrauchern gelten die gesetzlichen Gerichtsstände.
+      </p>
+
+      <p>
+        Sollten einzelne Bestimmungen dieser AGB ganz oder teilweise unwirksam sein oder nicht Vertragsbestandteil werden, bleibt der Vertrag im Übrigen wirksam. An die Stelle der unwirksamen oder nicht einbezogenen Bestimmung treten die gesetzlichen Vorschriften.
+      </p>
+
+      <p class="legal-update">Stand: Juli 2026</p>
+
+    </article>
   </main>
 
   <footer>
     <div class="footer-inner">
       <div>© 2026 GABO Verleihservice</div>
+
       <div class="footer-links">
         <a href="impressum.html">Impressum</a>
         <a href="datenschutz.html">Datenschutz</a>
