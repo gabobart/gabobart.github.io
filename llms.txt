@@ -13,7 +13,7 @@ Bad Kreuznach 25€ (jeweils für Lieferung + Abholung zusammen).
 Bewertung: 5,0 Sterne bei Google (13 Rezensionen).
 
 ## Hauptseite
-- [Startseite](https://gaboevent.de/index.html): Vollständige Preisübersicht aller Geräte (Soundboks Partybox, Partylicht, Nebelmaschine, Seifenblasenmaschine, Bierzeltgarnituren) und Kombi-Pakete, Kundenbewertungen, Liefergebiets-Karte, Kontaktmöglichkeiten
+- [Startseite](https://gaboevent.de/index.html): Vollständige Preisübersicht aller Geräte (Soundboks Partybox, Partylicht, Nebelmaschine, Seifenblasenmaschine, Bierzeltgarnituren) und Kombi-Pakete, Kundenbewertungen, Liefergebiets-Übersicht, Kontaktmöglichkeiten
 
 ## Lokale Seiten
 - [Partybox mieten Mainz](https://gaboevent.de/partybox-mieten-mainz.html): Soundboks-Verleih mit Lieferung nach Mainz für 10€
@@ -31,3 +31,4 @@ Bewertung: 5,0 Sterne bei Google (13 Rezensionen).
 - [Datenschutz](https://gaboevent.de/datenschutz.html)
 - [AGB & Mietbedingungen](https://gaboevent.de/agb.html)
 - [Widerruf](https://gaboevent.de/widerruf.html)
+- [KI-Richtlinie](https://gaboevent.de/ki-richtlinie.html): Transparenz zum Einsatz von KI auf dieser Website – kein KI-Chatbot im Kundenkontakt, persönlicher Kontakt bleibt Mensch
