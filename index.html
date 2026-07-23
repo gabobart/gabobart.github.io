@@ -9,7 +9,6 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="canonical" href="https://gaboevent.de/">
 <link rel="preload" as="image" href="logo.webp" fetchpriority="high">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="de_DE">
 <meta property="og:site_name" content="GABO Verleihservice">
@@ -25,7 +24,10 @@
   --white:#fff;--blue:#2563eb;--blue2:#3b82f6;--soft:#dbeafe;--green:#25D366;
   --shadow:0 10px 24px rgba(15,23,42,.08);--radius:22px;--max:1180px
 }
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"Segoe UI",Roboto,"Helvetica Neue",sans-serif;color:var(--text);font-size:17px;line-height:1.6;background:radial-gradient(circle at 15% 15%,rgba(59,130,246,.14),transparent 22%),radial-gradient(circle at 82% 18%,rgba(139,92,246,.12),transparent 22%),linear-gradient(180deg,var(--bg),var(--bg2) 55%,#f7fbff)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+.skip-link{position:absolute;left:-9999px;top:0;z-index:9999;background:#2563eb;color:#fff;padding:12px 20px;border-radius:0 0 10px 0;font-weight:900;font-size:15px}
+.skip-link:focus{left:0}
+body{margin:0;font-family:"Segoe UI",Roboto,"Helvetica Neue",sans-serif;color:var(--text);font-size:17px;line-height:1.6;background:radial-gradient(circle at 15% 15%,rgba(59,130,246,.14),transparent 22%),radial-gradient(circle at 82% 18%,rgba(139,92,246,.12),transparent 22%),linear-gradient(180deg,var(--bg),var(--bg2) 55%,#f7fbff)}
 img{max-width:100%;display:block}a{text-decoration:none;color:inherit}.container{width:min(calc(100% - 32px),var(--max));margin:auto}
 .topbar{position:relative;z-index:5000;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);box-shadow:0 2px 10px rgba(15,23,42,.05)}
 .navbar{display:flex;align-items:center;justify-content:flex-end;padding:8px 0;position:relative;z-index:5001}
@@ -48,6 +50,14 @@ h1{font-size:clamp(26px,4vw,34px);line-height:1.1;letter-spacing:-.6px;margin:0 
 .feature-list{margin:0 0 10px;padding-left:18px;color:#334155;display:grid;gap:5px;font-size:14px}.price-list{display:grid;gap:5px;margin-bottom:8px}.price-row{display:flex;justify-content:space-between;gap:14px;padding:6px 0;border-bottom:1px dashed #d8e2ee;color:#334155;font-size:14px}.price-row:last-child{border-bottom:none}.price-row strong{font-size:17px;font-weight:900;color:#0f172a;white-space:nowrap}.price-unit{font-size:11px;color:#64748b;font-weight:700}.deposit,.small-note{margin-top:6px;color:#0f172a;font-size:13px;font-weight:900}.addon-box{margin-top:6px;color:#64748b;font-size:12px;font-weight:700;line-height:1.5}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:44px;padding:0 16px;border-radius:14px;font-weight:900;font-size:14px;box-shadow:0 10px 24px rgba(15,23,42,.10)}.btn-whatsapp{background:linear-gradient(135deg,var(--green),#1fb455);color:#fff}.btn-primary{background:linear-gradient(135deg,#3b82f6,#2563eb);color:#fff}.btn-instagram{background:linear-gradient(135deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);color:#fff}.btn-small{min-height:38px;padding:0 12px;font-size:15px;line-height:1.5}.cta-row,.cta-inline{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
 .contact-wrap{display:grid;grid-template-columns:1fr 1fr;gap:18px}.contact-card{padding:26px;border-radius:24px;background:rgba(255,255,255,.9);border:1px solid var(--line);box-shadow:var(--shadow)}.contact-card p{color:var(--muted)}
+.delivery-list{list-style:none;margin:0 0 14px;padding:0;display:grid;gap:6px}
+.delivery-list li{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:9px 12px;border-radius:10px;background:#fff;border:1px solid var(--line);font-size:14px}
+.delivery-list li span{color:#0f172a;font-weight:800}
+.delivery-list li strong{font-size:13px;font-weight:900;color:#1e3a8a;white-space:nowrap}
+.delivery-list li.delivery-hq{background:linear-gradient(135deg,#eff6ff,#dbeafe);border-color:rgba(37,99,235,.25)}
+.delivery-list li.delivery-hq strong{color:#1d4ed8}
+.delivery-list li.delivery-free{background:rgba(37,211,102,.08);border-color:rgba(37,211,102,.3)}
+.delivery-list li.delivery-free strong{color:#1fb455}
 .faq details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-bottom:10px;box-shadow:var(--shadow)}.faq summary{font-weight:900;cursor:pointer}.faq p{color:var(--muted);margin-bottom:0}
 .faq-outer{background:transparent;border:none;box-shadow:none;padding:0;margin-bottom:0}.faq-outer-summary{display:flex;align-items:center;justify-content:space-between;background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-bottom:10px;box-shadow:var(--shadow);list-style:none;cursor:pointer}.faq-outer-summary::-webkit-details-marker{display:none}.faq-outer-arrow{font-size:14px;color:var(--blue);transition:transform .3s}.faq-outer[open] .faq-outer-arrow{transform:rotate(180deg)}
 /* ===== BEWERTUNGEN ===== */
@@ -84,6 +94,22 @@ h1{font-size:clamp(26px,4vw,34px);line-height:1.1;letter-spacing:-.6px;margin:0 
 .btn-google{display:inline-flex;align-items:center;gap:9px;margin-top:14px;padding:11px 18px;border-radius:12px;background:#fff;border:1px solid #dadce0;color:#3c4043;font-weight:800;font-size:14px;box-shadow:0 1px 3px rgba(60,64,67,.16);transition:.2s ease}.btn-google:hover{box-shadow:0 3px 8px rgba(60,64,67,.24);background:#f8faff}.btn-google svg{flex-shrink:0}.reviews-link{color:var(--blue);font-weight:900}
 .city-links{text-align:center;color:var(--muted);font-size:15px;margin:26px auto}.city-links a{color:var(--blue);font-weight:900}footer{border-top:1px solid var(--line);background:rgba(255,255,255,.78)}.footer-inner{display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px;padding:24px 0 96px;color:var(--muted);font-size:14px}.footer-links{display:flex;gap:14px;flex-wrap:wrap;justify-content:center}.footer-links a{color:var(--blue);font-weight:900}
 .float-wa{position:fixed;right:18px;bottom:18px;z-index:300;display:inline-flex;align-items:center;justify-content:center;padding:14px 18px;border-radius:999px;background:linear-gradient(135deg,#25D366,#1fb455);color:#fff;font-weight:900;box-shadow:0 12px 28px rgba(37,211,102,.45)}
+
+/* ===== HINWEIS-BANNER ===== */
+.cookie-banner{position:fixed;left:0;right:0;bottom:0;z-index:9999;transform:translateY(120%);transition:transform .45s cubic-bezier(.16,1,.3,1);padding:14px}
+.cookie-banner.open{transform:translateY(0)}
+.cookie-card{position:relative;overflow:hidden;max-width:640px;margin:0 auto;background:linear-gradient(180deg,rgba(255,255,255,.98),rgba(255,255,255,.94));border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;box-shadow:0 -10px 40px rgba(15,23,42,.18),var(--shadow)}
+.cookie-card:before{content:"";position:absolute;inset:0 auto auto 0;width:100%;height:4px;background:linear-gradient(90deg,var(--blue2),#8b5cf6,#06b6d4)}
+.cookie-icon-row{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.cookie-icon-row span.emoji{font-size:20px}
+.cookie-card h3{margin:0;font-size:18px;font-weight:900;letter-spacing:-.3px}
+.cookie-card p{margin:0 0 14px;color:var(--muted);font-size:14px;line-height:1.55}
+.cookie-card a{color:var(--blue);font-weight:800;text-decoration:underline;text-underline-offset:2px}
+.cookie-actions{display:flex;gap:10px;flex-wrap:wrap}
+.cookie-btn{flex:1 1 auto;min-height:46px;padding:0 16px;border-radius:14px;font-weight:900;font-size:14px;border:none;cursor:pointer;transition:.2s;box-shadow:0 8px 18px rgba(15,23,42,.08)}
+.cookie-btn-accept{background:linear-gradient(135deg,#3b82f6,#2563eb);color:#fff}
+.cookie-btn-accept:hover{transform:translateY(-1px);box-shadow:0 10px 22px rgba(37,99,235,.35)}
+
 @media(max-width:980px){.contact-wrap{grid-template-columns:1fr}}@media(max-width:700px){.grid{grid-template-columns:1fr}.btn{width:100%}}@media(max-width:480px){.price-row{flex-direction:column;gap:4px}.float-wa{right:14px;bottom:14px;font-size:14px}}
 @media(min-width:900px){
 body{font-size:17px}
@@ -104,6 +130,10 @@ h3{font-size:23px}
 .btn-small{min-height:44px;font-size:14px}
 }
 @media(min-width:1100px){.product-image-wrap{height:360px}.multi{height:280px}}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:0.01ms!important;animation-iteration-count:1!important;transition-duration:0.01ms!important;scroll-behavior:auto!important}
+}
 </style>
 <script type="application/ld+json">{
 "@context":"https://schema.org","@type":"LocalBusiness","@id":"https://gaboevent.de/#business","name":"GABO Verleihservice",
@@ -234,6 +264,7 @@ h3{font-size:23px}
 }</script>
 </head>
 <body>
+<a href="#main-content" class="skip-link">Zum Inhalt springen</a>
 
 <div class="topbar"><div class="container navbar">
 <button class="burger" id="burger" aria-label="Menü öffnen" aria-expanded="false"><span></span><span></span><span></span></button>
@@ -260,6 +291,7 @@ h3{font-size:23px}
 <div style="display:inline-flex;align-items:center;gap:6px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:900;color:#1e3a8a;margin-top:6px;box-shadow:var(--shadow)">📍 Abholung in Heidesheim (bei Ingelheim am Rhein)</div>
 </div></header>
 
+<main id="main-content">
 <section class="section" id="warum-gabo">
   <div class="container">
     <div class="section-head"><h2 class="xl">Warum GABO?</h2><p>Kein anonymer Konzern, sondern persönlicher Verleih aus der Region.</p></div>
@@ -336,28 +368,28 @@ h3{font-size:23px}
     <div class="section-head"><h2 class="xl">Pakete für Feiern und Events</h2><p>Fertige Kombinationen für Sound, Licht und Effekte.</p></div>
     <div class="pricing-grid">
       <article class="card">
-        <div class="badge">Für kleine Feiern</div><div class="multi multi-2"><div class="cell"><img src="soundboks-lautsprecher.webp" alt="Soundboks Partybox" loading="lazy" decoding="async"></div><div class="cell"><img src="soundboks-partylicht.webp" alt="Soundboks Partylicht" loading="lazy" decoding="async"></div></div><h3>Paket Basic</h3><div class="subtitle">1× Soundboks Partybox + 1× Soundboks Partylicht</div>
+        <div class="badge">Für kleine Feiern</div><div class="multi multi-2"><div class="cell"><img src="soundboks-lautsprecher.webp" alt="Soundboks Partybox" loading="lazy" decoding="async" width="400" height="400"></div><div class="cell"><img src="soundboks-partylicht.webp" alt="Soundboks Partylicht" loading="lazy" decoding="async" width="400" height="400"></div></div><h3>Paket Basic</h3><div class="subtitle">1× Soundboks Partybox + 1× Soundboks Partylicht</div>
         <div class="price-list"><div class="price-row"><span>Mo–Do</span><strong>55€ <span class="price-unit">/ Tag</span></strong></div><div class="price-row"><span>Fr–So</span><strong>65€ <span class="price-unit">/ Tag</span></strong></div><div class="price-row"><span>Wochenende komplett</span><strong>190€</strong></div></div>
         <div class="deposit">Kaution: 220€</div><div class="addon-box">Stativ optional: +5€</div><div class="cta-inline"><a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20das%20Paket%20Basic%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a></div>
       </article>
       <article class="card featured">
-        <div class="badge">Am beliebtesten</div><div class="multi multi-3"><div class="cell"><img src="soundboks-lautsprecher.webp" alt="Soundboks Partybox" loading="lazy" decoding="async"></div><div class="cell"><img src="soundboks-partylicht.webp" alt="Soundboks Partylicht" loading="lazy" decoding="async"></div><div class="cell"><img src="nebelmaschine.webp" alt="Nebelmaschine" loading="lazy" decoding="async"></div></div><h3>Paket Party</h3><div class="subtitle">1× Soundboks + 1× Partylicht + 1× Nebelmaschine</div>
+        <div class="badge">Am beliebtesten</div><div class="multi multi-3"><div class="cell"><img src="soundboks-lautsprecher.webp" alt="Soundboks Partybox" loading="lazy" decoding="async" width="400" height="400"></div><div class="cell"><img src="soundboks-partylicht.webp" alt="Soundboks Partylicht" loading="lazy" decoding="async" width="400" height="400"></div><div class="cell"><img src="nebelmaschine.webp" alt="Nebelmaschine" loading="lazy" decoding="async" width="400" height="400"></div></div><h3>Paket Party</h3><div class="subtitle">1× Soundboks + 1× Partylicht + 1× Nebelmaschine</div>
         <div class="price-list"><div class="price-row"><span>Mo–Do</span><strong>85€ <span class="price-unit">/ Tag</span></strong></div><div class="price-row"><span>Fr–So</span><strong>105€ <span class="price-unit">/ Tag</span></strong></div><div class="price-row"><span>Wochenende komplett</span><strong>290€</strong></div></div>
         <div class="deposit">Kaution: 260€</div><div class="addon-box">1 Füllung Nebelfluid (1,7 Liter) inklusive · Weitere Füllung Nebelfluid (1,7 L): 10€ · Stativ optional: +5€</div><div class="cta-inline"><a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20das%20Paket%20Party%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a></div>
       </article>
       <article class="card">
-        <div class="badge">Für größere Feiern</div><div class="multi multi-4"><div class="cell"><img src="soundboks-lautsprecher.webp" alt="Soundboks Partybox grau" loading="lazy" decoding="async"></div><div class="cell"><img src="soundboks-lautsprecher-weiss.webp" alt="Soundboks Partybox weiß" loading="lazy" decoding="async"></div><div class="cell"><img src="soundboks-partylicht.webp" alt="Soundboks Partylicht" loading="lazy" decoding="async"></div><div class="cell"><img src="soundboks-partylicht.webp" alt="Soundboks Partylicht" loading="lazy" decoding="async"></div></div><h3>Paket Premium</h3><div class="subtitle">2× Soundboks Partybox + 2× Soundboks Partylicht</div>
+        <div class="badge">Für größere Feiern</div><div class="multi multi-4"><div class="cell"><img src="soundboks-lautsprecher.webp" alt="Soundboks Partybox grau" loading="lazy" decoding="async" width="400" height="400"></div><div class="cell"><img src="soundboks-lautsprecher-weiss.webp" alt="Soundboks Partybox weiß" loading="lazy" decoding="async" width="400" height="400"></div><div class="cell"><img src="soundboks-partylicht.webp" alt="Soundboks Partylicht" loading="lazy" decoding="async" width="400" height="400"></div><div class="cell"><img src="soundboks-partylicht.webp" alt="Soundboks Partylicht" loading="lazy" decoding="async" width="400" height="400"></div></div><h3>Paket Premium</h3><div class="subtitle">2× Soundboks Partybox + 2× Soundboks Partylicht</div>
         <div class="price-list"><div class="price-row"><span>Mo–Do</span><strong>115€ <span class="price-unit">/ Tag</span></strong></div><div class="price-row"><span>Fr–So</span><strong>135€ <span class="price-unit">/ Tag</span></strong></div><div class="price-row"><span>Wochenende komplett</span><strong>385€</strong></div></div>
         <div class="deposit">Kaution: 350€</div><div class="addon-box">1 Box weiß + 1 Box grau – gleicher Sound · 2 Stative optional: +10€</div><div class="cta-inline"><a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20das%20Paket%20Premium%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a></div>
       </article>
       <article class="card">
-        <div class="badge">Komplettes Setup</div><div class="multi multi-7"><div class="cell"><img src="soundboks-lautsprecher.webp" alt="Soundboks Partybox grau" loading="lazy" decoding="async"></div><div class="cell"><img src="soundboks-lautsprecher-weiss.webp" alt="Soundboks Partybox weiß" loading="lazy" decoding="async"></div><div class="cell"><img src="soundboks-partylicht.webp" alt="Soundboks Partylicht" loading="lazy" decoding="async"></div><div class="cell"><img src="soundboks-partylicht.webp" alt="Soundboks Partylicht" loading="lazy" decoding="async"></div><div class="cell"><img src="nebelmaschine.webp" alt="Nebelmaschine" loading="lazy" decoding="async"></div><div class="cell"><img src="seifenblasenmaschine.webp" alt="Seifenblasenmaschine Eliminator Bubbletron EXL Go" loading="lazy" decoding="async"></div><div class="cell"><img src="stativ-set.webp" alt="Stativ Set" loading="lazy" decoding="async"></div></div><h3>Paket Event Komplett</h3><div class="subtitle">2× Soundboks + 2× Partylicht + Nebelmaschine + Seifenblasenmaschine + 2 Stative</div>
+        <div class="badge">Komplettes Setup</div><div class="multi multi-7"><div class="cell"><img src="soundboks-lautsprecher.webp" alt="Soundboks Partybox grau" loading="lazy" decoding="async" width="400" height="400"></div><div class="cell"><img src="soundboks-lautsprecher-weiss.webp" alt="Soundboks Partybox weiß" loading="lazy" decoding="async" width="400" height="400"></div><div class="cell"><img src="soundboks-partylicht.webp" alt="Soundboks Partylicht" loading="lazy" decoding="async" width="400" height="400"></div><div class="cell"><img src="soundboks-partylicht.webp" alt="Soundboks Partylicht" loading="lazy" decoding="async" width="400" height="400"></div><div class="cell"><img src="nebelmaschine.webp" alt="Nebelmaschine" loading="lazy" decoding="async" width="400" height="400"></div><div class="cell"><img src="seifenblasenmaschine.webp" alt="Seifenblasenmaschine Eliminator Bubbletron EXL Go" loading="lazy" decoding="async" width="400" height="400"></div><div class="cell"><img src="stativ-set.webp" alt="Stativ Set" loading="lazy" decoding="async" width="400" height="400"></div></div><h3>Paket Event Komplett</h3><div class="subtitle">2× Soundboks + 2× Partylicht + Nebelmaschine + Seifenblasenmaschine + 2 Stative</div>
         <div class="price-list"><div class="price-row"><span>Mo–Do</span><strong>215€ <span class="price-unit">/ Tag</span></strong></div><div class="price-row"><span>Fr–So</span><strong>245€ <span class="price-unit">/ Tag</span></strong></div><div class="price-row"><span>Wochenende komplett</span><strong>650€</strong></div></div>
         <div class="deposit">Kaution: 450€</div><div class="addon-box">Je 1 Füllung Nebelfluid (1,7 L) + Seifenblasenfluid (2 L) inklusive · Weitere Füllung Nebelfluid (1,7 L): 10€ · Weitere Füllung Seifenblasenfluid (2 L): 12€ · 1 Box weiß + 1 Box grau</div>
         <div class="cta-inline"><a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20das%20Paket%20Event%20Komplett%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a></div>
       </article>
       <article class="card">
-        <div class="badge">Mit Sitzgelegenheit</div><div class="multi multi-8"><div class="cell"><img src="soundboks-lautsprecher.webp" alt="Soundboks Partybox grau" loading="lazy" decoding="async"></div><div class="cell"><img src="soundboks-lautsprecher-weiss.webp" alt="Soundboks Partybox weiß" loading="lazy" decoding="async"></div><div class="cell"><img src="soundboks-partylicht.webp" alt="Soundboks Partylicht" loading="lazy" decoding="async"></div><div class="cell"><img src="soundboks-partylicht.webp" alt="Soundboks Partylicht" loading="lazy" decoding="async"></div><div class="cell"><img src="nebelmaschine.webp" alt="Nebelmaschine" loading="lazy" decoding="async"></div><div class="cell"><img src="seifenblasenmaschine.webp" alt="Seifenblasenmaschine Eliminator Bubbletron EXL Go" loading="lazy" decoding="async"></div><div class="cell"><img src="stativ-set.webp" alt="Stativ Set" loading="lazy" decoding="async"></div><div class="cell"><img src="bierzeltgarnitur-2.webp" alt="Bierzeltgarnituren" loading="lazy" decoding="async"></div></div><h3>Paket Event Komplett mit Bierzelt</h3><div class="subtitle">2× Soundboks + 2× Partylicht + Nebelmaschine + Seifenblasenmaschine + 2 Stative + 2 Bierzeltgarnituren</div>
+        <div class="badge">Mit Sitzgelegenheit</div><div class="multi multi-8"><div class="cell"><img src="soundboks-lautsprecher.webp" alt="Soundboks Partybox grau" loading="lazy" decoding="async" width="400" height="400"></div><div class="cell"><img src="soundboks-lautsprecher-weiss.webp" alt="Soundboks Partybox weiß" loading="lazy" decoding="async" width="400" height="400"></div><div class="cell"><img src="soundboks-partylicht.webp" alt="Soundboks Partylicht" loading="lazy" decoding="async" width="400" height="400"></div><div class="cell"><img src="soundboks-partylicht.webp" alt="Soundboks Partylicht" loading="lazy" decoding="async" width="400" height="400"></div><div class="cell"><img src="nebelmaschine.webp" alt="Nebelmaschine" loading="lazy" decoding="async" width="400" height="400"></div><div class="cell"><img src="seifenblasenmaschine.webp" alt="Seifenblasenmaschine Eliminator Bubbletron EXL Go" loading="lazy" decoding="async" width="400" height="400"></div><div class="cell"><img src="stativ-set.webp" alt="Stativ Set" loading="lazy" decoding="async" width="400" height="400"></div><div class="cell"><img src="bierzeltgarnitur-2.webp" alt="Bierzeltgarnituren" loading="lazy" decoding="async" width="400" height="400"></div></div><h3>Paket Event Komplett mit Bierzelt</h3><div class="subtitle">2× Soundboks + 2× Partylicht + Nebelmaschine + Seifenblasenmaschine + 2 Stative + 2 Bierzeltgarnituren</div>
         <div class="price-list"><div class="price-row"><span>Mo–Do</span><strong>245€ <span class="price-unit">/ Tag</span></strong></div><div class="price-row"><span>Fr–So</span><strong>275€ <span class="price-unit">/ Tag</span></strong></div><div class="price-row"><span>Wochenende komplett</span><strong>680€</strong></div></div>
         <div class="deposit">Kaution: 550€</div><div class="addon-box">Je 1 Füllung Nebelfluid (1,7 L) + Seifenblasenfluid (2 L) inklusive · Weitere Füllung Nebelfluid (1,7 L): 10€ · Weitere Füllung Seifenblasenfluid (2 L): 12€ · 1 Box weiß + 1 Box grau · 2 Tische + 4 Bänke, Platz für ca. 12–16 Personen</div>
         <div class="cta-inline"><a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%20das%20Paket%20Event%20Komplett%20mit%20Bierzelt%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a></div>
@@ -367,8 +399,8 @@ h3{font-size:23px}
 </section>
 
 <section class="section" id="party-ausstattung"><div class="container"><div class="section-head"><h2 class="xl">Party-Ausstattung mieten</h2><p>Bierzeltgarnituren und weitere Ausstattung für deine Feier.</p></div><div class="grid">
-<article class="card"><div class="badge">Beliebt</div><div class="product-image-wrap"><img src="bierzeltgarnitur-1.webp" alt="1 Bierzeltgarnitur mieten – Tisch mit 2 Bänken" loading="lazy" decoding="async"></div><h3>1 Bierzeltgarnitur</h3><div class="subtitle">1 Tisch + 2 Bänke</div><ul class="feature-list"><li>Klappbar – einfacher Transport</li><li>Platz für ca. 6–8 Personen</li></ul><div class="price-list"><div class="price-row"><span>Mo–Do</span><strong>15€ / Tag</strong></div><div class="price-row"><span>Fr–So</span><strong>20€ / Tag</strong></div><div class="price-row"><span>Wochenende komplett</span><strong>45€</strong></div></div><div class="deposit">Kaution: 50€</div><div class="cta-inline"><a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%201%20Bierzeltgarnitur%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a></div></article>
-<article class="card"><div class="badge">Spar-Tipp</div><div class="product-image-wrap"><img src="bierzeltgarnitur-2.webp" alt="2 Bierzeltgarnituren mieten – 2 Tische mit 4 Bänken" loading="lazy" decoding="async"></div><h3>2 Bierzeltgarnituren</h3><div class="subtitle">2 Tische + 4 Bänke</div><ul class="feature-list"><li>Klappbar – einfacher Transport</li><li>Platz für ca. 12–16 Personen</li></ul><div class="price-list"><div class="price-row"><span>Mo–Do</span><strong>25€ / Tag</strong></div><div class="price-row"><span>Fr–So</span><strong>35€ / Tag</strong></div><div class="price-row"><span>Wochenende komplett</span><strong>80€</strong></div></div><div class="deposit">Kaution: 100€</div><div class="cta-inline"><a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%202%20Bierzeltgarnituren%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a></div></article>
+<article class="card"><div class="badge">Beliebt</div><div class="product-image-wrap"><img src="bierzeltgarnitur-1.webp" alt="1 Bierzeltgarnitur mieten – Tisch mit 2 Bänken" loading="lazy" decoding="async" width="400" height="400"></div><h3>1 Bierzeltgarnitur</h3><div class="subtitle">1 Tisch + 2 Bänke</div><ul class="feature-list"><li>Klappbar – einfacher Transport</li><li>Platz für ca. 6–8 Personen</li></ul><div class="price-list"><div class="price-row"><span>Mo–Do</span><strong>15€ / Tag</strong></div><div class="price-row"><span>Fr–So</span><strong>20€ / Tag</strong></div><div class="price-row"><span>Wochenende komplett</span><strong>45€</strong></div></div><div class="deposit">Kaution: 50€</div><div class="cta-inline"><a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%201%20Bierzeltgarnitur%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a></div></article>
+<article class="card"><div class="badge">Spar-Tipp</div><div class="product-image-wrap"><img src="bierzeltgarnitur-2.webp" alt="2 Bierzeltgarnituren mieten – 2 Tische mit 4 Bänken" loading="lazy" decoding="async" width="400" height="400"></div><h3>2 Bierzeltgarnituren</h3><div class="subtitle">2 Tische + 4 Bänke</div><ul class="feature-list"><li>Klappbar – einfacher Transport</li><li>Platz für ca. 12–16 Personen</li></ul><div class="price-list"><div class="price-row"><span>Mo–Do</span><strong>25€ / Tag</strong></div><div class="price-row"><span>Fr–So</span><strong>35€ / Tag</strong></div><div class="price-row"><span>Wochenende komplett</span><strong>80€</strong></div></div><div class="deposit">Kaution: 100€</div><div class="cta-inline"><a class="btn btn-small btn-whatsapp" href="https://wa.me/4917629007917?text=Ich%20m%C3%B6chte%202%20Bierzeltgarnituren%20mieten." target="_blank" rel="noopener noreferrer">Jetzt anfragen</a></div></article>
 </div></div></section>
 
 <section class="section" id="bewertungen">
@@ -562,19 +594,19 @@ h3{font-size:23px}
 
       <!-- Dots -->
       <div class="slider-dots" id="sliderDots">
-        <button class="slider-dot active" data-index="0"></button>
-        <button class="slider-dot" data-index="1"></button>
-        <button class="slider-dot" data-index="2"></button>
-        <button class="slider-dot" data-index="3"></button>
-        <button class="slider-dot" data-index="4"></button>
-        <button class="slider-dot" data-index="5"></button>
-        <button class="slider-dot" data-index="6"></button>
-        <button class="slider-dot" data-index="7"></button>
-        <button class="slider-dot" data-index="8"></button>
-        <button class="slider-dot" data-index="9"></button>
-        <button class="slider-dot" data-index="10"></button>
-        <button class="slider-dot" data-index="11"></button>
-        <button class="slider-dot" data-index="12"></button>
+        <button class="slider-dot active" data-index="0" aria-label="Bewertung 1 anzeigen"></button>
+        <button class="slider-dot" data-index="1" aria-label="Bewertung 2 anzeigen"></button>
+        <button class="slider-dot" data-index="2" aria-label="Bewertung 3 anzeigen"></button>
+        <button class="slider-dot" data-index="3" aria-label="Bewertung 4 anzeigen"></button>
+        <button class="slider-dot" data-index="4" aria-label="Bewertung 5 anzeigen"></button>
+        <button class="slider-dot" data-index="5" aria-label="Bewertung 6 anzeigen"></button>
+        <button class="slider-dot" data-index="6" aria-label="Bewertung 7 anzeigen"></button>
+        <button class="slider-dot" data-index="7" aria-label="Bewertung 8 anzeigen"></button>
+        <button class="slider-dot" data-index="8" aria-label="Bewertung 9 anzeigen"></button>
+        <button class="slider-dot" data-index="9" aria-label="Bewertung 10 anzeigen"></button>
+        <button class="slider-dot" data-index="10" aria-label="Bewertung 11 anzeigen"></button>
+        <button class="slider-dot" data-index="11" aria-label="Bewertung 12 anzeigen"></button>
+        <button class="slider-dot" data-index="12" aria-label="Bewertung 13 anzeigen"></button>
       </div>
 
     </div>
@@ -624,17 +656,66 @@ h3{font-size:23px}
     <div class="contact-wrap">
       <div class="contact-card"><h3>Kontakt & Reservierung</h3><p>Frag schnell per WhatsApp an. Sende einfach Wunschtermin, Ort und gewünschtes Equipment.</p><div class="cta-row"><a class="btn btn-whatsapp" href="https://wa.me/4917629007917" target="_blank" rel="noopener noreferrer">WhatsApp schreiben</a><a class="btn btn-primary" href="tel:+4917629007917">Jetzt anrufen</a><a class="btn btn-instagram" href="https://www.instagram.com/gaboevent" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5.5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"></circle></svg>Instagram</a></div></div>
       <div class="contact-card"><h3>Abhol- & Liefergebiet</h3><p>Standard ist <strong>Abholung in Heidesheim</strong> (bei Ingelheim). Lieferung nach Ingelheim & Heidesheim ist <strong>kostenlos</strong>, weitere Orte gegen Aufpreis nach Absprache.</p>
-        <div id="deliveryMap" style="width:100%;height:320px;border-radius:14px;border:1px solid var(--line);margin-bottom:10px;box-shadow:var(--shadow)"></div>
-        <p style="font-size:13px;color:#64748b;margin:0 0 6px">📍 Klicke auf einen Ort in der Karte, um den Lieferpreis zu sehen.</p>
-        <p style="font-size:14px">Der Preis gilt für Lieferung + Abholung.</p></div>
+        <ul class="delivery-list">
+          <li class="delivery-hq"><span>Heidesheim am Rhein</span><strong>Abholung / Standort</strong></li>
+          <li class="delivery-free"><span>Ingelheim am Rhein</span><strong>kostenlose Lieferung</strong></li>
+          <li><span>Bingen am Rhein</span><strong>+10€</strong></li>
+          <li><span>Mainz</span><strong>+10€</strong></li>
+          <li><span>Nieder-Olm</span><strong>+15€</strong></li>
+          <li><span>Rüsselsheim</span><strong>+15€</strong></li>
+          <li><span>Wiesbaden</span><strong>+15€</strong></li>
+          <li><span>Oppenheim</span><strong>+20€</strong></li>
+          <li><span>Darmstadt</span><strong>+25€</strong></li>
+          <li><span>Bad Kreuznach</span><strong>+25€</strong></li>
+          <li><span>Frankfurt am Main</span><strong>+25€</strong></li>
+        </ul>
+        <p style="font-size:14px">Der Preis gilt für Lieferung + Abholung. Andere Orte in der Nähe? Frag einfach kurz per WhatsApp an.</p></div>
     </div>
+
   </div>
 </section>
 
 
 <div class="container city-links" style="font-size:12px;color:#94a3b8;margin:16px auto;opacity:0.7"><p>Lokale Seiten: <a href="partybox-mieten-mainz.html" style="color:#94a3b8;font-weight:600">Partybox mieten Mainz</a> · <a href="partybox-mieten-wiesbaden.html" style="color:#94a3b8;font-weight:600">Partybox mieten Wiesbaden</a> · <a href="partybox-mieten-frankfurt.html" style="color:#94a3b8;font-weight:600">Partybox mieten Frankfurt</a> · <a href="soundboks-mieten-mainz.html" style="color:#94a3b8;font-weight:600">Soundboks mieten Mainz</a> · <a href="soundboks-mieten-wiesbaden.html" style="color:#94a3b8;font-weight:600">Soundboks mieten Wiesbaden</a> · <a href="soundboks-mieten-frankfurt.html" style="color:#94a3b8;font-weight:600">Soundboks mieten Frankfurt</a></p></div>
-<footer><div class="container footer-inner"><div><strong>GABO Verleihservice</strong> · Partybox, Soundboks und Eventtechnik mieten</div><div>© 2026 GABO Verleihservice</div><div class="footer-links"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a><a href="agb.html">AGB & Mietbedingungen</a><a href="widerruf.html">Widerruf</a><a href="faq.html">FAQ</a></div></div></footer>
+</main>
+<footer><div class="container footer-inner"><div><strong>GABO Verleihservice</strong> · Partybox, Soundboks und Eventtechnik mieten</div><div>© 2026 GABO Verleihservice</div><div class="footer-links"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a><a href="agb.html">AGB & Mietbedingungen</a><a href="widerruf.html">Widerruf</a><a href="ki-richtlinie.html">KI-Richtlinie</a><a href="faq.html">FAQ</a></div></div></footer>
 <a class="float-wa" href="https://wa.me/4917629007917?text=Hi%20Gabo%2C%20ich%20m%C3%B6chte%20gerne%20etwas%20mieten." target="_blank" rel="noopener noreferrer" aria-label="Per WhatsApp anfragen">WhatsApp</a>
+
+<!-- ===== HINWEIS-BANNER (keine Cookies, keine automatischen Drittanbieter-Inhalte) ===== -->
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-modal="false" aria-labelledby="cookieTitle" aria-describedby="cookieDesc">
+  <div class="cookie-card">
+    <div class="cookie-icon-row"><span class="emoji" aria-hidden="true">🍪</span><h3 id="cookieTitle">Keine Cookies, keine Datenweitergabe</h3></div>
+    <p id="cookieDesc">Diese Website setzt keine Tracking- oder Analyse-Cookies und lädt keine automatischen Inhalte von Drittanbietern. Links zu WhatsApp, Instagram und Google öffnen sich erst, wenn du aktiv darauf klickst. Mehr dazu in unserer <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+    <div class="cookie-actions">
+      <button type="button" class="cookie-btn cookie-btn-accept" id="cookieOkBtn">Alles klar</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var STORAGE_KEY = 'gabo_cookie_notice_seen';
+  var banner = document.getElementById('cookieBanner');
+  var okBtn = document.getElementById('cookieOkBtn');
+
+  function hideBanner(){
+    banner.classList.remove('open');
+  }
+
+  okBtn.addEventListener('click', function(){
+    try{ localStorage.setItem(STORAGE_KEY, '1'); }catch(e){}
+    hideBanner();
+  });
+
+  document.addEventListener('DOMContentLoaded', function(){
+    var seen;
+    try{ seen = localStorage.getItem(STORAGE_KEY); }catch(e){ seen = null; }
+    if (!seen) {
+      banner.classList.add('open');
+    }
+  });
+})();
+</script>
 
 <script>
 document.addEventListener('DOMContentLoaded', function(){
@@ -684,58 +765,5 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 </script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
-<script>
-document.addEventListener('DOMContentLoaded', function(){
-  var mapEl = document.getElementById('deliveryMap');
-  if (!mapEl || typeof L === 'undefined') return;
-
-  var map = L.map('deliveryMap', {scrollWheelZoom:false}).setView([49.99, 8.20], 9);
-
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; OpenStreetMap',
-    maxZoom: 18
-  }).addTo(map);
-
-  var baseIcon = L.divIcon({
-    className: '',
-    html: '<div style="background:#2563eb;width:14px;height:14px;border-radius:50%;border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.35)"></div>',
-    iconSize: [20,20],
-    iconAnchor: [10,10]
-  });
-  var freeIcon = L.divIcon({
-    className: '',
-    html: '<div style="background:#25D366;width:14px;height:14px;border-radius:50%;border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.35)"></div>',
-    iconSize: [20,20],
-    iconAnchor: [10,10]
-  });
-  var hqIcon = L.divIcon({
-    className: '',
-    html: '<div style="background:#25D366;width:18px;height:18px;border-radius:50%;border:3px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,.4)"></div>',
-    iconSize: [24,24],
-    iconAnchor: [12,12]
-  });
-
-  var stops = [
-    {name:"Heidesheim am Rhein (Abholung / Standort)", lat:49.9714, lng:8.1206, price:"Standard-Abholung", hq:true},
-    {name:"Ingelheim am Rhein", lat:49.9738, lng:8.0625, price:"kostenlose Lieferung", free:true},
-    {name:"Nieder-Olm", lat:49.8814, lng:8.2039, price:"+15€"},
-    {name:"Oppenheim", lat:49.8500, lng:8.3583, price:"+20€"},
-    {name:"Bingen am Rhein", lat:49.9642, lng:7.9058, price:"+10€"},
-    {name:"Mainz", lat:50.0000, lng:8.2711, price:"+10€"},
-    {name:"Rüsselsheim", lat:49.9909, lng:8.4092, price:"+15€"},
-    {name:"Wiesbaden", lat:50.0782, lng:8.2398, price:"+15€"},
-    {name:"Darmstadt", lat:49.8728, lng:8.6512, price:"+25€"},
-    {name:"Bad Kreuznach", lat:49.8467, lng:7.8676, price:"+25€"},
-    {name:"Frankfurt am Main", lat:50.1109, lng:8.6821, price:"+25€"}
-  ];
-
-  stops.forEach(function(s){
-    var icon = s.hq ? hqIcon : (s.free ? freeIcon : baseIcon);
-    var marker = L.marker([s.lat, s.lng], {icon: icon}).addTo(map);
-    marker.bindPopup('<strong>' + s.name + '</strong><br>' + s.price);
-  });
-});
-</script>
 </body>
 </html>

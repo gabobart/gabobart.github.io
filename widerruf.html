@@ -69,6 +69,28 @@
       text-decoration:none;
     }
 
+    .skip-link{
+      position:absolute;
+      left:-9999px;
+      top:0;
+      z-index:9999;
+      background:#2563eb;
+      color:#fff;
+      padding:12px 20px;
+      border-radius:0 0 10px 0;
+      font-weight:900;
+      font-size:15px;
+    }
+
+    .skip-link:focus{
+      left:0;
+    }
+
+    @media(prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}
+      *,*::before,*::after{animation-duration:0.01ms!important;animation-iteration-count:1!important;transition-duration:0.01ms!important;scroll-behavior:auto!important}
+    }
+
     .container{
       width:min(calc(100% - 32px), var(--max));
       margin:0 auto;
@@ -349,6 +371,7 @@
 </head>
 
 <body>
+  <a href="#main-content" class="skip-link">Zum Inhalt springen</a>
 
   <nav class="navbar" aria-label="Hauptnavigation">
     <div class="navbar-inner">
@@ -369,7 +392,7 @@
     </div>
   </header>
 
-  <main class="container">
+  <main class="container" id="main-content">
     <article class="legal-card">
 
       <div class="legal-warning">
@@ -594,6 +617,7 @@
         <a href="datenschutz.html">Datenschutz</a>
         <a href="agb.html">AGB &amp; Mietbedingungen</a>
         <a href="widerruf.html">Widerruf</a>
+        <a href="ki-richtlinie.html">KI-Richtlinie</a>
       </div>
     </div>
   </footer>
