@@ -19,9 +19,6 @@
 <meta property="og:image" content="https://gaboevent.de/logo.webp">
 <meta property="og:image:alt" content="GABO Verleihservice Logo">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Partybox mieten Mainz | Soundboks Verleih Rhein-Main – GABO">
-<meta name="twitter:description" content="Partybox und Soundboks mieten in Mainz, Wiesbaden, Frankfurt & Umgebung. Faire Preise, schnelle WhatsApp-Anfrage, Abholung in Heidesheim/Ingelheim.">
-<meta name="twitter:image" content="https://gaboevent.de/logo.webp">
 <style>
 :root{
   --bg:#f8fbff;--bg2:#edf4ff;--text:#0f172a;--muted:#475569;--line:#dbe7f4;
@@ -84,13 +81,14 @@ h1{font-size:clamp(26px,4vw,34px);line-height:1.1;letter-spacing:-.6px;margin:0 
 .rslide-avatar{width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,#dbeafe,#bfdbfe);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:11px;color:#1e40af;flex-shrink:0}
 .rslide-name{font-weight:900;font-size:11px;color:#0f172a}
 .rslide-g{display:flex;align-items:center;gap:3px;margin-top:1px}
-.rslide-time{font-size:10px;color:#9ca3af}
+.rslide-time{font-size:10px;color:#64748b}
 .rslide-stars{color:#fbbc04;font-size:11px;letter-spacing:1px;margin-bottom:3px}
 .rslide-text{font-size:11px;color:#374151;line-height:1.45}
 /* Dots */
-.slider-dots{display:flex;justify-content:center;gap:7px;margin-top:14px}
-.slider-dot{width:8px;height:8px;border-radius:50%;border:none;cursor:pointer;padding:0;background:#cbd5e1;transition:.25s}
-.slider-dot.active{background:var(--blue);width:22px;border-radius:4px}
+.slider-dots{display:flex;justify-content:center;gap:2px;margin-top:14px}
+.slider-dot{position:relative;width:44px;height:44px;border:none;cursor:pointer;padding:0;background:transparent}
+.slider-dot::before{content:"";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:8px;height:8px;border-radius:50%;background:#cbd5e1;transition:.25s}
+.slider-dot.active::before{background:var(--blue);width:22px;border-radius:4px}
 /* Arrows */
 .slider-arrow{position:absolute;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:#fff;color:#0f172a;font-size:15px;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:5;box-shadow:var(--shadow);transition:.2s}
 .slider-arrow:hover{background:var(--soft)}.slider-arrow.prev{left:-17px}.slider-arrow.next{right:-17px}
