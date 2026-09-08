@@ -1,30 +1,53 @@
 # GABO Verleihservice
 
-> Verleih von Soundboks Partyboxen, Partylicht, Nebelmaschine, Seifenblasenmaschine
-> und Bierzeltgarnituren für private Feiern (Geburtstag, Gartenparty, Hochzeit,
-> Kindergeburtstag) im Rhein-Main-Gebiet: Mainz, Wiesbaden, Frankfurt, Ingelheim,
-> Heidesheim, Bingen, Nieder-Olm, Rüsselsheim, Darmstadt und Umgebung.
+> Verleih von Soundboks Partyboxen, Partylicht, Nebelmaschine, Seifenblasenmaschine,
+> Lichterketten und Bierzeltgarnituren für private Feiern (Geburtstag, Gartenparty,
+> Hochzeit, Kindergeburtstag, Firmenfeier) im Rhein-Main-Gebiet: Mainz, Wiesbaden,
+> Ingelheim, Heidesheim, Bingen, Nieder-Olm, Rüsselsheim, Oppenheim, Darmstadt
+> und Umgebung.
 
 Kontakt: WhatsApp +49 176 29007917, Telefon +49 176 29007917.
 Standort: Heidesheim am Rhein (bei Ingelheim), Standard-Abholung dort kostenlos.
-Lieferung: Ingelheim & Heidesheim kostenlos, Mainz 10€, Bingen 10€, Wiesbaden 15€,
-Nieder-Olm 15€, Rüsselsheim 15€, Oppenheim 20€, Frankfurt 25€, Darmstadt 25€,
-Bad Kreuznach 25€ (jeweils für Lieferung + Abholung zusammen).
+Lieferung: Ingelheim & Heidesheim kostenlos, Mainz 15€, Bingen 15€, Wiesbaden 15€,
+Nieder-Olm 25€, Rüsselsheim 25€, Oppenheim 25€, Darmstadt 40€
+(jeweils für Lieferung + Abholung zusammen).
 Bewertung: 5,0 Sterne bei Google (13 Rezensionen).
 
+## Preise Einzelverleih (Mo–Do / Fr–So pro Tag, Wochenende komplett)
+- Soundboks Partybox: 35€ / 40€ / 115€, Kaution 350€
+- Soundboks Partylicht: 25€ / 30€ / 80€, Kaution 150€
+- Nebelmaschine Stairville AF-250: 35€ / 45€ / 120€, Kaution 100€, 1 Füllung inklusive, weitere Füllung 10€
+- Seifenblasenmaschine Eliminator Bubbletron EXL Go: 30€ / 40€ / 100€, Kaution 150€, 1 Füllung inklusive, weitere Füllung 12€
+- 1 Bierzeltgarnitur: 15€ / 20€ / 45€, Kaution 50€
+- 2 Bierzeltgarnituren: 25€ / 35€ / 80€, Kaution 100€
+- Lichterkette 10 Meter: 10€ / 15€ / 35€, Kaution 30€, jede weitere Kette 5€ und 15€ Kaution mehr
+
+## Pakete (10€ günstiger als die Summe der Einzelpreise)
+- Paket Basic (Box + Partylicht): 50€ / 60€ / 185€, Kaution 350€
+- Paket Box + Nebelmaschine: 60€ / 75€ / 225€, Kaution 350€
+- Paket Box + Seifenblasenmaschine: 55€ / 70€ / 205€, Kaution 300€
+- Paket Party (Box + Licht + Nebel): 85€ / 105€ / 305€, Kaution 400€
+- Paket Premium (2 Boxen + 2 Lichter): 110€ / 130€ / 380€, Kaution 600€
+- Paket Event Komplett (2 Boxen + 2 Lichter + Nebel + Seifenblasen + 2 Stative): 210€ / 240€ / 645€, Kaution 800€
+- Paket Event Komplett mit Bierzelt (zusätzlich 2 Bierzeltgarnituren): 240€ / 270€ / 675€, Kaution 850€
+
 ## Hauptseite
-- [Startseite](https://gaboevent.de/index.html): Vollständige Preisübersicht aller Geräte (Soundboks Partybox, Partylicht, Nebelmaschine, Seifenblasenmaschine, Bierzeltgarnituren) und Kombi-Pakete, Kundenbewertungen, Liefergebiets-Übersicht, Kontaktmöglichkeiten
+- [Startseite](https://gaboevent.de/index.html): Vollständige Preisübersicht aller Geräte und Pakete, Kundenbewertungen, Liefergebiet, Kontaktmöglichkeiten
 
 ## Lokale Seiten
-- [Partybox mieten Mainz](https://gaboevent.de/partybox-mieten-mainz.html): Soundboks-Verleih mit Lieferung nach Mainz für 10€
-- [Partybox mieten Wiesbaden](https://gaboevent.de/partybox-mieten-wiesbaden.html): Soundboks-Verleih mit Lieferung nach Wiesbaden für 15€
-- [Partybox mieten Frankfurt](https://gaboevent.de/partybox-mieten-frankfurt.html): Soundboks-Verleih mit Lieferung nach Frankfurt für 25€
-- [Soundboks mieten Mainz](https://gaboevent.de/soundboks-mieten-mainz.html): Details und Preise zur Soundboks Partybox für Mainz und Umgebung
-- [Soundboks mieten Wiesbaden](https://gaboevent.de/soundboks-mieten-wiesbaden.html): Details und Preise zur Soundboks Partybox für Wiesbaden und Umgebung
-- [Soundboks mieten Frankfurt](https://gaboevent.de/soundboks-mieten-frankfurt.html): Details und Preise zur Soundboks Partybox für Frankfurt und Umgebung
+- [Partybox & Soundboks mieten Ingelheim](https://gaboevent.de/partybox-mieten-ingelheim.html): Verleih in Ingelheim und Heidesheim, Lieferung im Ort kostenlos
+- [Partybox & Soundboks mieten Mainz](https://gaboevent.de/partybox-mieten-mainz.html): Verleih für alle Mainzer Stadtteile, Lieferung 15€
+- [Partybox & Soundboks mieten Bingen](https://gaboevent.de/partybox-mieten-bingen.html): Verleih für Bingen am Rhein und Umgebung, Lieferung 15€
+- [Partybox & Soundboks mieten Wiesbaden](https://gaboevent.de/partybox-mieten-wiesbaden.html): Verleih für Wiesbaden, Biebrich, Kastel und Kostheim, Lieferung 15€
+
+## Geräteseiten
+- [Nebelmaschine mieten](https://gaboevent.de/nebelmaschine-mieten.html): Stairville AF-250, Füllung inklusive, Technik und Anwendung
+- [Seifenblasenmaschine mieten](https://gaboevent.de/seifenblasenmaschine-mieten.html): Eliminator Bubbletron EXL Go, besonders für Kindergeburtstage und Hochzeiten
+- [Bierzeltgarnitur mieten](https://gaboevent.de/bierzeltgarnitur-mieten.html): Tisch mit zwei Bänken, einzeln oder als Zweierset
+- [Lichterkette mieten](https://gaboevent.de/lichterkette-mieten.html): 10 Meter mit zehn Fassungen, mehrere Ketten zusammensteckbar
 
 ## Service
-- [FAQ](https://gaboevent.de/faq.html): Antworten zu Produktauswahl, Outdoor-Nutzung, Stromversorgung (Akku vs. 230V), Abholung/Lieferung mit allen Ortspreisen, "Wochenende komplett", Nachfüllungen für Nebel- (10€) und Seifenblasenfluid (12€), Rückgabe, Mietvertrag, Kaution, Kurzfrist-Buchung und Buchungsablauf per WhatsApp
+- [FAQ](https://gaboevent.de/faq.html): Antworten zu Produktauswahl, Outdoor-Nutzung, Stromversorgung (Akku vs. 230V), Abholung und Lieferung mit allen Ortspreisen, "Wochenende komplett", Nachfüllungen für Nebel- (10€) und Seifenblasenfluid (12€), Rückgabe, Mietvertrag, Kaution, Kurzfrist-Buchung und Buchungsablauf per WhatsApp
 
 ## Optional
 - [Impressum](https://gaboevent.de/impressum.html)
