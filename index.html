@@ -74,14 +74,14 @@ h1{font-size:clamp(26px,4vw,34px);line-height:1.1;letter-spacing:-.6px;margin:0 
 .faq-outer{background:transparent;border:none;box-shadow:none;padding:0;margin-bottom:0}.faq-outer-summary{display:flex;align-items:center;justify-content:space-between;background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-bottom:10px;box-shadow:var(--shadow);list-style:none;cursor:pointer}.faq-outer-summary::-webkit-details-marker{display:none}.faq-outer-arrow{font-size:14px;color:var(--blue);transition:transform .3s}.faq-outer[open] .faq-outer-arrow{transform:rotate(180deg)}
 /* ===== BEWERTUNGEN ===== */
 
-.google-summary-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:8px 14px;text-align:center;box-shadow:var(--shadow);max-width:260px;margin:0 auto}
-.g-logo-row{display:flex;align-items:center;justify-content:center;gap:5px;margin-bottom:2px}
+.google-summary-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 20px;text-align:center;box-shadow:var(--shadow);max-width:310px;margin:0 auto}
+.g-logo-row{display:flex;align-items:center;justify-content:center;gap:7px;margin-bottom:4px;font-size:14px;font-weight:800}
 .g-logo-row svg{flex-shrink:0;width:14px;height:14px}
 .g-logo-row span{font-size:13px;font-weight:900;color:#3c4043}
-.g-score-row{font-size:20px;font-weight:900;color:#0f172a;line-height:1.1}
-.g-stars-row{color:#fbbc04;font-size:12px;letter-spacing:1px;margin:1px 0}
-.g-count-row{font-size:11px;color:#6b7280;font-weight:700;margin-bottom:8px}
-.btn-google-rate{display:inline-flex;align-items:center;justify-content:center;gap:6px;background:linear-gradient(135deg,#2563eb,#3b82f6);color:#fff;font-weight:900;font-size:11px;padding:7px 12px;border-radius:999px;box-shadow:0 4px 10px rgba(37,99,235,.28);transition:.2s;width:100%}
+.g-score-row{font-size:34px;font-weight:900;color:#0f172a;line-height:1.05}
+.g-stars-row{color:#fbbc04;font-size:19px;letter-spacing:2px;margin:3px 0}
+.g-count-row{font-size:13px;color:#6b7280;font-weight:700;margin-bottom:12px}
+.btn-google-rate{display:inline-flex;align-items:center;justify-content:center;gap:6px;background:linear-gradient(135deg,#2563eb,#3b82f6);color:#fff;font-weight:900;font-size:13px;padding:10px 16px;border-radius:999px;box-shadow:0 4px 10px rgba(37,99,235,.28);transition:.2s;width:100%}
 .btn-google-rate:hover{transform:translateY(-1px);box-shadow:0 6px 14px rgba(37,99,235,.38)}
 /* Auto-Slider */
 .review-slider-outer{position:relative}
@@ -156,6 +156,7 @@ h3{font-size:23px}
 .multi{height:160px;padding:0}
 .card{padding:10px}
 }
+.review-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:10px;margin-top:14px}.review-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:11px 13px;box-shadow:var(--shadow);text-align:left;display:flex;flex-direction:column;gap:5px}.review-head{display:flex;align-items:center;gap:8px}.review-avatar{width:27px;height:27px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:12px;flex-shrink:0}.review-name{font-weight:900;font-size:12.5px;line-height:1.25}.review-stars{color:#fbbc04;font-size:11px;letter-spacing:1px}.review-text{margin:0;font-size:12.5px;line-height:1.5;color:#334155}.review-source{margin:12px 0 0;text-align:center;font-size:11.5px;color:var(--muted)}@media(min-width:900px){.review-text{font-size:13px}.review-name{font-size:13px}}
 </style>
 <script type="application/ld+json">{
 "@context":"https://schema.org","@type":"LocalBusiness","@id":"https://gaboevent.de/#business","name":"GABO Verleihservice",
@@ -225,11 +226,18 @@ h3{font-size:23px}
         </div>
         <div class="g-score-row">5,0</div>
         <div class="g-stars-row">★★★★★</div>
-        <div class="g-count-row">(19 Rezensionen)</div>
+        <div class="g-count-row">(20 Rezensionen)</div>
         <a class="btn-google-rate" href="https://g.page/r/CU4kqnSAsf6GEAE/review" target="_blank" rel="noopener noreferrer">
           Bewerten Sie uns auf Google
         </a>
     </div>
+    <div class="review-grid">
+      <article class="review-card"><div class="review-head"><div class="review-avatar" style="background:linear-gradient(135deg,#dcfce7,#bbf7d0);color:#166534" aria-hidden="true">N</div><div class="review-name">NIKLAS Rombach</div></div><div class="review-stars" aria-label="5 von 5 Sternen">★★★★★</div><p class="review-text">Absolut empfehlenswert! Super Technik, faire Preise und super freundlicher Service! Hatten das komplett Paket mit 2 SOUNDBOKS, seifenblasenmaschine und nebelmaschine für unsere Gartenhochzeit bestellt. Mit den Boxen kann man ein Festival beschallen, absolut top! Vielen Dank</p></article>
+      <article class="review-card"><div class="review-head"><div class="review-avatar" style="background:linear-gradient(135deg,#dbeafe,#bfdbfe);color:#1e3a8a" aria-hidden="true">M</div><div class="review-name">Mike Enroute</div></div><div class="review-stars" aria-label="5 von 5 Sternen">★★★★★</div><p class="review-text">Alles Top! Sehr freundlicher Service, auch noch beim Tragen geholfen, super Kommunikation einfach über WhatsApp, Anlieferung und Ablieferung pünktlich und ohne Probleme und guter Preis! Gerne wieder! Vielen Dank</p></article>
+      <article class="review-card"><div class="review-head"><div class="review-avatar" style="background:linear-gradient(135deg,#ede9fe,#ddd6fe);color:#5b21b6" aria-hidden="true">M</div><div class="review-name">Murat Senyüz</div></div><div class="review-stars" aria-label="5 von 5 Sternen">★★★★★</div><p class="review-text">Super Service, sehr netter Kontakt, bei uns war es eine kurzfristige Feier, aber Gabo Event &amp; Verleihservice sei Dank. Es war eine reibungslose Abwicklung. Von mir 5 Sterne.</p></article>
+      <article class="review-card"><div class="review-head"><div class="review-avatar" style="background:linear-gradient(135deg,#ffedd5,#fed7aa);color:#9a3412" aria-hidden="true">V</div><div class="review-name">Verena Luzius</div></div><div class="review-stars" aria-label="5 von 5 Sternen">★★★★★</div><p class="review-text">Super netter Kontakt, zuverlässige Abwicklung zu fairen Preisen und geniales Equipment ! Für uns ab sofort noch über diesen Verleih 😊</p></article>
+    </div>
+    <p class="review-source">Alle Bewertungen stammen aus unserem Google-Unternehmensprofil und sind dort vollständig nachzulesen.</p>
   </div>
 </section>
 
